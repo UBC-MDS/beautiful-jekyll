@@ -12,6 +12,20 @@ These instructions will walk you through installing the required Data Science so
 - is 4 years old or newer at the start of the program
 - uses English as the default language
 
+
+##### Free Windows 10 Education edition for UBC students
+
+Before starting the installation process, in the case that your Windows 10 version is only the Home edition, UBC students may be eligible for a free upgrade to Windows 10 Education edition.
+
+This is distributed through [Onthehub.com](https://onthehub.com/download/free-software/windows-10-pro).
+
+On the bottom of the page you would need to find the school **University of British Columbia** and for the department select **University of British Columbia - Faculty of Applied Science**.
+
+You will then need to log in through your CWL in order to obtain the product key for the Education edition.
+
+In order to apply the key to your Windows 10 Computer click on Start and search for **settings**. In the **settings**, search for **activation** and click on **change product key**. Type in the product key you obtained from Onthehub and the process should start automatically. If you are worried at all about data loss, try to back up your computer ore important files before starting this process.
+
+
 ## Table of Contents
 - [GitHub](#github)
 - [Git](#git)
@@ -42,7 +56,7 @@ This step is required for
 
 ## Git
 
-We will be using the command line version of Git as well as Git through RStudio. 
+We will be using the command line version of Git as well as Git through RStudio.
 
 Go to <https://git-scm.com/download/win> and a download should automatically start (if not, follow the instructions on that page). After the download has finished, run the installer selecting the following options:
   - On the **Select Components** page, check "On the Desktop" under "Additional icons"
@@ -81,7 +95,7 @@ To see if Jupyter was successfully installed in the Anaconda Python distribution
 jupyter notebook
 ```
 
-A browser should have launched and you should see a page that looks like the screenshot below. 
+A browser should have launched and you should see a page that looks like the screenshot below.
 
 ![](/resources_pages/imgs/jupyter.png)
 
@@ -144,6 +158,13 @@ Sometimes a kernel loads, but doesn't work if installation was not done correctl
 
 ![](/resources_pages/imgs/IR_kernel_3.png)
 
+In case the process did not work, you may need to install the [IR kernel for anaconda](https://anaconda.org/r/r-irkernel). You would need to open a Git Bash window and type the command below.
+
+```
+conda install -c r r-irkernel
+```
+After this, if you open a Juyputer Notebook through Git Bash prompt, you should be able to start a new R kernel.
+
 #### Rscript
 
 To be able to call R scripts from the CMD or Git Bash you need to be able to execute the Rscript program from there. To make this possible you need to add the the file path of the directory/folder that houses the Rscript program (i.e., location where this program lives on your computer) to the Windows PATH system variable. You can modify the PATH system variable using System Utility in control panel on Windows. We outline below how to do this:
@@ -152,15 +173,15 @@ To be able to call R scripts from the CMD or Git Bash you need to be able to exe
 - This should bring up a menu item that will take you to where you can edit the Environment Variables. It should look something like this:
 
 ![](/resources_pages/imgs/env1.png)
-  
-- Double click on the "Path" entry from the top box. This should bring you to a new window titled "Edit Enviroment Variables". 
+
+- Double click on the "Path" entry from the top box. This should bring you to a new window titled "Edit Environment Variables".
 
 - Here, click on an empty line and then click **Browse**. This will open a dialogue box within which you can navigate to the folder where Rscript is installed (usually `C:\Program Files\R\R-3.5.1\bin`) and click **OK**. Close all remaining windows by clicking **OK**.
 
 ![](/resources_pages/imgs/env2.png)
 
 After following the instructions above, in Command Prompt type the following to ask for the version:
-``` 
+```
 Rscript --version
 ```
 you should see something like this if you were successful:
@@ -172,7 +193,7 @@ R scripting front-end version 3.5.1 (2018-07-02)
 
 We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Atom.
 
-Got to https://flight-manual.atom.io/getting-started/sections/installing-atom/ and follow the installation instructions. 
+Got to https://flight-manual.atom.io/getting-started/sections/installing-atom/ and follow the installation instructions.
 
 To test that atom is installed and can be opened from the Command Prompt, in Command Prompt the following to ask for the version:
 
@@ -223,11 +244,11 @@ Compiled with xpdf version 4.00
 
 ## SQLite
 
-- Got to https://www.sqlite.org/download.html and search for “Precompiled Binaries for Windows” Section. Download the zip file called sqlite-dll-win32-x86-xxxx.zip or sqlite-dll-win64-x64-xxxx.zip (depending upon your system configuration) as well as sqlite-tools-win32-x86-xxxx.zip 
+- Got to https://www.sqlite.org/download.html and search for “Precompiled Binaries for Windows” Section. Download the zip file called sqlite-dll-win32-x86-xxxx.zip or sqlite-dll-win64-x64-xxxx.zip (depending upon your system configuration) as well as sqlite-tools-win32-x86-xxxx.zip
 - Create a folder in your `C` directory called `sqlite` and unzip both the files which you have downloaded. You should now see the following files there:
   ```
   sqldiff.exe
-  sqlite3.def 
+  sqlite3.def
   sqlite3.dll
   sqlite3.exe
   sqlite3_analyzer.exe
@@ -256,7 +277,7 @@ Type `.quit` to exit.
 We will be using Make to automate our analysis scripts. More on this later!
 
 Go to https://github.com/gnu-mcu-eclipse/windows-build-tools/releases and download `
-gnu-mcu-eclipse-build-tools-2.10-20180103-1919-win64.zip`. 
+gnu-mcu-eclipse-build-tools-2.10-20180103-1919-win64.zip`.
 
 Unpack the archive and copy it into the %userprofile%\AppData\Roaming\GNU MCU Eclipse (for example C:\Users\User\AppData\Roaming\GNU MCU Eclipse) folder.
 
