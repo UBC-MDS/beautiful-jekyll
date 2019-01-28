@@ -23,7 +23,7 @@ On the bottom of the page you would need to find the school **University of Brit
 
 You will then need to log in through your CWL in order to obtain the product key for the Education edition.
 
-In order to apply the key to your Windows 10 Computer click on Start and search for **settings**. In the **settings**, search for **activation** and click on **change product key**. Type in the product key you obtained from Onthehub and the process should start automatically. If you are worried at all about data loss, try to back up your computer ore important files before starting this process.
+In order to apply the key to your Windows 10 Computer click on Start and search for **settings**. In the **settings**, search for **activation** and click on **change product key**. Type in the product key you obtained from Onthehub and the process should start automatically. If you are worried at all about data loss, try to back up your computer or important files before starting this process.
 
 
 ## Table of Contents
