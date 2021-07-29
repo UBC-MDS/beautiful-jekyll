@@ -28,7 +28,7 @@ These instructions will walk you through installing the required Data Science so
 
 - [UBC Student Email](#ubc-student-email){:target="_self"}
 - [Web browser](#web-browser){:target="_self"}
-- [LastPass password manager](#lastpass-password-manager){:target="_self"}
+- [Password manager](#password-manager){:target="_self"}
 - [Slack](#slack){:target="_self"}
 - [Visual Studio code](#visual-studio-code){:target="_self"}
 - [GitHub](#github){:target="_self"}
@@ -71,9 +71,9 @@ In MDS we will be using many tools that work most reliably on Google Chrome and 
 - To install Chrome, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome" and follow the instructions on the website to finish the installation.
 - To install Firefox, go to [https://www.mozilla.org/en-US/firefox/new/](https://www.mozilla.org/en-US/firefox/new/), click on "Download Firefox" and follow the instructions on the website to finish the installation.
 
-## LastPass password manager
+## Password manager
 
-Some MDS courses (e.g. the capstone project) use the LastPass password manager to share credentials. Although we will not cover privacy and security topics until the second semester of the program, we recommend that you use a password manager such as LastPass to help you create strong passwords and store them securely, and to facilitate online authentication. You can sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome or Firefox browser extension available here: [https://lastpass.com/misc_download2.php](https://lastpass.com/misc_download2.php).
+A password manager is an efficient and convenient measure to protect your online accounts from most common threats. While you don't strictly need to use one for any of the courses in MDS, we **highly recommend** that you set one up for your own benefit. Examples of reliable password managers include the ones built into Chrome and Firefox, [Bitwarden](https://bitwarden.com/), and [KeePassXC](https://keepassxc.org/) (if you prefer to sync your passwords manually).
 
 ## Slack
 
