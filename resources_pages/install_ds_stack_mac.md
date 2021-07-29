@@ -245,7 +245,6 @@ To install packages individually, we can now use the following command: `conda i
 ```bash
 conda install \
  jupyterlab=3.* \
- numpy=1.* \
  pandas=1.* \
  flake8=3.* \
  black=21.*
@@ -643,7 +642,6 @@ OK        code 1.58.0
 
 ## Python packages
 OK        jupyterlab=3.0.16
-OK        numpy=1.21.0
 OK        pandas=1.2.5
 OK        flake8=3.9.2
 OK        black=21.5b2

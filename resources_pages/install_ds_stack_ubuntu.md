@@ -235,7 +235,6 @@ To install packages individually, we can now use the following command: `conda i
 ```
 conda install \
  jupyterlab=2.* \
- numpy=1.* \
  pandas=1.* \
  flake8=3.* \
  black=19.*
@@ -615,7 +614,6 @@ MISSING   code=1.*
 
 ## Python packages
 MISSING   jupyterlab=2.*
-MISSING   numpy=1.*
 MISSING   pandas=1.*
 OK        flake8=3.7.9
 MISSING   black=19.*
