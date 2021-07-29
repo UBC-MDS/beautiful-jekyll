@@ -249,11 +249,11 @@ you can replace `conda install` with `conda install -y`.
 
 ## JupyterLab setup
 
-We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. Install them via the following commands:
+We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. We will also use Jupyter Book to create publication ready documents. Install them via the following commands:
 
 ```
 conda install nodejs=15.*
-conda install -c conda-forge jupyterlab jupyterlab-git jupytext
+conda install -c conda-forge jupyterlab jupyterlab-git jupytext jupyter-book
 ```
 
 To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
