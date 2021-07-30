@@ -11,6 +11,7 @@ subtitle: MDS software stack install instructions for Ubuntu
 
 ## Table of Contents
 
+- [Installation notes](#installation-notes){:target="_self"}
 - [UBC Student Email](#ubc-student-email){:target="_self"}
 - [Web browser](#web-browser){:target="_self"}
 - [Password manager](#password-manager){:target="_self"}
