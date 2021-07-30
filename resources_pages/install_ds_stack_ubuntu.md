@@ -58,7 +58,6 @@ In MDS we will be using many tools that work most reliably on Google Chrome and 
 
 > Note that if you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
 
-
 ## Password manager
 
 A password manager is an efficient and convenient measure to protect your online accounts from most common threats. While you don't strictly need to use one for any of the courses in MDS, we **highly recommend** that you set one up for your own benefit. Examples of reliable password managers include the ones built into Chrome and Firefox, [Bitwarden](https://bitwarden.com/), and [KeePassXC](https://keepassxc.org/) (if you prefer to sync your passwords manually).
@@ -98,6 +97,7 @@ Sign up for a free account at [GitHub.com](https://github.com/) if you don't hav
 To add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login to [Github.ubc.ca](https://github.ubc.ca) using your CWL credentials.
 
 This step is required for
+
 - being able to store your work
 - all homework submission and grading
 - working collaboratively
@@ -412,7 +412,9 @@ tlmgr install eurosym \
   trimspaces \
   ucs \
   ulem \
-  upquote
+  upquote \
+  lwarp \
+  oberdiek
 ```
 
 To test that your latex installation is working with jupyter notebooks,

@@ -556,7 +556,9 @@ tlmgr.bat install eurosym \
   trimspaces \
   ucs \
   ulem \
-  upquote
+  upquote \
+  lwarp \
+  oberdiek
 ```
 
 To test that your latex installation is working with jupyter notebooks,
