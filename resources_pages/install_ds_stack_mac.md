@@ -369,9 +369,9 @@ We will install the lightest possible version of LaTeX and it's necessary packag
 
 First, run the following command to make sure that `/usr/local/bin` is writable:
 
->```shell
-> sudo chown -R $(whoami):admin /usr/local/bin
->```
+```shell
+sudo chown -R $(whoami):admin /usr/local/bin
+```
 
 > **Note:** You might be asked to enter your password during installation.
 
@@ -380,10 +380,6 @@ Now open RStudio and run the following commands to install the `tinytex` package
 ```R
 install.packages('tinytex')
 tinytex::install_tinytex()
-```
-
-```bash
-~/Library/TinyTeX/bin/*/tlmgr path add
 ```
 
 You can check that the installation is working by opening a terminal and asking for the version of latex:
