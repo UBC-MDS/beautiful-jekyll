@@ -164,7 +164,7 @@ if ! [ -x "$(command -v conda)" ]; then  # Check that conda exists as an executa
     echo "In order to do this after the installation process," >> check-setup-mds.log
     echo "first run 'source <path to conda>/bin/activate' and then run 'conda init'." >> check-setup-mds.log
 else
-    py_pkgs=(pandas=1 flake8=3 black=21 nodejs=15 jupyterlab=3 jupyterlab-git=0 jupytext=1 jupyter-book=0)
+    py_pkgs=(pandas=1 flake8=3 black=21 pyppeteer=0 nodejs=15 jupyterlab=3 jupyterlab-git=0 jupytext=1 jupyter-book=0)
     # installed_py_pkgs=$(pip freeze)
     installed_py_pkgs=$(conda list | tail -n +4 | tr -s " " "=" | cut -d "=" -f -2)
     for py_pkg in ${py_pkgs[@]}; do
@@ -179,7 +179,7 @@ else
     done
 fi
 
-# jupyterlab PDF generation
+# jupyterlab PDF and HTML generation
 if ! [ -x "$(command -v jupyter)" ]; then  # Check that jupyter exists as an executable program
     echo "Please install 'jupyterlab' before testing PDF generation." >> check-setup-mds.log
 else
@@ -205,13 +205,40 @@ else
      },
      "nbformat": 4,
      "nbformat_minor": 4
-    }' > mds-nbconvert-pdf-test.ipynb
-    if ! jupyter nbconvert mds-nbconvert-pdf-test.ipynb --to pdf &> /dev/null; then
-        echo 'MISSING   jupyterlab PDF-generation failed. Check that latex and jupyterlab are marked OK above.' >> check-setup-mds.log
+    }' > mds-nbconvert-test.ipynb
+    # Test PDF
+    if ! jupyter nbconvert mds-nbconvert-test.ipynb --to pdf --log-level 'ERROR' &> jupyter-pdf-error.log; then
+        echo 'MISSING   jupyterlab PDF-generation failed. Check that latex and jupyterlab are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
     else
         echo 'OK        jupyterlab PDF-generation was successful.' >> check-setup-mds.log
     fi
-    rm mds-nbconvert-pdf-test.ipynb
+    # Test WebPDF
+    # I don't want to automate any of the installation steps since it can be harder to troubleshoot then,
+    # so we just output and error message telling students is the most probable cause of the failure.
+    if ! [ -x "$(command -v pyppeteer-install)" ]; then  # Check that pyppeteer-install exists as an executable program
+        echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you did not run `pip install "nbconvert[webpdf]"` to install pyppeteer.' >> check-setup-mds.log
+    else
+        if ! timeout 1s pyppeteer-install &> /dev/null; then
+            # If the student didn't run `pypeteer-install`
+            # then this command will try to download chromium, which should always take more than 1s
+            # so `timeout` will interupt it with exit code 1.
+            # If chromium is already installed,
+            # this command just returns an info message which should not take more than 1s.
+            echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you have not run `pyppeteer-install` to download chromium for jupyterlab WebPDF export.' >> check-setup-mds.log
+        elif ! jupyter nbconvert mds-nbconvert-test.ipynb --to webpdf --log-level 'ERROR' &> jupyter-webpdf-error.log; then
+            echo 'MISSING   jupyterlab WebPDF-generation failed. Check that latex, pyppeteer, and jupyterlab are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
+        else
+            echo 'OK        jupyterlab WebPDF-generation was successful.' >> check-setup-mds.log
+        fi
+    fi
+    # Test HTML
+    if ! jupyter nbconvert mds-nbconvert-test.ipynb --to html --log-level 'ERROR' &> jupyter-html-error.log; then
+        echo 'MISSING   jupyterlab HTML-generation failed. Check that jupyterlab is marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
+    else
+        echo 'OK        jupyterlab HTML-generation was successful.' >> check-setup-mds.log
+    fi
+    # -f makes sure `rm` succeeds even when the file does not exists
+    rm -f mds-nbconvert-test.ipynb mds-nbconvert-test.pdf mds-nbconvert-test.html
 fi
 
 # 3. R packages
@@ -255,6 +282,34 @@ fi
 # so that students have time to read the help message in the beginning.
 tail -n +2 check-setup-mds.log  # `tail` to skip rows already echoed to stdout
 
+# Output details about PDF and HTML creation errors
+# This is outputted after all the package OK/MISSING info
+# to separate the detailed error message from the overview of which packages installed correctly.
+if [ -s jupyter-pdf-error.log ]; then
+    echo '' >> check-setup-mds.log
+    echo '======== You had the following errors during Jupyter PDF generation ========' >> check-setup-mds.log
+    cat jupyter-pdf-error.log >> check-setup-mds.log
+    echo '======== End of Jupyter PDF error ========' >> check-setup-mds.log
+    # -f makes sure `rm` succeeds even when the file does not exists
+    rm -f jupyter-pdf-error.log
+fi
+if [ -s jupyter-webpdf-error.log ]; then
+    echo '' >> check-setup-mds.log
+    echo '======== You had the following errors during Jupyter WebPDF generation ========' >> check-setup-mds.log
+    cat jupyter-webpdf-error.log >> check-setup-mds.log
+    echo '======== End of Jupyter WebPDF error ========' >> check-setup-mds.log
+    # -f makes sure `rm` succeeds even when the file does not exists
+    rm -f jupyter-webpdf-error.log
+fi
+if [ -s jupyter-html-error.log ]; then
+    echo '' >> check-setup-mds.log
+    echo 'You had the following errors during Jupyter HTML generation:' >> check-setup-mds.log
+    cat jupyter-html-error.log >> check-setup-mds.log
+    echo '======== End of Jupyter HTML error ========' >> check-setup-mds.log
+    # -f makes sure `rm` succeeds even when the file does not exists
+    rm -f jupyter-html-error.log
+fi
+
 # Student don't need to see this in stdout, but useful to have in the log-file
 # env
 echo '' >> check-setup-mds.log
@@ -280,6 +335,6 @@ else
 fi
 
 echo
-echo "This output and additional configuration details"
-echo "have been saved to the file $(pwd)/check-setup-mds.log."
+echo "The above output has been saved to the file $(pwd)/check-setup-mds.log"
+echo "together with system configuration details and any detailed error messages about PDF and HTML generation."
 echo "You can open this folder in your file browser by typing \`${file_browser} .\` (without the surrounding backticks)."

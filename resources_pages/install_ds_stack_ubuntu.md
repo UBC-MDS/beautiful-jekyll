@@ -239,6 +239,7 @@ We will be using the Jupytext Python package and the JupyterLab git extension to
 ```
 conda install nodejs=15.*
 conda install -c conda-forge jupyterlab jupyterlab-git jupytext jupyter-book
+pip install "nbconvert[webpdf]" && pyppeteer-install
 ```
 
 To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
