@@ -326,8 +326,7 @@ pip install https://github.com/jupyter/nbconvert/archive/6.0.0a6.zip
 We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. We will also use Jupyter Book to create publication ready documents. Install them via the following commands:
 
 ```
-conda install nodejs=15.*
-conda install -c conda-forge jupyterlab jupyterlab-git jupytext jupyter-book
+conda install -c conda-forge jupyterlab jupyterlab-git jupytext jupyter-book jupyterlab-spellchecker nodejs=15.*
 pip install "nbconvert[webpdf]" && pyppeteer-install
 ```
 
