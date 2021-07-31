@@ -505,6 +505,7 @@ To install an extension, you simply search for it in the search bar, click the e
 - Python (everything Python: notebooks, debugging, linting, formatting, etc.)
 - markdownlint (markdown linting and style checking extension)
 - GitLens - Git supercharged (powerful extension that extends VS Code's native git capabilities)
+- Git History (intutive view of your git history)
 - Docker (easily use Docker from VS Code)
 - (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
 - (Optional) Material Icon Theme (great-looking custom file icons!)
