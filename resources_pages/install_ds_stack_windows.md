@@ -197,6 +197,16 @@ Then save the file and exit VS Code.
 
 > Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
 
+In some cases,
+VScode is not set as the default text editor for git
+even after appending the two lines above,
+so to make sure it is registered properly,
+also run the following from your terminal:
+
+```bash
+git config --global core.editor "code --wait"
+```
+
 ## Python, Conda, and JupyterLab
 
 ### Python and Conda
