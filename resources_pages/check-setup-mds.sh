@@ -262,9 +262,9 @@ else
     done
 fi
 
-# rmarkdown PDF generation
+# rmarkdown PDF and HTML generation
 if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable program
-    echo "Please install 'R' before testing PDF generation." >> check-setup-mds.log
+    echo "Please install 'R' before testing PDF and HTML generation." >> check-setup-mds.log
 else
     # Create an empty Rmd-file for testing
     touch mds-knit-pdf-test.Rmd
@@ -272,6 +272,11 @@ else
         echo "MISSING   rmarkdown PDF-generation failed. Check that latex and rmarkdown are marked OK above." >> check-setup-mds.log
     else
         echo 'OK        rmarkdown PDF-generation was successful.' >> check-setup-mds.log
+    fi
+    if ! Rscript -e "rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'html_document')" &> /dev/null; then
+        echo "MISSING   rmarkdown HTML-generation failed. Check that rmarkdown is marked OK above." >> check-setup-mds.log
+    else
+        echo 'OK        rmarkdown HTML-generation was successful.' >> check-setup-mds.log
     fi
     rm mds-knit-pdf-test.Rmd
 fi
