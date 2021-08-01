@@ -334,16 +334,6 @@ and you can press enter to proceed with the installation.
 If you want to answer `yes` by default and skip this confirmation step,
 you can replace `conda install` with `conda install -y`.
 
-Next we will update `nbconvert` (which was installed with `jupyterlab`),
-because we require a more recent version to make it work well with `tinytex` on Windows,
-which we will install later.
-To install the latest version directly from GitHub,
-we need to use the `pip` package manager instead of `conda`:
-
-```
-pip install https://github.com/jupyter/nbconvert/archive/6.0.0a6.zip
-```
-
 > **Note**: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ### JupyterLab setup
