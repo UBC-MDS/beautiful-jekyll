@@ -207,6 +207,21 @@ also run the following from your terminal:
 git config --global core.editor "code --wait"
 ```
 
+On Windows,
+VScode sometimes reads a different configuration file than Git Bash.
+To make sure both program work with the same settings,
+open your `~/.bashrc` file:
+
+```bash
+code ~/.bashrc
+```
+
+And append the following line:
+
+```bash
+if [ -f ~/.bash_profile ]; then . ~/.bash_profile; fi
+```
+
 ## Python, Conda, and JupyterLab
 
 ### Python and Conda
