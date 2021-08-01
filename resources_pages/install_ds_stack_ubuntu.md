@@ -574,7 +574,7 @@ bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/mast
 The output from running the script will look something like this:
 
 ````
-# MDS setup check 0.1.0
+# MDS setup check 1.1.0
 
 If a program or package is marked as MISSING,
 this means that you are missing the required version of that program or package.
