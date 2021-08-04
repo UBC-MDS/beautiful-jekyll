@@ -218,13 +218,27 @@ else
     if ! [ -x "$(command -v pyppeteer-install)" ]; then  # Check that pyppeteer-install exists as an executable program
         echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you did not run `pip install "nbconvert[webpdf]"` to install pyppeteer.' >> check-setup-mds.log
     else
-        if ! timeout 1s pyppeteer-install &> /dev/null; then
-            # If the student didn't run `pypeteer-install`
-            # then this command will try to download chromium, which should always take more than 1s
-            # so `timeout` will interupt it with exit code 1.
-            # If chromium is already installed,
-            # this command just returns an info message which should not take more than 1s.
-            echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you have not run `pyppeteer-install` to download chromium for jupyterlab WebPDF export.' >> check-setup-mds.log
+        # If the student didn't run `pypeteer-install`
+        # then that command will try to download chromium,
+        # which should always take more than 1s
+        # so `timeout` will interupt it with exit code 1.
+        # If chromium is already installed,
+        # this command just returns an info message which should not take more than 1s.
+        # ----
+        # Unfortunately, apple has decided not to use gnu-coreutils,
+        # so we need to use less reliable solution on macOS;
+        # there might be corner cases where this breaks
+        if [[ "$(uname)" == 'Darwin' ]]; then
+            # The surrounding $() here is just to supress the alarm clock output
+            # as redirection does not work.
+            $(perl -e 'alarm shift; exec pyppeteer-install' 1)
+        else
+            # Using the reliable `timeout` tool on Linux and Windows
+            timeout 1s pyppeteer-install &> /dev/null
+        fi
+            # `$?` stores the exit code of the last program that as executed
+            if ! [ $? ]; then
+                echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you have not run `pyppeteer-install` to download chromium for jupyterlab WebPDF export.' >> check-setup-mds.log
         elif ! jupyter nbconvert mds-nbconvert-test.ipynb --to webpdf --log-level 'ERROR' &> jupyter-webpdf-error.log; then
             echo 'MISSING   jupyterlab WebPDF-generation failed. Check that latex, pyppeteer, and jupyterlab are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
         else
