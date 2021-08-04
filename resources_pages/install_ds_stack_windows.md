@@ -345,6 +345,8 @@ conda install -c conda-forge jupyterlab-git jupytext jupyter-book jupyterlab-spe
 pip install -U "nbconvert[webpdf]" && pyppeteer-install
 ```
 
+> **Note** You might see an error message about pip's dependency resolver mentioning that myst-nb not being compatible with installed version of nbconvert, but this is nothing to worry about in this case.
+
 To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
 To exit out of JupyterLab you can click `File -> Shutdown`,
 or go to the terminal from which you launched JupyterLab and hold `Ctrl` while pressing `c` twice.
