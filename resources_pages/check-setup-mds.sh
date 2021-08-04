@@ -309,25 +309,21 @@ if [ -s jupyter-pdf-error.log ]; then
     echo '======== You had the following errors during Jupyter PDF generation ========' >> check-setup-mds.log
     cat jupyter-pdf-error.log >> check-setup-mds.log
     echo '======== End of Jupyter PDF error ========' >> check-setup-mds.log
-    # -f makes sure `rm` succeeds even when the file does not exists
-    rm -f jupyter-pdf-error.log
 fi
 if [ -s jupyter-webpdf-error.log ]; then
     echo '' >> check-setup-mds.log
     echo '======== You had the following errors during Jupyter WebPDF generation ========' >> check-setup-mds.log
     cat jupyter-webpdf-error.log >> check-setup-mds.log
     echo '======== End of Jupyter WebPDF error ========' >> check-setup-mds.log
-    # -f makes sure `rm` succeeds even when the file does not exists
-    rm -f jupyter-webpdf-error.log
 fi
 if [ -s jupyter-html-error.log ]; then
     echo '' >> check-setup-mds.log
     echo 'You had the following errors during Jupyter HTML generation:' >> check-setup-mds.log
     cat jupyter-html-error.log >> check-setup-mds.log
     echo '======== End of Jupyter HTML error ========' >> check-setup-mds.log
-    # -f makes sure `rm` succeeds even when the file does not exists
-    rm -f jupyter-html-error.log
 fi
+# -f makes sure `rm` succeeds even when the file does not exists
+rm -f jupyter-html-error.log jupyter-webpdf-error.log jupyter-pdf-error.log
 
 # Student don't need to see this in stdout, but useful to have in the log-file
 # env
