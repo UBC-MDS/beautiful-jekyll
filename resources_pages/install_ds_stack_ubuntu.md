@@ -229,7 +229,7 @@ To install packages individually, we can now use the following command: `conda i
 
 ```
 conda install \
- jupyterlab=2.* \
+ jupyterlab=3.* \
  pandas=1.* \
  flake8=3.* \
  black=19.*
