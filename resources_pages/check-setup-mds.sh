@@ -164,7 +164,7 @@ if ! [ -x "$(command -v conda)" ]; then  # Check that conda exists as an executa
     echo "In order to do this after the installation process," >> check-setup-mds.log
     echo "first run 'source <path to conda>/bin/activate' and then run 'conda init'." >> check-setup-mds.log
 else
-    py_pkgs=(pandas=1 flake8=3 black=21 pyppeteer=0 nodejs=15 jupyterlab=3 jupyterlab-git=0 jupytext=1 jupyter-book=0 jupyterlab-spellchecker=0)
+    py_pkgs=(pandas=1 flake8=3 black=21 pyppeteer=0 nodejs=15 nbconvert=6 jupyterlab=3 jupyterlab-git=0 jupytext=1 jupyter-book=0 jupyterlab-spellchecker=0)
     # installed_py_pkgs=$(pip freeze)
     installed_py_pkgs=$(conda list | tail -n +4 | tr -s " " "=" | cut -d "=" -f -2)
     for py_pkg in ${py_pkgs[@]}; do
@@ -240,14 +240,14 @@ else
         if ! [ $? ]; then
             echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you have not run `pyppeteer-install` to download chromium for jupyterlab WebPDF export.' >> check-setup-mds.log
         elif ! jupyter nbconvert mds-nbconvert-test.ipynb --to webpdf --log-level 'ERROR' &> jupyter-webpdf-error.log; then
-            echo 'MISSING   jupyterlab WebPDF-generation failed. Check that latex, pyppeteer, and jupyterlab are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
+            echo 'MISSING   jupyterlab WebPDF-generation failed. Check that jupyterlab, nbconvert, and pyppeteer are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
         else
             echo 'OK        jupyterlab WebPDF-generation was successful.' >> check-setup-mds.log
         fi
     fi
     # Test HTML
     if ! jupyter nbconvert mds-nbconvert-test.ipynb --to html --log-level 'ERROR' &> jupyter-html-error.log; then
-        echo 'MISSING   jupyterlab HTML-generation failed. Check that jupyterlab is marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
+        echo 'MISSING   jupyterlab HTML-generation failed. Check that jupyterlab and nbconvert are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
     else
         echo 'OK        jupyterlab HTML-generation was successful.' >> check-setup-mds.log
     fi
