@@ -236,9 +236,9 @@ else
             # Using the reliable `timeout` tool on Linux and Windows
             timeout 1s pyppeteer-install &> /dev/null
         fi
-            # `$?` stores the exit code of the last program that as executed
-            if ! [ $? ]; then
-                echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you have not run `pyppeteer-install` to download chromium for jupyterlab WebPDF export.' >> check-setup-mds.log
+        # `$?` stores the exit code of the last program that as executed
+        if ! [ $? ]; then
+            echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you have not run `pyppeteer-install` to download chromium for jupyterlab WebPDF export.' >> check-setup-mds.log
         elif ! jupyter nbconvert mds-nbconvert-test.ipynb --to webpdf --log-level 'ERROR' &> jupyter-webpdf-error.log; then
             echo 'MISSING   jupyterlab WebPDF-generation failed. Check that latex, pyppeteer, and jupyterlab are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
         else
