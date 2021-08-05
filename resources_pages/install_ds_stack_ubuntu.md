@@ -605,7 +605,7 @@ OK        rstudio 1.4.1725
 OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
 OK        python 3.9.1
 OK        conda 4.10.3
-OK        bash 4.4.23(1)-release (x86_64-pc-msys)
+OK        bash 5.1.4(1)-release (x86_64-pc-linux-gnu)
 OK        git 2.32.0
 OK        make 4.3
 OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2021)
