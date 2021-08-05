@@ -257,7 +257,7 @@ you can replace `conda install` with `conda install -y`.
 We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. We will also use Jupyter Book to create publication ready documents. Install them via the following commands:
 
 ```bash
-conda install -c conda-forge jupyterlab-git jupytext jupyter-book jupyterlab-spellchecker
+conda install jupyterlab-git jupytext jupyter-book jupyterlab-spellchecker
 pip install -U "nbconvert[webpdf]" && pyppeteer-install
 ```
 
