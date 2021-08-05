@@ -621,31 +621,31 @@ ProductName:	macOS
 ProductVersion:	11.4
 BuildVersion:	20F71
 
-MISSING You need macOS Catalina (10.15.x).
-
 ## System programs
-OK        psql (PostgreSQL) 13.3
+MISSING   psql 13.*
 OK        rstudio 1.4.1725
 OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
-OK        python 3.8.10
+OK        python 3.9.1
 OK        conda 4.10.3
 OK        bash 3.2.57(1)-release (x86_64-apple-darwin20)
-OK        git 2.30.1 (Apple Git-130)
-OK        make 3.81
-OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2022/dev)
-OK        tlmgr 59291 (2021-05-21 05:14:40 +0200)
+OK        git 2.32.0
+OK        make 4.3
+OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2021)
+OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
 OK        docker 20.10.7, build f0df350
-OK        code 1.58.0
+OK        code 1.58.2
 
 ## Python packages
-OK        jupyterlab=3.0.16
-OK        pandas=1.2.5
+MISSING   jupyterlab=3.*
+OK        pandas=1.3.0
 OK        flake8=3.9.2
-OK        black=21.5b2
-OK        nodejs=15.14.0
-OK        jupytext=1.11.3
+MISSING   black=21.*
+MISSING   nodejs=15.*
+OK        jupytext=1.11.4
 OK        jupyterlab-git=0.30.1
-MISSING   jupyterlab PDF-generation failed. Check that latex and jupyterlab are marked OK above.
+OK        jupyterlab PDF-generation was successful.
+OK        jupyterlab WebPDF-generation was successful.
+OK        jupyterlab HTML-generation was successful.
 
 ## R packages
 OK        tidyverse=1.3.1
@@ -655,8 +655,10 @@ OK        renv=0.13.2
 OK        IRkernel=1.2
 OK        tinytex=0.32
 OK        rmarkdown PDF-generation was successful.
+OK        rmarkdown HTML-generation was successful.
 
-This output and additional configuration details have been saved to check-setup-mds.log in this directory.
+The above output has been saved to the file /home/joel/check-setup-mds.log
+together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `open .` (without the surrounding backticks).
 ````
 

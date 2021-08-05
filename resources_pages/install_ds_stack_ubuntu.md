@@ -232,7 +232,7 @@ conda install \
  jupyterlab=3.* \
  pandas=1.* \
  flake8=3.* \
- black=19.*
+ black=21.*
 ```
 
 `conda` will show you the packages that will be downloaded,
@@ -597,43 +597,47 @@ Checking program and package versions...
 ## Operating system
 Operating System: Ubuntu 20.04
 Architecture:     x86-64
-Kernel:           Linux 5.4.0-28-generic
+Kernel:           Linux 5.11.0-7620-generic
 
 ## System programs
-OK        psql 12.3
-MISSING   rstudio=1.*
-OK        R 4.0.2 (2020-06-22) -- "Taking Off Again"
-OK        python 3.8.3
-OK        conda 4.8.3
-OK        bash 4-pc-linux-gnu)
-OK        git 2.27.0
+MISSING   psql 13.*
+OK        rstudio 1.4.1725
+OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
+OK        python 3.9.1
+OK        conda 4.10.3
+OK        bash 4.4.23(1)-release (x86_64-pc-msys)
+OK        git 2.32.0
 OK        make 4.3
-OK        latex 3.14159265-2.6-1.40.21 (TeX Live 2020)
-OK        tlmgr 55369 (2020-06-01 02:32:00 +0200)
-MISSING   docker=19.*
-MISSING   code=1.*
+OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2021)
+OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
+OK        docker 20.10.7, build f0df350
+OK        code 1.58.2
 
 ## Python packages
-MISSING   jupyterlab=2.*
-MISSING   pandas=1.*
-OK        flake8=3.7.9
-MISSING   black=19.*
-MISSING   nodejs=10.*
-OK        jupytext=1.3.4
-MISSING   jupyterlab-git=0.*
-MISSING   jupyterlab PDF-generation failed. Check that latex and jupyterlab are marked OK above.
+MISSING   jupyterlab=3.*
+OK        pandas=1.3.0
+OK        flake8=3.9.2
+MISSING   black=21.*
+MISSING   nodejs=15.*
+OK        jupytext=1.11.4
+OK        jupyterlab-git=0.30.1
+OK        jupyterlab PDF-generation was successful.
+OK        jupyterlab WebPDF-generation was successful.
+OK        jupyterlab HTML-generation was successful.
 
 ## R packages
-OK        tidyverse=1.3.0
-OK        blogdown=0.20
-OK        xaringan=0.16
-OK        renv=0.11.0
-OK        IRkernel=1.1.1
-OK        tinytex=0.25
-OK        rmarkdown PDF-generation was successful
+OK        tidyverse=1.3.1
+OK        blogdown=1.3
+OK        xaringan=0.22
+OK        renv=0.13.2
+OK        IRkernel=1.2
+OK        tinytex=0.32
+OK        rmarkdown PDF-generation was successful.
+OK        rmarkdown HTML-generation was successful.
 
-This output and additional configuration details
-have been saved to the file check-setup-mds.log in this directory.
+The above output has been saved to the file /home/joel/check-setup-mds.log
+together with system configuration details and any detailed error messages about PDF and HTML generation.
+You can open this folder in your file browser by typing `xdg-open .` (without the surrounding backticks).
 ````
 
 As you can see at the end of the output,

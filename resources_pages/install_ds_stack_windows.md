@@ -798,12 +798,11 @@ Checking program and package versions...
 ## Operating system
 Microsoft Windows 10 Education
 64-bit
-10.0.19041
+10.0.19044
 
 ## System programs
 MISSING   psql 13.*
 OK        rstudio 1.4.1725
-OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
 OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
 OK        python 3.9.1
 OK        conda 4.10.3
@@ -811,6 +810,7 @@ OK        bash 4.4.23(1)-release (x86_64-pc-msys)
 OK        git 2.32.0.windows.2
 OK        make 4.3
 OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX)
+OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
 OK        docker 20.10.7, build f0df350
 OK        code 1.58.2
 
@@ -833,8 +833,8 @@ OK        IRkernel=1.2
 OK        tinytex=0.32
 OK        rmarkdown PDF-generation was successful.
 
-This output and additional configuration details
-have been saved to the file /c/Users/florencia/check-setup-mds.log.
+This output and additional configuration details have been saved to the file /c/Users/joel/check-setup-mds.log.
+together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `explorer .` (without the surrounding backticks).
 ````
 
