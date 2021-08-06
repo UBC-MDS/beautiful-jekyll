@@ -263,16 +263,22 @@ R is another programming language that we will be using a lot in the MDS program
 
 #### R
 
-The version of R available in the default Ubuntu repositories (`3.6.*`) is older than the one we use in MDS (`4.*`). To obtain the latest R `4.*` packages, we need to add a new repository which is maintained directly by the r-project. To do this, first add the key for this repository by typing the following:
+The version of R available in the default Ubuntu repositories (`3.6.*`) is older than the one we use in MDS (`4.*`). To obtain the latest R `4.*` packages, we need to add a new repository which is maintained directly by the r-project. To do this, first add a couple of helper packages that we will need:
+
+```bash
+sudo apt install software-properties-common dirmngr
+```
+
+Then add the key for this repository by typing the following:
 
 ```
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
 ```
 
 Then add the URL to the repository:
 
 ```
-sudo apt-add-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
 ```
 
 Next, install `r-base` and `r-base-dev` (useful for compiling R packages from source):
@@ -289,8 +295,8 @@ R --version
 You should see something like this if you were successful:
 
 ```
-R version 4.0.2 (2020-06-22) -- "Taking Off Again"
-Copyright (C) 2020 The R Foundation for Statistical Computing
+R version 4.1.0 (2021-05-18) -- "Camp Pontanezen"
+Copyright (C) 2021 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -299,6 +305,8 @@ GNU General Public License versions 2 or 3.
 For more information about these matters see
 https://www.gnu.org/licenses/.
 ```
+
+> Note: [See this page for additoinal instructions if you run into troubles while installing R](https://cloud.r-project.org/bin/linux/ubuntu/).
 
 > Note: Although it is possible to install R through conda, we highly recommend not doing so. In case you have already installed R using conda you can remove it by executing `conda uninstall r-base`.
 
