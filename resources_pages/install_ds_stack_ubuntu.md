@@ -202,8 +202,7 @@ and the LSP packages fill the same function for our code.
 Install them via the following commands:
 
 ```bash
-conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext pyppetteer=0.2.2 jupyterlab-lsp jupyter-lsp-python
-pyppeteer-install
+conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
 ```
 
 To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal,
@@ -419,6 +418,29 @@ install.packages('tinytex')
 tinytex::install_tinytex()
 ```
 
+You can check that the installation is working by opening a terminal and asking for the version of latex:
+
+```
+latex --version
+```
+
+You should see something like this if you were successful:
+
+```
+pdfTeX 3.14159265-2.6-1.40.21 (TeX Live 2020)
+kpathsea version 6.3.2
+Copyright 2020 Han The Thanh (pdfTeX) et al.
+There is NO warranty.  Redistribution of this software is
+covered by the terms of both the pdfTeX copyright and
+the Lesser GNU General Public License.
+For more information about these matters, see the file
+named COPYING and the pdfTeX source.
+Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+Compiled with libpng 1.6.37; using libpng 1.6.37
+Compiled with zlib 1.2.11; using zlib 1.2.11
+Compiled with xpdf version 4.02
+```
+
 The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add the TinyTex executables to our `PATH` and install several more packages (`PATH` is a collection of directories which contain the available executable programs on your computer).
 
 To append the TinyTex executables to our `PATH` we need to edit our `.bashrc` file. The TinyTex executables are usually installed in `$HOME/bin`. Thus, add the lines below to the bottom of your `.bashrc` file (which you can open by `code $HOME/.bashrc`) and save the file:
@@ -461,28 +483,21 @@ or the same one you used to test IRkernel above.
 Go to `File -> Export notebook as... -> Export Notebook to PDF`.
 If the PDF file is created,
 your LaTeX environment is set up correctly.
-You can also check by typing the following to ask for the version of latex:
 
-```
-latex --version
+### WebPDF export
+
+Jupyter recently added another way to export notebooks to PDF
+which does not require Latex
+and makes the exported PDF look similar to notebooks exported to HTML.
+This requires the `pyppeteer` package,
+which we can install as follows.
+
+```bash
+conda install pyppeteer=0.2.2
+pyppeteer-install
 ```
 
-You should see something like this if you were successful:
-
-```
-pdfTeX 3.14159265-2.6-1.40.21 (TeX Live 2020)
-kpathsea version 6.3.2
-Copyright 2020 Han The Thanh (pdfTeX) et al.
-There is NO warranty.  Redistribution of this software is
-covered by the terms of both the pdfTeX copyright and
-the Lesser GNU General Public License.
-For more information about these matters, see the file
-named COPYING and the pdfTeX source.
-Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-Compiled with libpng 1.6.37; using libpng 1.6.37
-Compiled with zlib 1.2.11; using zlib 1.2.11
-Compiled with xpdf version 4.02
-```
+Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
 
 ## PostgreSQL
 

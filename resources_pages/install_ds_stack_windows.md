@@ -364,8 +364,7 @@ and the LSP packages fill the same function for our code.
 Install them via the following commands:
 
 ```bash
-conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext pyppetteer=0.2.2 jupyterlab-lsp jupyter-lsp-python
-pyppeteer-install
+conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
 ```
 
 To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal,
@@ -553,6 +552,7 @@ Note that you might see two error messages regarding lua during the installation
 
 You can check that the installation is working by opening a terminal and asking for the version of latex:
 
+
 ```
 latex --version
 ```
@@ -609,6 +609,21 @@ or the same one you used to test IRkernel above.
 Go to `File -> Export notebook as... -> Export Notebook to PDF`.
 If the PDF file is created,
 your LaTeX environment is set up correctly.
+
+### WebPDF export
+
+Jupyter recently added another way to export notebooks to PDF
+which does not require Latex
+and makes the exported PDF look similar to notebooks exported to HTML.
+This requires the `pyppeteer` package,
+which we can install as follows.
+
+```bash
+conda install pyppeteer=0.2.2
+pyppeteer-install
+```
+
+Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
 
 ## Make
 
