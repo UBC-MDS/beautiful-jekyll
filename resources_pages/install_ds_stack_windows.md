@@ -138,7 +138,6 @@ It should look like this screenshot:
 
 ![](/resources_pages/imgs/windows-terminal-gitbash.png)
 
-
 To open a new tab you can click the plus sign or use `Ctrl + Shift + t`
 (you can close a tab with `Ctrl + Shift + w`).
 To copy text from the terminal,
@@ -290,7 +289,7 @@ python --version
 you should now see the same output as above:
 
 ```
-Python 3.9.1
+Python 3.9.5
 ```
 
 Let's also check the version of the `conda` package manager. If you type
