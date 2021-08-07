@@ -290,7 +290,7 @@ Next, install `r-base` and `r-base-dev` (useful for compiling R packages from so
 sudo apt install r-base r-base-dev
 ```
 
-After installation, type the following in a terminal to ask for the version:
+After installation, type the following in a new terminal window:
 ```
 R --version
 ```

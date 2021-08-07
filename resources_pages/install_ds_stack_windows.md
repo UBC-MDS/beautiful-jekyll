@@ -390,7 +390,7 @@ After the installation is complete, we will add the R executables to the PATH va
 code ~/.bash_profile
 ```
 
-Append the following line to the file
+Append the following lines to the file
 
 ```
 # Add R and Rscript to PATH
@@ -398,7 +398,7 @@ export PATH="/c/Program Files/R/R-4.1.0/bin/x64":$PATH
 ```
 
 Then save the file and exit VS Code.
-Now you can open terminal and type
+Now you can open a new terminal window and type
 
 ```
 R --version

@@ -290,7 +290,7 @@ R is another programming language that we will be using a lot in the MDS program
 
 Go to [https://cran.r-project.org/bin/macosx/](https://cran.r-project.org/bin/macosx/) and download the latest version of R for Mac. Open the file and follow the installer instructions.
 
-After installation, in Terminal type the following to ask for the version:
+After installation, open a new terminal window and type the following:
 
 ```bash
 R --version
