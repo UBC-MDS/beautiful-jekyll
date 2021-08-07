@@ -183,6 +183,21 @@ also run the following from your terminal:
 git config --global core.editor "code --wait"
 ```
 
+On MacOS,
+VScode sometimes reads a different configuration file than your other programs.
+To avoid this,
+open your `~/.bashrc` file:
+
+```bash
+code ~/.bashrc
+```
+
+And append the following line:
+
+```bash
+if [ -f ~/.bash_profile ]; then . ~/.bash_profile; fi
+```
+
 ## Python, Conda, and JupyterLab
 
 ### Python and Conda
