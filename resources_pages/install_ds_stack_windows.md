@@ -464,7 +464,7 @@ by opening up RStudio and
 typing the following into the R console inside RStudio:
 
 ```
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'devtools', 'usethis'))
+install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver'))
 ```
 
 If you get a prompt asking if you want to install packages that need compilation from sources, click "Yes".
