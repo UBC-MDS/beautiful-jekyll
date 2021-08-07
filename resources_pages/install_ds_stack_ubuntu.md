@@ -260,19 +260,6 @@ Python 3.8.3
 > Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/home/<USER>` directory), and try the installation again, selecting **Python 3.8**.
 
 
-## JupyterLab setup
-
-We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. We will also use Jupyter Book to create publication ready documents. Install them via the following commands:
-
-```bash
-conda install jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext pyppetteer=0.2.2 jupyterlab-lsp jupyter-lsp-python
-pyppeteer-install
-```
-
-To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
-To exit out of JupyterLab you can click `File -> Shutdown`,
-or go to the terminal from which you launched JupyterLab and hold `Ctrl` while pressing `c` twice.
-
 ## R, IRkernel, and RStudio
 
 R is another programming language that we will be using a lot in the MDS program. We will use R both in Jupyter notebooks and in RStudio.
