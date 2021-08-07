@@ -97,29 +97,55 @@ This step is required for
 - all homework submission and grading
 - working collaboratively
 
-## Git and Bash
+## Git, Bash, and Windows Terminal
 
-Although Git and Bash are two separate programs,
+Although these three are separate programs,
 we are including them in the same section here
 since they are packaged together in the same installer on Windows.
 Briefly, we will be using the Bash shell to interact with our computers via a command line interface,
-and Git to keep a version history of our files and upload to/download from to GitHub.
-We will be using the command line version of Git as well as Git through RStudio and JupyterLab. Some of the Git commands we will use are only available since Git 2.23, so if your Git is older than this version, we ask you to update it.
+Git to keep a version history of our files and upload to/download from to GitHub,
+and Windows Terminal to run the both Bash and Git.
 
-Go to <https://git-scm.com/download/win> and download the windows version of git. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
+Go to <https://git-scm.com/download/win> and download the windows version of git.
+After the download has finished,
+run the installer and accept the default configuration for all pages except for the following:
 
-- *Optional* On the **Select Components** page, check "On the Desktop" under "Additional icons".
+- On the **Select Components** page, add a Git Bash profile to Windows Terminal.
+
+    ![](/resources_pages/imgs/gitbash-terminal-profile.png)
+
 - On the **Choosing the default editor used by Git** page, select "Use Visual Studio Code as Git's default editor" from the drop-down menu'
 
-![](/resources_pages/imgs/vscode-as-git-editor.png)
+    ![](/resources_pages/imgs/vscode-as-git-editor.png)
 
-> **Note** if you wish to pin Git Bash to the taskbar, you need to search for the program in the start menu, right click the entry and select "Pin to taskbar". If you instead first launch the program and pin it by right clicking on the taskbar icon, Git Bash will open with the wrong home directory (`/` instead of `/c/users/$USERNAME`.
+[To install windows terminal visit this link](https://aka.ms/terminal)
+and click `Get` to open it in Windows Store.
+Inside the Store, click `Get` again and then click `Install`.
+After installation,
+click `Launch` and [follow the steps in the documentation
+to set Git bash as the default terminal profile](https://docs.microsoft.com/en-us/windows/terminal/get-started#set-your-default-terminal-profile).
+You can now launch the Windows terminal from the start menu
+or pin it to the taskbar like any other program
+(you can read the rest of the article linked above for additional tips if you wish).
 
-After installation, test if you were successful by opening the Git Bash program. Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash terminal (we will often refer to this as just "the terminal"):
+To make sure everything worked,
+close down Windows Terminal,
+and open it again.
+Git Bash should open by default
+and the tab should read  `MINGW64:/c/Users/$USERNAME`
+(you should also see `/c/Users/$USERNAME` if you type `pwd` into the terminal).
+It should look like this screenshot:
 
-![](/resources_pages/imgs/gitbash.png)
+![](/resources_pages/imgs/windows-terminal-gitbash.png)
 
-In the terminal, type the following to check which version of Bash you just installed:
+
+To open a new tab you can click the plus sign or use `Ctrl + Shift + t`
+(you can close a tab with `Ctrl + Shift + w`).
+To copy text from the terminal,
+you can highlight it with the mouse and then click `Ctrl + Shift + c`.
+To paste text you use `Ctrl + Shift + v`,
+try it by pasting the following into the terminal
+to check which version of Bash you just installed:
 
 ```
 bash --version
@@ -136,10 +162,6 @@ This is free software; you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 ```
 
-> If you tried to paste the above into the Git Bash terminal, you will have noticed that `Ctrl+V` does not work in Git Bash. Instead you need to right click and select "Paste" or use the `Shift+Insert` shortcut. To copy from the Git Bash terminal you simply select the text you want and it is copied automatically.
-
-> Via right click you can also reach the settings menu where you can configure Git Bash to your preferences, a couple of tips would be to check "Mouse -> Clicks place command line cursor" and change the font to something more legible, e.g. Consolas ("Text -> Select").
-
 Let's also check which version of git was installed:
 
 ```
@@ -150,6 +172,9 @@ git --version
 git version 2.32.0.windows.2
 ```
 
+> *Note:* Some of the Git commands we will use are only available since Git 2.23,
+so make sure your if your Git is at least this version.
+
 You can launch many windows programs from the Bash terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
 
 ```
@@ -157,7 +182,7 @@ code --version
 ```
 
 ```
-1.58.2
+1.59.0
 c3f126316369cd610563c75b1b1725e0679adfb3
 x64
 ```
@@ -209,7 +234,7 @@ git config --global core.editor "code --wait"
 
 On Windows,
 VScode sometimes reads a different configuration file than Git Bash.
-To make sure both program work with the same settings,
+To avoid this,
 open your `~/.bashrc` file:
 
 ```bash
@@ -267,8 +292,6 @@ you should now see the same output as above:
 ```
 Python 3.9.1
 ```
-
-> **Note** that if you want to run Python interactively from the Git Bash terminal, you need to prepend the `winpty` command, so the full command would be `winpty python` (if you run this, note that you can exit the Python prompt by typing `exit()`). Running just `python` works on other setups, but will freeze the Git Bash terminal.
 
 Let's also check the version of the `conda` package manager. If you type
 
