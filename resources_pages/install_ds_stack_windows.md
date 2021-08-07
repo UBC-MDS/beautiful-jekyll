@@ -16,7 +16,7 @@ subtitle: MDS software stack install instructions for Windows
 - [Web browser](#web-browser){:target="_self"}
 - [Password manager](#password-manager){:target="_self"}
 - [Slack](#slack){:target="_self"}
-- [Visual Studio code](#visual-studio-code){:target="_self"}
+- [Visual Studio Code](#visual-studio-code){:target="_self"}
 - [GitHub](#github){:target="_self"}
 - [Git and Bash](#git-and-bash){:target="_self"}
 - [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab){:target="_self"}
@@ -100,11 +100,11 @@ This step is required for
 ## Git and Bash
 
 Although Git and Bash are two separate programs,
-we are including them in the same section here 
+we are including them in the same section here
 since they are packaged together in the same installer on Windows.
 Briefly, we will be using the Bash shell to interact with our computers via a command line interface,
 and Git to keep a version history of our files and upload to/download from to GitHub.
-We will be using the command line version of Git as well as Git through RStudio and JupyterLab. Some of the Git commands we will use are only available since Git 2.23, so if you're Git is older than this version, we ask you to update it.
+We will be using the command line version of Git as well as Git through RStudio and JupyterLab. Some of the Git commands we will use are only available since Git 2.23, so if your Git is older than this version, we ask you to update it.
 
 Go to <https://git-scm.com/download/win> and download the windows version of git. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
 
