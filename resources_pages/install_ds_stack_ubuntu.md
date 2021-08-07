@@ -164,6 +164,57 @@ git config --global core.editor "code --wait"
 
 ## Python, Conda, and JupyterLab
 
+## Installing Python packages
+
+`conda` installs Python packages from different online repositories which are called "channels".
+A package needs to go through thorough testing before it is included in the default channel,
+which is good for stability,
+but also means that new versions will be delayed and fewer packages are available overall.
+There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
+which provides more up to date packages
+To enable us to access the most up to date version of the Python packages we are going to use,
+we will add the more up to date  channel,
+To add the conda-forge channel by typing the following in the terminal:
+
+```bash
+conda config --add channels conda-forge
+```
+
+To install packages individually,
+we can now use the following command:
+`conda install <package-name>`.
+After running that command
+`conda` will show you the packages that will be downloaded,
+and you can press enter to proceed with the installation.
+If you want to answer `yes` by default and skip this confirmation step,
+you can replace `conda install` with `conda install -y`.
+Let's try this out in the next section,
+by installing some of the key packages we will use in MDS.
+
+## JupyterLab setup
+
+We will be using `JupyterLab` as our main coding environment
+and `pandas` is one of the key data analyses packages in MDS.
+The Jupytext Python package and the JupyterLab git extension facilitates
+using notebooks in JupyterLab together with Git & GitHub.
+The spellchecker helps us correcting typos in our writing
+and the LSP packages fill the same function for our code.
+Install them via the following commands:
+
+```bash
+conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext pyppetteer=0.2.2 jupyterlab-lsp jupyter-lsp-python
+pyppeteer-install
+```
+
+To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal,
+which should open a new tab in your default browser with the JupyterLab interface.
+To exit out of JupyterLab you can click `File -> Shutdown`,
+or go to the terminal from which you launched JupyterLab and hold `Ctrl` while pressing `c` twice.
+
+![](/resources_pages/imgs/jupyter_lab.PNG)
+
+> **Note:** we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
+
 ### Python and Conda
 
 We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.8 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh).
@@ -209,49 +260,15 @@ Python 3.8.3
 
 > Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/home/<USER>` directory), and try the installation again, selecting **Python 3.8**.
 
-## Essential Python packages
-
-`conda` installs Python packages from different online repositories which are called "channels".
-A package needs to go through thorough testing before it is included in the default channel,
-which is good for stability,
-but also means that new versions will be delayed and fewer packages are available overall.
-There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
-which provides more up to date packages
-To enable us to access the most up to date version of the Python packages we are going to use,
-we will add the more up to date  channel,
-To add the conda-forge channel by typing the following in the terminal:
-
-```
-conda config --add channels conda-forge
-```
-
-To install packages individually, we can now use the following command: `conda install <package-name>`. Let's install the key packages needed for the start of our program:
-
-```
-conda install \
- jupyterlab=3.* \
- pandas=1.* \
- flake8=3.* \
- black=21.*
-```
-
-`conda` will show you the packages that will be downloaded,
-and you can press enter to proceed with the installation.
-If you want to answer `yes` by default and skip this confirmation step,
-you can replace `conda install` with `conda install -y`.
-
-> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ## JupyterLab setup
 
 We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. We will also use Jupyter Book to create publication ready documents. Install them via the following commands:
 
+```bash
+conda install jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext pyppetteer=0.2.2 jupyterlab-lsp jupyter-lsp-python
+pyppeteer-install
 ```
-conda install jupyterlab-git jupytext jupyter-book jupyterlab-spellchecker
-pip install -U "nbconvert[webpdf]" && pyppeteer-install
-```
-
-> **Note** You might see an error message about pip's dependency resolver mentioning that myst-nb not being compatible with installed version of nbconvert, but this is nothing to worry about in this case.
 
 To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
 To exit out of JupyterLab you can click `File -> Shutdown`,
@@ -329,7 +346,7 @@ Go to `Tools > Global Options > Code > Editing` and tick the following option:
 
 Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works.
 
-### Essential R packages
+### Installing R packages
 
 The `tidyverse` R package (and some others) have external dependencies on Ubuntu outside of R. We need to install these first before we install such R packages:
 

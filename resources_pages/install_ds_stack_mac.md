@@ -21,8 +21,6 @@ subtitle: MDS software stack install instructions for macOS
 - [GitHub](#github){:target="_self"}
 - [Git](#git){:target="_self"}
 - [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab){:target="_self"}
-- [Essential python packages](#essential-python-packages){:target="_self"}
-- [JupyterLab setup](#jupyterlab-setup){:target="_self"}
 - [R, XQuartz, IRkernel, and RStudio](#r-xquartz-irkernel-and-rstudio){:target="_self"}
 - [LaTeX](#latex){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
@@ -219,7 +217,7 @@ Python 3.8.3
 
 > **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.8**.
 
-## Essential Python packages
+## Installing Python packages
 
 `conda` installs Python packages from different online repositories which are called "channels".
 A package needs to go through thorough testing before it is included in the default channel,
@@ -235,37 +233,40 @@ To add the conda-forge channel by typing the following in the terminal:
 conda config --add channels conda-forge
 ```
 
-To install packages individually, we can now use the following command: `conda install <package-name>`. Let's install the key packages needed for the start of our program:
-
-```bash
-conda install \
- jupyterlab=3.* \
- pandas=1.* \
- flake8=3.* \
- black=21.*
-```
-
+To install packages individually,
+we can now use the following command:
+`conda install <package-name>`.
+After running that command
 `conda` will show you the packages that will be downloaded,
 and you can press enter to proceed with the installation.
 If you want to answer `yes` by default and skip this confirmation step,
 you can replace `conda install` with `conda install -y`.
-
-> **Note:** we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
+Let's try this out in the next section,
+by installing some of the key packages we will use in MDS.
 
 ## JupyterLab setup
 
-We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. We will also use Jupyter Book to create publication ready documents. Install them via the following commands:
+We will be using `JupyterLab` as our main coding environment
+and `pandas` is one of the key data analyses packages in MDS.
+The Jupytext Python package and the JupyterLab git extension facilitates
+using notebooks in JupyterLab together with Git & GitHub.
+The spellchecker helps us correcting typos in our writing
+and the LSP packages fill the same function for our code.
+Install them via the following commands:
 
 ```bash
-conda install jupyterlab-git jupytext jupyter-book jupyterlab-spellchecker
-pip install -U "nbconvert[webpdf]" && pyppeteer-install
+conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext pyppetteer=0.2.2 jupyterlab-lsp jupyter-lsp-python
+pyppeteer-install
 ```
 
-> **Note** You might see an error message about pip's dependency resolver mentioning that myst-nb not being compatible with installed version of nbconvert, but this is nothing to worry about in this case.
-
-To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
+To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal,
+which should open a new tab in your default browser with the JupyterLab interface.
 To exit out of JupyterLab you can click `File -> Shutdown`,
 or go to the terminal from which you launched JupyterLab and hold `Ctrl` while pressing `c` twice.
+
+![](/resources_pages/imgs/jupyter_lab.PNG)
+
+> **Note:** we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ## R, XQuartz, IRkernel, and RStudio
 
