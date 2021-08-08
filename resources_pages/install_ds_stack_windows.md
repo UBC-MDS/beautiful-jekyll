@@ -466,7 +466,7 @@ Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m
 
 ### Rtools
 
-Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <http://cran.r-project.org/bin/windows/Rtools/> and download the latest version (e.g., Rtools40.exe). After the download has finished, run the installer with the default configuration. Do *not* follow the Rtools' website instructions for "Putting Rtools on the PATH". RStudio will put Rtools on the PATH automatically when it is needed.
+Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <http://cran.r-project.org/bin/windows/Rtools/> and download the latest version (e.g., Rtools40.exe). After the download has finished, run the installer with the default configuration. **Do not** follow the Rtools' website instructions for "Putting Rtools on the PATH". RStudio will put Rtools on the PATH automatically when it is needed.
 
 To test if you're installation was successful,
 open RStudio (restart it if you already have it open)
@@ -490,11 +490,11 @@ install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devt
 
 If you get a prompt asking if you want to install packages that need compilation from sources, click "Yes".
 
-> **Note**: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
+> **Note**: We will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ### IRkernel
 
-The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R *from a terminal* and run the setup via the following two commands:
+The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R **from a terminal** (not R Studio) and run the setup via the following two commands:
 
 ```
 install.packages('IRkernel')
