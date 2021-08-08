@@ -56,7 +56,7 @@ In MDS we will be using many tools that work most reliably on Google Chrome and 
 - Firefox comes preinstalled with Ubuntu, so there is not need to download anything.
 - To install Chrome, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome" choose the deb-file, download it to your computer and click on the downloaded file to install it.
 
-> Note that if you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
+> **Note:** If you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
 
 ## Password manager
 
@@ -126,7 +126,7 @@ git config --global user.name "Jane Doe"
 git config --global user.email janedoe@example.com
 ```
 
-> Note: to ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
+> **Note:** To ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
 
 ### Setting VS Code as the default editor
 
@@ -136,7 +136,7 @@ To make programs run from the terminal (such as `git`) use VS Code by default, w
 code ~/.bashrc
 ```
 
-> Note: If you see any existing lines in your `~/.bashrc`
+> **Note:** If you see any existing lines in your `~/.bashrc`
 > related to a previous Python or R installation,
 > please remove these.
 
@@ -150,7 +150,7 @@ VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
 
 Then save the file and exit VS Code.
 
-> Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
+> **Note:** Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
 
 In some cases,
 VScode is not set as the default text editor for git
@@ -223,7 +223,7 @@ Once the download is finished, open Terminal and execute the following commands:
 bash path/to/file
 ```
 
-> Note: most often this file is downloaded to the `Downloads` directory, and thus the command will look like this:
+> **Note:** Most often this file is downloaded to the `Downloads` directory, and thus the command will look like this:
 >
 >```
 >bash Downloads/Miniconda3-latest-Linux-x86_64.sh
@@ -257,7 +257,7 @@ which should return something like this:
 Python 3.8.3
 ```
 
-> Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/home/<USER>` directory), and try the installation again, selecting **Python 3.8**.
+> **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/home/<USER>` directory), and try the installation again, selecting **Python 3.8**.
 
 
 ## R, IRkernel, and RStudio
@@ -309,21 +309,21 @@ For more information about these matters see
 https://www.gnu.org/licenses/.
 ```
 
-> Note: [See this page for additoinal instructions if you run into troubles while installing R](https://cloud.r-project.org/bin/linux/ubuntu/).
+> **Note:** [See this page for additoinal instructions if you run into troubles while installing R](https://cloud.r-project.org/bin/linux/ubuntu/).
 
-> Note: Although it is possible to install R through conda, we highly recommend not doing so. In case you have already installed R using conda you can remove it by executing `conda uninstall r-base`.
+> **Note:** Although it is possible to install R through conda, we highly recommend not doing so. In case you have already installed R using conda you can remove it by executing `conda uninstall r-base`.
 
 ### RStudio
 
 Download the Ubuntu 18/Debian 10 Desktop version of RStudio Preview from [https://rstudio.com/products/rstudio/download/preview/](https://rstudio.com/products/rstudio/download/preview/). Open the file and follow the installer instructions.
 
-> Note that there is not yet an official RStudio version for Ubuntu 20.04, so it is recommended to use the Ubuntu 18 version. Also note that if you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
+> **Note:** There is not yet an official RStudio version for Ubuntu 20.04, so it is recommended to use the Ubuntu 18 version. Also note that if you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
 
 To see if you were successful, try opening RStudio by clicking on its icon or typing `rstudio` in a terminal. It should open and look something like this picture below:
 
 ![](/resources_pages/imgs/RStudio-ubuntu.png)
 
-> Note that since we installed RStudio directly from a deb file rather than from a repository or a snap package, it will not be updated when we run `sudo apt upgrade` and not automatically as for snap packages. Instead, RStudio will notify you of any available updates when the program is launched.
+> **Note:** Since we installed RStudio directly from a deb file rather than from a repository or a snap package, it will not be updated when we run `sudo apt upgrade` and not automatically as for snap packages. Instead, RStudio will notify you of any available updates when the program is launched.
 
 Now we are going to change RStudio’s *Insert Pipe* shortcut so that it inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/). 
 Go to `Tools > Global Options > Code > Editing` and tick the following option:
@@ -348,7 +348,7 @@ typing the following into the R console inside RStudio:
 install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools', 'languageserver'))
 ```
 
-> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
+> **Note:** We will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ### IRkernel
 
@@ -359,7 +359,7 @@ install.packages('IRkernel')
 IRkernel::installspec()
 ```
 
-> Note: If you see an error message saying "jupyter-client has to be installed...",
+> **Note:** If you see an error message saying "jupyter-client has to be installed...",
 > close RStudio and run the following line from your terminal instead `R -e "IRkernel::installspec()"`.
 
 To see if you were successful, try running JupyterLab and check if you have a working R kernel. To launch JupyterLab, type the following in a terminal:
@@ -547,7 +547,7 @@ Type "help" for help.
 postgres=#
 ```
 
-> Note: to exit from Postgres type `exit`, or press `ctrl` + `d`.
+> **Note:** To exit from Postgres type `exit`, or press `ctrl` + `d`.
 
 ## Docker
 
@@ -727,7 +727,7 @@ we will ask you to submit this log file,
 so that we can confirm that your installation was successful.
 Details on where to submit will be provided later.
 
-> Note that in general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
+> **Note:** In general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
 
 ## Attributions
 

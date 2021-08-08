@@ -171,7 +171,7 @@ git --version
 git version 2.32.0.windows.2
 ```
 
-> *Note:* Some of the Git commands we will use are only available since Git 2.23,
+> **Note:** Some of the Git commands we will use are only available since Git 2.23,
 so make sure your if your Git is at least this version.
 
 You can launch many windows programs from the Bash terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
@@ -219,7 +219,7 @@ VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
 
 Then save the file and exit VS Code.
 
-> Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
+> **Note:** Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
 
 In some cases,
 VScode is not set as the default text editor for git
@@ -252,7 +252,7 @@ if [ -f ~/.bash_profile ]; then . ~/.bash_profile; fi
 
 We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.8 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe). After the download has finished, run the installer and accept the default configuration for all pages.
 
-> Do *not* add miniconda to PATH. We will set this up later.
+> **Note:** Do *not* add miniconda to PATH. We will set this up later.
 
 After installation, open the Start Menu and search for the program called "Anaconda Prompt (miniconda3)". When this opens you will see a prompt similar to `(base) C:\Users\your_name`. Type the following to check that your Python installation is working:
 
@@ -266,7 +266,7 @@ which should return something like this:
 Python 3.9.1
 ```
 
-> If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.8**.
+> **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.8**.
 
 ### Integrating Python with the Git Bash terminal
 
@@ -304,7 +304,7 @@ you should see something like this
 conda 4.10.3
 ```
 
-> *Optional* One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
+> **Optional:** One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
 >
 > ```
 > code "/c/Program Files/Git/etc/profile.d/git-prompt.sh"
@@ -503,7 +503,7 @@ IRkernel::installspec()
 
 When asked to select a mirror, pick one at a location close to where you live for faster downloads.
 
-> Note that you cannot use RStudio for this step because it will not be able to find the jupyter installation. R from terminal will since the correct PATH for jupyter is set when the terminal is launched.
+> **Note:** You cannot use RStudio for this step because it will not be able to find the jupyter installation. R from terminal will since the correct PATH for jupyter is set when the terminal is launched.
 
 To see if you were successful, try running JupyterLab and check if you have a working R kernel. To launch the JupyterLab type the following in the terminal:
 
@@ -672,7 +672,7 @@ Later in the program, we will be using `make` to automate our analysis scripts. 
 
 ![](/resources_pages/imgs/extract-make-path.png)
 
-> *Note* It is advisable to show file extensions by default in the Windows File Explorer. Click the `View` tab and check the box next to `File name extensions`.
+> **Note:** It is advisable to show file extensions by default in the Windows File Explorer. Click the `View` tab and check the box next to `File name extensions`.
 
 Next we need to add make's `bin` folder to our PATH so that we can use the command `make` from the terminal (like we did with R earlier). Open the bash configuration file with VS Code again by pasting this into a terminal:
 
@@ -934,7 +934,7 @@ we will ask you to submit this log file,
 so that we can confirm that your installation was successful.
 Details on where to submit will be provided later.
 
-> Note that in general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
+> **Note:** In general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
 
 ## Attributions
 * [Harvard CS109](http://cs109.github.io/2015/)
