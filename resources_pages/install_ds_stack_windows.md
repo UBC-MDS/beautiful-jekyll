@@ -691,7 +691,7 @@ so you don't need to replace it manually.
 
 ```
 # Add R, Rscript, and Make to path
-export PATH="/c/Users/${USERNAME}/make-4.3/bin":"/c/Program Files/R/R-4.0.2/bin/x64":$PATH
+export PATH="/c/Users/${USERNAME}/make-4.3/bin":"/c/Program Files/R/R-4.1.0/bin/x64":$PATH
 ```
 
 Then save the file and exit VS Code.
