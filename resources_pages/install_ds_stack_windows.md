@@ -520,23 +520,57 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
 To improve the experience of using R in JupyterLab,
-we will add an extension that allows us to setup keyboard shortcuts for inserting text
-(thanks to former MDS student Ryan Homer for developing this extension!).
-By default,
-it creates shortcuts for inserting two of the most common R operators: `<-` and `|>`.
-Run the following from terminal to install the extension:
+we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
+Go to `Settings -> Advanced Settings Editor -> Keyboard Shortcuts`
+and paste the following in the rightmost panel that says `User Preferences`
+(replacing the `{}`):
 
+```json
+{
+    "shortcuts": [
+        {
+            "command": "apputils:run-first-enabled",
+            "selector": "body",
+            "keys": ["Alt -"],
+            "args": {
+                "commands": [
+                    "console:replace-selection",
+                    "fileeditor:replace-selection",
+                    "notebook:replace-selection",
+                ],
+                "args": {"text": "<- "}
+            }
+        },
+        {
+            "command": "apputils:run-first-enabled",
+            "selector": "body",
+            "keys": ["Accel Shift M"],
+            "args": {
+                "commands": [
+                    "console:replace-selection",
+                    "fileeditor:replace-selection",
+                    "notebook:replace-selection",
+                ],
+                "args": {"text": "|> "}
+            }
+        }
+    ]
+}
 ```
-conda install nodejs="15.*"
-jupyter labextension install @techrah/text-shortcuts
-jupyter lab build
-```
+
+After you have pasted this text,
+hit the small floppy disk in the top right (or `Ctrl` + `s`)
+to save the settings.
+Here is a screenshot of what it looks like with the settings saved:
+
+![](/resources_pages/imgs/r-jl-text-shortcuts.png)
 
 To check that the extension is working,
 open JupyterLab,
 launch an R notebook,
 and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Ctrl` + `m`, respectively.
-
+You could add any arbitrary text insertion command the same way,
+but this is all that is required for MDS.
 
 ## LaTeX
 
