@@ -621,6 +621,19 @@ PROMPT_COMMAND='history -a; echo'
 # Increase history size
 HISTSIZE=50000
 HISTFILESIZE=50000
+
+# Aliases and functions
+# Note that aliases only are in effect when you are using the shell interactively
+# (e.g. opening the terminal and typing or pasting commands).
+# If you run a bash script or makefile,
+# the original command is used instead of your alias.
+# More verbose file list format
+alias l='ls -vlrthAF'
+# Move, remove, and copy show what was done and prompt before overwriting files.
+alias rm="rm -vI"
+alias mv="mv -vi"
+alias cp="cp -vi"
+alias mkdir="mkdir -vp"
 ```
 
 ## Post-installation notes

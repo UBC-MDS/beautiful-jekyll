@@ -826,14 +826,18 @@ PROMPT_COMMAND='history -a; echo'
 HISTSIZE=50000
 HISTFILESIZE=50000
 
-# Aliases
+# Aliases and functions
 # Note that aliases only are in effect when you are using the shell interactively
-# (e.g. opening the Git Bash terminal and typing or pasting commands).
+# (e.g. opening the terminal and typing or pasting commands).
 # If you run a bash script or makefile,
 # the original command is used instead of your alias.
-# Run Python and Docker in compatibility mode when started from an interactive shell
-alias python="winpty python"
-alias docker="winpty docker"
+# More verbose file list format
+alias l='ls -vlrthAF'
+# Move, remove, and copy show what was done and prompt before overwriting files.
+alias rm="rm -vI"
+alias mv="mv -vi"
+alias cp="cp -vi"
+alias mkdir="mkdir -vp"
 # `man` function to display help messages with a pager as on Unix
 man() {
     $1 --help | less
