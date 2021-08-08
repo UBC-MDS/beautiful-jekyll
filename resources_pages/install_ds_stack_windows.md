@@ -672,6 +672,8 @@ Later in the program, we will be using `make` to automate our analysis scripts. 
 
 ![](/resources_pages/imgs/extract-make-path.png)
 
+> *Note* It is advisable to show file extensions by default in the Windows File Explorer. Click the `View` tab and check the box next to `File name extensions`.
+
 Next we need to add make's `bin` folder to our PATH so that we can use the command `make` from the terminal (like we did with R earlier). Open the bash configuration file with VS Code again by pasting this into a terminal:
 
 ```
