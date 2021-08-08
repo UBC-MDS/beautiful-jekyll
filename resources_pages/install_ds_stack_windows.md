@@ -585,9 +585,11 @@ tinytex::install_tinytex()
 
 Note that you might see two error messages regarding lua during the installation, you can safely ignore these, the installation will complete successfully after clicking "OK".
 
-
-You can check that the installation is working by opening a terminal and asking for the version of latex:
-
+In order for Git Bash to be able to find the location of TinyTex,
+you will need to [sign out of Windows](https://support.microsoft.com/en-us/windows/sign-out-of-windows-346925bb-024c-cd86-7a53-9066242a9ed3) and back in again.
+After doing that,
+you can check that the installation worked
+by opening a terminal and asking for the version of latex:
 
 ```
 latex --version
@@ -610,7 +612,7 @@ Compiled with zlib 1.2.11; using zlib 1.2.11
 Compiled with xpdf version 4.03
 ```
 
-The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages. Before we do this, please [sign out of Windows](https://support.microsoft.com/en-us/windows/sign-out-of-windows-346925bb-024c-cd86-7a53-9066242a9ed3) and back in again in order for the Git Bash terminal to be able to find the location of TinyTex.
+The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages.
 
 When you sign back in,
 install the additional LaTeX packages needed for Jupyter by pasting the following into the new terminal instance and press enter:
@@ -659,7 +661,8 @@ conda install pyppeteer=0.2.2
 pyppeteer-install
 ```
 
-Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
+Now try exporting a notebook by clicking
+`File -> Export notebook as... -> Export Notebook to WebPDF`.
 
 ## Make
 
