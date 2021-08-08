@@ -292,7 +292,8 @@ else
     else
         echo 'OK        rmarkdown HTML-generation was successful.' >> check-setup-mds.log
     fi
-    rm mds-knit-pdf-test.Rmd
+    # -f makes sure `rm` succeeds even when the file does not exists
+    rm -f mds-knit-pdf-test.Rmd mds-knit-pdf-test.html mds-knit-pdf-test.pdf
 fi
 
 # 4. Ouput the saved file to stdout
