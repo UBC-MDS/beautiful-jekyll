@@ -79,7 +79,7 @@ code --version
 you should see something like this if you were successful:
 
 ```
-1.47.0
+1.59.0
 d5e9aa0227e057a60c82568bf31c04730dc15dcd
 x64
 ```
