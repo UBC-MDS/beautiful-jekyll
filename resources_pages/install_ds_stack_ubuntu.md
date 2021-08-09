@@ -266,13 +266,7 @@ R is another programming language that we will be using a lot in the MDS program
 
 #### R
 
-The version of R available in the default Ubuntu repositories (`3.6.*`) is older than the one we use in MDS (`4.*`). To obtain the latest R `4.*` packages, we need to add a new repository which is maintained directly by the r-project. To do this, first add a couple of helper packages that we will need:
-
-```bash
-sudo apt install software-properties-common dirmngr
-```
-
-Then add the key for this repository by typing the following:
+The version of R available in the default Ubuntu repositories is older than the one we use in MDS. To obtain the latest R packages, we need to add a new repository which is maintained directly by the r-project. To do this, first add the key for this repository by typing the following:
 
 ```
 wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
