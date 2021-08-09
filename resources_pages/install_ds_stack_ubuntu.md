@@ -181,11 +181,11 @@ bash path/to/file
 
 The instructions for the installation will then appear:
 
-(1) Press Enter.
-(2) Once the licence agreement shows, you can press space scroll down, or press `q` to skip reading it.
-(3) Type `yes` and press enter to accept the licence agreement.
-(4) Press enter to accept the default installation location.
-(5) Type `yes` and press enter to instruct the installer to run `conda init`, which makes `conda` available from the terminal/shell.
+1. Press Enter.
+2. Once the licence agreement shows, you can press space scroll down, or press `q` to skip reading it.
+3. Type `yes` and press enter to accept the licence agreement.
+4. Press enter to accept the default installation location.
+5. Type `yes` and press enter to instruct the installer to run `conda init`, which makes `conda` available from the terminal/shell.
 
 After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
 ```
@@ -194,7 +194,7 @@ conda --version
 which should return something like this:
 
 ```
-conda 4.8.3
+conda 4.10.3
 ```
 
 Next, type the following to ask for the version of Python:
@@ -204,7 +204,7 @@ python --version
 which should return something like this:
 
 ```
-Python 3.8.3
+Python 3.9.5
 ```
 
 > **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/home/<USER>` directory), and try the installation again, selecting **Python 3.8**.
