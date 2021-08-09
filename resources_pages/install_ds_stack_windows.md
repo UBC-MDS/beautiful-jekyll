@@ -821,6 +821,9 @@ Then paste the following at the end of the file
 and save it afterwards:
 
 ```
+# Show unstaged (*) and staged (+) changes in the prompt string
+export GIT_PS1_SHOWDIRTYSTATE=1
+
 # TAB completion configuration
 # TAB completion ignores case
 bind "set completion-ignore-case on"

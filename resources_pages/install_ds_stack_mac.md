@@ -595,20 +595,27 @@ To install an extension, you simply search for it in the search bar, click the e
 
 To improve your experience using bash,
 we recommend appending a few lines to the end of your bash configuration file.
-This is optional,
-but makes it easier to use the TAB key for autocompletion
-and improves how bash handles the command history
+These make it easier to use the TAB key for autocompletion
+improves how bash handles the command history,
+and the appearance of the terminal
 (we will talk more about these topics during class).
 It also adds colors to the terminal's text,
 which can make it easier to navigate visually.
 First,
-open the configuration file:
+run the following command to download a script
+that always shows information about git in the terminal prompt:
+
+```bash
+curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+```
+
+Then open the bash configuration file:
 
 ```bash
 code ~/.bash_profile
 ```
 
-Then paste the following at the end of the file
+Paste the following at the end of the file
 (make sure not to overwrite any existing lines)
 and save it afterwards:
 
@@ -616,10 +623,15 @@ and save it afterwards:
 # Silence default shell note when launching bash
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+# Load the git prompt script
+source ~/.git-prompt.sh
+# Show unstaged (*) and staged (+) changes in the prompt string
+export GIT_PS1_SHOWDIRTYSTATE=1
+
 # Color text so it is easier to distinguish elements from each other
 export CLICOLOR=1
 export LSCOLORS=ExGxFxdxCxDxDxxbaDecac
-export PS1="${CONDA_PROMPT_MODIFIER}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
+export PS1=${CONDA_PROMPT_MODIFIER}'\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 " (%s)")\n\$ '
 
 # TAB completion configuration
 # TAB completion ignores case
