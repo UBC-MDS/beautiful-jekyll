@@ -496,7 +496,8 @@ tlmgr install eurosym \
 ```
 
 To test that your latex installation is working with jupyter notebooks,
-launch `jupyter lab` from a terminal and open either a new notebook
+launch `jupyter lab` from the terminal where you confirmed that latex works
+and open either a new notebook
 or the same one you used to test IRkernel above.
 Go to `File -> Export notebook as... -> Export Notebook to PDF`.
 If the PDF file is created,
@@ -549,9 +550,11 @@ postgres=#
 
 You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can [sign up for a free one here](https://store.docker.com/signup?next=%2F%3Fref%3Dlogin).
 
-After signing-up, you also need to install Docker **CE** for Ubuntu. Install the stable version by following the installation instructions using the ["Install using the repository" methods found here](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository), including the subheadings "Set up the repository" and "Install Docker engine".
+After signing-up, you also need to install Docker **CE** for Ubuntu. Install the stable version by following the installation instructions using the ["Install using the repository" methods found here](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository), including the subheadings "Set up the repository" and "Install Docker engine" (you can skip step 2 "Install a specific version of the docker engine" since we already got the latest from step 1).
 
-Next, [follow the Linux post installation steps here](https://docs.docker.com/engine/install/linux-postinstall/) so that you can run Docker without typing `sudo`, and confirm that docker is working by following the verification instructions on that same page.
+Next, [follow the Linux post installation steps here](https://docs.docker.com/engine/install/linux-postinstall/) so that you can run Docker without typing `sudo`
+(only the subheading "Managing docker as a non-root user").
+Confirm that docker is working by following the verification instructions on that same page.
 
 ## VS Code extensions
 
