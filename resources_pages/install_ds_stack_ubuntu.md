@@ -164,6 +164,52 @@ git config --global core.editor "code --wait"
 
 ## Python, Conda, and JupyterLab
 
+### Python and Conda
+
+We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.8 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh).
+
+Once the download is finished, open Terminal and execute the following commands:
+```
+bash path/to/file
+```
+
+> **Note:** Most often this file is downloaded to the `Downloads` directory, and thus the command will look like this:
+>
+>```
+>bash Downloads/Miniconda3-latest-Linux-x86_64.sh
+>```
+
+The instructions for the installation will then appear:
+
+(1) Press Enter.
+(2) Once the licence agreement shows, you can press space scroll down, or press `q` to skip reading it.
+(3) Type `yes` and press enter to accept the licence agreement.
+(4) Press enter to accept the default installation location.
+(5) Type `yes` and press enter to instruct the installer to run `conda init`, which makes `conda` available from the terminal/shell.
+
+After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
+```
+conda --version
+```
+which should return something like this:
+
+```
+conda 4.8.3
+```
+
+Next, type the following to ask for the version of Python:
+```
+python --version
+```
+which should return something like this:
+
+```
+Python 3.8.3
+```
+
+> **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/home/<USER>` directory), and try the installation again, selecting **Python 3.8**.
+
+
 ## Installing Python packages
 
 `conda` installs Python packages from different online repositories which are called "channels".
@@ -213,52 +259,6 @@ or go to the terminal from which you launched JupyterLab and hold `Ctrl` while p
 ![](/resources_pages/imgs/jupyter_lab.PNG)
 
 > **Note:** we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
-
-### Python and Conda
-
-We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.8 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh).
-
-Once the download is finished, open Terminal and execute the following commands:
-```
-bash path/to/file
-```
-
-> **Note:** Most often this file is downloaded to the `Downloads` directory, and thus the command will look like this:
->
->```
->bash Downloads/Miniconda3-latest-Linux-x86_64.sh
->```
-
-The instructions for the installation will then appear:
-
-(1) Press Enter.
-(2) Once the licence agreement shows, you can press space scroll down, or press `q` to skip reading it.
-(3) Type `yes` and press enter to accept the licence agreement.
-(4) Press enter to accept the default installation location.
-(5) Type `yes` and press enter to instruct the installer to run `conda init`, which makes `conda` available from the terminal/shell.
-
-After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
-```
-conda --version
-```
-which should return something like this:
-
-```
-conda 4.8.3
-```
-
-Next, type the following to ask for the version of Python:
-```
-python --version
-```
-which should return something like this:
-
-```
-Python 3.8.3
-```
-
-> **Note:** If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/home/<USER>` directory), and try the installation again, selecting **Python 3.8**.
-
 
 ## R, IRkernel, and RStudio
 
