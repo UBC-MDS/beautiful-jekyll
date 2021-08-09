@@ -122,19 +122,30 @@ run the installer and accept the default configuration for all pages except for 
 and click `Get` to open it in Windows Store.
 Inside the Store, click `Get` again and then click `Install`.
 After installation,
-click `Launch` and [follow the steps in the documentation
-to set Git bash as the default terminal profile](https://docs.microsoft.com/en-us/windows/terminal/get-started#set-your-default-terminal-profile).
+click `Launch` to start Windows Terminal.
+In the top of the window,
+you will see the tab bar with one open tab,
+a plus sign,
+and a down arrow.
+Click the down arrow and select `Settings`
+(or type the shortcut `Ctrl` + `,`).
+In the `Startup` section,
+click the dropdown menu under `Default profile`
+and select `Git Bash`.
+
+![](/resources_pages/imgs/git-bash-default-shell.png)
+
 You can now launch the Windows terminal from the start menu
 or pin it to the taskbar like any other program
 (you can read the rest of the article linked above for additional tips if you wish).
-
 To make sure everything worked,
 close down Windows Terminal,
 and open it again.
-Git Bash should open by default
+Git Bash should open by default,
+the text should be green and purple,
 and the tab should read  `MINGW64:/c/Users/$USERNAME`
 (you should also see `/c/Users/$USERNAME` if you type `pwd` into the terminal).
-It should look like this screenshot:
+This screenshot shows what it should look like:
 
 ![](/resources_pages/imgs/windows-terminal-gitbash.png)
 
