@@ -18,7 +18,7 @@ subtitle: MDS software stack install instructions for Windows
 - [Slack](#slack){:target="_self"}
 - [Visual Studio Code](#visual-studio-code){:target="_self"}
 - [GitHub](#github){:target="_self"}
-- [Git and Bash](#git-and-bash){:target="_self"}
+- [Git, Bash, and Windows Terminal](#git-bash-and-windows-terminal){:target="_self"}
 - [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab){:target="_self"}
 - [R, IRkernel, Rtools, and RStudio](#r-irkernel-rtools-and-rstudio){:target="_self"}
 - [LaTeX](#latex){:target="_self"}
