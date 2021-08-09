@@ -172,6 +172,14 @@ This is free software; you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 ```
 
+> **Note:** If there is a newline (the `enter` character) in the clipboard
+> when you are pasting into the terminal,
+> you will be asked if you are sure you want to paste 
+> since this newline will act as if you pressed `enter`
+> and run the command.
+> As a guideline you can press `Paste anyway`
+> unless you are sure you don't want this to happen.
+
 Let's also check which version of git was installed:
 
 ```
