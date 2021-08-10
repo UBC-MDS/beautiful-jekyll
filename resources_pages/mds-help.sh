@@ -9,6 +9,10 @@ else
     echo "Operating system verison could not be detected." >> check-setup-mds.log
 fi
 
+# Use colors for headings for clarity
+ORANGE='\033[0;33m'
+NC='\033[0m' # No Color
+
 # Help messages
 help_preamble="
 This help message shows a brief explanation
@@ -28,7 +32,7 @@ mds-help shell
 "
 
 shell_help="
-            ##### Shell commands #####
+${ORANGE}# Shell commands${NC}
 
 These are typed into your bash terminal prompt.
 
@@ -72,7 +76,7 @@ mds-help | grep remove          Search for all commands related to 'remove' in t
 "
 
 git_help="
-            ##### Git subcommands #####
+${ORANGE}# Git subcommands${NC}
 
 These commands are typed after 'git' in the terminal.
 
@@ -115,7 +119,7 @@ rebase -i HEAD~4           Reorder and/or drop the last four commits interactive
 
 
 conda_help="
-            ##### Conda subcommands #####
+${ORANGE}# Conda subcommands${NC}
 
 These commands are typed after 'conda' in the terminal.
 
@@ -142,7 +146,7 @@ env export -f env.yaml --from-history  Only export explicitly installed packages
 "
 
 alias_help="
-            ##### MDS aliases #####
+${ORANGE}# MDS aliases${NC}
 
 These aliases are shortcuts for commands we expect that you will be using often.
 
@@ -158,23 +162,19 @@ ca     'conda activate'
 
 # Handle subcommands to only output single sections
 if [[ $1 == 'shell' ]]; then
-    echo "$shell_help"
+    echo -e "$shell_help"
 elif [[ $1 == 'git' ]]; then
-    echo "$git_help"
+    echo -e "$git_help"
 elif [[ $1 == 'conda' ]]; then
-    echo "$conda_help"
+    echo -e "$conda_help"
 elif [[ $1 == 'alias' ]]; then
-    echo "$alias_help"
+    echo -e "$alias_help"
 elif [[ $1 == '' ]]; then
-    echo "$help_preamble"
-    echo
-    echo "$shell_help"
-    echo
-    echo "$git_help"
-    echo
-    echo "$conda_help"
-    echo
-    echo "$alias_help"
+    echo -e "$help_preamble"
+    echo -e "$shell_help"
+    echo -e "$git_help"
+    echo -e "$conda_help"
+    echo -e "$alias_help"
 else
     echo "$1 is not recognized, either leave blank or specify 'shell', 'git', 'conda', or 'alias'."
 fi
