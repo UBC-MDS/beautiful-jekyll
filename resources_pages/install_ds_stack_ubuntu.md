@@ -660,6 +660,8 @@ alias rm="rm -vI"
 alias mv="mv -vi"
 alias cp="cp -vi"
 alias mkdir="mkdir -vp"
+# Case insensitive grep by default
+alias grep='grep -i'
 ```
 
 Finally, download and save the MDS help script via the following command.

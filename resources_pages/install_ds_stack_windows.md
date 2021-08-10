@@ -877,6 +877,8 @@ alias rm="rm -vI"
 alias mv="mv -vi"
 alias cp="cp -vi"
 alias mkdir="mkdir -vp"
+# Case insensitive grep by default
+alias grep='grep -i'
 # `man` function to display help messages with a pager as on Unix
 man() {
     $1 --help | less
