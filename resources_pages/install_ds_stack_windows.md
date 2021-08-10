@@ -335,6 +335,10 @@ conda 4.10.3
 > PS1="$PS1"'\n'       # new line
 > ```
 >
+> While we are in this file,
+> let's also remove the line that says `PS1="$PS1"'$MSYSTEM '          # show MSYSTEM` (line 17),
+> to remove some clutter from the terminal.
+>
 > Click to save the file,
 > when VS Code prompts you that the saving failed,
 > click "Retry as Admin" and then "Yes".
@@ -805,10 +809,12 @@ This [video tutorial](https://www.youtube.com/watch?v=-nh9rCzPJ20) is an excelle
 
 To improve your experience using bash,
 we recommend appending a few lines to the end of your bash configuration file.
-This is optional,
-but makes it easier to use the TAB key for autocompletion
-and improves how bash handles the command history
+These make it easier to use the TAB key for autocompletion
+improves how bash handles the command history,
+and the appearance of the terminal
 (we will talk more about these topics during class).
+It also adds colors to the terminal's text,
+which can make it easier to navigate visually.
 First,
 open the configuration file:
 

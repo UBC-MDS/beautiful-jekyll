@@ -606,7 +606,7 @@ run the following command to download a script
 that always shows information about git in the terminal prompt:
 
 ```bash
-curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+curl -Sso ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 ```
 
 Then open the bash configuration file:
@@ -631,7 +631,8 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # Color text so it is easier to distinguish elements from each other
 export CLICOLOR=1
 export LSCOLORS=ExGxFxdxCxDxDxxbaDecac
-export PS1=${CONDA_PROMPT_MODIFIER}'\[\033[01;32m\]\u@\h\[\033[01;33m\] \w\[\033[36m\]$(__git_ps1 " (%s)")\[\033[00m\]\n\$ '
+# Color the prompt string and add git info
+export PS1=${CONDA_PROMPT_MODIFIER}'\[\033[01;32m\]\u@\h\[\033[01;35m\] \w\[\033[34m\]$(__git_ps1 " (%s)")\[\033[00m\]\n\$ '
 
 # TAB completion configuration
 # TAB completion ignores case
