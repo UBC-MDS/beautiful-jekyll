@@ -11,23 +11,23 @@ subtitle: MDS software stack install instructions for macOS
 
 ## Table of Contents
 
-- [Installation notes](#installation-notes){:target="_self"}
-- [UBC Student Email](#ubc-student-email){:target="_self"}
-- [Web browser](#web-browser){:target="_self"}
-- [Password manager](#password-manager){:target="_self"}
-- [Slack](#slack){:target="_self"}
-- [Bash shell](#bash-shell){:target="_self"}
-- [Visual Studio Code](#visual-studio-code){:target="_self"}
-- [GitHub](#github){:target="_self"}
-- [Git](#git){:target="_self"}
-- [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab){:target="_self"}
-- [R, XQuartz, IRkernel, and RStudio](#r-xquartz-irkernel-and-rstudio){:target="_self"}
-- [LaTeX](#latex){:target="_self"}
-- [PostgreSQL](#postgresql){:target="_self"}
-- [Docker](#docker){:target="_self"}
-- [VS Code extensions](#vs-code-extensions){:target="_self"}
-- [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
-- [Post-installation notes](#post-installation-notes){:target="_self"}
+- [Installation notes](#installation-notes){:target="\_self"}
+- [UBC Student Email](#ubc-student-email){:target="\_self"}
+- [Web browser](#web-browser){:target="\_self"}
+- [Password manager](#password-manager){:target="\_self"}
+- [Slack](#slack){:target="\_self"}
+- [Bash shell](#bash-shell){:target="\_self"}
+- [Visual Studio Code](#visual-studio-code){:target="\_self"}
+- [GitHub](#github){:target="\_self"}
+- [Git](#git){:target="\_self"}
+- [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab){:target="\_self"}
+- [R, XQuartz, IRkernel, and RStudio](#r-xquartz-irkernel-and-rstudio){:target="\_self"}
+- [LaTeX](#latex){:target="\_self"}
+- [PostgreSQL](#postgresql){:target="\_self"}
+- [Docker](#docker){:target="\_self"}
+- [VS Code extensions](#vs-code-extensions){:target="\_self"}
+- [Improving the bash configuration](#improving-the-bash-configuration){:target="\_self"}
+- [Post-installation notes](#post-installation-notes){:target="\_self"}
 
 ## Installation notes
 
@@ -47,7 +47,8 @@ make sure to follow the post-installation notes at the end
 to check that all software is setup correctly.
 
 ## UBC Student Email
-Please sign up for a UBC Student Email. This account will also grant you access to a range of UBC services, including Microsoft Teams and OneDrive. To do so navigate to [https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service](https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service) and follow the instructions under "Get Started". 
+
+Please sign up for a UBC Student Email. This account will also grant you access to a range of UBC services, including Microsoft Teams and OneDrive. To do so navigate to [https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service](https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service) and follow the instructions under "Get Started".
 
 ## Web browser
 
@@ -110,6 +111,7 @@ Sign up for a free account at [GitHub.com](https://github.com/) if you don't hav
 To add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login to [Github.ubc.ca](https://github.ubc.ca) using your CWL credentials.
 
 This step is required for
+
 - being able to store your work
 - all homework submission and grading
 - working collaboratively
@@ -216,7 +218,7 @@ which should return something like this:
 conda 4.10.3
 ```
 
-> **Note:** If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell){:target="_self"} above to set your default Terminal shell to Bash as opposed to Zsh.
+> **Note:** If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell){:target="\_self"} above to set your default Terminal shell to Bash as opposed to Zsh.
 
 Next, type the following to ask for the version of Python:
 
@@ -241,7 +243,7 @@ but also means that new versions will be delayed and fewer packages are availabl
 There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
 which provides more up to date packages
 To enable us to access the most up to date version of the Python packages we are going to use,
-we will add the more up to date  channel,
+we will add the more up-to-date channel.
 To add the conda-forge channel by typing the following in the terminal:
 
 ```bash
@@ -256,6 +258,7 @@ After running that command
 and you can press enter to proceed with the installation.
 If you want to answer `yes` by default and skip this confirmation step,
 you can replace `conda install` with `conda install -y`.
+Also note that we may occasionally install packages using `pip`, the standard Python package manager. The installation command is very similar to that of `conda`: `pip install <package-name>`.
 Let's try this out in the next section,
 by installing some of the key packages we will use in MDS.
 
@@ -270,8 +273,16 @@ and the LSP packages fill the same function for our code.
 Install them via the following commands:
 
 ```bash
-conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
+conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext jupyterlab-lsp jupyter-lsp-python
 ```
+
+We will grade part of your assignments in MDS using the Otter-Grader package. For your Jupyter-based assignments, you need to install Otter-Grader using the following command:
+
+```bash
+pip install otter-grader
+```
+
+> Note: You will also install Otter-Grader for R in the later sections of this guide.
 
 To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal,
 which should open a new tab in your default browser with the JupyterLab interface.
@@ -324,7 +335,7 @@ To see if you were successful, try opening RStudio by clicking on its icon (from
 
 ![](/resources_pages/imgs/RStudio.png)
 
-Now we are going to change RStudio’s *Insert Pipe* shortcut so that it inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/). 
+Now we are going to change RStudio’s _Insert Pipe_ shortcut so that it inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/).
 Go to `Tools > Global Options > Code > Editing` and tick the following option:
 
 ![](/resources_pages/imgs/new-pipe-rstudio.png)
@@ -342,6 +353,12 @@ install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devt
 ```
 
 > **Note:** we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
+
+As mentioned earlier, you will need the Otter-Grader package in R as well, which you can install by runninng the following command in R console:
+
+```R
+devtools::install_github("ucbds-infra/ottr@stable")
+```
 
 ### IRkernel
 
@@ -381,34 +398,34 @@ and paste the following in the rightmost panel that says `User Preferences`
 
 ```json
 {
-    "shortcuts": [
-        {
-            "command": "apputils:run-first-enabled",
-            "selector": "body",
-            "keys": ["Alt -"],
-            "args": {
-                "commands": [
-                    "console:replace-selection",
-                    "fileeditor:replace-selection",
-                    "notebook:replace-selection",
-                ],
-                "args": {"text": "<- "}
-            }
-        },
-        {
-            "command": "apputils:run-first-enabled",
-            "selector": "body",
-            "keys": ["Accel Shift M"],
-            "args": {
-                "commands": [
-                    "console:replace-selection",
-                    "fileeditor:replace-selection",
-                    "notebook:replace-selection",
-                ],
-                "args": {"text": "|> "}
-            }
-        }
-    ]
+  "shortcuts": [
+    {
+      "command": "apputils:run-first-enabled",
+      "selector": "body",
+      "keys": ["Alt -"],
+      "args": {
+        "commands": [
+          "console:replace-selection",
+          "fileeditor:replace-selection",
+          "notebook:replace-selection"
+        ],
+        "args": { "text": "<- " }
+      }
+    },
+    {
+      "command": "apputils:run-first-enabled",
+      "selector": "body",
+      "keys": ["Accel Shift M"],
+      "args": {
+        "commands": [
+          "console:replace-selection",
+          "fileeditor:replace-selection",
+          "notebook:replace-selection"
+        ],
+        "args": { "text": "|> " }
+      }
+    }
+  ]
 }
 ```
 
@@ -546,7 +563,7 @@ you should see something like this if you were successful:
 ```
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
-1b930d010525: Pull complete 
+1b930d010525: Pull complete
 Digest: sha256:451ce787d12369c5df2a32c85e5a03d52cbcef6eb3586dd03075f3034f10adcd
 Status: Downloaded newer image for hello-world:latest
 
@@ -794,6 +811,6 @@ Details on where to submit will be provided later.
 
 ## Attributions
 
-* [Harvard CS109](http://cs109.github.io/2015/)
-* [UBC STAT 545](http://stat545.com/packages01_system-prep.html#mac-os-system-prep) licensed under the [CC BY-NC 3.0](https://creativecommons.org/licenses/by-nc/3.0/legalcode).
-* [Software Carpentry](https://software-carpentry.org/)
+- [Harvard CS109](http://cs109.github.io/2015/)
+- [UBC STAT 545](http://stat545.com/packages01_system-prep.html#mac-os-system-prep) licensed under the [CC BY-NC 3.0](https://creativecommons.org/licenses/by-nc/3.0/legalcode).
+- [Software Carpentry](https://software-carpentry.org/)
