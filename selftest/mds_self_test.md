@@ -47,7 +47,7 @@ Answer:
 
 We strongly recommend using Python or R for these programming exercises. Or, even better, do them in both languages!
 
-1. Solve one of the Project Euler problems (https://projecteuler.net/archives) of your choice.
+1. Solve one of the Project Euler problems (<https://projecteuler.net/archives>) of your choice.
 
 Answer:
 
@@ -60,7 +60,7 @@ print(sum(i for i in range(1000) if i % 3 == 0 or i % 5 == 0))
 
 <!-- end answer -->
 
-1. Download the file `gapminder_Canada.csv` at https://github.com/UBC-MDS/public/blob/master/gapminder_Canada.csv. Then, write a program that reads in this file and computes the mean and variance of each of the four numeric columns. 
+1. Download the file `gapminder_Canada.csv` at <https://github.com/UBC-MDS/public/blob/master/gapminder_Canada.csv>. Then, write a program that reads in this file and computes the mean and variance of each of the four numeric columns. 
 
 Answer:
 
