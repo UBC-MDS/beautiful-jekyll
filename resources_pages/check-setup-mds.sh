@@ -57,9 +57,9 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
         echo '' >> check-setup-mds.log
         echo "MISSING Windows Home is not sufficient. Please upgrade to the free Education edition as per the setup instructions." >> check-setup-mds.log
     fi
-    if ! $(grep -iq "1904[1|2|3|4]" <<< $os_version); then
+    if ! $(grep -iq "22000\|1904[1|2|3|4]" <<< $os_version); then
         echo '' >> check-setup-mds.log
-        echo "MISSING You need at least Windows build 10.0.19041. Please run Windows update." >> check-setup-mds.log
+        echo "MISSING You need at least Windows 10 build 10.0.19041 or Windows 11 build 11.0.22000. Please run Windows update." >> check-setup-mds.log
     fi
 else
     echo "Operating system verison could not be detected." >> check-setup-mds.log
