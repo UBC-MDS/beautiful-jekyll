@@ -25,7 +25,7 @@ subtitle: MDS software stack install instructions for macOS 2022/23
 - [LaTeX](#latex){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
 - [Docker](#docker){:target="_self"}
-- [Quarto](#quarto){:target="_self"}
+- [Quarto CLI](#quarto-cli){:target="_self"}
 - [VS Code extensions](#vs-code-extensions){:target="_self"}
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
