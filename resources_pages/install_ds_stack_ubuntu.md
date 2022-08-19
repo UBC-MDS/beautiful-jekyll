@@ -596,7 +596,7 @@ Next, [follow the Linux post installation steps here](https://docs.docker.com/en
 (only the subheading "Managing docker as a non-root user").
 Confirm that docker is working by following the verification instructions on that same page.
 
-## Quarto
+## Quarto CLI
 
 Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal.
 
