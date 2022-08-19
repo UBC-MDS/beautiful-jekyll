@@ -568,29 +568,6 @@ pyppeteer-install
 
 Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
 
-## Pandoc
-
-Install Pandoc for MacOs from the following link [Pandoc](https://pandoc.org/installing.html).
-
-Try in the command line
-
-```bash
-pandoc --version
-```
-You sould get this output:
-
-```bash
-pandoc 2.19
-Compiled with pandoc-types 1.22.2, texmath 0.12.5.2, skylighting 0.13,
-citeproc 0.8.0.1, ipynb 0.2, hslua 2.2.1
-Scripting engine: Lua 5.4
-User data directory: /Users/florenciadandrea/.local/share/pandoc
-Copyright (C) 2006-2022 John MacFarlane. Web:  https://pandoc.org
-This is free software; see the source for copying conditions. There is no
-warranty, not even for merchantability or fitness for a particular purpose.
-```
-
-
 ## PostgreSQL
 
 We will be using PostgreSQL as our database management system. You can [download PostgreSQL 14.x from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, **and make sure you save it using a password manager or similar so that you know what it is in November when the SQL course starts** (otherwise you will need to reinstall PostgreSQL). For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
