@@ -49,15 +49,18 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
     os_edition=$(wmic os get caption | grep Micro | sed 's/\n//g')
     echo $os_edition >> check-setup-mds.log
     wmic os get osarchitecture | grep bit | sed 's/\n//g' >> check-setup-mds.log
-    os_version=$(wmic os get version | grep 10 | sed 's/\n//g')
-    echo $os_version >> check-setup-mds.log
+    os_version_full=$(wmic os get version | grep -Eo '[0-9]+(\.[0-9]+){2}')
+    echo $os_version_full >> check-setup-mds.log
     file_browser="explorer"
 
-    if $(grep -iq Home <<< $os_edition); then
+    os_version=${os_version_full%%.*}  # Major version (before the first dot)
+    os_build=${os_version_full##*.}    # Build number (after the last dot)
+
+    if [[ $os_edition =~ "Home" ]]; then
         echo '' >> check-setup-mds.log
         echo "MISSING Windows Home is not sufficient. Please upgrade to the free Education edition as per the setup instructions." >> check-setup-mds.log
     fi
-    if ! $(grep -iq "22[0-9]{3}|1904[1|2|3|4]" <<< $os_version); then
+    if [[ $os_version -eq 10 && $os_build -lt 19041 ]]; then
         echo '' >> check-setup-mds.log
         echo "MISSING You need Windows 10 or 11 with build number >= 10.0.19041. Please run Windows update." >> check-setup-mds.log
     fi
