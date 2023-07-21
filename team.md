@@ -190,5 +190,5 @@ Betty Zhao joined the MDS program in January 2022 as a course coordinator. She w
 - **Mike Gelbart** (Now Co-Founder and Principal of [VISST](https://www.visst.ca/#team))
 - **Rodolfo Lourenzutti** (Now tenure-track Professor of Teaching in the Dept. of Statistics at UBC)
 - **Firas Moosvi** (Now Lecturer in the Computer Science, Mathematics, Physics, and Statistics department at UBC Okanagan)
-- **Arman Seyed-Ahmadi** (Now research Scientist at Genentech)
+- **Arman Seyed-Ahmadi** (Now Research Scientist at Genentech)
 - **Shaun Sun** (Now Assistant Professor in the Department of Mathematics and Statistics at University of the Fraser Valley)
