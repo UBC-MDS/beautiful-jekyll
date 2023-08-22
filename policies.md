@@ -16,7 +16,7 @@ Attendance in lectures and lab sessions is not mandatory but highly recommended.
 
 ## Lecture recordings
 
-We will not livestream or require instructors to record their lectures. If the instructor chooses to record their lectures, students with approved reasons (e.g. illness, jury duty, etc.) may request access to the recordings by reaching out to the course coordinator via Slack.
+We will not livestream or require instructors to record their lectures. You should rely on lecture notes to catch up if absent. When past lecture recordings are available, instructors may grant access to students who were absent for approved reasons (e.g. illness, jury duty, etc.).
 
 ## Academic concession policy
 
