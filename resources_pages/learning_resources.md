@@ -14,15 +14,11 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 
 
 ### Python
-- [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
-- [Practical Python Programming](https://github.com/dabeaz-course/practical-python/blob/main/README.md)
-- [Programming for Everybody (Getting Started with Python)](https://www.coursera.org/learn/python), from U. Michigan (Coursera)
-- [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036), Udacity
-- [Python Programming: A Concise Introduction](https://www.coursera.org/learn/python-programming-introduction), from Wesleyan U. (Coursera)
-- [Introduction to Data Science in Python](https://www.coursera.org/learn/python-data-analysis), from U. Michigan (Coursera)
-- [Principles of Computing (Part 1)](https://www.coursera.org/learn/principles-of-computing-1), from Rice U. (Coursera)
-- [Foundations of Python Programming](https://runestone.academy/runestone/books/published/fopp/index.html) ([Runestone](https://runestone.academy/))
-- [Codecademy Learn Python 3](https://www.codecademy.com/learn/learn-python-3) (paid content but they have a free trial)
+- [Programming for Everybody](https://www.py4e.com/) by Chuck Severance (online book & [Youtube lectures](https://www.youtube.com/watch?v=8DvywoWv6fI&t=9009s))
+- Series of Youtube tutorials by Corey Shaffer ([Beginner tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTskrapNbzXhwoFUiLCjGgY7), [OOP programming](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc))
+- [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) by Jake VanderPlas
+- [Codeacademy Learn Python 3](https://www.codecademy.com/learn/learn-python-3) (paid content but they have a free trial)
+- [Python Principles](https://pythonprinciples.com/) (learning basics via coding)
 
 ### R
 - [R for Data Science](https://r4ds.had.co.nz/)
