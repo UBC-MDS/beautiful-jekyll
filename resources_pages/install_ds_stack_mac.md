@@ -224,11 +224,17 @@ open your `~/.bashrc` file:
 code ~/.bashrc
 ```
 
-And append the following line:
+And append the following lines:
 
 ```bash
+# Do NOT add anything to this file, use `~/.bash_profile` instead.
+# The next line automatically loads your `~/.bash_profile`
+# any time a program tries to read your `~/.bashrc` file.
 if [ -f ~/.bash_profile ]; then . ~/.bash_profile; fi
 ```
+
+The comment is a reminder to your future self
+who might open up this file a few months from now =)
 
 ## Python, Conda, and JupyterLab
 
