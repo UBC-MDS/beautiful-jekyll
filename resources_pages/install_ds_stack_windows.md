@@ -488,7 +488,7 @@ https://www.gnu.org/licenses/.
 
 ### RStudio
 
-Download the Windows preview version of RStudio Desktop  from <https://www.rstudio.com/products/rstudio/download/#download>. Open the file and follow the installer instructions.
+Download the Windows version of RStudio Desktop  from <https://posit.co/download/rstudio-desktop/d>. Open the file and follow the installer instructions.
 
 To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:
 
