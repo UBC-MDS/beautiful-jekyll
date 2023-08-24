@@ -574,10 +574,10 @@ We will be using PostgreSQL as our database management system.
 Install it via the following command:
 
 ```
-sudo apt install postgresql-14
+sudo apt install postgresql
 ```
 
-> Note: Older version of Ubuntu might not have version 14 of PostgreSQL in the repos.
+> Note: Older version of Ubuntu might not have the latest version of PostgreSQL in the repos.
 > If this is the case for your version
 > you need to follow the instructions in the PostgreSQL documentation
 > to [first add the their repository
