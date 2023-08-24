@@ -391,7 +391,7 @@ Go to `Tools > Global Options > Code > Editing` and tick the following option:
 
 ![](/resources_pages/imgs/new-pipe-rstudio.png)
 
-Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works.
+Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works. Close down RStudio afterwards.
 
 ### Installing R packages
 

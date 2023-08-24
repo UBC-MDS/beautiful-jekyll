@@ -532,7 +532,7 @@ Press `Shift` + `Ctrl` + `m` in RStudio's console. If it is returned the followi
 
 ![](/resources_pages/imgs/new-pipe-rstudio.png)
 
-Once the change is made you can try again in the RStudio console `Ctrl` + `Shift` + `m` verify that it functions. 
+Once the change is made you can try again in the RStudio console `Ctrl` + `Shift` + `m` verify that it functions.  Close down RStudio afterwards.
 
 ### Rtools
 
