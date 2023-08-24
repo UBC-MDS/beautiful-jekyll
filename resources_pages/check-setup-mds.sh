@@ -219,10 +219,10 @@ else
     # Test WebPDF
     # I don't want to automate any of the installation steps since it can be harder to troubleshoot then,
     # so we just output and error message telling students is the most probable cause of the failure.
-    if ! [ -x "$(command -v pyppeteer-install)" ]; then  # Check that pyppeteer-install exists as an executable program
-        echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you did not run `pip install "nbconvert[webpdf]"` to install pyppeteer.' >> check-setup-mds.log
+    if ! [ -x "$(command -v playwright)" ]; then  # Check that playwright exists as an executable program
+        echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you did not run `pip install "nbconvert[webpdf]"`.' >> check-setup-mds.log
     else
-        # If the student didn't run `pypeteer-install`
+        # If the student didn't run `playwright install chromium`
         # then that command will try to download chromium,
         # which should always take more than 1s
         # so `timeout` will interupt it with exit code 1.
@@ -235,16 +235,16 @@ else
         if [[ "$(uname)" == 'Darwin' ]]; then
             # The surrounding $() here is just to supress the alarm clock output
             # as redirection does not work.
-            $(perl -e 'alarm shift; exec pyppeteer-install' 1)
+            $(perl -e 'alarm shift; exec playwright install chromium' 1)
         else
             # Using the reliable `timeout` tool on Linux and Windows
-            timeout 1s pyppeteer-install &> /dev/null
+            timeout 1s playwright install chromium &> /dev/null
         fi
         # `$?` stores the exit code of the last program that as executed
         if ! [ $? ]; then
-            echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you have not run `pyppeteer-install` to download chromium for jupyterlab WebPDF export.' >> check-setup-mds.log
+            echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you have not run `playwright install chromium` to download chromium for jupyterlab WebPDF export.' >> check-setup-mds.log
         elif ! jupyter nbconvert mds-nbconvert-test.ipynb --to webpdf --log-level 'ERROR' &> jupyter-webpdf-error.log; then
-            echo 'MISSING   jupyterlab WebPDF-generation failed. Check that jupyterlab, nbconvert, and pyppeteer are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
+            echo 'MISSING   jupyterlab WebPDF-generation failed. Check that jupyterlab and nbconvert are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
         else
             echo 'OK        jupyterlab WebPDF-generation was successful.' >> check-setup-mds.log
         fi
