@@ -593,15 +593,15 @@ your LaTeX environment is set up correctly.
 Jupyter recently added another way to export notebooks to PDF
 which does not require Latex
 and makes the exported PDF look similar to notebooks exported to HTML.
-This requires the `pyppeteer` package,
+This requires the an additional package,
 which we can install as follows.
 
 ```bash
-conda install pyppeteer
-pyppeteer-install
+pip install "nbconvert[webpdf]"
+playwright install chromium
 ```
 
-Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
+Try this by going to `File -> Save and Export Notebook As... -> WebPDF`.
 
 ## PostgreSQL
 
