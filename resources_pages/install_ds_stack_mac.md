@@ -248,6 +248,8 @@ Select the appropiate link:
 
 **Mac M1 or higher**: [Miniconda MacOS Apple M1 64-bit pkg install for Python **3.x** can be downloaded here.](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.pkg)
 
+> **Note:** on August 24th, 2023 we observed an issue using the latest install link above for "Mac M1 or higher". If you also observe this, then please visit [https://docs.conda.io/en/latest/miniconda-other-installer-links.html#macos-installers](https://docs.conda.io/en/latest/miniconda-other-installer-links.html#macos-installers) and download and install the "Miniconda3 macOS Apple M1 64-bit pkg" installer from the latest (highest) version of Python that you can see listed on that page.
+
 After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
 
 ```bash
@@ -257,16 +259,10 @@ conda --version
 which should return something like this:
 
 ```
-conda 4.12.0
+conda 23.5.2
 ```
 
 > **Note:** If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell){:target="_self"} above to set your default Terminal shell to Bash as opposed to Zsh.
-
-In general, installing Miniconda will install the last version of Python. As the new version of Miniconda with Python 3.10 has not been released yet, as an exception we are going to re-install Python 3.10 separately:
-
-```
-conda install python=3.10
-```
 
 Next, type the following to ask for the version of Python:
 
@@ -274,10 +270,10 @@ Next, type the following to ask for the version of Python:
 python --version
 ```
 
-which should return Python 3.10.0 or greater:
+which should return Python 3.11.0 or greater:
 
 ```
-Python 3.10.0
+Python 3.11.4
 ```
 
 ## Installing Python packages
