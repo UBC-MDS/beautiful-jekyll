@@ -103,7 +103,7 @@ code --version
 you should see something like this if you were successful (does not have to be the exact same version):
 
 ```
-1.70.1
+1.81.1
 6d9b74a70ca9c7733b29f0456fd8195364076dda
 x64
 ```
@@ -226,7 +226,7 @@ conda --version
 which should return something like this:
 
 ```
-conda 4.12.0
+conda 23.5.2
 ```
 
 In general, installing Miniconda will install the last version of Python. As the new version of Miniconda with Python 3.10 has not been released yet, as an exception we are going to install Python 3.10 separately:
@@ -242,7 +242,7 @@ python --version
 which should return Python 3.10.0 or greater:
 
 ```
-Python 3.10.0
+Python 3.11.4
 ```
 
 ## Installing Python packages
@@ -335,7 +335,7 @@ R --version
 You should see something like this if you were successful:
 
 ```
-R version 4.2.1 (2022-06-23) -- "Funny-Looking Kid"
+R version 4.3.1 (2023-06-16) -- "Beagle Scouts"
 Copyright (C) 2022 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
@@ -352,7 +352,7 @@ https://www.gnu.org/licenses/.
 
 ### RStudio
 
-Download the Ubuntu 22 Desktop version (not Pro) of RStudio Preview from [https://rstudio.com/products/rstudio/download/preview/](https://rstudio.com/products/rstudio/download/preview/). Open the file and follow the installer instructions.
+Download the Ubuntu 22 Desktop version (not Pro) of RStudio from [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/). Open the file and follow the installer instructions.
 
 > **Note:** If you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
 
@@ -500,7 +500,7 @@ latex --version
 You should see something like this if you were successful:
 
 ```
-pdfTeX 3.14159265-2.6-1.40.21 (TeX Live 2020)
+pdfTeX 3.14159265-2.6-1.40.25 (TeX Live 2023)
 kpathsea version 6.3.2
 Copyright 2020 Han The Thanh (pdfTeX) et al.
 There is NO warranty.  Redistribution of this software is
@@ -600,7 +600,7 @@ The above should yield the prompt to change to what is shown below
 (the exact minor version does not matter as the major version is 14):
 
 ```
-psql (14.4 (Ubuntu 14.4-0ubuntu0.22.04.1))
+psql (14.9 (Ubuntu 14.9-0ubuntu0.22.04.1))
 Type "help" for help.
 
 postgres=#
@@ -635,7 +635,7 @@ quarto --version
 If the installation was successful you will read the output:
 
 ```bash
-1.0.38
+1.3.450
 ```
 
 ## VS Code extensions
