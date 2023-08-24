@@ -734,7 +734,7 @@ pyppeteer-install
 ```
 
 Now try exporting a notebook by clicking
-`File -> Export notebook as... -> Export Notebook to WebPDF`.
+`File -> Save and Export Notebook As... -> WebPDF`.
 
 ## Make
 
