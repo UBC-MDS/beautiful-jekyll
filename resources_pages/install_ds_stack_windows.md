@@ -73,7 +73,7 @@ such as not being able to install all the software before the start of the progr
 it is useful to know UBC offers a free online computing environment
 that you can use as a backup to follow along in most of the MDS courses.
 This is called Jupyter Open
-and you can access it by logging into https://open.jupyter.ubc.ca/
+and you can access it by logging into [https://open.jupyter.ubc.ca/](https://open.jupyter.ubc.ca/)
 with your UBC CWL.
 Jupyter Open allow you to work with JupyterLab, R, Python, and Bash,
 and you can install packages via the `conda` and `pip` package managers
