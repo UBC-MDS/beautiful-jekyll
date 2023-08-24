@@ -716,7 +716,7 @@ tlmgr.bat install eurosym \
 To test that your latex installation is working with jupyter notebooks,
 launch `jupyter lab` from a terminal and open either a new notebook
 or the same one you used to test IRkernel above.
-Go to `File -> Export notebook as... -> Export Notebook to PDF`.
+Go to `File -> Save and Export Notebook as... -> PDF`.
 If the PDF file is created,
 your LaTeX environment is set up correctly.
 

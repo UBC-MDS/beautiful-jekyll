@@ -509,7 +509,7 @@ quarto --version
 If the installation was successful you will read the output:
 
 ```bash
-1.0.38
+1.3.450
 ```
 
 ## LaTeX
@@ -584,15 +584,9 @@ tlmgr install eurosym \
 To test that your latex installation is working with jupyter notebooks,
 launch `jupyter lab` from a terminal and open either a new notebook
 or the same one you used to test IRkernel above.
-Go to `File -> Export notebook as... -> Export Notebook to PDF`.
+Go to `File -> Save and Export Notebook as... -> PDF`.
 If the PDF file is created,
 your LaTeX environment is set up correctly.
-
-> **Notes installation 2022/23:** Try to export the notebook as HTML (`File -> Export notebook as... -> Export Notebook to PDF`). If you get [an error](www.github.com/microsoft/vscode-jupyter/issues/9468), downgrade the package `jinja` to the version 3.0.3:
-
-```bash
-pip install jinja2==3.0.3
-```
 
 ### WebPDF export
 
