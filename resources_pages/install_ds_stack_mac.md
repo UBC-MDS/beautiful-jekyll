@@ -122,7 +122,7 @@ code --version
 you should see something like this if you were successful:
 
 ```
-1.70.1
+1.81.1
 5763d909d5f12fe19f215cbfdd29a91c0fa9208a
 arm64
 ```
