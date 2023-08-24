@@ -370,7 +370,7 @@ Go to `Tools > Global Options > Code > Editing` and tick the following option:
 
 ![](/resources_pages/imgs/new-pipe-rstudio.png)
 
-Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works.
+Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works. Close down RStudio afterwards.
 
 ### Installing R packages
 
@@ -381,7 +381,7 @@ sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev libfontconfig1-dev 
 ```
 
 Next, install the key R packages needed for the start of MDS program,
-by opening up RStudio and
+by opening up RStudio again and
 typing the following into the R console inside RStudio
 (the first line might take a long time to run):
 
@@ -426,7 +426,7 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 To improve the experience of using R in JupyterLab,
 we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
-Go to `Settings -> Advanced Settings Editor -> JSON Settings Editor (top right corner) -> Keyboard Shortcuts`.
+Go to `Settings -> Settings Editor`. Then click `JSON Settings Editor` in the top right corner and click on `Keyboard Shortcuts` in the navigation panel to the left.
 You will see two panels,
 the right-most panel allows you to perform advanced modification
 of keyboards shortcuts in JupyterLab
