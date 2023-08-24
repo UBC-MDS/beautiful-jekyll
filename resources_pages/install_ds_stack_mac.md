@@ -270,7 +270,7 @@ Next, type the following to ask for the version of Python:
 python --version
 ```
 
-which should return Python 3.11.0 or greater:
+Make sure it returns Python 3.11.0 or greater:
 
 ```
 Python 3.11.4
@@ -301,8 +301,18 @@ and you can press enter to proceed with the installation.
 If you want to answer `yes` by default and skip this confirmation step,
 you can replace `conda install` with `conda install -y`.
 Also note that we may occasionally need to install packages using `pip`, the standard Python package manager. The installation command is very similar to that of `conda`: `pip install <package-name>`.
-Let's try this out in the next section,
-by installing some of the key packages we will use in MDS.
+
+Let's try this out by installing a package that makes conda faster
+and changing the config to use this package by default:
+
+```bash
+conda install conda-libmamba-solver
+conda config --set solver libmamba
+```
+
+In the next session
+we will use `conda` to install
+some of the key packages we will use in MDS.
 
 ## JupyterLab setup
 
@@ -314,7 +324,7 @@ The spellchecker helps us correcting typos in our writing.
 Install them via the following commands:
 
 ```bash
-conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext  
+conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker  
 ```
 
 We will grade part of your assignments in MDS using the Otter-Grader package. For your Jupyter-based assignments, you need to install Otter-Grader using the following command:
