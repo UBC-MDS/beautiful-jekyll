@@ -557,20 +557,12 @@ your LaTeX environment is set up correctly.
 Jupyter recently added another way to export notebooks to PDF
 which does not require Latex
 and makes the exported PDF look similar to notebooks exported to HTML.
-This requires the `pyppeteer` package,
+This requires the an additional package,
 which we can install as follows.
 
 ```bash
-conda install pyppeteer
-pyppeteer-install
-```
-
-Due to [a current bug in pyppeteer](https://github.com/jupyter/nbconvert/issues/1834)
-we also need to disable sandbox mode
-by running the following single line from the terminal:
-
-```
-echo 'c.WebPDFExporter.disable_sandbox = True' > ~/.jupyter/jupyter_nbconvert_config.py && touch ~/.jupyter/jupyter_lab_config.py && echo 'c.WebPDFExporter.disable_sandbox = True' >> ~/.jupyter/jupyter_lab_config.py
+pip install "nbconvert[webpdf]"
+playwright install chromium
 ```
 
 Now you can try exporting by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
