@@ -439,7 +439,7 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 To improve the experience of using R in JupyterLab,
 we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
-Go to `Settings -> Advanced Settings Editor -> JSON Settings Editor (top right corner) -> Keyboard Shortcuts`.
+Go to `Settings -> Settings Editor`. Then click `JSON Settings Editor` in the top right corner and click on `Keyboard Shortcuts` in the navigation panel to the left.
 You will see two panels,
 the right-most panel allows you to perform advanced modification
 of keyboards shortcuts in JupyterLab
@@ -451,8 +451,6 @@ and paste the following:
  
 
 ```json
-{
-    "shortcuts": [
         {
             "command": "apputils:run-first-enabled",
             "selector": "body",
@@ -478,9 +476,7 @@ and paste the following:
                 ],
                 "args": {"text": "|> "}
             }
-        }
-    ]
-}
+        },
 ```
 
 After you have pasted this text,
