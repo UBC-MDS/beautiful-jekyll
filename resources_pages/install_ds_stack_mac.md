@@ -22,10 +22,10 @@ subtitle: MDS software stack install instructions for macOS 2022/23
 - [Git](#git){:target="_self"}
 - [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab){:target="_self"}
 - [R, XQuartz, IRkernel, and RStudio](#r-xquartz-irkernel-and-rstudio){:target="_self"}
+- [Quarto CLI](#quarto-cli){:target="_self"}
 - [LaTeX](#latex){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
 - [Docker](#docker){:target="_self"}
-- [Quarto CLI](#quarto-cli){:target="_self"}
 - [VS Code extensions](#vs-code-extensions){:target="_self"}
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
@@ -493,6 +493,25 @@ and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Cmd` + `m`
 You could add any arbitrary text insertion command the same way,
 but this is all that is required for MDS.
 
+## Quarto CLI
+
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal. 
+
+The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
+
+Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for MacOs.
+
+After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
+
+```bash
+quarto --version
+```
+If the installation was successful you will read the output:
+
+```bash
+1.0.38
+```
+
 ## LaTeX
 
 We will install the lightest possible version of LaTeX and it's necessary packages as possible so that we can render Jupyter notebooks and R Markdown documents to html and PDF. If you have previously installed LaTeX, please uninstall it before proceeding with these instructions.
@@ -521,18 +540,18 @@ latex --version
 You should see something like this if you were successful:
 
 ```
-pdfTeX 3.14159265-2.6-1.40.21 (TeX Live 2020)
-kpathsea version 6.3.2
-Copyright 2020 Han The Thanh (pdfTeX) et al.
+pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023)
+kpathsea version 6.3.5
+Copyright 2023 Han The Thanh (pdfTeX) et al.
 There is NO warranty.  Redistribution of this software is
 covered by the terms of both the pdfTeX copyright and
 the Lesser GNU General Public License.
 For more information about these matters, see the file
 named COPYING and the pdfTeX source.
 Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-Compiled with libpng 1.6.37; using libpng 1.6.37
-Compiled with zlib 1.2.11; using zlib 1.2.11
-Compiled with xpdf version 4.02
+Compiled with libpng 1.6.39; using libpng 1.6.39
+Compiled with zlib 1.2.13; using zlib 1.2.13
+Compiled with xpdf version 4.04
 ```
 
 The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages. Do this by opening a terminal and copying the following there press enter:
@@ -548,8 +567,10 @@ tlmgr install eurosym \
   jknapltx \
   ms \
   parskip \
+  pdfcol \
   pgf \
   rsfs \
+  soul \
   tcolorbox \
   titling \
   trimspaces \
@@ -643,25 +664,6 @@ Share images, automate workflows, and more with a free Docker ID:
 
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
-```
-
-## Quarto CLI
-
-Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal. 
-
-The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
-
-Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for MacOs.
-
-After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
-
-```bash
-quarto --version
-```
-If the installation was successful you will read the output:
-
-```bash
-1.0.38
 ```
 
 ## VS Code extensions
