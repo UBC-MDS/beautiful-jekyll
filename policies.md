@@ -50,11 +50,11 @@ To pass an MDS course a student must score 60% or above. To graduate from MDS, a
 
 ### Final course grades
 
-With a few exceptions (which will be communicated to students at the start of a course), each course grade is calculated using the lab and quiz grades, weighted 60% and 40% respectively. However, if a student fails all the quizzes in a course (each below 60%) then the final course grade will be the lower of their calculated course grade and 67%. This means that to graduate a student cannot fail all the quizzes in more than 3 courses.
+With a few exceptions (which will be communicated to students at the start of a course), each course grade is calculated using the lab and quiz grades, weighted 50% and 50% respectively. However, if a student fails all the quizzes in a course (each below 60%) then the final course grade will be the lower of their calculated course grade and 67%. This means that to graduate a student cannot fail all the quizzes in more than 3 courses.
 
 ### Late Submissions
 
-A late submission is defined as any work submitted after the deadline. For a late submission, the student will receive a 75% scaling of their grade for the first occurrence, 50% scaling of their grade for the second to fifth occurrences, and will receive a grade of 0 for subsequent occurrences. 
+A late submission is defined as any work submitted after the deadline. For a late submission, the student will receive a 75% scaling of their grade for the first occurrence, 50% scaling of their grade for the second to fifth occurrences, and will receive a grade of 0 for subsequent occurrences. Late submissions are accumulated throughout the program. 
 
 ### Re-grading
  
