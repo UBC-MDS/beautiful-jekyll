@@ -133,6 +133,10 @@ run the installer and accept the default configuration for all pages except for 
 
     ![](/resources_pages/imgs/vscode-as-git-editor.png)
 
+- Set the default branch name to `main`
+
+    ![](/resources_pages/imgs/gitbash-defualt_main.png)
+
 [To install windows terminal visit this link](https://aka.ms/terminal)
 and click `Get` to open it in Windows Store.
 Inside the Store, click `Get` again and then click `Install`.
@@ -183,7 +187,7 @@ bash --version
 The output should look similar to this:
 
 ```
-GNU bash, version 5.1.16(1)-release (x86_64-pc-msys)
+GNU bash, version 5.2.15(1)-release (x86_64-pc-msys)
 Copyright (C) 2020 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 
@@ -206,7 +210,7 @@ git --version
 ```
 
 ```
-git version 2.37.2.windows.2
+git version 2.42.0.windows.2
 ```
 
 > **Note:**  You can launch many windows programs from the terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
@@ -216,7 +220,7 @@ code --version
 ```
 
 ```
-1.70.1
+1.81.1
 6d9b74a70ca9c7733b29f0456fd8195364076dda
 x64
 ```
@@ -313,10 +317,10 @@ After installation, open the Start Menu and search for the program called "Anaco
 python --version
 ```
 
-which should return Python 3.10.0 or greater:
+which should return Python 3.11.0 or greater:
 
 ```
-Python 3.10.0
+Python 3.11.0
 ```
 
 ### Integrating Python with the Git Bash terminal
@@ -340,7 +344,7 @@ python --version
 you should now see the same output as above:
 
 ```
-Python 3.10.0
+Python 3.11.0
 ```
 
 Let's also check the version of the `conda` package manager. If you type
@@ -352,7 +356,7 @@ conda --version
 you should see something like this
 
 ```
-conda 4.13.0
+conda 23.5.2
 ```
 
 > **Optional:** One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
@@ -423,6 +427,8 @@ Install them via the following commands:
 conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext
 ```
 
+If the above command fails, try installing a few packages at a time instead of all of them at once.
+
 We will grade part of your assignments in MDS using the Otter-Grader package. For your Jupyter-based assignments, you need to install Otter-Grader using the following command:
 
 ```bash
@@ -460,7 +466,7 @@ Append the following lines to the file
 # Automatically expand the R version number
 R_DIR=(/c/Program\ Files/R/*/bin/x64)
 # Add R and Rscript to PATH
-export PATH="${R_DIR}:$PATH"
+export PATH="$R_DIR:$PATH" # double quote is important here
 ```
 
 Then save the file and exit VS Code.
@@ -488,7 +494,7 @@ https://www.gnu.org/licenses/.
 
 ### RStudio
 
-Download the Windows version of RStudio Desktop  from <https://posit.co/download/rstudio-desktop/d>. Open the file and follow the installer instructions.
+Download the Windows version of RStudio Desktop  from <https://posit.co/download/rstudio-desktop/>. Open the file and follow the installer instructions.
 
 To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:
 
@@ -568,7 +574,7 @@ The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable 
 
 ```
 install.packages('IRkernel')
-IRkernel::installspec()
+IRkernel::installspec() # make sure you do this in a terminal, not within RStudio
 ```
 
 When asked to select a mirror, pick one at a location close to where you live for faster downloads.
@@ -875,6 +881,24 @@ To install an extension, you simply search for it in the search bar, click the e
 - (Optional) Material Icon Theme (great-looking custom file icons!)
 
 This [video tutorial](https://www.youtube.com/watch?v=-nh9rCzPJ20) is an excellent introduction to using VS Code in Python.
+
+## Stan
+
+Stan is the language we will be using later on in the program for Bayesian statistics.
+To install it open RStudio and install `rstan`
+
+```r
+install.packages('rstan')
+```
+
+Test the installation with:
+
+```r
+example(stan_model, package = "rstan", run.dontrun = TRUE)
+```
+
+The model should then compile and sample.
+
 
 ## Improving the bash configuration
 
