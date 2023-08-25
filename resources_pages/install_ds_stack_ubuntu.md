@@ -654,6 +654,23 @@ To install an extension, you simply search for it in the search bar, click the e
 
 [This video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
 
+## Stan
+
+Stan is the language we will be using later on in the program for Bayesian statistics.
+To install it open RStudio and install `rstan`
+
+```r
+install.packages('rstan')
+```
+
+Test the installation with:
+
+```r
+example(stan_model, package = "rstan", run.dontrun = TRUE)
+```
+
+The model should then compile and sample.
+
 ## Improving the bash configuration
 
 To improve your experience using bash,
