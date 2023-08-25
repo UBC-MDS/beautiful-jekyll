@@ -764,73 +764,78 @@ and to provide instructions for how you can troubleshoot any issues.
 To run this script,
 please execute the following command from your terminal.
 
-```
+````
 bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/master/resources_pages/check-setup-mds.sh)
 ```
 
 The output from running the script will look something like this:
 
-````
-# MDS setup check 1.1.0
+```
+# MDS setup check 2023.1
 
 If a program or package is marked as MISSING,
 this means that you are missing the required version of that program or package.
 Either it is not installed at all or the wrong version is installed.
 The required version is indicated with a number and an asterisk (*),
 e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.5, etc).
-
+ 
 You can run the following commands to find out which version
 of a program or package is installed (if any):
 ```
 name_of_program --version  # For system programs
 conda list  # For Python packages
-R -q -e "installed.packages()[,c(Package, Version)]"  # For R packages
+R -q -e "as.data.frame(installed.packages()[,3])"  # For R packages
 ```
-
+ 
 Checking program and package versions...
-
+ 
 ## Operating system
-Operating System: Ubuntu 20.04
+Operating System: Ubuntu 22.04.1 LTS
 Architecture:     x86-64
-Kernel:           Linux 5.11.0-7620-generic
-
+Kernel:           Linux 6.2.0-26-generic
+ 
 ## System programs
-MISSING   psql 13.*
-OK        rstudio 1.4.1725
-OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
-OK        python 3.10.0
-OK        conda 4.10.3
-OK        bash 5.1.4(1)-release (x86_64-pc-linux-gnu)
-OK        git 2.32.0
+OK        psql 14.9 (Ubuntu 14.9-0ubuntu0.22.04.1)
+OK        rstudio 2023.06.2+561
+OK        R 4.3.1 (2023-06-16) -- "Beagle Scouts"
+OK        python 3.11.4
+OK        conda 23
+OK        bash 5.1.16(1)-release (x86_64-pc-linux-gnu)
+OK        git 2.34.1
 OK        make 4.3
-OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2021)
-OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
-OK        docker 20.10.7, build f0df350
-OK        code 1.58.2
-
+OK        latex 3.141592653-2.6-1.40.25 (TeX Live 2023)
+OK        tlmgr 5:21 +0200)
+OK        docker 24.0.5, build ced0996
+OK        code 1.81.1
+ 
 ## Python packages
-MISSING   jupyterlab=3.*
-OK        pandas=1.3.0
-OK        flake8=3.9.2
-MISSING   black=21.*
-MISSING   nodejs=15.*
-OK        jupytext=1.11.4
-OK        jupyterlab-git=0.30.1
+OK        otter-grader=5.1.3
+OK        pandas=2.0.3
+OK        nbconvert-core=7.7.4
+OK        playwright=1.37.0
+OK        jupyterlab=4.0.5
+OK        jupyterlab-git=0.41.0
+OK        jupyterlab-spellchecker=0.8.4
 OK        jupyterlab PDF-generation was successful.
 OK        jupyterlab WebPDF-generation was successful.
 OK        jupyterlab HTML-generation was successful.
-
+ 
 ## R packages
-OK        tidyverse=1.3.1
-OK        blogdown=1.3
-OK        xaringan=0.22
-OK        renv=0.13.2
-OK        IRkernel=1.2
-OK        tinytex=0.32
+OK        tidyverse=2.0.0
+OK        markdown=1.8
+OK        rmarkdown=2.24
+OK        renv=1.0.2
+OK        IRkernel=1.3.2
+OK        tinytex=0.46
+OK        janitor=2.2.0
+OK        gapminder=1.0.0
+OK        readxl=1.4.3
+OK        ottr=1.1.3
+OK        canlang=0.0.1
 OK        rmarkdown PDF-generation was successful.
 OK        rmarkdown HTML-generation was successful.
-
-The above output has been saved to the file /home/joel/check-setup-mds.log
+ 
+The above output has been saved to the file /home/vboxuser/check-setup-mds.log
 together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `xdg-open .` (without the surrounding backticks).
 ````
