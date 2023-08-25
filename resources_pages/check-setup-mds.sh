@@ -245,6 +245,8 @@ else
             timeout 1s playwright install chromium &> /dev/null
         fi
         # `$?` stores the exit code of the last program that as executed
+        # If the exit code is anything else than zero, it means that the above command failed,
+        # i.e. chromium has not been installed via playwright yet
         if [ $? ]; then
             echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you have not run `playwright install chromium` to download chromium for jupyterlab WebPDF export.' >> check-setup-mds.log
         elif ! jupyter nbconvert mds-nbconvert-test.ipynb --to webpdf --log-level 'ERROR' &> jupyter-webpdf-error.log; then
