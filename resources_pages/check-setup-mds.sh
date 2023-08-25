@@ -4,9 +4,13 @@
 # The version number represents <Year>.<Patch>
 # since we usually iterate on the script once per year just before the semester starts.
 
+# Use colors for headings for clarity
+ORANGE='\033[0;33m'
+NC='\033[0m' # No Color
+
 # 0. Help message and OS info
 echo ''
-echo "# MDS setup check 2023.1" | tee check-setup-mds.log
+echo "${ORANGE}# MDS setup check 2023.1${NC}" | tee check-setup-mds.log
 echo '' | tee -a check-setup-mds.log
 echo 'If a program or package is marked as MISSING,'
 echo 'this means that you are missing the required version of that program or package.'
@@ -23,7 +27,7 @@ echo 'R -q -e "as.data.frame(installed.packages()[,3])"  # For R packages'
 echo '```'
 echo ''
 echo 'Checking program and package versions...'
-echo '## Operating system' >> check-setup-mds.log
+echo "${ORANGE}## Operating system${NC}" >> check-setup-mds.log
 if [[ "$(uname)" == 'Linux' ]]; then
     # sed is for alignment purposes
     sys_info=$(hostnamectl)
@@ -69,7 +73,7 @@ echo '' >> check-setup-mds.log
 # 1. System programs
 # Tries to run system programs and if successful greps their version string
 # Currently marks both uninstalled and wrong verion number as MISSING
-echo "## System programs" >> check-setup-mds.log
+echo "${ORANGE}## System programs${NC}" >> check-setup-mds.log
 
 # There is an esoteric case for .app programs on macOS where `--version` does not work.
 # Also, not all programs are added to path,
@@ -160,7 +164,7 @@ done
 # Greps the `conda list` output for correct version numbers
 # Currently marks both uninstalled and wrong verion number as MISSING
 echo "" >> check-setup-mds.log
-echo "## Python packages" >> check-setup-mds.log
+echo "${ORANGE}## Python packages${NC}" >> check-setup-mds.log
 if ! [ -x "$(command -v conda)" ]; then  # Check that conda exists as an executable program
     echo "Please install 'conda' to check Python package versions." >> check-setup-mds.log
     echo "If 'conda' is installed already, make sure to run 'conda init'" >> check-setup-mds.log
@@ -263,7 +267,7 @@ fi
 # Format R package output similar to above for python and grep for correct version numbers
 # Currently marks both uninstalled and wrong verion number as MISSING
 echo "" >> check-setup-mds.log
-echo "## R packages" >> check-setup-mds.log
+echo "${ORANGE}## R packages${NC}" >> check-setup-mds.log
 if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable program
     echo "Please install 'R' to check R package versions." >> check-setup-mds.log
 else
@@ -333,12 +337,12 @@ rm -f jupyter-html-error.log jupyter-webpdf-error.log jupyter-pdf-error.log
 # Student don't need to see this in stdout, but useful to have in the log-file
 # env
 echo '' >> check-setup-mds.log
-echo "## Environmental variables" >> check-setup-mds.log
+echo "${ORANGE}## Environmental variables${NC}" >> check-setup-mds.log
 env >> check-setup-mds.log
 
 # .bash_profile
 echo '' >> check-setup-mds.log
-echo "## Content of .bash_profile" >> check-setup-mds.log
+echo "${ORANGE}## Content of .bash_profile${NC}" >> check-setup-mds.log
 if ! [ -f ~/.bash_profile ]; then
     echo "~/.bash_profile not found" >> check-setup-mds.log
 else
@@ -347,7 +351,7 @@ fi
 
 # .bashrc
 echo '' >> check-setup-mds.log
-echo "## Content of .bashrc" >> check-setup-mds.log
+echo "${ORANGE}## Content of .bashrc${NC}" >> check-setup-mds.log
 if ! [ -f ~/.bashrc ]; then
     echo "~/.bashrc not found" >> check-setup-mds.log
 else
