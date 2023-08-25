@@ -552,8 +552,10 @@ tlmgr install eurosym \
   jknapltx \
   ms \
   parskip \
+  pdfcol \
   pgf \
   rsfs \
+  soul \
   tcolorbox \
   titling \
   trimspaces \
