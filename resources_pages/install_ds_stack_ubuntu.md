@@ -22,10 +22,10 @@ subtitle: MDS software stack install instructions for Ubuntu 2022/23
 - [Git](#git){:target="_self"}
 - [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab){:target="_self"}
 - [R, IRkernel, and RStudio](#r-irkernel-and-rstudio){:target="_self"}
+- [Quarto CLI](#quarto-cli){:target="_self"}
 - [LaTeX](#latex){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
 - [Docker](#docker){:target="_self"}
-- [Quarto CLI](#quarto-cli){:target="_self"}
 - [VS Code extensions](#vs-code-extensions){:target="_self"}
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
@@ -339,7 +339,7 @@ You should see something like this if you were successful:
 
 ```
 R version 4.3.1 (2023-06-16) -- "Beagle Scouts"
-Copyright (C) 2022 The R Foundation for Statistical Computing
+Copyright (C) 2023 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -479,6 +479,26 @@ and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Ctrl` + `m
 You could add any arbitrary text insertion command the same way,
 but this is all that is required for MDS.
 
+## Quarto CLI
+
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal.
+
+The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
+
+Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for Linux.
+
+After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
+
+```bash
+quarto --version
+```
+
+If the installation was successful you will read the output:
+
+```bash
+1.3.450
+```
+
 ## LaTeX
 
 We will install the lightest possible version of LaTeX and it's necessary packages as possible so that we can render Jupyter notebooks and R Markdown documents to html and PDF. If you have previously installed LaTeX, please uninstall it before proceeding with these instructions.
@@ -613,26 +633,6 @@ After signing-up, you also need to install Docker **CE** for Ubuntu. Install the
 Next, [follow the Linux post installation steps here](https://docs.docker.com/engine/install/linux-postinstall/) so that you can run Docker without typing `sudo`
 (only the subheading "Managing docker as a non-root user").
 Confirm that docker is working by following the verification instructions on that same page.
-
-## Quarto CLI
-
-Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal.
-
-The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
-
-Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for Linux.
-
-After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
-
-```bash
-quarto --version
-```
-
-If the installation was successful you will read the output:
-
-```bash
-1.3.450
-```
 
 ## VS Code extensions
 
