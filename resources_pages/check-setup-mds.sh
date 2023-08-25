@@ -247,7 +247,7 @@ else
         # `$?` stores the exit code of the last program that as executed
         # If the exit code is anything else than zero, it means that the above command failed,
         # i.e. chromium has not been installed via playwright yet
-        if [ $? ]; then
+        if ! [ $? -eq "0" ]; then
             echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you have not run `playwright install chromium` to download chromium for jupyterlab WebPDF export.' >> check-setup-mds.log
         elif ! jupyter nbconvert mds-nbconvert-test.ipynb --to webpdf --log-level 'ERROR' &> jupyter-webpdf-error.log; then
             echo 'MISSING   jupyterlab WebPDF-generation failed. Check that jupyterlab, nbconvert, and playwright are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
