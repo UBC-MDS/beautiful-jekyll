@@ -108,10 +108,10 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
     fi
     # Rstudio on windows does not accept the --version flag when run interactively
     # so this section can only be troubleshot from the script
-    if ! $(grep -iq "2023\.06.*" <<< "$('/c//Program Files/RStudio/bin/rstudio' --version)"); then
+    if ! $(grep -iq "2023\.06.*" <<< "$('/c//Program Files/RStudio/rstudio' --version)"); then
         echo "MISSING   rstudio 2023.06*" >> check-setup-mds.log
     else
-        echo "OK        rstudio "$('/c//Program Files/RStudio/bin/rstudio' --version) >> check-setup-mds.log
+        echo "OK        rstudio "$('/c//Program Files/RStudio/rstudio' --version) >> check-setup-mds.log
     fi
     # tlmgr needs .bat appended on windows and it cannot be tested as an exectuable with `-x`
     if ! [ "$(command -v tlmgr.bat)" ]; then
