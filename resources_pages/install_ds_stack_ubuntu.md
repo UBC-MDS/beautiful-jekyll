@@ -233,7 +233,7 @@ Installing Miniconda will install the latest version of Python. Type the followi
 ```
 python --version
 ```
-Make sure it returns Python 3.10.0 or greater:
+Make sure it returns Python 3.11.0 or greater:
 
 ```
 Python 3.11.4
