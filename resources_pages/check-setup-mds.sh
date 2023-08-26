@@ -43,7 +43,7 @@ if [[ "$(uname)" == 'Linux' ]]; then
 elif [[ "$(uname)" == 'Darwin' ]]; then
     sw_vers >> check-setup-mds.log
     file_browser="open"
-    if ! $(sw_vers | grep -iq "12.\|11.[4|5|6]"); then
+    if ! $(sw_vers | grep -iq "13.\|12.\|11.[4|5|6]"); then
         echo '' >> check-setup-mds.log
         echo "MISSING You need macOS Big Sur or greater (>=11.4)." >> check-setup-mds.log
     fi
