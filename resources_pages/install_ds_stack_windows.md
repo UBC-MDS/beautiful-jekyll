@@ -434,7 +434,7 @@ and the LSP packages fill the same function for our code.
 Install them via the following commands:
 
 ```bash
-conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext
+conda install pandas memory_profiler jupyterlab=4 jupyterlab-git jupyterlab-spellchecker jupytext
 ```
 
 If the above command fails, try installing a few packages at a time instead of all of them at once.
