@@ -239,7 +239,7 @@ else
         if [[ "$(uname)" == 'Darwin' ]]; then
             # The surrounding $() here is just to supress the alarm clock output
             # as redirection does not work.
-            $(perl -e 'alarm shift; exec playwright install chromium' 1)
+            $(perl -e 'alarm shift; exec `playwright install chromium`' 1)
         else
             # Using the reliable `timeout` tool on Linux and Windows
             timeout 1s playwright install chromium &> /dev/null
