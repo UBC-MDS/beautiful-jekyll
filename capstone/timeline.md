@@ -18,7 +18,7 @@ This year's capstone course will run __May - June, 2023__ (~8 weeks).
 | [Partners submit video presentations](#partners-submit-video-presentations)                    | January 18, 2024      |
 | [Capstone fair](#capstone-fair)                                                                | Feb 7, 2024       |
 | [Students rate the projects](#students-rate-the-projects)                                      | Feb 11, 2024     |
-| [Partners demonstrate readiness of data and sign legal docs](#partners-demonstrate-readiness-of-data-and-sign-legal-docs)                                    | February 19, 2023      |
+| [Partners demonstrate readiness of data and sign legal docs](#partners-demonstrate-readiness-of-data-and-sign-legal-docs)                                    | February 19, 2024      |
 | Students are assigned to projects                                                              | Mar 31, 2024     |
 | [Kickoff meetings](#kickoff-meetings)                                                          | April, 2024           |
 | [Project](#project)                                                                            | Apr 29 - June 26, 2024 |
