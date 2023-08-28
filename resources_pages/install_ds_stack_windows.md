@@ -1048,7 +1048,7 @@ bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/mast
 The output from running the script will look something like this:
 
 ```
-# MDS setup check 1.1.0
+# MDS setup check 2023.1
 
 If a program or package is marked as MISSING,
 this means that you are missing the required version of that program or package.
@@ -1058,65 +1058,65 @@ e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.5, etc
 
 You can run the following commands to find out which version
 of a program or package is installed (if any):
-
+```
 name_of_program --version  # For system programs
 conda list  # For Python packages
-R -q -e "installed.packages()[,c(Package, Version)]"  # For R packages
-
+R -q -e "as.data.frame(installed.packages()[,3])"  # For R packages
+```
 
 Checking program and package versions...
 
 ## Operating system
-Microsoft Windows 11 Education
+Microsoft Windows 11 Pro
 64-bit
-10.0.22000
+10.0.22621
+
+MISSING You need Windows 10 or 11 with build number >= 10.0.19041. Please run Windows update.
 
 ## System programs
-OK        psql (PostgreSQL) 14.5
-OK        rstudio 2022.07.1+554
-OK        tlmgr revision 63068 (2022-04-18 07:58:07 +0200)
-OK        R 4.2.1 (2022-06-23 ucrt) -- "Funny-Looking Kid"
-OK        python 3.10.0
-OK        conda 4.13.0
+OK        psql (PostgreSQL) 15.4
+ 2023.06.2+561dio
+OK        tlmgr revision 66798 (2023-04-08 02:15:21 +0200)
+OK        R 4.3.1 (2023-06-16 ucrt) -- "Beagle Scouts"
+OK        python 3.11.4
+OK        conda 23
 OK        bash 4-pc-msys)
-OK        git 2.37.2.windows.2
-OK        make 4.3
-OK        latex 3.141592653-2.6-1.40.24 (TeX Live 2022)
-OK        docker 20.10.17, build 100c701
-OK        code 1.70.1
+OK        git 2.42.0.windows.1
+OK        make 4.4.1
+OK        latex 3.141592653-2.6-1.40.25 (TeX Live 2023)
+OK        docker 24.0.5, build ced0996
+OK        code 1.81.1
 
 ## Python packages
-OK        pandas=1.4.3
-OK        pyppeteer=1.0.2
-OK        nbconvert=6.5.3
-OK        jupyterlab=3.4.5
-OK        jupyterlab-git=0.38.0
-OK        jupytext=1.14.0
-OK        jupyterlab-spellchecker=0.7.2
+OK        otter-grader=5.1.3
+OK        pandas=2.0.3
+OK        nbconvert-core=7.7.4
+OK        playwright=1.37.0
+OK        jupyterlab=4.0.5
+OK        jupyterlab-git=0.41.0
+OK        jupyterlab-spellchecker=0.8.4
 OK        jupyterlab PDF-generation was successful.
 OK        jupyterlab WebPDF-generation was successful.
 OK        jupyterlab HTML-generation was successful.
 
 ## R packages
-OK        tidyverse=1.3.2
-OK        markdown=1.1
-OK        rmarkdown=2.14
-OK        renv=0.15.5
-OK        IRkernel=1.3
-OK        tinytex=0.40
-OK        janitor=2.1.0
-OK        gapminder=0.3.0
-OK        readxl=1.4.0
+OK        tidyverse=2.0.0
+OK        markdown=1.8
+OK        rmarkdown=2.24
+OK        renv=1.0.2
+OK        IRkernel=1.3.2
+OK        tinytex=0.46
+OK        janitor=2.2.0
+OK        gapminder=1.0.0
+OK        readxl=1.4.3
 OK        ottr=1.1.3
 OK        canlang=0.0.1
 OK        rmarkdown PDF-generation was successful.
 OK        rmarkdown HTML-generation was successful.
 
-This output and additional configuration details have been saved to the file /c/Users/Florencia/check-setup-mds.log
+The above output has been saved to the file /c/Users/Danie/check-setup-mds.log
 together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `explorer .` (without the surrounding backticks).
-
-
 ```
 
 As you can see at the end of the output,
