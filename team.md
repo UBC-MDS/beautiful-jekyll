@@ -103,10 +103,10 @@ Gittu George became a part of the MDS team in the spring of 2021. He graduated w
 
 <img src='../img/team/varada.jpeg'  align="left" width="32%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
-Varada Kolhatkar joined the MDS program in October 2018 as a teaching and research postdoctoral fellow. She was born and raised in Pune, India, where she completed her undergraduate degree in Computer Science. After working in industry for two years in India, she pursued her Master’s degree from the University of Minnesota Duluth and a Ph.D. degree from the University of Toronto, both in Computer Science, specializing in Computational Linguistics. Varada spent two years at Simon Fraser University as a post-doctoral fellow, where she developed datasets and computational tools that will help keep online communities engaged in constructive discussions. When Varada is not in the classroom you can find her biking, cooking or in Victoria.  <br>
+Varada Kolhatkar became a part of the MDS program in October 2018, serving as a teaching postdoctoral fellow. During this period, she discovered her passion for teaching, leading her to choose teaching and learning as her long-term career path. In July 2020, she transitioned into the role of an Assistant Professor of Teaching within the Department of Computer Science. Varada's academic journey includes a Master’s degree from the University of Minnesota Duluth and a Ph.D. from the University of Toronto, both in Computer Science with a specialization in Computational Linguistics. Prior to her current position, she spent two years as a postdoctoral fellow at Simon Fraser University. During this time, her work was centered around the development of datasets and computational tools aimed at fostering constructive discussions and engagement within online communities.
 <br>
 
-<i>In the last 6 months, Varada has learned that it's not easy to buy a home in Vancouver.  </i> <br>
+<i>Varada has recently finished a 10-day meditation course during which she learned about [Vipassana meditation](https://www.dhamma.org/en-US/index). She is fascinated by the technique and she aspires to continue her meditation practice in future. </i> <br>
 
 <i>Varada’s favourite data science topic is unsupervised learning.  </i> <br>
 
