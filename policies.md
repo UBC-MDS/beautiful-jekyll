@@ -14,6 +14,10 @@ Attendance in lectures and lab sessions is not mandatory but highly recommended.
 
 **If you are feeling unwell, are experiencing any flu-like symptoms, or have reason to believe you may have Covid-19, please do not come to any in-person meetings including lectures, labs, office hours, or quizzes**.
 
+## Lecture recordings
+
+We do not livestream or require instructors to record their lectures. If you miss a class you can catch up by reviewing lecture notes as well as by talking to peers and asking them to share their notes. When past lecture recordings are available, instructors may grant access to students who were absent for approved reasons only (e.g. illness, jury duty, etc.).
+
 ## Academic concession policy
 
 If you are expecting to miss an assignment or a quiz for a justified reason you can request an academic concession before the deadline. From the UBC Senate [policy on academic concession](https://www.calendar.ubc.ca/vancouver/index.cfm?tree=3,329,0,0), grounds for academic concession can be illness, conflicting responsibilities, or compassionate grounds. Examples of compassionate grounds, from the above policy, include "a traumatic event experienced by the student, a family member, or a close friend; an act of sexual assault or other sexual misconduct experienced by the student, a family member, or a close friend; a death in the family or of a close friend."
