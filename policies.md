@@ -54,7 +54,7 @@ With a few exceptions (which will be communicated to students at the start of a 
 
 ### Late Submissions
 
-A late submission is defined as any work submitted after the deadline. For a late submission, the student will receive a 75% scaling of their grade for the first occurrence, 50% scaling of their grade for the second to fifth occurrences, and will receive a grade of 0 for subsequent occurrences. Late submissions are accumulated throughout the program. 
+A late submission is defined as any work submitted after the deadline. For a late submission, the student will receive a 75% scaling of their grade for the first occurrence, 50% scaling of their grade for the second to fifth occurrences, and will receive a grade of 0 for subsequent occurrences. Late submissions are cumulative throughout the program. 
 
 ### Re-grading
  
