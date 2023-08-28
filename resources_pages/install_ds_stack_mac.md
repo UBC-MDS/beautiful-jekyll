@@ -22,10 +22,10 @@ subtitle: MDS software stack install instructions for macOS 2022/23
 - [Git](#git){:target="_self"}
 - [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab){:target="_self"}
 - [R, XQuartz, IRkernel, and RStudio](#r-xquartz-irkernel-and-rstudio){:target="_self"}
+- [Quarto CLI](#quarto-cli){:target="_self"}
 - [LaTeX](#latex){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
 - [Docker](#docker){:target="_self"}
-- [Quarto CLI](#quarto-cli){:target="_self"}
 - [VS Code extensions](#vs-code-extensions){:target="_self"}
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
@@ -85,7 +85,7 @@ such as not being able to install all the software before the start of the progr
 it is useful to know UBC offers a free online computing environment
 that you can use as a backup to follow along in most of the MDS courses.
 This is called Jupyter Open
-and you can access it by logging into https://open.jupyter.ubc.ca/
+and you can access it by logging into [https://open.jupyter.ubc.ca/](https://open.jupyter.ubc.ca/)
 with your UBC CWL.
 Jupyter Open allow you to work with JupyterLab, R, Python, and Bash,
 and you can install packages via the `conda` and `pip` package managers
@@ -122,7 +122,7 @@ code --version
 you should see something like this if you were successful:
 
 ```
-1.70.1
+1.81.1
 5763d909d5f12fe19f215cbfdd29a91c0fa9208a
 arm64
 ```
@@ -165,7 +165,7 @@ git --version
 you should see something like this (does not have to be the exact same version) if you were successful:
 
 ```
-git version 2.32.1 (Apple Git-133)
+git version 2.39.2 (Apple Git-143)
 ```
 
 > **Note:** If you run into trouble, please see that Install Git > Mac OS section from [Happy Git and GitHub for the useR](http://happygitwithr.com/install-git.html#mac-os) for additional help or strategies for Git installation.
@@ -248,6 +248,8 @@ Select the appropiate link:
 
 **Mac M1 or higher**: [Miniconda MacOS Apple M1 64-bit pkg install for Python **3.x** can be downloaded here.](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.pkg)
 
+> **Note:** on August 24th, 2023 we observed an issue using the latest install link above for "Mac M1 or higher". If you also observe this, then please visit [https://docs.conda.io/en/latest/miniconda-other-installer-links.html#macos-installers](https://docs.conda.io/en/latest/miniconda-other-installer-links.html#macos-installers) and download and install the "Miniconda3 macOS Apple M1 64-bit pkg" installer from the latest (highest) version of Python that you can see listed on that page.
+
 After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
 
 ```bash
@@ -257,16 +259,10 @@ conda --version
 which should return something like this:
 
 ```
-conda 4.12.0
+conda 23.5.2
 ```
 
 > **Note:** If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell){:target="_self"} above to set your default Terminal shell to Bash as opposed to Zsh.
-
-In general, installing Miniconda will install the last version of Python. As the new version of Miniconda with Python 3.10 has not been released yet, as an exception we are going to re-install Python 3.10 separately:
-
-```
-conda install python=3.10
-```
 
 Next, type the following to ask for the version of Python:
 
@@ -274,10 +270,10 @@ Next, type the following to ask for the version of Python:
 python --version
 ```
 
-which should return Python 3.10.0 or greater:
+Make sure it returns Python 3.11.0 or greater:
 
 ```
-Python 3.10.0
+Python 3.11.4
 ```
 
 ## Installing Python packages
@@ -305,8 +301,18 @@ and you can press enter to proceed with the installation.
 If you want to answer `yes` by default and skip this confirmation step,
 you can replace `conda install` with `conda install -y`.
 Also note that we may occasionally need to install packages using `pip`, the standard Python package manager. The installation command is very similar to that of `conda`: `pip install <package-name>`.
-Let's try this out in the next section,
-by installing some of the key packages we will use in MDS.
+
+Let's try this out by installing a package that makes conda faster
+and changing the config to use this package by default:
+
+```bash
+conda install conda-libmamba-solver
+conda config --set solver libmamba
+```
+
+In the next session
+we will use `conda` to install
+some of the key packages we will use in MDS.
 
 ## JupyterLab setup
 
@@ -318,7 +324,7 @@ The spellchecker helps us correcting typos in our writing.
 Install them via the following commands:
 
 ```bash
-conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext  
+conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker  
 ```
 
 We will grade part of your assignments in MDS using the Otter-Grader package. For your Jupyter-based assignments, you need to install Otter-Grader using the following command:
@@ -355,8 +361,8 @@ R --version
 You should see something like this if you were successful:
 
 ```
-R version 4.2.1 (2022-06-23) -- "Funny Looking Kid"
-Copyright (C) 2022 The R Foundation for Statistical Computing
+R version 4.3.1 (2023-06-16) -- "Beagle Scouts"
+Copyright (C) 2023 The R Foundation for Statistical Computing
 Platform: aarch64-apple-darwin20 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -374,9 +380,7 @@ Some R packages rely on the dependency XQuartz which no longer ships with the Ma
 
 ### RStudio
 
-Download the macOS Desktop version (not Pro) of RStudio  [https://rstudio.com/products/rstudio/download/preview/](https://rstudio.com/products/rstudio/download/preview/). Open the file and follow the installer instructions. 
-
-If you are using a Mac M1 or higher the installer is going to ask you automatically to install first a program called Rosetta. Native support for apple silicon is on development and may be released soon.
+Download the macOS Desktop version (not Pro) of RStudio  [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/). Open the file and follow the installer instructions. 
 
 To see if you were successful, try opening RStudio by clicking on its icon (from Finder, Applications or Launchpad). It should open and look something like this picture below:
 
@@ -387,7 +391,7 @@ Go to `Tools > Global Options > Code > Editing` and tick the following option:
 
 ![](/resources_pages/imgs/new-pipe-rstudio.png)
 
-Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works.
+Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works. Close down RStudio afterwards.
 
 ### Installing R packages
 
@@ -399,9 +403,53 @@ typing the following into the R console inside RStudio:
 install.packages(c('tidyverse', 'renv', 'usethis', 'devtools', 'markdown', 'rmarkdown', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
+install.packages("StanHeaders", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
 ```
 
 > **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
+
+## Stan
+
+Stan is the language we will be using later on in the program for Bayesian statistics.
+To install it open RStudio and install `rstan`
+
+Test the installation with:
+
+```r
+example(stan_model, package = "rstan", run.dontrun = TRUE)
+```
+
+The model should then compile and sample.
+Here's a snippet of the output you should see:
+
+```
+SAMPLING FOR MODEL '16a540c6086086816528e4524def24d9' NOW (CHAIN 4).
+Chain 4: 
+Chain 4: Gradient evaluation took 2e-06 seconds
+Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.02 seconds.
+Chain 4: Adjust your expectations accordingly!
+Chain 4: 
+Chain 4: 
+Chain 4: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 4: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 4: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 4: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 4: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 4: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 4: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 4: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 4: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 4: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 4: 
+Chain 4:  Elapsed Time: 0.003828 seconds (Warm-up)
+Chain 4:                0.003417 seconds (Sampling)
+Chain 4:                0.007245 seconds (Total)
+Chain 4: 
+```
+
 
 ### IRkernel
 
@@ -435,7 +483,7 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 To improve the experience of using R in JupyterLab,
 we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
-Go to `Settings -> Advanced Settings Editor -> JSON Settings Editor (top right corner) -> Keyboard Shortcuts`.
+Go to `Settings -> Settings Editor`. Then click `JSON Settings Editor` in the top right corner and click on `Keyboard Shortcuts` in the navigation panel to the left.
 You will see two panels,
 the right-most panel allows you to perform advanced modification
 of keyboards shortcuts in JupyterLab
@@ -447,8 +495,6 @@ and paste the following:
  
 
 ```json
-{
-    "shortcuts": [
         {
             "command": "apputils:run-first-enabled",
             "selector": "body",
@@ -474,9 +520,7 @@ and paste the following:
                 ],
                 "args": {"text": "|> "}
             }
-        }
-    ]
-}
+        },
 ```
 
 After you have pasted this text,
@@ -492,6 +536,25 @@ launch an R notebook,
 and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Cmd` + `m`, respectively.
 You could add any arbitrary text insertion command the same way,
 but this is all that is required for MDS.
+
+## Quarto CLI
+
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal. 
+
+The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
+
+Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for MacOs.
+
+After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
+
+```bash
+quarto --version
+```
+If the installation was successful you will read the output:
+
+```bash
+1.3.450
+```
 
 ## LaTeX
 
@@ -521,18 +584,18 @@ latex --version
 You should see something like this if you were successful:
 
 ```
-pdfTeX 3.14159265-2.6-1.40.21 (TeX Live 2020)
-kpathsea version 6.3.2
-Copyright 2020 Han The Thanh (pdfTeX) et al.
+pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023)
+kpathsea version 6.3.5
+Copyright 2023 Han The Thanh (pdfTeX) et al.
 There is NO warranty.  Redistribution of this software is
 covered by the terms of both the pdfTeX copyright and
 the Lesser GNU General Public License.
 For more information about these matters, see the file
 named COPYING and the pdfTeX source.
 Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-Compiled with libpng 1.6.37; using libpng 1.6.37
-Compiled with zlib 1.2.11; using zlib 1.2.11
-Compiled with xpdf version 4.02
+Compiled with libpng 1.6.39; using libpng 1.6.39
+Compiled with zlib 1.2.13; using zlib 1.2.13
+Compiled with xpdf version 4.04
 ```
 
 The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages. Do this by opening a terminal and copying the following there press enter:
@@ -548,8 +611,10 @@ tlmgr install eurosym \
   jknapltx \
   ms \
   parskip \
+  pdfcol \
   pgf \
   rsfs \
+  soul \
   tcolorbox \
   titling \
   trimspaces \
@@ -563,34 +628,28 @@ tlmgr install eurosym \
 To test that your latex installation is working with jupyter notebooks,
 launch `jupyter lab` from a terminal and open either a new notebook
 or the same one you used to test IRkernel above.
-Go to `File -> Export notebook as... -> Export Notebook to PDF`.
+Go to `File -> Save and Export Notebook as... -> PDF`.
 If the PDF file is created,
 your LaTeX environment is set up correctly.
-
-> **Notes installation 2022/23:** Try to export the notebook as HTML (`File -> Export notebook as... -> Export Notebook to PDF`). If you get [an error](www.github.com/microsoft/vscode-jupyter/issues/9468), downgrade the package `jinja` to the version 3.0.3:
-
-```bash
-pip install jinja2==3.0.3
-```
 
 ### WebPDF export
 
 Jupyter recently added another way to export notebooks to PDF
 which does not require Latex
 and makes the exported PDF look similar to notebooks exported to HTML.
-This requires the `pyppeteer` package,
+This requires the an additional package,
 which we can install as follows.
 
 ```bash
-conda install pyppeteer
-pyppeteer-install
+pip install "nbconvert[webpdf]"
+playwright install chromium
 ```
 
-Try this by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
+Try this by going to `File -> Save and Export Notebook As... -> WebPDF`.
 
 ## PostgreSQL
 
-We will be using PostgreSQL as our database management system. You can download PostgreSQL 14.x from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, **and make sure you save it using a password manager or similar so that you know what it is in November when the SQL course starts** (otherwise you will need to reinstall PostgreSQL). For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
+We will be using PostgreSQL as our database management system. You can download the most recent version of PostgreSQL from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, **and make sure you save it using a password manager or similar so that you know what it is in November when the SQL course starts** (otherwise you will need to reinstall PostgreSQL). For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
 
 To test if the installation was successful open the `SQL Shell` app from the LaunchPad or applications directory. You will be asked to setup your configuration:
 
@@ -643,25 +702,6 @@ Share images, automate workflows, and more with a free Docker ID:
 
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
-```
-
-## Quarto CLI
-
-Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal. 
-
-The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
-
-Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for MacOs.
-
-After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
-
-```bash
-quarto --version
-```
-If the installation was successful you will read the output:
-
-```bash
-1.0.38
 ```
 
 ## VS Code extensions

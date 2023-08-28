@@ -22,10 +22,10 @@ subtitle: MDS software stack install instructions for Ubuntu 2022/23
 - [Git](#git){:target="_self"}
 - [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab){:target="_self"}
 - [R, IRkernel, and RStudio](#r-irkernel-and-rstudio){:target="_self"}
+- [Quarto CLI](#quarto-cli){:target="_self"}
 - [LaTeX](#latex){:target="_self"}
 - [PostgreSQL](#postgresql){:target="_self"}
 - [Docker](#docker){:target="_self"}
-- [Quarto CLI](#quarto-cli){:target="_self"}
 - [VS Code extensions](#vs-code-extensions){:target="_self"}
 - [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
 - [Post-installation notes](#post-installation-notes){:target="_self"}
@@ -83,7 +83,7 @@ such as not being able to install all the software before the start of the progr
 it is useful to know UBC offers a free online computing environment
 that you can use as a backup to follow along in most of the MDS courses.
 This is called Jupyter Open
-and you can access it by logging into https://open.jupyter.ubc.ca/
+and you can access it by logging into [https://open.jupyter.ubc.ca/](https://open.jupyter.ubc.ca/)
 with your UBC CWL.
 Jupyter Open allow you to work with JupyterLab, R, Python, and Bash,
 and you can install packages via the `conda` and `pip` package managers
@@ -103,7 +103,7 @@ code --version
 you should see something like this if you were successful (does not have to be the exact same version):
 
 ```
-1.70.1
+1.81.1
 6d9b74a70ca9c7733b29f0456fd8195364076dda
 x64
 ```
@@ -226,23 +226,17 @@ conda --version
 which should return something like this:
 
 ```
-conda 4.12.0
+conda 23.5.2
 ```
 
-In general, installing Miniconda will install the last version of Python. As the new version of Miniconda with Python 3.10 has not been released yet, as an exception we are going to install Python 3.10 separately:
-
-```
-conda install python=3.10
-```
-
-Next, type the following to ask for the version of Python:
+Installing Miniconda will install the latest version of Python. Type the following to ask for the version of Python:
 ```
 python --version
 ```
-which should return Python 3.10.0 or greater:
+Make sure it returns Python 3.11.0 or greater:
 
 ```
-Python 3.10.0
+Python 3.11.4
 ```
 
 ## Installing Python packages
@@ -270,8 +264,17 @@ and you can press enter to proceed with the installation.
 If you want to answer `yes` by default and skip this confirmation step,
 you can replace `conda install` with `conda install -y`.
 Also note that we may occasionally need to install packages using `pip`, the standard Python package manager. The installation command is very similar to that of `conda`: `pip install <package-name>`.
-Let's try this out in the next section,
-by installing some of the key packages we will use in MDS.
+Let's try this out by installing a package that makes conda faster
+and changing the config to use this package by default:
+
+```bash
+conda install conda-libmamba-solver
+conda config --set solver libmamba
+```
+
+In the next session
+we will use `conda` to install
+some of the key packages we will use in MDS.
 
 ## JupyterLab setup
 
@@ -283,8 +286,10 @@ The spellchecker helps us correcting typos in our writing.
 Install them via the following commands:
 
 ```bash
-conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext
+conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker
 ```
+
+If the above command fails, try installing a few packages at a time instead of all of them at once.
 
 We will grade part of your assignments in MDS using the Otter-Grader package. For your Jupyter-based assignments, you need to install Otter-Grader using the following command:
 
@@ -335,8 +340,8 @@ R --version
 You should see something like this if you were successful:
 
 ```
-R version 4.2.1 (2022-06-23) -- "Funny-Looking Kid"
-Copyright (C) 2022 The R Foundation for Statistical Computing
+R version 4.3.1 (2023-06-16) -- "Beagle Scouts"
+Copyright (C) 2023 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -352,7 +357,7 @@ https://www.gnu.org/licenses/.
 
 ### RStudio
 
-Download the Ubuntu 22 Desktop version (not Pro) of RStudio Preview from [https://rstudio.com/products/rstudio/download/preview/](https://rstudio.com/products/rstudio/download/preview/). Open the file and follow the installer instructions.
+Download the Ubuntu 22 Desktop version (not Pro) of RStudio from [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/). Open the file and follow the installer instructions.
 
 > **Note:** If you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
 
@@ -367,7 +372,7 @@ Go to `Tools > Global Options > Code > Editing` and tick the following option:
 
 ![](/resources_pages/imgs/new-pipe-rstudio.png)
 
-Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works.
+Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works. Close down RStudio afterwards.
 
 ### Installing R packages
 
@@ -378,17 +383,60 @@ sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev libfontconfig1-dev 
 ```
 
 Next, install the key R packages needed for the start of MDS program,
-by opening up RStudio and
+by opening up RStudio again and
 typing the following into the R console inside RStudio
 (the first line might take a long time to run):
 
 ```R
-install.packages(c('tidyverse', 'markdown', 'rmarkdown', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
+install.packages(c('tidyverse', 'renv', 'usethis', 'devtools', 'markdown', 'rmarkdown', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
+install.packages("StanHeaders", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
 ```
 
 > **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
+
+## Stan
+
+Stan is the language we will be using later on in the program for Bayesian statistics.
+To install it open RStudio and install `rstan`
+
+Test the installation with:
+
+```r
+example(stan_model, package = "rstan", run.dontrun = TRUE)
+```
+
+The model should then compile and sample.
+Here's a snippet of the output you should see:
+
+```
+SAMPLING FOR MODEL '16a540c6086086816528e4524def24d9' NOW (CHAIN 4).
+Chain 4: 
+Chain 4: Gradient evaluation took 2e-06 seconds
+Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.02 seconds.
+Chain 4: Adjust your expectations accordingly!
+Chain 4: 
+Chain 4: 
+Chain 4: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 4: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 4: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 4: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 4: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 4: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 4: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 4: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 4: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 4: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 4: 
+Chain 4:  Elapsed Time: 0.003828 seconds (Warm-up)
+Chain 4:                0.003417 seconds (Sampling)
+Chain 4:                0.007245 seconds (Total)
+Chain 4: 
+```
 
 ### IRkernel
 
@@ -423,7 +471,7 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 To improve the experience of using R in JupyterLab,
 we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
-Go to `Settings -> Advanced Settings Editor -> JSON Settings Editor (top right corner) -> Keyboard Shortcuts`.
+Go to `Settings -> Settings Editor`. Then click `JSON Settings Editor` in the top right corner and click on `Keyboard Shortcuts` in the navigation panel to the left.
 You will see two panels,
 the right-most panel allows you to perform advanced modification
 of keyboards shortcuts in JupyterLab
@@ -476,6 +524,26 @@ and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Ctrl` + `m
 You could add any arbitrary text insertion command the same way,
 but this is all that is required for MDS.
 
+## Quarto CLI
+
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal.
+
+The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
+
+Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for Linux.
+
+After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
+
+```bash
+quarto --version
+```
+
+If the installation was successful you will read the output:
+
+```bash
+1.3.450
+```
+
 ## LaTeX
 
 We will install the lightest possible version of LaTeX and it's necessary packages as possible so that we can render Jupyter notebooks and R Markdown documents to html and PDF. If you have previously installed LaTeX, please uninstall it before proceeding with these instructions.
@@ -500,7 +568,7 @@ latex --version
 You should see something like this if you were successful:
 
 ```
-pdfTeX 3.14159265-2.6-1.40.21 (TeX Live 2020)
+pdfTeX 3.14159265-2.6-1.40.25 (TeX Live 2023)
 kpathsea version 6.3.2
 Copyright 2020 Han The Thanh (pdfTeX) et al.
 There is NO warranty.  Redistribution of this software is
@@ -529,8 +597,10 @@ tlmgr install eurosym \
   jknapltx \
   ms \
   parskip \
+  pdfcol \
   pgf \
   rsfs \
+  soul \
   tcolorbox \
   titling \
   trimspaces \
@@ -545,7 +615,7 @@ To test that your latex installation is working with Jupyter notebooks,
 launch `jupyter lab` from the terminal where you confirmed that latex works
 and open either a new notebook
 or the same one you used to test IRkernel above.
-Go to `File -> Export notebook as... -> Export Notebook to PDF`.
+Go to `File -> Save and Export Notebook as... -> PDF`.
 If the PDF file is created,
 your LaTeX environment is set up correctly.
 
@@ -554,23 +624,16 @@ your LaTeX environment is set up correctly.
 Jupyter recently added another way to export notebooks to PDF
 which does not require Latex
 and makes the exported PDF look similar to notebooks exported to HTML.
-This requires the `pyppeteer` package,
+This requires the an additional package,
 which we can install as follows.
 
 ```bash
-conda install pyppeteer
-pyppeteer-install
+pip install "nbconvert[webpdf]"
+playwright install chromium
 ```
 
-Due to [a current bug in pyppeteer](https://github.com/jupyter/nbconvert/issues/1834)
-we also need to disable sandbox mode
-by running the following single line from the terminal:
-
-```
-echo 'c.WebPDFExporter.disable_sandbox = True' > ~/.jupyter/jupyter_nbconvert_config.py && touch ~/.jupyter/jupyter_lab_config.py && echo 'c.WebPDFExporter.disable_sandbox = True' >> ~/.jupyter/jupyter_lab_config.py
-```
-
-Now you can try exporting by going to `File -> Export notebook as... -> Export Notebook to WebPDF`.
+Now you can try exporting by going to 
+`File -> Save and Export Notebook As... -> WebPDF`.
 
 ## PostgreSQL
 
@@ -578,10 +641,10 @@ We will be using PostgreSQL as our database management system.
 Install it via the following command:
 
 ```
-sudo apt install postgresql-14
+sudo apt install postgresql
 ```
 
-> Note: Older version of Ubuntu might not have version 14 of PostgreSQL in the repos.
+> Note: Older version of Ubuntu might not have the latest version of PostgreSQL in the repos.
 > If this is the case for your version
 > you need to follow the instructions in the PostgreSQL documentation
 > to [first add the their repository
@@ -600,7 +663,7 @@ The above should yield the prompt to change to what is shown below
 (the exact minor version does not matter as the major version is 14):
 
 ```
-psql (14.4 (Ubuntu 14.4-0ubuntu0.22.04.1))
+psql (14.9 (Ubuntu 14.9-0ubuntu0.22.04.1))
 Type "help" for help.
 
 postgres=#
@@ -617,26 +680,6 @@ After signing-up, you also need to install Docker **CE** for Ubuntu. Install the
 Next, [follow the Linux post installation steps here](https://docs.docker.com/engine/install/linux-postinstall/) so that you can run Docker without typing `sudo`
 (only the subheading "Managing docker as a non-root user").
 Confirm that docker is working by following the verification instructions on that same page.
-
-## Quarto CLI
-
-Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal.
-
-The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
-
-Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for Linux.
-
-After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
-
-```bash
-quarto --version
-```
-
-If the installation was successful you will read the output:
-
-```bash
-1.0.38
-```
 
 ## VS Code extensions
 
@@ -766,73 +809,78 @@ and to provide instructions for how you can troubleshoot any issues.
 To run this script,
 please execute the following command from your terminal.
 
-```
+````
 bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/master/resources_pages/check-setup-mds.sh)
 ```
 
 The output from running the script will look something like this:
 
-````
-# MDS setup check 1.1.0
+```
+# MDS setup check 2023.1
 
 If a program or package is marked as MISSING,
 this means that you are missing the required version of that program or package.
 Either it is not installed at all or the wrong version is installed.
 The required version is indicated with a number and an asterisk (*),
 e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.5, etc).
-
+ 
 You can run the following commands to find out which version
 of a program or package is installed (if any):
 ```
 name_of_program --version  # For system programs
 conda list  # For Python packages
-R -q -e "installed.packages()[,c(Package, Version)]"  # For R packages
+R -q -e "as.data.frame(installed.packages()[,3])"  # For R packages
 ```
-
+ 
 Checking program and package versions...
-
+ 
 ## Operating system
-Operating System: Ubuntu 20.04
+Operating System: Ubuntu 22.04.1 LTS
 Architecture:     x86-64
-Kernel:           Linux 5.11.0-7620-generic
-
+Kernel:           Linux 6.2.0-26-generic
+ 
 ## System programs
-MISSING   psql 13.*
-OK        rstudio 1.4.1725
-OK        R 4.1.0 (2021-05-18) -- "Camp Pontanezen"
-OK        python 3.10.0
-OK        conda 4.10.3
-OK        bash 5.1.4(1)-release (x86_64-pc-linux-gnu)
-OK        git 2.32.0
+OK        psql 14.9 (Ubuntu 14.9-0ubuntu0.22.04.1)
+OK        rstudio 2023.06.2+561
+OK        R 4.3.1 (2023-06-16) -- "Beagle Scouts"
+OK        python 3.11.4
+OK        conda 23
+OK        bash 5.1.16(1)-release (x86_64-pc-linux-gnu)
+OK        git 2.34.1
 OK        make 4.3
-OK        latex 3.141592653-2.6-1.40.23 (TeX Live 2021)
-OK        tlmgr revision 59291 (2021-05-21 05:14:40 +0200)
-OK        docker 20.10.7, build f0df350
-OK        code 1.58.2
-
+OK        latex 3.141592653-2.6-1.40.25 (TeX Live 2023)
+OK        tlmgr 5:21 +0200)
+OK        docker 24.0.5, build ced0996
+OK        code 1.81.1
+ 
 ## Python packages
-MISSING   jupyterlab=3.*
-OK        pandas=1.3.0
-OK        flake8=3.9.2
-MISSING   black=21.*
-MISSING   nodejs=15.*
-OK        jupytext=1.11.4
-OK        jupyterlab-git=0.30.1
+OK        otter-grader=5.1.3
+OK        pandas=2.0.3
+OK        nbconvert-core=7.7.4
+OK        playwright=1.37.0
+OK        jupyterlab=4.0.5
+OK        jupyterlab-git=0.41.0
+OK        jupyterlab-spellchecker=0.8.4
 OK        jupyterlab PDF-generation was successful.
 OK        jupyterlab WebPDF-generation was successful.
 OK        jupyterlab HTML-generation was successful.
-
+ 
 ## R packages
-OK        tidyverse=1.3.1
-OK        blogdown=1.3
-OK        xaringan=0.22
-OK        renv=0.13.2
-OK        IRkernel=1.2
-OK        tinytex=0.32
+OK        tidyverse=2.0.0
+OK        markdown=1.8
+OK        rmarkdown=2.24
+OK        renv=1.0.2
+OK        IRkernel=1.3.2
+OK        tinytex=0.46
+OK        janitor=2.2.0
+OK        gapminder=1.0.0
+OK        readxl=1.4.3
+OK        ottr=1.1.3
+OK        canlang=0.0.1
 OK        rmarkdown PDF-generation was successful.
 OK        rmarkdown HTML-generation was successful.
-
-The above output has been saved to the file /home/joel/check-setup-mds.log
+ 
+The above output has been saved to the file /home/vboxuser/check-setup-mds.log
 together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `xdg-open .` (without the surrounding backticks).
 ````
