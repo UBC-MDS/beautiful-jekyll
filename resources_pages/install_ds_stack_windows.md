@@ -101,12 +101,15 @@ In MDS we will use the publicly available [GitHub.com](https://github.com/) as w
 
 Sign up for a free account at [GitHub.com](https://github.com/) if you don't have one already.
 
-### GitHub.ubc.ca
+#### GitHub.ubc.ca
 
-To add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login to [Github.ubc.ca](https://github.ubc.ca) using your CWL credentials.
+To add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to follow the instructions below:
+
+1. navigate to [https://activate.github.ubc.ca](https://activate.github.ubc.ca) and login with your CWL to setup their access
+2. **wait 20 minutes**
+3. login to [Github.ubc.ca](https://github.ubc.ca) using your CWL credentials
 
 This step is required for
-
 - being able to store your work
 - all homework submission and grading
 - working collaboratively
