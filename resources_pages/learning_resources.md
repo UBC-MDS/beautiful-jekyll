@@ -28,8 +28,10 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 
 ### Statistics and Probability
 - [Fat Chance: Probability from the Ground Up](https://www.edx.org/course/fat-chance-probability-ground-up-1), from Harvard U. (edX)
-- [Introduction to Probability and Data](https://www.coursera.org/learn/probability-intro) with R, from Duke U. (Coursera)
 - [Basic Statistics](https://www.coursera.org/learn/basic-statistics), from University of Amsterdam (Coursera)
+- [Seeing Theory](http://students.brown.edu/seeing-theory/#secondPage) (highly recommended)
+- [Probability & Statistics — Open Learning Initiative](https://oli.cmu.edu/courses/probability-statistics-open-free/), from Carnegie Mellon University
+- [Statistics and Probability](https://www.khanacademy.org/math/statistics-probability) from Khan Academy
 
 ### Calculus
 - (Highly recommended) [Essence of calculus](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) (YouTube series)
