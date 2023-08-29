@@ -19,11 +19,12 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) by Jake VanderPlas
 - [Codeacademy Learn Python 3](https://www.codecademy.com/learn/learn-python-3) (paid content but they have a free trial)
 - [Python Principles](https://pythonprinciples.com/) (learning basics via coding)
+- [Programming in Python for Data Science](https://prog-learn.mds.ubc.ca/) online course open lectures by Michael Gelbart, Hayley Boyce and Tiffany Timbers
 
 ### R
-- [R for Data Science](https://r4ds.had.co.nz/)
-- [R Programming](https://www.coursera.org/learn/r-programming), from Johns Hopkins U. (Courera)
-- [Codecademy Learn R](https://www.codecademy.com/learn/learn-r)
+- [Data Science: A First Introduction](https://datasciencebook.ca/) by Tiffany Timbers, Trevor Campbell and Melissa Lee
+- [R for Data Science](https://r4ds.hadley.nz/) by Hadley Wickham, Mine Cetinkaya-Rundel and Garett Grolemund
+- [R Programming](https://www.coursera.org/learn/r-programming), online courses from Johns Hopkins U. (Courera)
 
 ### Statistics and Probability
 - [Fat Chance: Probability from the Ground Up](https://www.edx.org/course/fat-chance-probability-ground-up-1), from Harvard U. (edX)
