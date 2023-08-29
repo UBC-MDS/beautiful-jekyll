@@ -4,14 +4,13 @@ title: Learning Resources
 subtitle: Optional extra preparation for entering UBC MDS students
 ---
 
-The following is a list of online courses and other resources that might be useful preparation for the UBC MDS program. Completion of these courses
+The following is a list of online resources that might be useful preparation for the UBC MDS program. Completion of these courses
 does not replace the [official program prerequisites](http://masterdatascience.science.ubc.ca/admissions). Rather, this page is
 mainly intended for entering students who may wish to reinforce their preparation before the program starts.
+Many of these resources can also be helpful resources during the program. Highly recommended items are in bold.
 
-Disclaimer: We have not vetted these courses ourselves but rather selected them based on their descriptions seeming appropriate. 
+Disclaimer: We have not vetted all these resources ourselves, but rather selected them based on a combination of our experience, recommendation from colleagues, and the resources descriptions.
 If you have feedback about them, please [let us know](http://masterdatascience.science.ubc.ca/contact-us).
-
-
 
 ### Python
 - [Programming for Everybody](https://www.py4e.com/) by Chuck Severance (online book & [Youtube lectures](https://www.youtube.com/watch?v=8DvywoWv6fI&t=9009s))
@@ -32,13 +31,13 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 - [Basic Statistics](https://www.coursera.org/learn/basic-statistics), from University of Amsterdam (Coursera)
 
 ### Calculus
-- (Highly recommended) [Essence of calculus](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) (YouTube series)
+- **[Essence of calculus](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) (YouTube series)**
 - [Calculus One](https://www.coursera.org/learn/calculus1), from The Ohio State University (Coursera)
 - Calculus: Single Variable, [Part 1](https://www.coursera.org/learn/single-variable-calculus), [Part 2](https://www.coursera.org/learn/differentiation-calculus), [Part 3](https://www.coursera.org/learn/integration-calculus) from U. Pennsylvania (Coursera)
 - Calculus 1, [Differentiation](https://www.edx.org/course/calculus-1a-differentiation-mitx-18-01-1x) and [Integration](https://www.edx.org/course/calculus-1b-integration-mitx-18-01-2x) from MIT (edX)
 
 ### Linear algebra
-- (Highly recommended) [Essence of linear algebra](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) (YouTube series)
+- **[Essence of linear algebra](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) (YouTube series)**
 - [MIT A 2020 Vision of Linear Algebra, Spring 2020 by Gilbert Strang](https://github.ubc.ca/MDS-2023-24/DSCI_563_unsup-learn_instructors/issues/80)
 - [Immersive linear algebra](http://immersivemath.com/ila/index.html), interactive e-book
 - [Linear Algebra Refresher Course](https://www.udacity.com/course/linear-algebra-refresher-course--ud953) with Python (Udacity).
@@ -49,8 +48,7 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 - [Writing in the Sciences](https://www.classcentral.com/course/sciwrite-464) by Standford via Coursera (free to audit)
 
 ### General
-- [Data Analysis for the Life Sciences](https://leanpub.com/dataanalysisforthelifesciences) by Rafael A Irizarry and Michael I Love (has a suggested price but can be accessed for $0)
-- A variety of [free O'Reilly Ebooks on data science](http://www.oreilly.com/data/free/archive.html)
-- A list of data science textbooks, curated by an MDS alum, is available [here](https://www.notion.so/virtuallibrary/Textbook-References-e8afb919d3454759a731bda6e06a442d).
-- [Dataquest](https://www.dataquest.io/)
-- [Data Gymnasia](https://mathigon.org/data-gymnasia) from Brown University
+- **[StatQuest](https://statquest.org/video-index/), introductory intuition of many statistical topics through entertaining videos.**
+- [An Introduction to Statistical Learning](https://www.statlearning.com/), introductory theory and intuition with applications in both R and Python.
+- [3Blue1Brown](https://www.3blue1brown.com/), similar to StatQuest but more focus on Math and deeper explanations.
+- A [comprehensive list of data science textbooks](https://www.notion.so/virtuallibrary/Textbook-References-e8afb919d3454759a731bda6e06a442d) curated by an MDS alum.
