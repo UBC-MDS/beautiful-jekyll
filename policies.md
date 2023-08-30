@@ -124,6 +124,12 @@ Students must correctly cite any code that has been authored by someone else or 
 
 An “adequate acknowledgement” requires a detailed identification of the (parts of the) code reused and a full citation of the original source code that has been reused.
 
+## Use of LLMs
+
+- Use of LLMs on quizzes in MDS will be strictly prohibited. The purpose of our quizzes is to test your knowledge, not the LLMs.
+- In some assignments in MDS you will be explicitly asked to use LLMs so that you get practice working with them.
+- If you are not asked to use an LLM to solve a problem in MDS, you probably shouldn’t use them to directly solve the problem. By doing so you are only cheating yourself of the practice and learning you would get by solving the problem yourself.
+
 ## Leaves of Absence (medical or personal)
 
 Students in good academic standing may request long-term academic leave from the program for medical or personal reasons and return, within a year, to complete the MDS program. These requests must be discussed and submitted in writing to the MDS Leadership Team well in advance. Leaves can only start at the beginning of a term, which for MDS, is January 1st. It is also possible that the MDS course offerings and orders change from year-to-year. Hence, students who are on leave from the program may have to take their outstanding courses in in a different order than expected. Please be aware that fees and other costs (loss of student loans and bursaries) may apply depending on individual situations.
