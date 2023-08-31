@@ -5,7 +5,7 @@ subtitle: For MDS Capstone Projects
 
 ---
 
-This year's capstone course will run __May - June, 2023__ (~8 weeks).
+This year's capstone course will run __May - June, 2024__ (~8 weeks).
 
 **The soft deadline for UBC Capstone proposals is Nov 1st. And the hard deadline is Nov 30th.** Proposals sent in by Nov 1st will receive feedback (that will hopefully increase their chances of being selected).
 
