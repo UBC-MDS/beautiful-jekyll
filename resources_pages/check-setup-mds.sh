@@ -80,10 +80,10 @@ echo -e "${ORANGE}## System programs${NC}" >> check-setup-mds.log
 # so easier to test the location of the executable than having students add it to PATH.
 if [[ "$(uname)" == 'Darwin' ]]; then
     # psql is not added to path by default
-    if ! [ -x "$(command -v /Library/PostgreSQL/15/bin/psql)" ]; then
-        echo "MISSING   postgreSQL 15.*" >> check-setup-mds.log
+    if ! [ -x "$(command -v /Library/PostgreSQL/1{5,6}/bin/psql)" ]; then
+        echo "MISSING   postgreSQL 15.* or 16.*" >> check-setup-mds.log
     else
-        echo "OK        "$(/Library/PostgreSQL/15/bin/psql --version) >> check-setup-mds.log
+        echo "OK        "$(/Library/PostgreSQL/1{5,6}/bin/psql --version) >> check-setup-mds.log
     fi
 
     # rstudio is installed as an .app
@@ -101,10 +101,10 @@ if [[ "$(uname)" == 'Darwin' ]]; then
     sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* docker=24.* code=1.*)
 # psql and Rstudio are not on PATH in windows
 elif [[ "$OSTYPE" == 'msys' ]]; then
-    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/15/bin/psql')" ]; then
-        echo "MISSING   psql 15.*" >> check-setup-mds.log
+    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/1{5,6}/bin/psql')" ]; then
+        echo "MISSING   psql 15.* or 16.*" >> check-setup-mds.log
     else
-        echo "OK        "$('/c/Program Files/PostgreSQL/15/bin/psql' --version) >> check-setup-mds.log
+        echo "OK        "$('/c/Program Files/PostgreSQL/1{5,6}/bin/psql' --version) >> check-setup-mds.log
     fi
     # Rstudio on windows does not accept the --version flag when run interactively
     # so this section can only be troubleshot from the script
