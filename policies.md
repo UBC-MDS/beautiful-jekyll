@@ -85,17 +85,16 @@ Balancing these two sides is difficult. In MDS the policy is as follows: if a gr
 
 ## Quiz policies
 
-Unless otherwise specified, MDS quizzes are open-book. This means it is permitted to use any materials such as course notes,
-the internet, software documentation, etc. 
+Unless otherwise specified, MDS quizzes are **closed book**, with allowance of a double-sided A4 cheatsheet. You may only access Canvas during the quiz.
 
-**However, it is NOT permitted to communicate with anyone else, including via posting quiz questions on internet forums, during a quiz.**
+**It is NOT permitted to communicate with anyone else, including via posting quiz questions on internet forums, during a quiz.**
 
 **Use of AI tools (e.g., ChatGPT) is also strictly prohibited and can lead to serious consequences.**
 
 The following are also **NOT** permitted:
 
 - taking a quiz from a remote location
-- leaving the quiz room early with your laptop
+- leaving the quiz room early
 - leaving and re-entering the quiz room (unless approved by the instructor, please talk to the instructor before the quiz if you think you might have to leave the room during the quiz)
 
 Failing to observe the above expectations may result in a zero grade for the quiz in question.
