@@ -56,10 +56,6 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
     os_version=${os_version_full%%.*}  # Major version (before the first dot)
     os_build=${os_version_full##*.}    # Build number (after the last dot)
 
-    if [[ $os_edition =~ "Home" ]]; then
-        echo '' >> check-setup-mds.log
-        echo "MISSING Windows Home is not sufficient. Please upgrade to the free Education edition as per the setup instructions." >> check-setup-mds.log
-    fi
     if [[ $os_version -eq 10 && $os_build -lt 19041 ]]; then
         echo '' >> check-setup-mds.log
         echo "MISSING You need Windows 10 or 11 with build number >= 10.0.19041. Please run Windows update." >> check-setup-mds.log
