@@ -4,9 +4,13 @@
 # The version number represents <Year>.<Patch>
 # since we usually iterate on the script once per year just before the semester starts.
 
+# Use colors for headings for clarity
+ORANGE='\033[0;33m'
+NC='\033[0m' # No Color
+
 # 0. Help message and OS info
 echo ''
-echo "# MDS setup check 2022.1" | tee check-setup-mds.log
+echo -e "${ORANGE}# MDS setup check 2023.1${NC}" | tee check-setup-mds.log
 echo '' | tee -a check-setup-mds.log
 echo 'If a program or package is marked as MISSING,'
 echo 'this means that you are missing the required version of that program or package.'
@@ -19,11 +23,11 @@ echo 'of a program or package is installed (if any):'
 echo '```'
 echo 'name_of_program --version  # For system programs'
 echo 'conda list  # For Python packages'
-echo 'R -q -e "installed.packages()[,c('Package', 'Version')]"  # For R packages'
+echo 'R -q -e "as.data.frame(installed.packages()[,3])"  # For R packages'
 echo '```'
 echo ''
 echo 'Checking program and package versions...'
-echo '## Operating system' >> check-setup-mds.log
+echo -e "${ORANGE}## Operating system${NC}" >> check-setup-mds.log
 if [[ "$(uname)" == 'Linux' ]]; then
     # sed is for alignment purposes
     sys_info=$(hostnamectl)
@@ -39,7 +43,7 @@ if [[ "$(uname)" == 'Linux' ]]; then
 elif [[ "$(uname)" == 'Darwin' ]]; then
     sw_vers >> check-setup-mds.log
     file_browser="open"
-    if ! $(sw_vers | grep -iq "12.\|11.[4|5|6]"); then
+    if ! $(sw_vers | grep -iq "13.\|12.\|11.[4|5|6]"); then
         echo '' >> check-setup-mds.log
         echo "MISSING You need macOS Big Sur or greater (>=11.4)." >> check-setup-mds.log
     fi
@@ -55,7 +59,6 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
 
     os_version=${os_version_full%%.*}  # Major version (before the first dot)
     os_build=${os_version_full##*.}    # Build number (after the last dot)
-
     if [[ $os_version -eq 10 && $os_build -lt 19041 ]]; then
         echo '' >> check-setup-mds.log
         echo "MISSING You need Windows 10 or 11 with build number >= 10.0.19041. Please run Windows update." >> check-setup-mds.log
@@ -68,45 +71,45 @@ echo '' >> check-setup-mds.log
 # 1. System programs
 # Tries to run system programs and if successful greps their version string
 # Currently marks both uninstalled and wrong verion number as MISSING
-echo "## System programs" >> check-setup-mds.log
+echo -e "${ORANGE}## System programs${NC}" >> check-setup-mds.log
 
 # There is an esoteric case for .app programs on macOS where `--version` does not work.
 # Also, not all programs are added to path,
 # so easier to test the location of the executable than having students add it to PATH.
 if [[ "$(uname)" == 'Darwin' ]]; then
     # psql is not added to path by default
-    if ! [ -x "$(command -v /Library/PostgreSQL/14/bin/psql)" ]; then
-        echo "MISSING   postgreSQL 14.*" >> check-setup-mds.log
+    if ! [ -x "$(command -v /Library/PostgreSQL/15/bin/psql)" ]; then
+        echo "MISSING   postgreSQL 15.*" >> check-setup-mds.log
     else
-        echo "OK        "$(/Library/PostgreSQL/14/bin/psql --version) >> check-setup-mds.log
+        echo "OK        "$(/Library/PostgreSQL/15/bin/psql --version) >> check-setup-mds.log
     fi
 
     # rstudio is installed as an .app
-    if ! $(grep -iq "= \"2022\.07.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)"); then
-        echo "MISSING   rstudio 2022.07.*" >> check-setup-mds.log
+    if ! $(grep -iq "= \"2023\.06.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)"); then
+        echo "MISSING   rstudio 2023.06.*" >> check-setup-mds.log
     else
         # This is what is needed instead of --version
-        installed_version_tmp=$(grep -io "= \"2022\.07.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)")
+        installed_version_tmp=$(grep -io "= \"2023\.06.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)")
         # Tidy strangely formatted version number
         installed_version=$(sed "s/= //;s/\"//g" <<< "$installed_version_tmp")
         echo "OK        "rstudio $installed_version >> check-setup-mds.log
     fi
 
     # Remove rstudio and psql from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* docker=20.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* docker=24.* code=1.*)
 # psql and Rstudio are not on PATH in windows
 elif [[ "$OSTYPE" == 'msys' ]]; then
-    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/14/bin/psql')" ]; then
-        echo "MISSING   psql 14.*" >> check-setup-mds.log
+    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/15/bin/psql')" ]; then
+        echo "MISSING   psql 15.*" >> check-setup-mds.log
     else
-        echo "OK        "$('/c/Program Files/PostgreSQL/14/bin/psql' --version) >> check-setup-mds.log
+        echo "OK        "$('/c/Program Files/PostgreSQL/15/bin/psql' --version) >> check-setup-mds.log
     fi
     # Rstudio on windows does not accept the --version flag when run interactively
     # so this section can only be troubleshot from the script
-    if ! $(grep -iq "2022\.07.*" <<< "$('/c//Program Files/RStudio/bin/rstudio' --version)"); then
-        echo "MISSING   rstudio 2022.07*" >> check-setup-mds.log
+    if ! $(grep -iq "2023\.06.*" <<< "$('/c//Program Files/RStudio/rstudio' --version)"); then
+        echo "MISSING   rstudio 2023.06*" >> check-setup-mds.log
     else
-        echo "OK        rstudio "$('/c//Program Files/RStudio/bin/rstudio' --version) >> check-setup-mds.log
+        echo "OK        rstudio "$('/c//Program Files/RStudio/rstudio' --version) >> check-setup-mds.log
     fi
     # tlmgr needs .bat appended on windows and it cannot be tested as an exectuable with `-x`
     if ! [ "$(command -v tlmgr.bat)" ]; then
@@ -115,11 +118,11 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
         echo "OK        "$(tlmgr.bat --version | head -1) >> check-setup-mds.log
     fi
     # Remove rstudio from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=4.* git=2.* make=4.* latex=3.* docker=20.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=4.* git=2.* make=4.* latex=3.* docker=24.* code=1.*)
 else
     # For Linux everything is sane and consistent so all packages can be tested the same way
-    sys_progs=(psql=14.* rstudio=2022\.07.* R=4.* python=3.* conda="23\|22\|4.*" bash=5.* \
-        git=2.* make=4.* latex=3.* tlmgr=5.* docker=20.* code=1.*)
+    sys_progs=(psql=14.* rstudio=2023\.06.* R=4.* python=3.* conda="23\|22\|4.*" bash=5.* \
+        git=2.* make=4.* latex=3.* tlmgr=5.* docker=24.* code=1.*)
     # Note that the single equal sign syntax in used for `sys_progs` is what we have in the install
     # instruction for conda, so I am using it for Python packagees so that we
     # can just paste in the same syntax as for the conda installations
@@ -159,7 +162,7 @@ done
 # Greps the `conda list` output for correct version numbers
 # Currently marks both uninstalled and wrong verion number as MISSING
 echo "" >> check-setup-mds.log
-echo "## Python packages" >> check-setup-mds.log
+echo -e "${ORANGE}## Python packages${NC}" >> check-setup-mds.log
 if ! [ -x "$(command -v conda)" ]; then  # Check that conda exists as an executable program
     echo "Please install 'conda' to check Python package versions." >> check-setup-mds.log
     echo "If 'conda' is installed already, make sure to run 'conda init'" >> check-setup-mds.log
@@ -167,7 +170,7 @@ if ! [ -x "$(command -v conda)" ]; then  # Check that conda exists as an executa
     echo "In order to do this after the installation process," >> check-setup-mds.log
     echo "first run 'source <path to conda>/bin/activate' and then run 'conda init'." >> check-setup-mds.log
 else
-    py_pkgs=(otter-grader=4 pandas=1 pyppeteer=1 nbconvert=7 jupyterlab=3 jupyterlab-git=0 jupytext=1 jupyterlab-spellchecker=0)
+    py_pkgs=(otter-grader=5 pandas=2 nbconvert-core=7 playwright=1 jupyterlab=4 jupyterlab-git=0 jupyterlab-spellchecker=0)
     # installed_py_pkgs=$(pip freeze)
     installed_py_pkgs=$(conda list | tail -n +4 | tr -s " " "=" | cut -d "=" -f -2)
     for py_pkg in ${py_pkgs[@]}; do
@@ -218,10 +221,10 @@ else
     # Test WebPDF
     # I don't want to automate any of the installation steps since it can be harder to troubleshoot then,
     # so we just output and error message telling students is the most probable cause of the failure.
-    if ! [ -x "$(command -v pyppeteer-install)" ]; then  # Check that pyppeteer-install exists as an executable program
-        echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you did not run `pip install "nbconvert[webpdf]"` to install pyppeteer.' >> check-setup-mds.log
+    if ! [ -x "$(command -v playwright)" ]; then  # Check that playwright exists as an executable program
+        echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you did not run `pip install "nbconvert[webpdf]"`.' >> check-setup-mds.log
     else
-        # If the student didn't run `pypeteer-install`
+        # If the student didn't run `playwright install chromium`
         # then that command will try to download chromium,
         # which should always take more than 1s
         # so `timeout` will interupt it with exit code 1.
@@ -234,16 +237,18 @@ else
         if [[ "$(uname)" == 'Darwin' ]]; then
             # The surrounding $() here is just to supress the alarm clock output
             # as redirection does not work.
-            $(perl -e 'alarm shift; exec pyppeteer-install' 1)
+            $(perl -e 'alarm shift; exec `playwright install chromium`' 1)
         else
             # Using the reliable `timeout` tool on Linux and Windows
-            timeout 1s pyppeteer-install &> /dev/null
+            timeout 1s playwright install chromium &> /dev/null
         fi
         # `$?` stores the exit code of the last program that as executed
-        if ! [ $? ]; then
-            echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you have not run `pyppeteer-install` to download chromium for jupyterlab WebPDF export.' >> check-setup-mds.log
+        # If the exit code is anything else than zero, it means that the above command failed,
+        # i.e. chromium has not been installed via playwright yet
+        if ! [ $? -eq "0" ]; then
+            echo 'MISSING   jupyterlab WebPDF-generation failed. It seems like you have not run `playwright install chromium` to download chromium for jupyterlab WebPDF export.' >> check-setup-mds.log
         elif ! jupyter nbconvert mds-nbconvert-test.ipynb --to webpdf --log-level 'ERROR' &> jupyter-webpdf-error.log; then
-            echo 'MISSING   jupyterlab WebPDF-generation failed. Check that jupyterlab, nbconvert, and pyppeteer are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
+            echo 'MISSING   jupyterlab WebPDF-generation failed. Check that jupyterlab, nbconvert, and playwright are marked OK above, then read the detailed error message in the log file.' >> check-setup-mds.log
         else
             echo 'OK        jupyterlab WebPDF-generation was successful.' >> check-setup-mds.log
         fi
@@ -262,11 +267,11 @@ fi
 # Format R package output similar to above for python and grep for correct version numbers
 # Currently marks both uninstalled and wrong verion number as MISSING
 echo "" >> check-setup-mds.log
-echo "## R packages" >> check-setup-mds.log
+echo -e "${ORANGE}## R packages${NC}" >> check-setup-mds.log
 if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable program
     echo "Please install 'R' to check R package versions." >> check-setup-mds.log
 else
-    r_pkgs=(tidyverse=1 markdown=1 rmarkdown=2 renv=0 IRkernel=1 tinytex=0 janitor=2 gapminder=0 readxl=1 ottr=1 canlang=0)
+    r_pkgs=(tidyverse=2 markdown=1 rmarkdown=2 renv=1 IRkernel=1 tinytex=0 janitor=2 gapminder=1 readxl=1 ottr=1 canlang=0)
     installed_r_pkgs=$(R -q -e "print(format(as.data.frame(installed.packages()[,c('Package', 'Version')]), justify='left'), row.names=FALSE)" | grep -v "^>" | tail -n +2 | sed 's/^ //;s/ *$//' | tr -s ' ' '=')
     for r_pkg in ${r_pkgs[@]}; do
         if ! $(grep -iq "$r_pkg" <<< $installed_r_pkgs); then
@@ -285,12 +290,12 @@ if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable prog
 else
     # Create an empty Rmd-file for testing
     touch mds-knit-pdf-test.Rmd
-    if ! Rscript -e "rmarkdown::find_pandoc(dir = c('/usr/bin/rstudio/bin/quarto/bin/tools', 'C:/Program Files/RStudio/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools'), cache=F); rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
+    if ! Rscript -e "rmarkdown::find_pandoc(dir = c('/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools'), cache=F); rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
         echo "MISSING   rmarkdown PDF-generation failed. Check that latex and rmarkdown are marked OK above." >> check-setup-mds.log
     else
         echo 'OK        rmarkdown PDF-generation was successful.' >> check-setup-mds.log
     fi
-    if ! Rscript -e "rmarkdown::find_pandoc(dir = c('/usr/bin/rstudio/bin/quarto/bin/tools', 'C:/Program Files/RStudio/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools'), cache=F); rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'html_document')" &> /dev/null; then
+    if ! Rscript -e "rmarkdown::find_pandoc(dir = c('/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools'), cache=F); rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'html_document')" &> /dev/null; then
         echo "MISSING   rmarkdown HTML-generation failed. Check that rmarkdown is marked OK above." >> check-setup-mds.log
     else
         echo 'OK        rmarkdown HTML-generation was successful.' >> check-setup-mds.log
@@ -332,12 +337,12 @@ rm -f jupyter-html-error.log jupyter-webpdf-error.log jupyter-pdf-error.log
 # Student don't need to see this in stdout, but useful to have in the log-file
 # env
 echo '' >> check-setup-mds.log
-echo "## Environmental variables" >> check-setup-mds.log
+echo -e "${ORANGE}## Environmental variables${NC}" >> check-setup-mds.log
 env >> check-setup-mds.log
 
 # .bash_profile
 echo '' >> check-setup-mds.log
-echo "## Content of .bash_profile" >> check-setup-mds.log
+echo -e "${ORANGE}## Content of .bash_profile${NC}" >> check-setup-mds.log
 if ! [ -f ~/.bash_profile ]; then
     echo "~/.bash_profile not found" >> check-setup-mds.log
 else
@@ -346,7 +351,7 @@ fi
 
 # .bashrc
 echo '' >> check-setup-mds.log
-echo "## Content of .bashrc" >> check-setup-mds.log
+echo -e "${ORANGE}## Content of .bashrc${NC}" >> check-setup-mds.log
 if ! [ -f ~/.bashrc ]; then
     echo "~/.bashrc not found" >> check-setup-mds.log
 else

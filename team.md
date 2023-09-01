@@ -11,11 +11,11 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 
 ## Team Stats
 
-- **11** : The total number of different languages we speak (including Spanish, Kurdish, Vietnamese, Mandarin, Swedish and Marathi)
-- **13** : The total number of coding languages we have experience working with as a whole.
+- **10** : The total number of different languages we speak (including Hindi, Japanese, Malayalam, Mandarin, Marathi, Spanish, Swedish, and Vietnamese)
+- **15** : The total number of coding languages we have experience working with as a whole.
 - **8** : The number of different countries our team cheers for during the Olympics.
-- **7.4** : The average number of years our team has of teaching experience (with a standard deviation of 2.1). 
-- **11** : The median number of postsecondary education years our team has studied. 
+- **5.4** : The average number of years our team has of teaching experience (with a standard deviation of 2.2).
+- **10** : The median number of postsecondary education years our team has studied.
 
 
 ## Team Facts
@@ -27,23 +27,23 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 
 ## The Team 
 
+#### Katie Burak, Assistant Professor of Teaching
 
-#### Florencia D'Andrea, Postdoctoral Research and Teaching Fellow
-
-<img src='../img/team/florencia.jpg'   align="left" width="32%" style="margin-right: 5px;"/>
+<img src='../img/team/katie.jpg'   align="left" width="33.4%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
-Florencia D'Andrea joined the MDS team at UBC in the summer of 2021. Florencia's field of work has been ecotoxicology, specializing in Pesticide Risk Assessment. She studied at the University of Buenos Aires where she obtained her Bachelor's, and Doctorate in Biology. During her PhD, she worked with multiple databases and used a model to simulate the environmental fate of pesticides. 
-Florencia has a teaching degree at the University the Buenos Aires. She has been an instructor for The Carpentries and is an RStudio Certified Trainer for Tidyverse and Shiny. When Florencia is not teaching or working, she can be found listening to podcasts, hiking or doing yoga.  <br>
+Katie joined UBC and began her role with MDS in July 2023. She completed her PhD in Statistics at the University of Alberta where her academic work focused on increasing the computational efficiency of nonparametric approaches such as bootstrapping using concentration of measure. She has previously organized a variety of outreach events such as data science camps and has a passion for statistical education and community outreach. When Katie is not teaching, you can find her hiking, skiing or playing tennis. <br>
 <br>
 
-<i>In the last 6 months, Florencia has gained experience developing Shiny apps.</i> <br>
+<i>In the last 6 months, Katie has learned how incredible the trails are in Pacific Spirit Park.</i> <br>
 
-<i>Florencia's favourite data science topics are visualization, reproducibility and software development. </i> <br>
+<i>Katie's favourite data science topics involve the applications of statistics, such as modelling and statistical inference.</i> <br>
 
-<a href="https://florencia.netlify.app/" target="_blank">Learn more about Florencia here.</a>
+<a href="https://www.linkedin.com/in/katie-burak-a9a12615b/?originalSubdomain=ca" target="_blank">Learn more about Katie here.</a>
 
 </p>
 
+<br>
+<br>
 
 #### Daniel Chen, Postdoctoral Research and Teaching Fellow
 
@@ -80,21 +80,6 @@ at a computer learing how to CAD design something to print on his 3D printer.
 <br>
 <br>
 
-#### Mike Gelbart, Associate Professor of Teaching (On Leave)
-
-<img src="../img/team/mike.jpg" align="left" width="34.5%" style="margin-right: 5px;"/>
-<p style="font-size:12.5px">
-  Mike Gelbart joined UBC in 2015 and was part of the team that designed the MDS curriculum. He attended Princeton University where he obtained an undergraduate degree in physics and worked on research projects in biophysics. Mike then changed directions and received a PhD from the machine learning group at Harvard University. Mike is passionate about education. Recently he has co-founded the Vancouver Independent School for Science and Technology, a not-for-profit STEM high school. When Mike isn't teaching, you can find him at home with his kids or driving them somewhere new, riding his bike or playing video games. <br>
-<br>
-
-<i>In the last 6 months, Mike has learned that graph neural networks are becoming an increasingly popular and powerful tool for harnessing network data. He also learned how much temperature affects the quality of his sleep.</i> <br>
-
-<i>Mike's favourite data science topic is interpreting ML models. </i> <br>
-
-<a href="https://www.mikegelbart.com/" target="_blank">Learn more about Mike here.</a>
-
-</p>
-
 #### Gittu George, Postdoctoral Research and Teaching Fellow
 
 <img src='../img/team/gittu.png'   align="left" width="31%" style="margin-right: 5px;"/>
@@ -118,10 +103,10 @@ Gittu George became a part of the MDS team in the spring of 2021. He graduated w
 
 <img src='../img/team/varada.jpeg'  align="left" width="32%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
-Varada Kolhatkar joined the MDS program in October 2018 as a teaching and research postdoctoral fellow. She was born and raised in Pune, India, where she completed her undergraduate degree in Computer Science. After working in industry for two years in India, she pursued her Master’s degree from the University of Minnesota Duluth and a Ph.D. degree from the University of Toronto, both in Computer Science, specializing in Computational Linguistics. Varada spent two years at Simon Fraser University as a post-doctoral fellow, where she developed datasets and computational tools that will help keep online communities engaged in constructive discussions. When Varada is not in the classroom you can find her biking, cooking or in Victoria.  <br>
+Varada Kolhatkar became a part of the MDS program in October 2018, serving as a teaching postdoctoral fellow. During this period, she discovered her passion for teaching, leading her to choose teaching and learning as her long-term career path. In July 2020, she transitioned into the role of an Assistant Professor of Teaching within the Department of Computer Science. Varada's academic journey includes a Master’s degree from the University of Minnesota Duluth and a Ph.D. from the University of Toronto, both in Computer Science with a specialization in Computational Linguistics. 
 <br>
 
-<i>In the last 6 months, Varada has learned that it's not easy to buy a home in Vancouver.  </i> <br>
+<i>Varada has recently finished a 10-day meditation course during which she learned about <a href="https://www.dhamma.org/en-US/index" target="_blank">Vipassana meditation</a>. She is fascinated by the technique and aspires to deepen her understanding and practice. </i> <br>
 
 <i>Varada’s favourite data science topic is unsupervised learning.  </i> <br>
 
@@ -129,16 +114,6 @@ Varada Kolhatkar joined the MDS program in October 2018 as a teaching and resear
 
 </p>
 
-
-#### Rodolfo Lourenzutti, Co-Director and Assistant Professor of Teaching
-
-
-<img src='../img/team/rodolfo.jpeg'  align="left" width="32%" style="margin-right: 5px;"/>
-<p style="font-size:12.5px">
-Originally from Vila Velha, a coastal town in Brazil, Rodolfo Lourenzutti has a long-standing passion for data analysis, which drove him to pursuit a B.Sc and M.Sc in Statistics at the Federal University of Espírito Santo, and Federal University of Minas Gerais, respectively. For his PhD, Rodolfo switched fields to computer science, in which he obtained a PhD from the Federal University of Espírito Santo. Rodolfo has a diverse experience in Brazil as well as Canada. During his Ph.D., he spent 10 months working at the department of Electrical and Computer Engineering at University of Alberta. After completing his doctorate, he worked as Postdoctoral Fellow at University of Alberta in the Department of Civil & Environmental Engineering for 18 months. Rodolfo has taught in MDS for two years, and joined UBC’s STAT department in 2020.  <br>
-<br>
-
-</p>
 
 #### Quan Nguyen, Postdoctoral Research and Teaching Fellow
 
@@ -172,7 +147,7 @@ Joel began his involvement with MDS as a TA while working on his PhD and joined 
 
 </p>
 
-#### Alexi Rodríguez-Arelis, Postdoctoral Research and Teaching Fellow
+#### Alexi Rodríguez-Arelis, Assistant Professor of Teaching
 
 <img src='../img/team/alexi.jpg'   align="left" width="33.4%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
@@ -189,7 +164,7 @@ Alexi commenced his current role at MDS in January 2021. He completed his PhD in
 
 
 
-#### Tiffany Timbers, Co-Director and Assistant Professor of Teaching (On Leave)
+#### Tiffany Timbers, Co-Director and Assistant Professor of Teaching
 
 <img src='../img/team/tiffany.png'  align="left" width="33%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
@@ -222,4 +197,18 @@ Betty Zhao joined the MDS program in January 2022 as a course coordinator. She w
 
 </p>
 
+<br>
+<br>
+<br>
 
+## Past Team Members
+
+- **Tomas Beuzen** (Now Data Scientist at Solar Analytics)
+- **Vincenzo Coia** (Now Senior Data Scientist I at BGC Engineering Inc.)
+- **Giulio Valentino Dalla Riva** (Now Senior Lecturer in Data Science at University of Canterbury)
+- **Florencia D'Andrea** (Now Contractor - Data Analyst/Research Software Engineer at Washington State university)
+- **Mike Gelbart** (Now Co-Founder and Principal of [VISST](https://www.visst.ca/#team))
+- **Rodolfo Lourenzutti** (Now tenure-track Professor of Teaching in the Dept. of Statistics at UBC)
+- **Firas Moosvi** (Now Lecturer in the Computer Science, Mathematics, Physics, and Statistics department at UBC Okanagan)
+- **Arman Seyed-Ahmadi** (Now Research Scientist at Genentech)
+- **Shaun Sun** (Now Assistant Professor in the Department of Mathematics and Statistics at University of the Fraser Valley)

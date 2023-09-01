@@ -73,7 +73,7 @@ such as not being able to install all the software before the start of the progr
 it is useful to know UBC offers a free online computing environment
 that you can use as a backup to follow along in most of the MDS courses.
 This is called Jupyter Open
-and you can access it by logging into https://open.jupyter.ubc.ca/
+and you can access it by logging into [https://open.jupyter.ubc.ca/](https://open.jupyter.ubc.ca/)
 with your UBC CWL.
 Jupyter Open allow you to work with JupyterLab, R, Python, and Bash,
 and you can install packages via the `conda` and `pip` package managers
@@ -101,12 +101,15 @@ In MDS we will use the publicly available [GitHub.com](https://github.com/) as w
 
 Sign up for a free account at [GitHub.com](https://github.com/) if you don't have one already.
 
-### GitHub.ubc.ca
+#### GitHub.ubc.ca
 
-To add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login to [Github.ubc.ca](https://github.ubc.ca) using your CWL credentials.
+To add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to follow the instructions below:
+
+1. navigate to [https://activate.github.ubc.ca](https://activate.github.ubc.ca) and login with your CWL to setup their access
+2. **wait 20 minutes**
+3. login to [Github.ubc.ca](https://github.ubc.ca) using your CWL credentials
 
 This step is required for
-
 - being able to store your work
 - all homework submission and grading
 - working collaboratively
@@ -132,6 +135,10 @@ run the installer and accept the default configuration for all pages except for 
 - On the **Choosing the default editor used by Git** page, select "Use Visual Studio Code as Git's default editor" from the drop-down menu'
 
     ![](/resources_pages/imgs/vscode-as-git-editor.png)
+
+- Set the default branch name to `main`
+
+    ![](/resources_pages/imgs/gitbash-defualt_main.png)
 
 [To install windows terminal visit this link](https://aka.ms/terminal)
 and click `Get` to open it in Windows Store.
@@ -183,7 +190,7 @@ bash --version
 The output should look similar to this:
 
 ```
-GNU bash, version 5.1.16(1)-release (x86_64-pc-msys)
+GNU bash, version 5.2.15(1)-release (x86_64-pc-msys)
 Copyright (C) 2020 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 
@@ -206,7 +213,7 @@ git --version
 ```
 
 ```
-git version 2.37.2.windows.2
+git version 2.42.0.windows.2
 ```
 
 > **Note:**  You can launch many windows programs from the terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
@@ -216,7 +223,7 @@ code --version
 ```
 
 ```
-1.70.1
+1.81.1
 6d9b74a70ca9c7733b29f0456fd8195364076dda
 x64
 ```
@@ -275,11 +282,17 @@ open your `~/.bashrc` file:
 code ~/.bashrc
 ```
 
-And append the following line:
+And append the following lines:
 
 ```bash
+# Do NOT add anything to this file, use `~/.bash_profile` instead.
+# The next line automatically loads your `~/.bash_profile`
+# any time a program tries to read your `~/.bashrc` file.
 if [ -f ~/.bash_profile ]; then . ~/.bash_profile; fi
 ```
+
+The comment is a reminder to your future self
+who might open up this file a few months from now =)
 
 ### Setting Git Bash as the default VS Code terminal profile
 
@@ -307,10 +320,10 @@ After installation, open the Start Menu and search for the program called "Anaco
 python --version
 ```
 
-which should return Python 3.10.0 or greater:
+which should return Python 3.11.0 or greater:
 
 ```
-Python 3.10.0
+Python 3.11.0
 ```
 
 ### Integrating Python with the Git Bash terminal
@@ -334,7 +347,7 @@ python --version
 you should now see the same output as above:
 
 ```
-Python 3.10.0
+Python 3.11.0
 ```
 
 Let's also check the version of the `conda` package manager. If you type
@@ -346,7 +359,7 @@ conda --version
 you should see something like this
 
 ```
-conda 4.13.0
+conda 23.5.2
 ```
 
 > **Optional:** One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
@@ -400,8 +413,18 @@ and you can press enter to proceed with the installation.
 If you want to answer `yes` by default and skip this confirmation step,
 you can replace `conda install` with `conda install -y`.
 Also note that we may occasionally need to install packages using `pip`, the standard Python package manager. The installation command is very similar to that of `conda`: `pip install <package-name>`.
-Let's try this out in the next section,
-by installing some of the key packages we will use in MDS.
+Let's try this out by installing a package that makes conda faster
+and changing the config to use this package by default:
+
+```bash
+conda install conda-libmamba-solver
+conda config --set solver libmamba
+```
+
+In the next session
+we will use `conda` to install
+some of the key packages we will use in MDS.
+
 
 ## JupyterLab setup
 
@@ -414,8 +437,10 @@ and the LSP packages fill the same function for our code.
 Install them via the following commands:
 
 ```bash
-conda install pandas memory_profiler jupyterlab jupyterlab-git jupyterlab-spellchecker jupytext
+conda install pandas jupyterlab=4 jupyterlab-git jupyterlab-spellchecker jupytext
 ```
+
+If the above command fails, try installing a few packages at a time instead of all of them at once.
 
 We will grade part of your assignments in MDS using the Otter-Grader package. For your Jupyter-based assignments, you need to install Otter-Grader using the following command:
 
@@ -454,7 +479,7 @@ Append the following lines to the file
 # Automatically expand the R version number
 R_DIR=(/c/Program\ Files/R/*/bin/x64)
 # Add R and Rscript to PATH
-export PATH="${R_DIR}:$PATH"
+export PATH="$R_DIR:$PATH" # double quote is important here
 ```
 
 Then save the file and exit VS Code.
@@ -482,7 +507,7 @@ https://www.gnu.org/licenses/.
 
 ### RStudio
 
-Download the Windows preview version of RStudio Desktop  from <https://www.rstudio.com/products/rstudio/download/#download>. Open the file and follow the installer instructions.
+Download the Windows version of RStudio Desktop  from <https://posit.co/download/rstudio-desktop/>. Open the file and follow the installer instructions.
 
 To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:
 
@@ -526,7 +551,7 @@ Press `Shift` + `Ctrl` + `m` in RStudio's console. If it is returned the followi
 
 ![](/resources_pages/imgs/new-pipe-rstudio.png)
 
-Once the change is made you can try again in the RStudio console `Ctrl` + `Shift` + `m` verify that it functions. 
+Once the change is made you can try again in the RStudio console `Ctrl` + `Shift` + `m` verify that it functions.  Close down RStudio afterwards.
 
 ### Rtools
 
@@ -549,29 +574,71 @@ by opening up RStudio and
 typing the following into the R console inside RStudio:
 
 ```R
-install.packages(c('tidyverse', 'markdown', 'rmarkdown', 'renv', 'usethis', 'devtools', 'languageserver', 'janitor', 'gapminder', 'readxl'))
+install.packages(c('tidyverse', 'renv', 'usethis', 'devtools', 'markdown', 'rmarkdown', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
+install.packages("StanHeaders", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+```
+
+> **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
+
+## Stan
+
+Stan is the language we will be using later on in the program for Bayesian statistics.
+To install it open RStudio and install `rstan`
+
+Test the installation with:
+
+```r
+example(stan_model, package = "rstan", run.dontrun = TRUE)
+```
+
+The model should then compile and sample.
+Here's a snippet of the output you should see:
+
+```
+SAMPLING FOR MODEL '16a540c6086086816528e4524def24d9' NOW (CHAIN 4).
+Chain 4: 
+Chain 4: Gradient evaluation took 2e-06 seconds
+Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.02 seconds.
+Chain 4: Adjust your expectations accordingly!
+Chain 4: 
+Chain 4: 
+Chain 4: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 4: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 4: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 4: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 4: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 4: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 4: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 4: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 4: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 4: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 4: 
+Chain 4:  Elapsed Time: 0.003828 seconds (Warm-up)
+Chain 4:                0.003417 seconds (Sampling)
+Chain 4:                0.007245 seconds (Total)
+Chain 4: 
 ```
 
 > **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
 
 ### IRkernel
 
-The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R **from the Windows Terminal (write `R` in the console and press enter)** (not R Studio) and run the setup via the following two commands:
+The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, install it and run the setup via the following two commands:
 
 ```
 install.packages('IRkernel')
 IRkernel::installspec()
 ```
 
-When asked to select a mirror, pick one at a location close to where you live for faster downloads.
+> **Note:** If you see an error message saying "jupyter-client has to be installed...",
+> close RStudio and run the following line from your terminal instead `R -e "IRkernel::installspec()"`.
 
-When you finish you can close R typing `q()`.
-
-> **Note:** You cannot use RStudio for this step because it will not be able to find the jupyter installation. R from terminal will since the correct PATH for jupyter is set when the terminal is launched.
-
-To see if you were successful, try running JupyterLab and check if you have a working R kernel. To launch the JupyterLab type the following in the terminal:
+To see if you were successful, try running JupyterLab and check if you have a working R kernel. To launch JupyterLab, type the following in a terminal:
 
 ```
 jupyter lab
@@ -587,7 +654,7 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 To improve the experience of using R in JupyterLab,
 we will add keyboard shortcuts for inserting the common R operators `<-` and `|>`.
-Go to `Settings -> Advanced Settings Editor -> JSON Settings Editor (top right corner) -> Keyboard Shortcuts`.
+Go to `Settings -> Settings Editor`. Then click `JSON Settings Editor` in the top right corner and click on `Keyboard Shortcuts` in the navigation panel to the left.
 You will see two panels,
 the right-most panel allows you to perform advanced modification
 of keyboards shortcuts in JupyterLab
@@ -597,8 +664,6 @@ by pasting the following:
  
 
 ```json
-{
-    "shortcuts": [
         {
             "command": "apputils:run-first-enabled",
             "selector": "body",
@@ -624,9 +689,7 @@ by pasting the following:
                 ],
                 "args": {"text": "|> "}
             }
-        }
-    ]
-}
+        },
 ```
 
 After you have pasted this text,
@@ -642,6 +705,28 @@ launch an R notebook,
 and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Ctrl` + `m`, respectively.
 You could add any arbitrary text insertion command the same way,
 but this is all that is required for MDS.
+
+## Quarto CLI
+
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal. 
+
+The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
+
+Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for Windows.
+
+After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
+
+```bash
+quarto --version
+```
+If the installation was successful you will read the output:
+
+```bash
+1.3.450
+```
+
+> **Note:** Pay attention that due to the Windows settings suggested in this installation you will always have to write  `quarto.cmd` instead of `quarto` to run Quarto commands. Read more [here](https://community.rstudio.com/t/bash-quarto-command-not-found/144187/3).
+
 
 ## LaTeX
 
@@ -669,7 +754,7 @@ latex --version
 You should see something like this if you were successful:
 
 ```
-pdfTeX 3.141592653-2.6-1.40.24 (TeX Live 2022)
+pdfTeX 3.14159265-2.6-1.40.25 (TeX Live 2023)
 kpathsea version 6.3.4
 Copyright 2022 Han The Thanh (pdfTeX) et al.
 There is NO warranty.  Redistribution of this software is
@@ -699,8 +784,10 @@ tlmgr.bat install eurosym \
   jknapltx \
   ms \
   parskip \
+  pdfcol \
   pgf \
   rsfs \
+  soul \
   tcolorbox \
   titling \
   trimspaces \
@@ -714,7 +801,7 @@ tlmgr.bat install eurosym \
 To test that your latex installation is working with jupyter notebooks,
 launch `jupyter lab` from a terminal and open either a new notebook
 or the same one you used to test IRkernel above.
-Go to `File -> Export notebook as... -> Export Notebook to PDF`.
+Go to `File -> Save and Export Notebook as... -> PDF`.
 If the PDF file is created,
 your LaTeX environment is set up correctly.
 
@@ -727,16 +814,16 @@ This requires the `pyppeteer` package,
 which we can install by typing the following into Windows Terminal.
 
 ```bash
-conda install pyppeteer
-pyppeteer-install
+pip install "nbconvert[webpdf]"
+playwright install chromium
 ```
 
 Now try exporting a notebook by clicking
-`File -> Export notebook as... -> Export Notebook to WebPDF`.
+`File -> Save and Export Notebook As... -> WebPDF`.
 
 ## Make
 
-Later in the program, we will be using `make` to automate our analysis scripts. [Download `make` from this URL](https://downloads.sourceforge.net/project/ezwinports/make-4.3-without-guile-w32-bin.zip). Click on the downloaded zip-file to open it in the File Explorer and click the button in the "Extract" tab that reads "Extract all". Change the extract location to `C:\Users\YOUR_USERNAME\make-4.3` (substituting in your actual username instead of `YOUR_USERNAME`) and click "Extract". See the screenshots below if you're unsure what to click.
+Later in the program, we will be using `make` to automate our analysis scripts. [Download `make` from this URL](https://sourceforge.net/projects/ezwinports/files/make-4.4.1-without-guile-w32-bin.zip/download). Click on the downloaded zip-file to open it in the File Explorer and click the button in the "Extract" tab that reads "Extract all". Change the extract location to `C:\Users\YOUR_USERNAME\make-4.4.1` (substituting in your actual username instead of `YOUR_USERNAME`) and click "Extract". See the screenshots below if you're unsure what to click.
 
 ![](/resources_pages/imgs/extract-make.png)
 
@@ -763,7 +850,7 @@ so you don't need to replace it manually.
 
 ```
 # Add R, Rscript, and Make to path
-export PATH="/c/Users/${USERNAME}/make-4.3/bin:${R_DIR}:$PATH"
+export PATH="/c/Users/${USERNAME}/make-4.4.1/bin:${R_DIR}:$PATH"
 ```
 
 Then save the file and exit VS Code.
@@ -786,7 +873,7 @@ There is NO WARRANTY, to the extent permitted by law.
 
 ## PostgreSQL
 
-We will be using PostgreSQL as our database management system. You can [download PostgreSQL 14.x from here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, **and make sure you save it using a password manager or similar so that you know what it is in November when the SQL course starts** (otherwise you will need to reinstall PostgreSQL). For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
+We will be using PostgreSQL as our database management system. You can download the most recent version of PostgreSQL from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, **and make sure you save it using a password manager or similar so that you know what it is in November when the SQL course starts** (otherwise you will need to reinstall PostgreSQL). For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation (if you accidentally launch the StackBuilder, click "cancel", you don't need to check any boxes).
 
 To test if the installation was successful open the `SQL Shell` app from the Start menu. You will be asked to setup your configuration, accept the default value (the one within square brackets) for the first four values by pressing enter four times, then type in your password and press enter one last time. It should look like this if it is working correctly:
 
@@ -834,26 +921,7 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
-## Quarto CLI
 
-Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal. 
-
-The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
-
-Quarto can be used outside RStudio as well, this is why we are going to install Quarto CLI. Please, download the [last version of Quarto CLI](https://quarto.org/docs/get-started/) for Windows.
-
-After the installation finishes, close all the terminals you may have open. Then, open a new one and try running this command:
-
-```bash
-quarto.cmd --version
-```
-If the installation was successful you will read the output:
-
-```bash
-1.0.38
-```
-
-> **Note:** Pay attention that due to the Windows settings suggested in this installation you will always have to write  `quarto.cmd` instead of `quarto` to run Quarto commands. Read more [here](https://community.rstudio.com/t/bash-quarto-command-not-found/144187/3).
 ## VS Code extensions
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
@@ -972,18 +1040,18 @@ and use it as a reference.
 
 You have completed the installation instructions, well done 🙌!
 We have created a script to help you check that your installation was successful,
-and to provide instructions for how you can troubleshoot any potential issues.
+and to provide instructions for how you can troubleshoot any issues.
 To run this script,
 please execute the following command from your terminal.
 
-```
+````
 bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/master/resources_pages/check-setup-mds.sh)
 ```
 
 The output from running the script will look something like this:
 
-```
-# MDS setup check 1.1.0
+````
+# MDS setup check 2023.1
 
 If a program or package is marked as MISSING,
 this means that you are missing the required version of that program or package.
@@ -993,66 +1061,66 @@ e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.5, etc
 
 You can run the following commands to find out which version
 of a program or package is installed (if any):
-
+```
 name_of_program --version  # For system programs
 conda list  # For Python packages
-R -q -e "installed.packages()[,c(Package, Version)]"  # For R packages
-
+R -q -e "as.data.frame(installed.packages()[,3])"  # For R packages
+```
 
 Checking program and package versions...
 
 ## Operating system
-Microsoft Windows 11 Education
+Microsoft Windows 11 Pro
 64-bit
-10.0.22000
+10.0.22621
+
+MISSING You need Windows 10 or 11 with build number >= 10.0.19041. Please run Windows update.
 
 ## System programs
-OK        psql (PostgreSQL) 14.5
-OK        rstudio 2022.07.1+554
-OK        tlmgr revision 63068 (2022-04-18 07:58:07 +0200)
-OK        R 4.2.1 (2022-06-23 ucrt) -- "Funny-Looking Kid"
-OK        python 3.10.0
-OK        conda 4.13.0
+OK        psql (PostgreSQL) 15.4
+ 2023.06.2+561dio
+OK        tlmgr revision 66798 (2023-04-08 02:15:21 +0200)
+OK        R 4.3.1 (2023-06-16 ucrt) -- "Beagle Scouts"
+OK        python 3.11.4
+OK        conda 23
 OK        bash 4-pc-msys)
-OK        git 2.37.2.windows.2
-OK        make 4.3
-OK        latex 3.141592653-2.6-1.40.24 (TeX Live 2022)
-OK        docker 20.10.17, build 100c701
-OK        code 1.70.1
+OK        git 2.42.0.windows.1
+OK        make 4.4.1
+OK        latex 3.141592653-2.6-1.40.25 (TeX Live 2023)
+OK        docker 24.0.5, build ced0996
+OK        code 1.81.1
 
 ## Python packages
-OK        pandas=1.4.3
-OK        pyppeteer=1.0.2
-OK        nbconvert=6.5.3
-OK        jupyterlab=3.4.5
-OK        jupyterlab-git=0.38.0
-OK        jupytext=1.14.0
-OK        jupyterlab-spellchecker=0.7.2
+OK        otter-grader=5.1.3
+OK        pandas=2.0.3
+OK        nbconvert-core=7.7.4
+OK        playwright=1.37.0
+OK        jupyterlab=4.0.5
+OK        jupyterlab-git=0.41.0
+OK        jupyterlab-spellchecker=0.8.4
 OK        jupyterlab PDF-generation was successful.
 OK        jupyterlab WebPDF-generation was successful.
 OK        jupyterlab HTML-generation was successful.
 
 ## R packages
-OK        tidyverse=1.3.2
-OK        markdown=1.1
-OK        rmarkdown=2.14
-OK        renv=0.15.5
-OK        IRkernel=1.3
-OK        tinytex=0.40
-OK        janitor=2.1.0
-OK        gapminder=0.3.0
-OK        readxl=1.4.0
+OK        tidyverse=2.0.0
+OK        markdown=1.8
+OK        rmarkdown=2.24
+OK        renv=1.0.2
+OK        IRkernel=1.3.2
+OK        tinytex=0.46
+OK        janitor=2.2.0
+OK        gapminder=1.0.0
+OK        readxl=1.4.3
 OK        ottr=1.1.3
 OK        canlang=0.0.1
 OK        rmarkdown PDF-generation was successful.
 OK        rmarkdown HTML-generation was successful.
 
-This output and additional configuration details have been saved to the file /c/Users/Florencia/check-setup-mds.log
+The above output has been saved to the file /c/Users/Danie/check-setup-mds.log
 together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `explorer .` (without the surrounding backticks).
-
-
-```
+````
 
 As you can see at the end of the output,
 a log file is saved in your current directory.

@@ -11,7 +11,7 @@ Our purpose is to teach and advocate for the responsible use of data science.
 ### Mission Statement - long version
 
 Our purpose is to teach and advocate for the responsible use of data science.
-We define _data science_ as the process of extracting value from data through reproducible and auditable processes. 
+We define _data science_ as the process of gaining insight from data through reproducible and auditable processes. 
 Responsible use of data science involves insisting on reproducible practices, carefully considering the ethical implications of one's work, clearly communicating and not overstating one's results, creating effective analyses and visualizations, as well as minimizing technical debt.
 We are committed to teaching these practices to our students, and disseminating them within the global data science community both directly and indirectly through our alumni. Finally, we are committed to be involved in determining the definition, scope, and boundaries of data science. 
 
