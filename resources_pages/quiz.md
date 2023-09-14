@@ -74,10 +74,10 @@ Raise your hand and notify the invigilator. Leave only if you are permitted to. 
 
 ### Instructions for TAs
 
-1. Go to the quiz room at least 10 minutes before the quiz time to check students in.
+1. Go to the quiz room **at least 10 minutes** before the quiz time to check students in.
 2. Announce the Canvas password to start students off.
 3. Try to walk around and make sure that at least one of the TAs stays at the back of the classroom.
 4. Report to us if you observe any form of academic dishonesty or chatting in the classroom.
 5. Ask the students to stay in the room for the full time even after they are done. (If students start leaving the room it can be distracting for other students.)
-6. If you encounter issues during the quiz, inform the lab instructor through Slack.
+6. If you encounter issues during the quiz, inform the lab instructor or the course coordinator through Slack.
 
