@@ -11,8 +11,8 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 
 ## Team Stats
 
-- **10** : The total number of different languages we speak (including Hindi, Japanese, Malayalam, Mandarin, Marathi, Spanish, Swedish, and Vietnamese)
-- **15** : The total number of coding languages we have experience working with as a whole.
+- **11** : The total number of different languages we speak (including Farsi, Hindi, Japanese, Malayalam, Mandarin, Marathi, Spanish, Swedish, and Vietnamese)
+- **19** : The total number of coding languages we have experience working with as a whole.
 - **8** : The number of different countries our team cheers for during the Olympics.
 - **5.4** : The average number of years our team has of teaching experience (with a standard deviation of 2.2).
 - **10** : The median number of postsecondary education years our team has studied.
@@ -162,13 +162,24 @@ Alexi commenced his current role at MDS in January 2021. He completed his PhD in
 
 </p>
 
+#### Jordan Schalm, Lecturer
 
+<img src='../img/team/jordan.jpg'   align="left" width="33.4%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Jordan is a Software Engineer for the Flow Foundation, where he works on the Core Protocol team. At Flow, Jordan developed the Joint-Feldman DKG Protocol and the world’s first production deployment of HotStuff, a Byzantine-Fault-Tolerant consensus algorithm. Most recently, he has contributed to extending Flow’s consensus algorithm with an interactive Pacemaker protocol (Jolteon) and a distributed PID controller for controlling the system’s overall block rate. In 2018, he co-created CryptoKitties, which defined the technical standard for non-fungible tokens and coined the term “NFT”. Jordan received a Bachelors of Computer Engineering from UBC in 2018.    <br>
+<br>
+
+<a href="https://www.jordanschalm.com/" target="_blank">Learn more about Jordan here.</a>
+</p>
+
+<br>
+<br>
 
 #### Tiffany Timbers, Co-Director and Assistant Professor of Teaching
 
 <img src='../img/team/tiffany.png'  align="left" width="33%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
-Tiffany joined the founding team who developed the Master’s of Data Science program at UBC as a Postdoctoral Teaching and Learning Fellow. She received PhD in Neuroscience in 2012 from UBC, following which she held a Banting Postdoctoral Fellowship at Simon Fraser University where her research focused on cell biology & genomics. This postdoctoral research was data intensive and required the application of data science and statistical methodologies. In 2018, she joined the Statistics Department at UBC as an Assistant Professor of Teaching. She primarily teaches courses courses on introductory statistics and data science, computer programming, reproducible workflows and collaborative software development.
+Tiffany joined the founding team who developed the Master’s of Data Science program at UBC as a Postdoctoral Teaching and Learning Fellow. She received a PhD in Neuroscience in 2012 from UBC, following which she held a Banting Postdoctoral Fellowship at Simon Fraser University where her research focused on cell biology & genomics. This postdoctoral research was data intensive and required the application of data science and statistical methodologies. In 2018, she joined the Statistics Department at UBC as an Assistant Professor of Teaching. She primarily teaches courses courses on introductory statistics and data science, computer programming, reproducible workflows and collaborative software development.
 
 <br>
 <br>
