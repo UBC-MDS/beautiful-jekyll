@@ -11,7 +11,7 @@ Here are some guidelines for the "block rep".
 
 #### 1. Introduce yourself to your peers as the new block rep
 
-We recommend doing this via Slack. If there isn't a "students only" channel, please do make one. You can try creating a private channel and then tagging `@students` in there. This will hopefully prompt you to invite all students into the channel.
+We recommend doing this via Slack. If there isn't a "students only" channel, please do make one. You can try creating a private channel and then type `/invite @v-students` or `/invite @cl-students` in there. This will hopefully prompt you to invite all students into the channel.
 
 #### 2. Collect feedback throughout the block
 
@@ -21,8 +21,8 @@ One thing we would like you to keep in mind is that the feedback passed on to in
 
 #### 3. Attend our team meeting
 
-We'll ask you to attend our team meeting, usually in the 3rd week of the block (or late in the 2nd week). Often, the block reps will share survey results with the
-teaching team right before the meeting (thought this is not required). These results don't need to be in a polished form (see below).
+We'll ask you to attend our in-person team meeting, usually at the end of the 2nd week of the block (or early in the 3rd week). Often, the block reps will share survey results with the
+teaching team after the meeting. These results don't need to be in a polished form (see below).
 
 #### 4. Communicate back to the cohort
 
