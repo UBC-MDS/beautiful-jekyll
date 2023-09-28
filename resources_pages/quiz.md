@@ -58,6 +58,7 @@ Quizzes will typically be through [Canvas](canvas.ubc.ca). Unlike labs, quizzes 
 - You can find your assigned quiz time and location on PrairieTest. Alternatively, you can check the MDS Calendar and the lab-sections repo (now updated with your assigned quiz location).
 - When you are instructed to leave the room after the quiz, please leave the room quietly. Please refrain from discussing the quiz with anyone else.
 
+&nbsp;
 #### Closed-book
 
 Unless otherwise specified, **quizzes will be closed-book** except for a double-sided A4 cheatsheet. This means that during the quiz students are expected to:
@@ -67,7 +68,7 @@ Unless otherwise specified, **quizzes will be closed-book** except for a double-
   - **not** open other files or webpages other than the Canvas quiz
   - **not** leave the quiz room early, and not come back into the quiz room after leaving (other than for purposes such as using the washroom)
 
-
+&nbsp;
 #### No collaboration
 
 You may **not** communicate with other students or anyone else or any robots, through any medium, at any time during the quiz. You may not communicate with any of your classmates until everyone is finished the quiz. For each quiz, there will be two sessions. Please don't post about MDS quizzes on Slack until at least 30 minutes after the end of the **second** quiz, in case some students were given extra time.
@@ -78,13 +79,10 @@ You may **not** communicate with other students or anyone else or any robots, th
 - **Cheatsheet**: You are allowed one double-sided A4 cheatsheet.
 - **CWL password**: Please memorize your password as you need it to log on to Canvas.
 
-
+&nbsp;
 ### Special Circumstances
 
-#### I finished the quiz early
-
-Wait quietly on your seat until the end of the quiz period.
-
-#### I need to use the washroom
-
-Raise your hand and notify the invigilator. Leave only if you are permitted to. However, we recommend that you use the washroom before the quiz.
+1. I finished the quiz early
+  - Wait quietly on your seat until the end of the quiz period.
+2. I need to use the washroom
+  - Raise your hand and notify the invigilator. Leave only if you are permitted to. However, we recommend that you use the washroom before the quiz.
