@@ -64,7 +64,7 @@ The explanation doesn't erase the grade but it creates a clearer picture of you 
 
 Another situation worth explaining is if you have unsuccessfully applied to the MDS program in the past. If this is the case, what has changed since you last applied?
 
-#### Recorded Virtual Interview
+#### 5. Recorded Virtual Interview
 
 NEW for applications for September 2024 - After you submit your application form, you will be emailed an invitation with a link to record and submit a virtual interview in which we will ask you several questions about your experience, motivation, communication skills, etc. You will be emailed detailed instructions and deadlines in early February.
 
