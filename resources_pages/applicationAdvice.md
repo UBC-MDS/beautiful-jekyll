@@ -16,18 +16,19 @@ If your ultimate goal is to pursue a PhD in statistics or computer science, MDS 
 
 #### 2. Personal Statement
 
-A strong personal statement should be...
+Starting the applications for September 2024, we have provided three guiding questions in place of the personal statement. This means that you will answer the three specific questions in the application form and do **not** need to submit a separate personal statement.
 
-- **specific to you.** The personal statement should be as specific to you as possible, and should explain how the MDS program fits into you career trajectory. Try to avoid sentences that could work for any MDS applicant. For example, avoid talking about how data science is changing the world, or about how UBC is a fantastic institution - both are true, but they don't tell us about _you_.  
-- **specific to UBC MDS.** The personal statement should be specific to the UBC MDS program, and should demonstrate that you understand what data science is and what the MDS program is. Reusing a letter you wrote to apply for Master's programs in Statistics or Computer Science, for example, is unlikely to yield good results. 
-- **polished.** The personal statement should be well-written, not contain typos or grammatical errors, use reasonable margins and font sizes, and adhere to the maximum length guidelines.
+Your answers should be...
 
-Other advice for your personal statement:
+- **specific to you.** Your answers should be as specific to you as possible, and should explain how the MDS program fits into you career trajectory. Try to avoid sentences that could work for any MDS applicant. For example, avoid talking about how data science is changing the world, or about how UBC is a fantastic institution - both are true, but they don't tell us about _you_.  
+- **specific to UBC MDS.** Your answers should be specific to the UBC MDS program, and should demonstrate that you understand what data science is and what the MDS program is. Reusing (part of) a letter you wrote to apply for Master's programs in Statistics or Computer Science, for example, is unlikely to yield good results. 
+- **polished.** Your answers should be well-written, not contain typos or grammatical errors, and adhere to the maximum length guidelines.
+
+Other advice for your answers:
 
 - While it is useful to explain why MDS is a good fit for you, praising UBC in general is not particularly helpful. Including the names of various MDS faculty members, unless you have something specific to say, is also generally not helpful.
-- If you have been out of school for a long time, and/or studied something very different from data science, the personal statement is a good opportunity to discuss your technical readiness for MDS. Often from your resume and reference letters we cannot tell what aspects of your work experience were technical in nature. Since your work experience is generally an important part of your application, we suggest taking a few sentences to describe in detail what your job(s) entailed. For example, were you mainly in management? Were you programming on a daily/weekly/monthly basis? Etc.
+- If you have been out of school for a long time, and/or studied something very different from data science, it is a good opportunity to discuss your technical readiness for MDS. Often from your resume and reference letters we cannot tell what aspects of your work experience were technical in nature. Since your work experience is generally an important part of your application, we suggest taking a few sentences to describe in detail what your job(s) entailed. For example, were you mainly in management? Were you programming on a daily/weekly/monthly basis? Etc.
 - It is generally not helpful to enumerate long lists of statistical and/or machine learning methods you have used, e.g. random forests, support vectors machines, convolutional neural networks, multiple linear regression, etc. Instead, focus on the big picture.
-- Part of the personal statement can also be used to explain any exceptional or unusual circumstances that pertain to your application; see below for more information. 
 
 #### 3. References
 
@@ -62,6 +63,10 @@ To elaborate on the final example above, if you have some particularly poor grad
 The explanation doesn't erase the grade but it creates a clearer picture of you as an applicant than an unexplained low grade. 
 
 Another situation worth explaining is if you have unsuccessfully applied to the MDS program in the past. If this is the case, what has changed since you last applied?
+
+#### Recorded Virtual Interview
+
+NEW for applications for September 2024 - After you submit your application form, you will be emailed an invitation with a link to record and submit a virtual interview in which we will ask you several questions about your experience, motivation, communication skills, etc. You will be emailed detailed instructions and deadlines in early February.
 
 #### Disclaimer
 
