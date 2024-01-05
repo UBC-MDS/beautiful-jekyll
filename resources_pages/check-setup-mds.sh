@@ -364,3 +364,4 @@ echo
 echo "The above output has been saved to the file $(pwd)/check-setup-mds.log"
 echo "together with system configuration details and any detailed error messages about PDF and HTML generation."
 echo "You can open this folder in your file browser by typing \`${file_browser} .\` (without the surrounding backticks)."
+echo "Before sharing the log file, review that there is no SENSITIVE INFORMATION such as passwords or access tokens in it."
