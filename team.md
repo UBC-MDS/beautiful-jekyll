@@ -76,6 +76,7 @@ at a computer learing how to CAD design something to print on his 3D printer.
 <a href="https://daniel.rbind.io/" target="_blank">Learn more about Daniel here.</a>
 
 </p>
+<br>
 
 
 #### Gittu George, Postdoctoral Research and Teaching Fellow
@@ -111,7 +112,7 @@ Varada Kolhatkar became a part of the MDS program in October 2018, serving as a 
 <a href="https://kvarada.github.io/" target="_blank">Learn more about Varada here.</a>
 
 </p>
-<br>
+
 
 #### Vincent Liu, Postdoctoral Research and Teaching Fellow
 
@@ -123,7 +124,6 @@ Vincent joined UBC in March 2024 as a postdoctoral teaching and research fellow.
 <a href="https://vincentliu3.github.io/" target="_blank">Learn more about Vincent here.</a>
 </p>
 
-<br>
 <br>
 <br>
 
