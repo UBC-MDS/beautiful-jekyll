@@ -13,8 +13,8 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 
 - **11** : The total number of different languages we speak (including Farsi, Hindi, Japanese, Malayalam, Mandarin, Marathi, Spanish, Swedish, and Vietnamese)
 - **19** : The total number of coding languages we have experience working with as a whole.
-- **8** : The number of different countries our team cheers for during the Olympics.
-- **5.4** : The average number of years our team has of teaching experience (with a standard deviation of 2.2).
+- **9** : The number of different countries our team cheers for during the Olympics.
+- **5.8** : The average number of years our team has of teaching experience (with a standard deviation of 2.8).
 - **10** : The median number of postsecondary education years our team has studied.
 
 
@@ -115,6 +115,19 @@ Varada Kolhatkar became a part of the MDS program in October 2018, serving as a 
 </p>
 
 
+#### Vincent Liu, Postdoctoral Research and Teaching Fellow
+
+<img src='../img/team/vincent.jpeg'  align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Vincent joined UBC in March 2024 as a postdoctoral teaching and research fellow. He completed his PhD and MSc in Computing Science at the University of Alberta where his research focused on data-driven reinforcement learning. Prior to that, he graduated with a Bachelor of Business Administration from National Taiwan University. He is passionate about the use of foundation models for education and personalization.
+<br>
+
+<a href="https://vincentliu3.github.io/" target="_blank">Learn more about Vincent here.</a>
+</p>
+
+<br>
+<br>
+
 #### Quan Nguyen, Postdoctoral Research and Teaching Fellow
 
 <img src='../img/team/quan.jpeg'   align="left" width="34.5%" style="margin-right: 5px;"/>
@@ -164,7 +177,7 @@ Alexi commenced his current role at MDS in January 2021. He completed his PhD in
 
 #### Jordan Schalm, Lecturer
 
-<img src='../img/team/jordan.jpg'   align="left" width="33.4%" style="margin-right: 5px;"/>
+<img src='../img/team/jordan.png'   align="left" width="33.4%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
 Jordan is a Software Engineer for the Flow Foundation, where he works on the Core Protocol team. At Flow, Jordan developed the Joint-Feldman DKG Protocol and the world’s first production deployment of HotStuff, a Byzantine-Fault-Tolerant consensus algorithm. Most recently, he has contributed to extending Flow’s consensus algorithm with an interactive Pacemaker protocol (Jolteon) and a distributed PID controller for controlling the system’s overall block rate. In 2018, he co-created CryptoKitties, which defined the technical standard for non-fungible tokens and coined the term “NFT”. Jordan received a Bachelors of Computer Engineering from UBC in 2018.    <br>
 <br>
