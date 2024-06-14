@@ -34,7 +34,6 @@ subtitle: For the MDS Capstone course
 <li><a href="https://www.whitecapsfc.com/">Vancouver Whitecaps Football Club</a>: <i>The Global Game: Ranking Soccer Clubs Worldwide</i></li>
 <li><a href="https://www.whitecapsfc.com/">Vancouver Whitecaps Football Club</a>: <i>Predicting Physical Performance of Football Players</i></li>
 <li><a href="https://www.westlandinsurance.ca/">Westland Insurance</a>: <i>Augmenting Customer Retention Modelling with NLP Feature Engineering</i></li>
-</ul>
 
 </details>
 
