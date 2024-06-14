@@ -5,14 +5,43 @@ subtitle: For the MDS Capstone course
 
 ---
 
-2023:
+<details open>
+  <summary>2024:</summary>
+
+- [ALS GoldSpot Discoveries Ltd.](https://goldspot.ca/): _Towards Decentralized Training of Machine Learning Models for Bone Cancer Detection_
+- [Analytika](http://www.analytika.ca/): _Production Line Robotics Arms Vision Recognition_
+- [Autozen Technology](https://www.autozen.com/): _Autozen Recommendation Engine_
+- [Boeing Digital Solutions, Inc. d/b/a Jeppesen](https://ww2.jeppesen.com/digital-aviation-analytics/): _Navigation Chart Change Detection_
+- [Canucks Sports & Entertainment](https://www.nhl.com/canucks/): _Ticket Pricing Analysis of the Vancouver Canucks_
+- [Changing Ocean Research Unit, Institute for the Oceans and Fisheries, UBC](https://coru.oceans.ubc.ca/): _Can you afford sustainable seafood in the future under climate change?_
+- [Faber Connect](https://faberconnect.com/): _Predicting No-Shows and Job Success in Construction_
+- [Illuminex AI](https://www.illuminex.ai/): _Airfield hazards: bird tracking at airports_
+- [Impact Canada (Impact and Innovation Unit, Privy Council Office)](https://impact.canada.ca/en): _Measuring innovation through knowledge production_
+- [Litefarm / University of British Columbia](https://ubcfarm.ubc.ca/csfs-research/litefarm/): _Leveraging data science for agricultural carbon and biodiversity outcomes_
+- [Rio Tinto Exploration](http://www.riotinto.com/): _FaultSENS_
+- [Rio Tinto Exploration](http://www.riotinto.com/): _Project DrillSense_
+- [Rocketbrew](https://www.therocketbrew.com/): _Generative AI Icebreaker - Wildcard Clickbait 🃏_
+- [SRK Consulting (Canada) Inc.](https://www.srk.com/): _Benchmarking tailings facility risks_
+- [SRK Consulting (Canada) Inc.](https://www.srk.com/): _Developing novel methods for liquefaction prediction_
+- Seahorse Strategies: _UBC Stock Portfolio Allocation Formula_
+- [Side.](https://www.theside.ca/): _AI-Driven Real Estate Insights: Revolutionizing Pre-Construction Sales_
+- [Strait of Georgia Data Center](https://sogdatacentre.ca/): _Survival Analysis System for Salmon in the Salish Sea_
+- [TRIUMF](https://www.triumf.ca/) and [UBC](https://www.ubc.ca/): _AI CALRICH_
+- [University of British Columbia](https://www.ubc.ca/): _Checklists and LLM prompts for efficient and effective test creation in data analysis_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _The Global Game: Ranking Soccer Clubs Worldwide_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Predicting Physical Performance of Football Players_
+- [Westland Insurance](https://www.westlandinsurance.ca/): _Augmenting Customer Retention Modelling with NLP Feature Engineering_
+</details>
+
+<details>
+  <summary>2023:</summary>
 
 - [Autozen Technology](https://www.autozen.com/): _Autozen Valuation Guru_
 - [BGC Engineering Inc.](https://bgcengineering.ca/): _Predicting the largest floods in Canadian rivers_
 - [Citysage for Reliance Foundry](https://www.reliance-foundry.com/): _Noise Pollution: Spatial modelling and visualization of urban sound levels_
 - [Cymax Group Technologies](https://cymaxgroup.com/): _Product Knowledge Graph_
 - [EOAS department, UBC Faculty of Science](https://www.eoas.ubc.ca/): _Data Science for polar ice core climate reconstructions_
-- [GoldSpot Discoveries](https://goldspot.ca/): _A Study on the Effects of Representation Bias on AI Performance and Methods of Mitigating it_
+- [ALS GoldSpot Discoveries Ltd.](https://goldspot.ca/): _A Study on the Effects of Representation Bias on AI Performance and Methods of Mitigating it_
 - [Insurance Corporation of BC](https://www.icbc.com/Pages/default.aspx): _Image Recognition of Vehicle Odometer Readings_
 - [Neotoma Paleoecology Database(University of Wisconsin – Madison)](https://www.neotomadb.org/): _Finding Fossils in the Literature_
 - [Olyns](https://www.olyns.com/): _The Price Is Right!_
@@ -27,8 +56,10 @@ subtitle: For the MDS Capstone course
 - [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Terrific Touch_
 - [Westland Insurance](https://www.westlandinsurance.ca/): _Predicting Customer Conversion_
 - [aDolus Inc](https://www.adolus.com/): _Can AI spot risky software in critical infrastructue?_
+</details>
 
-2022:
+<details>
+  <summary>2022:</summary>
 
 - [Canadian Campus Wellbeing Survey/UBC](https://pair.ubc.ca/surveys/canadian-campus-wellbeing-survey/): _Impact of COVID-19 on student mental health: Lessons from the CCWS_
 - [Corporate Finance Institute Education Inc.](https://corporatefinanceinstitute.com/): _Recency, Frequency, and Monetary Value Analysis_
@@ -36,8 +67,8 @@ subtitle: For the MDS Capstone course
 - [Defined Finance Ltd.](https://www.defined.fi/): _DeFi Dashboard: Follow and Forecast the Money_
 - [Glentel](https://www.glentel.com/home): _Practical people analytics for predicting retention_
 - [Glentel](https://www.glentel.com/home): _Practical people analytics for predicting employee performance_
-- [GoldSpot Discoveries](https://goldspot.ca/): _Detection and Mitigation of Data Drift and Model Decay_
-- [GoldSpot Discoveries](https://goldspot.ca/): _Panorama stitching of core-photos_
+- [ALS GoldSpot Discoveries Ltd.](https://goldspot.ca/): _Detection and Mitigation of Data Drift and Model Decay_
+- [ALS GoldSpot Discoveries Ltd.](https://goldspot.ca/): _Panorama stitching of core-photos_
 - [Olyns](https://www.olyns.com/): _Prune CNN models to help people go green_
 - [OraQ AI](https://www.oraq.ai/): _Using NLP to untangle the complex web of dental conditions_
 - [Population Health Surveillance and Epidemiology](http://www.bccdc.ca/our-services/programs/population-public-health-surveillance): _BC Chronic Disease Visualization and Trend Analysis with R Shiny_
@@ -60,7 +91,10 @@ subtitle: For the MDS Capstone course
 - [Westland Insurance](https://www.westlandinsurance.ca/): _Predicting Customer Retention_
 - [World Bank](https://www.worldbank.org/en/home): (How quickly can South Asia transition to a green economy?)
 
-2021:
+</details>
+
+<details>
+  <summary>2021:</summary>
 
 - [Analytika](http://www.analytika.ca/): _Transforming Customer Experiences_
 - [BC Centre on Substance Use](https://www.bccsu.ca/): _Using data science to identify and visualize novel compounds in illicit drug checking samples_
@@ -73,7 +107,7 @@ subtitle: For the MDS Capstone course
 - [Dialpad](https://www.dialpad.com/): _Understanding & Predicting Customer Satisfaction Using Vocal Features_
 - [Gerontology and Diabetes Research Laboratory (GDRL)](https://www.vchri.ca/): _Machine Learning Approaches to: 1. Diagnosing Lipohypertrophy at the bedside, and 2. Falls Prediction in Long Term Care_
 - [Glentel](https://www.glentel.com/home): _People Analytics_
-- [GoldSpot](https://goldspot.ca/): _Automated drill core logging through the lens of Machine learning and Deep learning_
+- [ALS GoldSpot Discoveries Ltd.](https://goldspot.ca/): _Automated drill core logging through the lens of Machine learning and Deep learning_
 - [Hootsuite](https://www.hootsuite.com/): _Customer Segmentation using Hootsuite Product Usage Data_
 - [Newsly](https://www.newsly.me/): _Audio listening preferences_
 - [Orbis Investments](https://www.orbis.com/ca/institutional/home): _Earning Calls Deception Analysis_
@@ -88,7 +122,10 @@ subtitle: For the MDS Capstone course
 - [aDolus Inc](https://www.adolus.com/): _Software File Clustering (What is this file?)_
 
 
-2020:
+</details>
+
+<details>
+  <summary>2020:</summary>
 
 - [aDolus](https://www.adolus.com/): _Unearthing Hidden Vulnerabilities in Mission Critical Software_
 - [Analytika](http://www.analytika.ca/): _Smart Agriculture_
@@ -100,7 +137,7 @@ subtitle: For the MDS Capstone course
 - [The Deetken Group](https://deetken.com/): _Forecasting the Evolution of Vancouver's Business Landscape_ 
 - [E-Comm 911](https://www.ecomm911.ca/): _Natural language processing to help save lives and protect property_
 - [Glentel](http://www.glentel.com/home): _Making sense of people data_
-- [GoldSpot Discoveries](https://goldspot.ca/): _Core Photo Analysis_
+- [ALS GoldSpot Discoveries Ltd.](https://goldspot.ca/): _Core Photo Analysis_
 - [MDA](https://mdacorporation.com/): _Image Captioning of Overhead Earth Observation Imagery_
 - [Merchant Growth](https://www.merchantgrowth.com/): _Merchant Score: Intelligent Credit Decisioning For Risk Management_
 - [PayByPhone](https://www.paybyphone.com/): _Crowdsourced parking locations_
@@ -115,7 +152,10 @@ subtitle: For the MDS Capstone course
 - [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Modelling the Physical Performances of the Vancouver Whitecaps_
 - [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Understanding Players' Offensive and Defensive Performance in Major League Soccer_
 
-2019:
+</details>
+
+<details>
+  <summary>2019:</summary>
 
 - [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Quantifying the Responses to Open-Ended Survey Questions_
 - [BGC Engineering](https://bgcengineering.ca/): _Automated Landslide Detection and Delineation from Digital Terrain Data_               
@@ -136,7 +176,10 @@ subtitle: For the MDS Capstone course
 - [Tetrad](http://www.tetrad.com/): _Understanding Restaurant Sales_
 - [UrbanLogiq](https://www.urbanlogiq.com/): _Indicators of Crash Severity_
 
-2018:
+</details>
+
+<details>
+  <summary>2018:</summary>
 
 - [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Discovering thematic categories from survey comments_
 - [BGC Engineering](https://bgcengineering.ca/): _Anomaly detection and flood forecasting using real-time hydrometric data_
@@ -151,10 +194,14 @@ subtitle: For the MDS Capstone course
 - [UBC Sauder School of Business](http://www.sauder.ubc.ca/): _Extracting features from financial documents for predicting firm performance_
 - [Visier](https://www.visier.com/): _Automated Human Resources Insight Discovery_
 
-2017:
+</details>
+
+<details>
+  <summary>2017:</summary>
 
 - [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Empowering employee engagement through AI_
 - [Coast Mountain Bus Company](https://www.translink.ca/en/About-Us/Corporate-Overview/Operating-Companies/CMBC.aspx): _Forecasting Transit Schedules and Congestion Areas_
 - [Rio Tinto](http://www.riotinto.com/): _Tools for Analyzing Mining Drill Data_
 - [UBC CTLT](http://ctlt.ubc.ca/): [_edXvis: Interactive Visualization of Student	Engagement with edX MOOCs_](https://ubc-mds.github.io/2018-01-01-CTLT-capstone/)
 - [Unbounce](https://unbounce.com/): _Unbounce Community Forum Analysis_
+</details>
