@@ -8,29 +8,32 @@ subtitle: For the MDS Capstone course
 <details open>
   <summary>2024:</summary>
 
-- [ALS GoldSpot Discoveries Ltd.](https://goldspot.ca/): _Towards Decentralized Training of Machine Learning Models for Bone Cancer Detection_
-- [Analytika](http://www.analytika.ca/): _Production Line Robotics Arms Vision Recognition_
-- [Autozen Technology](https://www.autozen.com/): _Autozen Recommendation Engine_
-- [Boeing Digital Solutions, Inc. d/b/a Jeppesen](https://ww2.jeppesen.com/digital-aviation-analytics/): _Navigation Chart Change Detection_
-- [Canucks Sports & Entertainment](https://www.nhl.com/canucks/): _Ticket Pricing Analysis of the Vancouver Canucks_
-- [Changing Ocean Research Unit, Institute for the Oceans and Fisheries, UBC](https://coru.oceans.ubc.ca/): _Can you afford sustainable seafood in the future under climate change?_
-- [Faber Connect](https://faberconnect.com/): _Predicting No-Shows and Job Success in Construction_
-- [Illuminex AI](https://www.illuminex.ai/): _Airfield hazards: bird tracking at airports_
-- [Impact Canada (Impact and Innovation Unit, Privy Council Office)](https://impact.canada.ca/en): _Measuring innovation through knowledge production_
-- [Litefarm / University of British Columbia](https://ubcfarm.ubc.ca/csfs-research/litefarm/): _Leveraging data science for agricultural carbon and biodiversity outcomes_
-- [Rio Tinto Exploration](http://www.riotinto.com/): _FaultSENS_
-- [Rio Tinto Exploration](http://www.riotinto.com/): _Project DrillSense_
-- [Rocketbrew](https://www.therocketbrew.com/): _Generative AI Icebreaker - Wildcard Clickbait 🃏_
-- [SRK Consulting (Canada) Inc.](https://www.srk.com/): _Benchmarking tailings facility risks_
-- [SRK Consulting (Canada) Inc.](https://www.srk.com/): _Developing novel methods for liquefaction prediction_
-- Seahorse Strategies: _UBC Stock Portfolio Allocation Formula_
-- [Side.](https://www.theside.ca/): _AI-Driven Real Estate Insights: Revolutionizing Pre-Construction Sales_
-- [Strait of Georgia Data Center](https://sogdatacentre.ca/): _Survival Analysis System for Salmon in the Salish Sea_
-- [TRIUMF](https://www.triumf.ca/) and [UBC](https://www.ubc.ca/): _AI CALRICH_
-- [University of British Columbia](https://www.ubc.ca/): _Checklists and LLM prompts for efficient and effective test creation in data analysis_
-- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _The Global Game: Ranking Soccer Clubs Worldwide_
-- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Predicting Physical Performance of Football Players_
-- [Westland Insurance](https://www.westlandinsurance.ca/): _Augmenting Customer Retention Modelling with NLP Feature Engineering_
+<ul>
+<li><a href="https://goldspot.ca/">ALS GoldSpot Discoveries Ltd.</a>: <i>Towards Decentralized Training of Machine Learning Models for Bone Cancer Detection</i></li>
+<li><a href="http://www.analytika.ca/">Analytika</a>: <i>Production Line Robotics Arms Vision Recognition</i></li>
+<li><a href="https://www.autozen.com/">Autozen Technology</a>: <i>Autozen Recommendation Engine</i></li>
+<li><a href="https://ww2.jeppesen.com/digital-aviation-analytics/">Boeing Digital Solutions, Inc. d/b/a Jeppesen</a>: <i>Navigation Chart Change Detection</i></li>
+<li><a href="https://www.nhl.com/canucks/">Canucks Sports & Entertainment</a>: <i>Ticket Pricing Analysis of the Vancouver Canucks</i></li>
+<li><a href="https://coru.oceans.ubc.ca/">Changing Ocean Research Unit, Institute for the Oceans and Fisheries, UBC</a>: <i>Can you afford sustainable seafood in the future under climate change?</i></li>
+<li><a href="https://faberconnect.com/">Faber Connect</a>: <i>Predicting No-Shows and Job Success in Construction</i></li>
+<li><a href="https://www.illuminex.ai/">Illuminex AI</a>: <i>Airfield hazards: bird tracking at airports</i></li>
+<li><a href="https://impact.canada.ca/en">Impact Canada (Impact and Innovation Unit, Privy Council Office)</a>: <i>Measuring innovation through knowledge production</i></li>
+<li><a href="https://ubcfarm.ubc.ca/csfs-research/litefarm/">Litefarm / University of British Columbia</a>: <i>Leveraging data science for agricultural carbon and biodiversity outcomes</i></li>
+<li><a href="http://www.riotinto.com/">Rio Tinto Exploration</a>: <i>FaultSENS</i></li>
+<li><a href="http://www.riotinto.com/">Rio Tinto Exploration</a>: <i>Project DrillSense</i></li>
+<li><a href="https://www.therocketbrew.com/">Rocketbrew</a>: <i>Generative AI Icebreaker - Wildcard Clickbait 🃏</i></li>
+<li><a href="https://www.srk.com/">SRK Consulting (Canada) Inc.</a>: <i>Benchmarking tailings facility risks</i></li>
+<li><a href="https://www.srk.com/">SRK Consulting (Canada) Inc.</a>: <i>Developing novel methods for liquefaction prediction</i></li>
+<li>Seahorse Strategies: <i>UBC Stock Portfolio Allocation Formula</i></li>
+<li><a href="https://www.theside.ca/">Side.</a>: <i>AI-Driven Real Estate Insights: Revolutionizing Pre-Construction Sales</i></li>
+<li><a href="https://sogdatacentre.ca/">Strait of Georgia Data Center</a>: <i>Survival Analysis System for Salmon in the Salish Sea</i></li>
+<li><a href="https://www.triumf.ca/">TRIUMF</a> and <a href="https://www.ubc.ca/">UBC</a>: <i>AI CALRICH</i></li>
+<li><a href="https://www.ubc.ca/">University of British Columbia</a>: <i>Checklists and LLM prompts for efficient and effective test creation in data analysis</i></li>
+<li><a href="https://www.whitecapsfc.com/">Vancouver Whitecaps Football Club</a>: <i>The Global Game: Ranking Soccer Clubs Worldwide</i></li>
+<li><a href="https://www.whitecapsfc.com/">Vancouver Whitecaps Football Club</a>: <i>Predicting Physical Performance of Football Players</i></li>
+<li><a href="https://www.westlandinsurance.ca/">Westland Insurance</a>: <i>Augmenting Customer Retention Modelling with NLP Feature Engineering</i></li>
+</ul>
+
 </details>
 
 <details>
@@ -56,6 +59,7 @@ subtitle: For the MDS Capstone course
 - [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Terrific Touch_
 - [Westland Insurance](https://www.westlandinsurance.ca/): _Predicting Customer Conversion_
 - [aDolus Inc](https://www.adolus.com/): _Can AI spot risky software in critical infrastructue?_
+
 </details>
 
 <details>
@@ -204,4 +208,5 @@ subtitle: For the MDS Capstone course
 - [Rio Tinto](http://www.riotinto.com/): _Tools for Analyzing Mining Drill Data_
 - [UBC CTLT](http://ctlt.ubc.ca/): [_edXvis: Interactive Visualization of Student	Engagement with edX MOOCs_](https://ubc-mds.github.io/2018-01-01-CTLT-capstone/)
 - [Unbounce](https://unbounce.com/): _Unbounce Community Forum Analysis_
+
 </details>
