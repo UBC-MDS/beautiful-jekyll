@@ -23,7 +23,7 @@ subtitle: For the MDS Capstone course
 <li><a href="https://ubcfarm.ubc.ca/csfs-research/litefarm/">Litefarm / University of British Columbia</a>: <i>Leveraging data science for agricultural carbon and biodiversity outcomes</i></li>
 <li><a href="http://www.riotinto.com/">Rio Tinto Exploration</a>: <i>FaultSENS</i></li>
 <li><a href="http://www.riotinto.com/">Rio Tinto Exploration</a>: <i>Project DrillSense</i></li>
-<li><a href="https://www.therocketbrew.com/">Rocketbrew</a>: <i>Generative AI Icebreaker <li>Wildcard Clickbait 🃏</i></li>
+<li><a href="https://www.therocketbrew.com/">Rocketbrew</a>: <i>Generative AI Icebreaker <li>Wildcard Clickbait</i> 🃏 </li>
 <li><a href="https://www.srk.com/">SRK Consulting (Canada) Inc.</a>: <i>Benchmarking tailings facility risks</i></li>
 <li><a href="https://www.srk.com/">SRK Consulting (Canada) Inc.</a>: <i>Developing novel methods for liquefaction prediction</i></li>
 <li>Seahorse Strategies: <i>UBC Stock Portfolio Allocation Formula</i></li>
@@ -34,7 +34,7 @@ subtitle: For the MDS Capstone course
 <li><a href="https://www.whitecapsfc.com/">Vancouver Whitecaps Football Club</a>: <i>The Global Game: Ranking Soccer Clubs Worldwide</i></li>
 <li><a href="https://www.whitecapsfc.com/">Vancouver Whitecaps Football Club</a>: <i>Predicting Physical Performance of Football Players</i></li>
 <li><a href="https://www.westlandinsurance.ca/">Westland Insurance</a>: <i>Augmenting Customer Retention Modelling with NLP Feature Engineering</i></li>
-
+</ul>
 </details>
 
 <details>
