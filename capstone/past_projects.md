@@ -23,7 +23,7 @@ subtitle: For the MDS Capstone course
 <li><a href="https://ubcfarm.ubc.ca/csfs-research/litefarm/">Litefarm / University of British Columbia</a>: <i>Leveraging data science for agricultural carbon and biodiversity outcomes</i></li>
 <li><a href="http://www.riotinto.com/">Rio Tinto Exploration</a>: <i>FaultSENS</i></li>
 <li><a href="http://www.riotinto.com/">Rio Tinto Exploration</a>: <i>Project DrillSense</i></li>
-<li><a href="https://www.therocketbrew.com/">Rocketbrew</a>: <i>Generative AI Icebreaker <li>Wildcard Clickbait</i> 🃏 </li>
+<li><a href="https://www.therocketbrew.com/">Rocketbrew</a>: <i>Generative AI Icebreaker - Wildcard Clickbait 🃏</i></li>
 <li><a href="https://www.srk.com/">SRK Consulting (Canada) Inc.</a>: <i>Benchmarking tailings facility risks</i></li>
 <li><a href="https://www.srk.com/">SRK Consulting (Canada) Inc.</a>: <i>Developing novel methods for liquefaction prediction</i></li>
 <li>Seahorse Strategies: <i>UBC Stock Portfolio Allocation Formula</i></li>
