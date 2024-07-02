@@ -12,7 +12,7 @@ This year's capstone course will run __May - June, 2025__ (~8 weeks).
 | Event                                                                                          | Deadline/Period       |
 |------------------------------------------------------------------------------------------------|-----------------------|
 | [Call for Capstone proposals opens](https://ubc-mds.github.io/capstone/proposal/)              | August 1, 2024     |
-| [Suggested initial submission of proposal](#proposal-revision-process)                         | October 15, 2025      |
+| [Suggested initial submission of proposal](#proposal-revision-process)                         | October 15, 2024      |
 | [Proposal deadline](#proposal-revision-process)                                                | November 15, 2024     |
 | [Selection of proposals](#selection-of-proposals)                                              | December 13, 2024     |
 | [Partners submit video presentations](#partners-submit-video-presentations)                    | January 17, 2025      |
