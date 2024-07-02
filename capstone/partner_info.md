@@ -30,6 +30,8 @@ subtitle: For MDS Capstone Projects
 
 - The partner consents to the organization's name and project title being listed on the UBC MDS website.
 
+- If cloud compute resources are required, the partner organization will provide them. The MDS program is not able to provide compute resources for students during capstone.
+
 ## Student Expectations
 
 We expect our student groups to
