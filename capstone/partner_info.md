@@ -34,22 +34,22 @@ subtitle: For MDS Capstone Projects
 
 ## Student Expectations
 
-We expect our student groups to
+Student groups are expected to live up to the following professional standards:
 
-- communicate productively, identify sub-problems that could be worked on individually by team members, and integrate contributions of team members into a final product;
-- work at least four full-time days per week on the project;
-- document and present their work at UBC (using written, oral, and visual means) at various points throughout the course.
-- optionally (but strongly recommended), present their final product and findings to the capstone partner's organization.
+- Communicate productively, identify sub-problems that could be worked on individually by team members, and integrate contributions of team members into a final product;
+- Work at least four full-time days per week on the project;
+- Document and present their work at UBC (using written, oral, and visual means) at various points throughout the course.
+- Optionally (but strongly recommended), present their final product and findings to the capstone partner's organization.
 
-## Project Expectations 
+## Project Expectations
 
-Successful MDS capstone projects...
+Successful MDS capstone projects meet the following criteria:
 
-- pose an interesting and open-ended question/problem that can be addressed using data science for which data is already available or easily obtainable.
-- pose a multi-faceted question/problem, containing enough dimensions to be addressed in a multitude of ways.
-- are sufficiently deep, such that a useful data product that makes a solid advance on the problem can be developed in two months.
-- can be split up into milestones, such that concrete progress can be made throughout the two months.
-- draw on various tools and topics the students have learned in their [courses](https://ubc-mds.github.io/descriptions/) during the MDS program.
+- Pose an interesting and open-ended question/problem that can be addressed using data science for which data is already available or easily obtainable.
+- Pose a multi-faceted question/problem, containing enough dimensions to be addressed in a multitude of ways.
+- Are sufficiently deep, such that a useful data product that makes a solid advance on the problem can be developed in two months.
+- Can be split up into milestones, such that concrete progress can be made throughout the two months.
+- Draw on various tools and topics the students have learned in their [courses](https://ubc-mds.github.io/descriptions/) during the MDS program.
 
 What a capstone project is **not**:
 
