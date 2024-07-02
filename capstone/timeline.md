@@ -21,8 +21,8 @@ This year's capstone course will run __May - June, 2025__ (~8 weeks).
 | [Partners demonstrate readiness of data and sign legal docs](#partners-demonstrate-readiness-of-data-and-sign-legal-docs)                                    | February 20, 2025      |
 | Students are assigned to projects                                                              | Mar 31, 2025     |
 | [Kickoff meetings](#kickoff-meetings)                                                          | April, 2025           |
-| [Project](#project)                                                                            | Apr 28 - June 26, 2025 |
 | [Kickoff hackathon](#hackathon)                                                                | Apr 28 - Apr 30, 2025   |
+| [Project](#project)                                                                            | Apr 28 - June 26, 2025 |
 
 <br>
 
