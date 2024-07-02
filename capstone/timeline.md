@@ -5,24 +5,24 @@ subtitle: For MDS Capstone Projects
 
 ---
 
-This year's capstone course will run __May - June, 2024__ (~8 weeks).
+This year's capstone course will run __May - June, 2025__ (~8 weeks).
 
-**The soft deadline for UBC Capstone proposals is Nov 1st. And the hard deadline is Nov 30th.** Proposals sent in by Nov 1st will receive feedback (that will hopefully increase their chances of being selected).
+**The soft deadline for UBC Capstone proposals is Oct 15th. And the hard deadline is Nov 15th.** Proposals sent in by Oct 15th will receive feedback (that will hopefully increase their chances of being selected).
 
 | Event                                                                                          | Deadline/Period       |
 |------------------------------------------------------------------------------------------------|-----------------------|
-| [Call for Capstone proposals opens](https://ubc-mds.github.io/capstone/proposal/)              | September 1, 2023     |
-| [Suggested initial submission of proposal](#proposal-revision-process)                         | November 1, 2023      |
-| [Proposal deadline](#proposal-revision-process)                                                | November 30, 2023     |
-| [Selection of proposals](#selection-of-proposals)                                              | December 15, 2023     |
-| [Partners submit video presentations](#partners-submit-video-presentations)                    | January 18, 2024      |
-| [Capstone fair](#capstone-fair)                                                                | Feb 7, 2024       |
-| [Students rate the projects](#students-rate-the-projects)                                      | Feb 16, 2024     |
-| [Partners demonstrate readiness of data and sign legal docs](#partners-demonstrate-readiness-of-data-and-sign-legal-docs)                                    | February 19, 2024      |
-| Students are assigned to projects                                                              | Mar 31, 2024     |
-| [Kickoff meetings](#kickoff-meetings)                                                          | April, 2024           |
-| [Project](#project)                                                                            | Apr 29 - June 26, 2024 |
-| [Kickoff hackathon](#hackathon)                                                                | Apr 29 - May 1, 2024   |
+| [Call for Capstone proposals opens](https://ubc-mds.github.io/capstone/proposal/)              | August 1, 2024     |
+| [Suggested initial submission of proposal](#proposal-revision-process)                         | October 15, 2024      |
+| [Proposal deadline](#proposal-revision-process)                                                | November 15, 2024     |
+| [Selection of proposals](#selection-of-proposals)                                              | December 13, 2024     |
+| [Partners submit video presentations](#partners-submit-video-presentations)                    | January 17, 2025      |
+| [Capstone fair](#capstone-fair)                                                                | Feb 6 - 7, 2025       |
+| [Students rate the projects](#students-rate-the-projects)                                      | Feb 16, 2025     |
+| [Partners demonstrate readiness of data and sign legal docs](#partners-demonstrate-readiness-of-data-and-sign-legal-docs)                                    | February 20, 2025      |
+| Students are assigned to projects                                                              | Mar 31, 2025     |
+| [Kickoff meetings](#kickoff-meetings)                                                          | April, 2025           |
+| [Kickoff hackathon](#hackathon)                                                                | Apr 28 - Apr 30, 2025   |
+| [Project](#project)                                                                            | Apr 28 - June 26, 2025 |
 
 <br>
 
@@ -30,7 +30,7 @@ This year's capstone course will run __May - June, 2024__ (~8 weeks).
 
 Members of an organization interested in participating as a capstone partner should submit a project [proposal](https://ubc-mds.github.io/capstone/proposal/).
 
-Proposals received *before November 1st* will be reviewed by the MDS teams and feedback/suggestions for revisions will be provided to the partner, who can then revise and re-submit their proposal. This revision process aims to maximize the chance of a proposal being selected by students. Proposals received *after November 1st* will not be provided with feedback.
+Proposals received *before October 15th* will be reviewed by the MDS teams and feedback/suggestions for revisions will be provided to the partner, who can then revise and re-submit their proposal. This revision process aims to maximize the chance of a proposal being selected by students. Proposals received *after October 15th* will not be provided with feedback.
 
 ## Selection of proposals
 
