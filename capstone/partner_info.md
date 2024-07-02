@@ -9,20 +9,20 @@ subtitle: For MDS Capstone Projects
 
 ## Benefits to Capstone Partners
 
-- You'll have ~4 data scientists-in-training working on your dataset/project for ~2 months, at no cost. These students will be well versed in modern data science tools and techniques, including statistical analysis and visualizations using R and Python.
+- You'll have ~4 data scientists-in-training working on your project for ~2 months, at no cost. These students will be well versed in modern data science tools and techniques, including statistical analysis and visualizations using R and Python.
 
-- These students could be potential future employees; in addition, there will be visibility for your organization for the whole cohort through various events and presentations.
+- Students will create a data science product for your project (*e.g.,* a dashboard, an analytic report, a set of scripts, a pipeline, or similar). This product is expected to be of high quality, with excellent code documentation and testing.
 
-- Students will create a well-developed product of interest/relevance to your work (*e.g.,* Shiny app, analytic report, scripts/software). This product is expected to be of high quality, with excellent code documentation and testing.
+- The students working on your project could be potential future employees. In addition, there will be visibility for your organization to the whole MDS cohort through various events and presentations.
 
 - This is an opportunity to develop a relationship with the UBC MDS program. These relationships have the possibility of kickstarting research collaborations between the partners and UBC.
 
 
 ## Expectations of Capstone Partners
 
-- You should be able to provide our students with ample data that is relevant to a question/problem faced by your organization. This need not belong to the capstone partner's organization -- for example, it could come freely online. Datasets must be sufficiently clean, and an appropriate and size that the students will be able to load into R and/or Python in a reasonable amount of time and effort.
+- You should be able to provide our students with ample high quality data that is relevant to a question/problem faced by your organization. This need not belong to the capstone partner's organization -- for example, it could be available freely online. Datasets must be sufficiently clean, and of an appropriate size that the students can load into R/Python with a reasonable amount of effort.
 
-- The partner must be available to meet with MDS students working on the capstone project (in person ideally) on a weekly basis during the duration of the capstone project.
+- The partner must be available to meet with MDS students working on the capstone project  on a weekly basis during the duration of the capstone project (ideally in person).
 
 - The partner should be on board with the educational goals of the capstone project, and understand that this partnership isn't simply "free data scientists" for two months. 
 
@@ -45,20 +45,20 @@ We expect our student groups to
 
 Successful MDS capstone projects...
 
-- pose an interesting and open-ended question/problem that can be addressed using data science for which data is available or obtainable.
+- pose an interesting and open-ended question/problem that can be addressed using data science for which data is already available or easily obtainable.
 - pose a multi-faceted question/problem, containing enough dimensions to be addressed in a multitude of ways.
-- are sufficiently deep, such that a useful data product can be made in two months that makes a solid advance on the problem.
-- can be split up into milestones, such that concrete progress can be made in two months.
+- are sufficiently deep, such that a useful data product that makes a solid advance on the problem can be developed in two months.
+- can be split up into milestones, such that concrete progress can be made throughout the two months.
 - draw on various tools and topics the students have learned in their [courses](https://ubc-mds.github.io/descriptions/) during the MDS program.
 
 What a capstone project is **not**:
 
 - Setting up and/or maintaining a database.
-    - This project should focus on a data science problem.
+    - The capstone project should focus on a data science problem.
 - A pre-specified approach, such as applying a particular machine learning algorithm to a particular data set.
     - This type of project is too narrow, not open-ended, and has only one or a few solutions. We expect our students to creatively come up with their own data science approaches to address the capstone partner's over-arching question/problem (with advice from the capstone partner on data science approaches).
 - Data cleaning.
-    - Although we expect some data wrangling to be involved in the project, we ask that you provide data that is mostly clean and "ready-to-go". If you need help with this, [ASDa](https://asda.stat.ubc.ca/) from the UBC Department of Statistics might be able to help for a fee.
+    - Although we expect some data wrangling to be involved in the project, we ask that you provide data that is mostly clean and "ready-to-go". If you need help with this, [ASDa](https://asda.stat.ubc.ca/) from the UBC Department of Statistics might be able to help for a fee. Projects where the students are required to spend a significant amount of time to create/obtain the data are likely to be rejected.
 - Software development.
     - Although our students learn some basic principles of software development, they are not generally equipped to build production-level software systems. Software development projects would also typically be less well aligned with the students' interests and the learning objectives of the capstone course.
 
@@ -69,7 +69,7 @@ Here are answers to some frequently asked questions regarding our capstone cours
 
 #### 1. Is there a fee to participate as a partner? Do students get paid?
 
-No, there is no fee involved anywhere in the process, and we ask that partners not pay our students.
+No, there is no fee involved anywhere in the process, and we ask that partners do not pay our students.
 
 #### 2. Where do the students work on the capstone projects?
 
@@ -85,7 +85,7 @@ Yes, assuming you are willing and able to supervise multiple capstone projects s
 
 #### 5. Will the students sign a non-disclosure agreement?
 
-Yes, this is possible. The preferred option is to use UBC's standard NDA template.
+Yes, this is possible. The agreement would be the UBC's standard NDA template.
 
 #### 6. Can the proposed project be "solved"?
 
