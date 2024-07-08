@@ -97,7 +97,7 @@ subtitle: For the MDS Capstone course
 <li><a href="https://www.whitecapsfc.com/">Vancouver Whitecaps Football Club</a>: <i>Disruptive Defending - Using Optical Tracking and Event Data to Evaluate MLS Players’ Defensive Performance</i></li>
 <li><a href="https://www.viewpoint.ai/">Viewpoint AI</a>: <i>Life Decision Support: Choose your best career path</i></li>
 <li><a href="https://www.westlandinsurance.ca/">Westland Insurance</a>: <i>Predicting Customer Retention</i></li>
-<li><a href="https://www.worldbank.org/en/home">World Bank</a>: (How quickly can South Asia transition to a green economy?)</li>
+<li><a href="https://www.worldbank.org/en/home">World Bank</a>: <i>How quickly can South Asia transition to a green economy?</i></li>
 </ul>
 
 </details>
