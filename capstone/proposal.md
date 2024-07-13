@@ -4,7 +4,7 @@ title: Proposals
 subtitle: For MDS Capstone Projects
 ---
 
-**Capstone Project Proposals open in fall each year, [see the timeline for this year's submission deadlines](/capstone/timeline).**
+**Capstone Project Proposals open in late summer/early fall each year, [see the timeline for this year's submission deadlines](/capstone/timeline).**
 
 Partners may choose to submit a capstone project(s) to the [MDS Vancouver](https://ubc-mds.github.io/about/) program (general data science) and/or the [MDS Computational Linguistics](https://ubc-mdscl.github.io/program/aboutme/) program (language-related data science). If you're unsure about which program to submit your project to, read more below.
 
