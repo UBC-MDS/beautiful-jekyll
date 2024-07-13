@@ -32,7 +32,6 @@ and what data product the students are expected to deliver at the end of the pro
 You can find more details about the required information in this year's proposal form,
 linked above.
 If the proposal form is not open yet,
-you can view this PDF with the questions that were asked in a previous year.
-<!--TODO print qualtrics form to PDF once we have finalized it and insert link here. Also insert CL link separately? -->
+you can [view this PDF with the questions that were asked in a previous year](/capstone/capstone-survey-sample.pdf).
 
 **NOTE** If your project requires confidentiality and IP assignment, please read our [legal page](https://ubc-mds.github.io/capstone/guide-to-mutual-nda-ip/) on how we handle these before submitting your capstone proposal. **_For non-UBC Capstone partners whose projects require confidentiality and IP assignment, we strongly recommend that partners show the UBC template documents to their legal counsel and get their agreement to use these documents before submitting the capstone proposal. We cannot sign alternate agreements, nor amend our agreements in any way._**
