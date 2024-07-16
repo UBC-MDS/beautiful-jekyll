@@ -39,6 +39,9 @@ Prajeet received his Master's and PhD in Mathematics at the University of Britis
 
 </p>
 
+<br>
+<br>
+
 #### Katie Burak, Assistant Professor of Teaching
 
 <img src='../img/team/katie.jpg'   align="left" width="33.4%" style="margin-right: 5px;"/>
@@ -70,6 +73,9 @@ Ben joined the MDS program in July 2024 as a course coordinator. Born in Taiwan 
 <a href="https://www.benchenblog.com/" target="_blank">Learn more about Ben here.</a>
 
 </p>
+
+<br>
+<br>
 
 #### Daniel Chen, Postdoctoral Research and Teaching Fellow
 
@@ -212,6 +218,9 @@ Andy Tai joined UBC's Master of Data Science Program as a Postdoctoral Teaching 
 <a href="https://andytai7.github.io/Andy-Tai/" target="_blank">Learn more about Andy here.</a>
 
 </p>
+
+<br>
+<br>
 
 #### Tiffany Timbers, Co-Director and Assistant Professor of Teaching
 
