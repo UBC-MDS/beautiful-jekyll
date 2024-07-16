@@ -26,6 +26,19 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 
 ## The Team 
 
+#### Prajeet Bajpai, Postdoctoral Research and Teaching Fellow
+
+<img src='../img/team/prajeet.png' align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Prajeet received his Master's and PhD in Mathematics at the University of British Columbia and his Bachelor's degree at Dartmouth College. As a PhD student, he had the opportunity to work as a TA for MDS, and joined the program full-time as a Postdoctoral Teaching and Learning Fellow in 2024. <br>
+<br>
+
+<i>Prajeet likes to play tennis (and occasionally the guitar) and loves to cook and eat.</i> <br>
+
+<a href="https://p-bajpai.github.io" target="_blank">Learn more about Prajeet here.</a>
+
+</p>
+
 #### Katie Burak, Assistant Professor of Teaching
 
 <img src='../img/team/katie.jpg'   align="left" width="33.4%" style="margin-right: 5px;"/>
@@ -43,6 +56,20 @@ Katie joined UBC and began her role with MDS in July 2023. She completed her PhD
 
 <br>
 <br>
+
+#### Ben Chen, Course Coordinator
+
+
+<img src='../img/team/ben.jpg'  align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Ben joined the MDS program in July 2024 as a course coordinator. Born in Taiwan and primarily raised in Shanghai, he completed his undergraduate studies in Hong Kong before earning his Master’s degree at the UBC MDS program. In his spare time, Ben enjoys staying active through swimming, running, and playing basketball. On more relaxed days, he indulges in his passion for anime while lounging in bed. <br>
+<br>
+
+<i>Ben absolutely hates eating tomatoes.  </i> <br>
+
+<a href="https://www.benchenblog.com/" target="_blank">Learn more about Ben here.</a>
+
+</p>
 
 #### Daniel Chen, Postdoctoral Research and Teaching Fellow
 
@@ -126,32 +153,6 @@ Vincent joined UBC in March 2024 as a postdoctoral teaching and research fellow.
 <br>
 <br>
 
-#### Andy Tai, Postdoctoral Research and Teaching Fellow
-
-<img src='../img/team/andy.jpg' align="left" width="32%" style="margin-right: 5px;"/>
-<p style="font-size:12.5px">
-Andy Tai joined UBC's Master of Data Science Program as a Postdoctoral Teaching and Learning Fellow in July 2024. He completed his PhD in Neuroscience at the University of British Columbia, focusing on using machine learning to predict the risk of fatal overdose in addiction psychiatry. Andy has published multiple international manuscripts and collaborated with global experts. <br>
-<br>
-
-<i>Andy had 3 concussions, played varsity basketball for one year at UofT, and love playing beach volleyball</i> <br>
-
-<a href="https://andytai7.github.io/Andy-Tai/" target="_blank">Learn more about Andy here.</a>
-
-</p>
-
-#### Prajeet Bajpai, Postdoctoral Research and Teaching Fellow
-
-<img src='../img/team/prajeet.png' align="left" width="32%" style="margin-right: 5px;"/>
-<p style="font-size:12.5px">
-Prajeet received his Master's and PhD in Mathematics at the University of British Columbia and his Bachelor's degree at Dartmouth College. As a PhD student, he had the opportunity to work as a TA for MDS, and joined the program full-time as a Postdoctoral Teaching and Learning Fellow in 2024. <br>
-<br>
-
-<i>Prajeet likes to play tennis (and occasionally the guitar) and loves to cook and eat.</i> <br>
-
-<a href="https://p-bajpai.github.io" target="_blank">Learn more about Prajeet here.</a>
-
-</p>
-
 #### Quan Nguyen, Postdoctoral Research and Teaching Fellow
 
 <img src='../img/team/quan.jpeg'   align="left" width="34.5%" style="margin-right: 5px;"/>
@@ -199,15 +200,18 @@ Alexi commenced his current role at MDS in January 2021. He completed his PhD in
 
 </p>
 
-#### Jordan Schalm, Lecturer
+#### Andy Tai, Postdoctoral Research and Teaching Fellow
 
-<img src='../img/team/jordan.png'   align="left" width="33.4%" style="margin-right: 5px;"/>
+<img src='../img/team/andy.jpg' align="left" width="32%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
-Jordan is a Software Engineer for the Flow Foundation, where he works on the Core Protocol team. At Flow, Jordan developed the Joint-Feldman DKG Protocol and the world’s first production deployment of HotStuff, a Byzantine-Fault-Tolerant consensus algorithm. Most recently, he has contributed to extending Flow’s consensus algorithm with an interactive Pacemaker protocol (Jolteon) and a distributed PID controller for controlling the system’s overall block rate. In 2018, he co-created CryptoKitties, which defined the technical standard for non-fungible tokens and coined the term “NFT”. Jordan received a Bachelors of Computer Engineering from UBC in 2018.    <br>
+Andy Tai joined UBC's Master of Data Science Program as a Postdoctoral Teaching and Learning Fellow in July 2024. He completed his PhD in Neuroscience at the University of British Columbia, focusing on using machine learning to predict the risk of fatal overdose in addiction psychiatry. Andy has published multiple international manuscripts and collaborated with global experts. <br>
+<br>
 
-<a href="https://www.jordanschalm.com/" target="_blank">Learn more about Jordan here.</a>
+<i>Andy had 3 concussions, played varsity basketball for one year at UofT, and love playing beach volleyball</i> <br>
+
+<a href="https://andytai7.github.io/Andy-Tai/" target="_blank">Learn more about Andy here.</a>
+
 </p>
-
 
 #### Tiffany Timbers, Co-Director and Assistant Professor of Teaching
 
@@ -239,20 +243,6 @@ Betty Zhao joined the MDS program in January 2022 as a course coordinator. She w
 <i>In the last 6 months, Betty has learned the basics of working out and cooking without blowing up the kitchen.  </i> <br>
 
 <a href="https://www.linkedin.com/in/mengxinzhao/" target="_blank">Learn more about Betty here.</a>
-
-</p>
-
-#### Ben Chen, Course Coordinator
-
-
-<img src='../img/team/ben.jpg'  align="left" width="32%" style="margin-right: 5px;"/>
-<p style="font-size:12.5px">
-Ben joined the MDS program in July 2024 as a course coordinator. Born in Taiwan and primarily raised in Shanghai, he completed his undergraduate studies in Hong Kong before earning his Master’s degree at the UBC MDS program. In his spare time, Ben enjoys staying active through swimming, running, and playing basketball. On more relaxed days, he indulges in his passion for anime while lounging in bed. <br>
-<br>
-
-<i>Ben absolutely hates eating tomatoes.  </i> <br>
-
-<a href="https://www.benchenblog.com/" target="_blank">Learn more about Ben here.</a>
 
 </p>
 
