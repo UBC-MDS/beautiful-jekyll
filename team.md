@@ -11,12 +11,11 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 
 ## Team Stats
 
-- **11** : The total number of different languages we speak (including Farsi, Hindi, Japanese, Malayalam, Mandarin, Marathi, Spanish, Swedish, and Vietnamese)
-- **19** : The total number of coding languages we have experience working with as a whole.
-- **9** : The number of different countries our team cheers for during the Olympics.
-- **5.8** : The average number of years our team has of teaching experience (with a standard deviation of 2.8).
+- **13** : The total number of different languages we speak (including Cantonese, Hindi, Japanese, Malayalam, Mandarin, Marathi, Nepali, Spanish, Swedish, and Vietnamese)
+- **16** : The total number of coding languages we have experience working with as a whole.
+- **10** : The number of different countries our team cheers for during the Olympics.
+- **5.5** : The average number of years our team has of teaching experience (with a standard deviation of 2.8).
 - **10** : The median number of postsecondary education years our team has studied.
-
 
 ## Team Facts
 
@@ -26,6 +25,19 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 - We hold weekly team meetings where we discuss not only our work progress but also our social wellbeing (this was implemented during COVID when we were working from home and we decided to keep it).
 
 ## The Team 
+
+#### Prajeet Bajpai, Postdoctoral Research and Teaching Fellow
+
+<img src='../img/team/prajeet.png' align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Prajeet received his Master's and PhD in Mathematics at the University of British Columbia and his Bachelor's degree at Dartmouth College. As a PhD student, he had the opportunity to work as a TA for MDS, and joined the program full-time as a Postdoctoral Teaching and Learning Fellow in 2024. <br>
+<br>
+
+<i>Prajeet likes to play tennis (and occasionally the guitar) and loves to cook and eat.</i> <br>
+
+<a href="https://p-bajpai.github.io" target="_blank">Learn more about Prajeet here.</a>
+
+</p>
 
 #### Katie Burak, Assistant Professor of Teaching
 
@@ -44,6 +56,20 @@ Katie joined UBC and began her role with MDS in July 2023. She completed her PhD
 
 <br>
 <br>
+
+#### Ben Chen, Course Coordinator
+
+
+<img src='../img/team/ben.jpg'  align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Ben joined the MDS program in July 2024 as a course coordinator. Born in Taiwan and primarily raised in Shanghai, he completed his undergraduate studies in Hong Kong before earning his Master’s degree at the UBC MDS program. In his spare time, Ben enjoys staying active through swimming, running, and playing basketball. On more relaxed days, he indulges in his passion for anime while lounging in bed. <br>
+<br>
+
+<i>Ben absolutely hates eating tomatoes.  </i> <br>
+
+<a href="https://www.benchenblog.com/" target="_blank">Learn more about Ben here.</a>
+
+</p>
 
 #### Daniel Chen, Postdoctoral Research and Teaching Fellow
 
@@ -174,15 +200,18 @@ Alexi commenced his current role at MDS in January 2021. He completed his PhD in
 
 </p>
 
-#### Jordan Schalm, Lecturer
+#### Andy Tai, Postdoctoral Research and Teaching Fellow
 
-<img src='../img/team/jordan.png'   align="left" width="33.4%" style="margin-right: 5px;"/>
+<img src='../img/team/andy.jpg' align="left" width="32%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
-Jordan is a Software Engineer for the Flow Foundation, where he works on the Core Protocol team. At Flow, Jordan developed the Joint-Feldman DKG Protocol and the world’s first production deployment of HotStuff, a Byzantine-Fault-Tolerant consensus algorithm. Most recently, he has contributed to extending Flow’s consensus algorithm with an interactive Pacemaker protocol (Jolteon) and a distributed PID controller for controlling the system’s overall block rate. In 2018, he co-created CryptoKitties, which defined the technical standard for non-fungible tokens and coined the term “NFT”. Jordan received a Bachelors of Computer Engineering from UBC in 2018.    <br>
+Andy Tai joined UBC's Master of Data Science Program as a Postdoctoral Teaching and Learning Fellow in July 2024. He completed his PhD in Neuroscience at the University of British Columbia, focusing on using machine learning to predict the risk of fatal overdose in addiction psychiatry. Andy has published multiple international manuscripts and collaborated with global experts. <br>
+<br>
 
-<a href="https://www.jordanschalm.com/" target="_blank">Learn more about Jordan here.</a>
+<i>Andy had 3 concussions, played varsity basketball for one year at UofT, and love playing beach volleyball</i> <br>
+
+<a href="https://andytai7.github.io/Andy-Tai/" target="_blank">Learn more about Andy here.</a>
+
 </p>
-
 
 #### Tiffany Timbers, Co-Director and Assistant Professor of Teaching
 
