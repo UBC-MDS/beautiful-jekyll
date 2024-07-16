@@ -41,6 +41,7 @@ Prajeet received his Master's and PhD in Mathematics at the University of Britis
 
 <br>
 <br>
+<br>
 
 #### Katie Burak, Assistant Professor of Teaching
 
