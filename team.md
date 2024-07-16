@@ -140,6 +140,19 @@ Andy Tai joined UBC's Master of Data Science Program as a Postdoctoral Teaching 
 
 </p>
 
+#### Prajeet Bajpai, Postdoctoral Research and Teaching Fellow
+
+<img src='../img/team/prajeet.png' align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Prajeet received his Master's and PhD in Mathematics at the University of British Columbia and his Bachelor's degree at Dartmouth College. As a PhD student, he had the opportunity to work as a TA for MDS, and joined the program full-time as a Postdoctoral Teaching and Learning Fellow in 2024. <br>
+<br>
+
+<i>Prajeet likes to play tennis (and occasionally the guitar) and loves to cook and eat.</i> <br>
+
+<a href="https://p-bajpai.github.io" target="_blank">Learn more about Prajeet here.</a>
+
+</p>
+
 #### Quan Nguyen, Postdoctoral Research and Teaching Fellow
 
 <img src='../img/team/quan.jpeg'   align="left" width="34.5%" style="margin-right: 5px;"/>
