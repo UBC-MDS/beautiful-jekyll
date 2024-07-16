@@ -127,6 +127,19 @@ Vincent joined UBC in March 2024 as a postdoctoral teaching and research fellow.
 <br>
 <br>
 
+#### Andy Tai, Postdoctoral Research and Teaching Fellow
+
+<img src='../img/team/andy.jpg' align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Andy Tai joined UBC's Master of Data Science Program as a Postdoctoral Teaching and Learning Fellow in July 2024. He completed his PhD in Neuroscience at the University of British Columbia, focusing on using machine learning to predict the risk of fatal overdose in addiction psychiatry. Andy has published multiple international manuscripts and collaborated with global experts. <br>
+<br>
+
+<i>Andy had 3 concussions, played varsity basketball for one year at UofT, and love playing beach volleyball</i> <br>
+
+<a href="https://andytai7.github.io/Andy-Tai/" target="_blank">Learn more about Andy here.</a>
+
+</p>
+
 #### Quan Nguyen, Postdoctoral Research and Teaching Fellow
 
 <img src='../img/team/quan.jpeg'   align="left" width="34.5%" style="margin-right: 5px;"/>
