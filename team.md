@@ -11,12 +11,11 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 
 ## Team Stats
 
-- **11** : The total number of different languages we speak (including Farsi, Hindi, Japanese, Malayalam, Mandarin, Marathi, Spanish, Swedish, and Vietnamese)
-- **19** : The total number of coding languages we have experience working with as a whole.
-- **9** : The number of different countries our team cheers for during the Olympics.
-- **5.8** : The average number of years our team has of teaching experience (with a standard deviation of 2.8).
+- **13** : The total number of different languages we speak (including Cantonese, Hindi, Japanese, Malayalam, Mandarin, Mandarin, Marathi, Nepali, Spanish, Swedish, and Vietnamese)
+- **16** : The total number of coding languages we have experience working with as a whole.
+- **10** : The number of different countries our team cheers for during the Olympics.
+- **5.5** : The average number of years our team has of teaching experience (with a standard deviation of 2.8).
 - **10** : The median number of postsecondary education years our team has studied.
-
 
 ## Team Facts
 
