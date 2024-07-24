@@ -17,4 +17,4 @@ title: MDS Event Calendar
 | End-of-program Celebration | End of Jun, 2025 | 
 | Graduation Ceremony* | Late Nov, 2025 |
 
-* Please check https://graduation.ubc.ca/ for the date of graduation ceremony.
+Note\*: Please check https://graduation.ubc.ca/ for the date of graduation ceremony.
