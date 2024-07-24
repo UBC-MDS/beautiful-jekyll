@@ -30,6 +30,7 @@ navbar-links:
     - At a glance: "img/schedule.pdf"
     - Course Descriptions: "descriptions"
     - Course Materials: "https://github.com/UBC-MDS/public"
+    - Event Calendar: "event-calendar"
     - Calendar: "calendar"
     - Policies and Regulations: "policies"
     - Jobs: "jobs"
