@@ -13,7 +13,7 @@ Partners may choose to submit a capstone project(s) to the [MDS Vancouver](https
 Proposal forms can be found here:
 - [MDS Vancouver proposal form](https://ubc.ca1.qualtrics.com/jfe/form/SV_cDgsSg3eb9zPcZo).
 - [MDS Computational Linguistics proposal form](https://ubc.ca1.qualtrics.com/jfe/form/SV_0VdmnKK7058Gy6W).
-- [An example proposal](/capstone/sample_proposal).
+- [An example proposal](/capstone/sample-proposal.pdf).
 
 
 ### Should I submit my proposal to MDS Vancouver or MDS Computational Linguistics?
