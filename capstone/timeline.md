@@ -9,20 +9,20 @@ This year's capstone course will run __May - June, 2025__ (~8 weeks).
 
 **The soft deadline for UBC Capstone proposals is Oct 15th. And the hard deadline is Nov 15th.** Proposals sent in by Oct 15th will receive feedback (that will hopefully increase their chances of being selected).
 
-| Event                                                                                          | Deadline/Period       |
-|------------------------------------------------------------------------------------------------|-----------------------|
-| [Call for Capstone proposals opens](https://ubc-mds.github.io/capstone/proposal/)              | August 1, 2024     |
-| [Suggested initial submission of proposal](#proposal-revision-process)                         | October 15, 2024      |
-| [Proposal deadline](#proposal-revision-process)                                                | November 15, 2024     |
-| [Selection of proposals](#selection-of-proposals)                                              | December 13, 2024     |
-| [Partners submit video presentations](#partners-submit-video-presentations)                    | January 17, 2025      |
-| [Capstone fair](#capstone-fair)                                                                | Feb 4 - 5, 2025       |
-| [Students rate the projects](#students-rate-the-projects)                                      | Feb 16, 2025     |
-| [Partners demonstrate readiness of data and sign legal docs](#partners-demonstrate-readiness-of-data-and-sign-legal-docs)                                    | February 20, 2025      |
-| Students are assigned to projects                                                              | Mar 31, 2025     |
-| [Kickoff meetings](#kickoff-meetings)                                                          | April, 2025           |
-| [Kickoff hackathon](#hackathon)                                                                | Apr 28 - Apr 30, 2025   |
-| [Project](#project)                                                                            | Apr 28 - June 26, 2025 |
+| Event                                                                                                                     | Dates                  |
+|---------------------------------------------------------------------------------------------------------------------------|------------------------|
+| [Call for Capstone proposals opens](https://ubc-mds.github.io/capstone/proposal/)                                         | August 1, 2024         |
+| [Deadline to submit proposals for early feedback](#proposal-revision-process)                                             | October 15, 2024       |
+| [Final deadline to submit proposals](#proposal-revision-process)                                                          | November 15, 2024      |
+| [Selection of proposals](#selection-of-proposals)                                                                         | December 13, 2024      |
+| [Partners submit video presentations](#partners-submit-video-presentations)                                               | January 17, 2025       |
+| [Capstone fair](#capstone-fair)                                                                                           | Feb 4 - 5, 2025        |
+| [Students rate the projects](#students-rate-the-projects)                                                                 | Feb 16, 2025           |
+| [Partners demonstrate readiness of data and sign legal docs](#partners-demonstrate-readiness-of-data-and-sign-legal-docs) | February 20, 2025      |
+| Students are assigned to projects                                                                                         | Mar 31, 2025           |
+| [Kickoff meetings](#kickoff-meetings)                                                                                     | April, 2025            |
+| [Kickoff hackathon](#hackathon)                                                                                           | Apr 28 - Apr 30, 2025  |
+| [Project](#project)                                                                                                       | Apr 28 - June 26, 2025 |
 
 <br>
 
