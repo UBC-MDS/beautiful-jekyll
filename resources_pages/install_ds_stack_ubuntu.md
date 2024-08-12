@@ -94,7 +94,7 @@ and during the program).
 
 The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can install VS Code either via the [Snap store/Ubuntu software app through this link](https://snapcraft.io/code) or via the downloadable deb-file from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). The getting started instructions are here: [https://code.visualstudio.com/docs/?dv=linux64_deb](https://code.visualstudio.com/docs/?dv=linux64_deb).
 
-You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
+You can test that VS code is installed and can be opened from Terminal by **restarting** terminal and typing the following command:
 
 ```
 code --version
@@ -221,7 +221,7 @@ The instructions for the installation will then appear:
 4. Press enter to accept the default installation location, and wait a few seconds for Conda to install to that location.
 5. Type `yes` and press enter to instruct the installer to run `conda init`, which makes `conda` available from the terminal/shell.
 
-After installation, restart the terminal. If the installation was successful, you will see `(base)` prepended to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
+After installation, **restart** the terminal. If the installation was successful, you will see `(base)` prepended to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
 
 ```
 conda --version
@@ -394,8 +394,6 @@ typing the following into the R console inside RStudio
 install.packages(c('tidyverse', 'renv', 'usethis', 'devtools', 'markdown', 'rmarkdown', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
-install.packages("StanHeaders", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
-install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
 ```
 
 > **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
@@ -404,6 +402,13 @@ install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption
 
 Stan is the language we will be using later on in the program for Bayesian statistics.
 To install it open RStudio and install `rstan`
+
+```R
+install.packages("StanHeaders", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+```
+
+> **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
 
 Test the installation with:
 
@@ -560,7 +565,7 @@ tinytex::install_tinytex()
 
 As recommended at the end of the installation,
 it is important to **log out and in again for TinyTex to work properly**
-(restarting the computer also works).
+(**restarting** the computer also works).
 Once you log back in,
 try running the following in a terminal:
 

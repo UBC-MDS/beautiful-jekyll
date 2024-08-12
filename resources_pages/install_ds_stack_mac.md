@@ -100,7 +100,7 @@ Apple recently changed the Mac default shell in the Terminal to Zsh, however, we
 chsh -s /bin/bash
 ```
 
-You will have to quit all instances of open Terminals and then restart the Terminal for this to take effect.
+You will have to quit all instances of open Terminals and then **restart** the Terminal for this to take effect.
 
 ## Visual Studio Code
 
@@ -113,7 +113,7 @@ Pay attention here if you have to download the "Intel Chip" or "Apple silicon" i
 Once the download is finished, click "Open with Archive utility", and move the extracted VS Code application from "Downloads" to "Applications".
 In addition to reading the [getting started instructions](https://code.visualstudio.com/docs/setup/mac), **be sure to follow the ["Launching from the command line"](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) steps as well.**
 
-You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
+You can test that VS code is installed and can be opened from Terminal by **restarting** terminal and typing the following command:
 
 ```bash
 code --version
@@ -254,7 +254,7 @@ Select the appropiate link:
 
 > **Note:** on August 24th, 2023 we observed an issue using the latest install link above for "Mac M1 or higher". If you also observe this, then please visit [https://docs.conda.io/en/latest/miniconda-other-installer-links.html#macos-installers](https://docs.conda.io/en/latest/miniconda-other-installer-links.html#macos-installers) and download and install the "Miniconda3 macOS Apple M1 64-bit pkg" installer from the latest (highest) version of Python that you can see listed on that page.
 
-After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
+After installation, **restart** the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
 
 ```bash
 conda --version
@@ -407,8 +407,6 @@ typing the following into the R console inside RStudio:
 install.packages(c('tidyverse', 'renv', 'usethis', 'devtools', 'markdown', 'rmarkdown', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
-install.packages("StanHeaders", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
-install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
 ```
 
 > **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
@@ -417,6 +415,13 @@ install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption
 
 Stan is the language we will be using later on in the program for Bayesian statistics.
 To install it open RStudio and install `rstan`
+
+```R
+install.packages("StanHeaders", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+```
+
+> **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
 
 Test the installation with:
 

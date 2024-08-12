@@ -513,7 +513,7 @@ To see if you were successful, try opening RStudio by clicking on its icon. It s
 
 ![](/resources_pages/imgs/RStudio.png)
 
-Next, we will make sure that Rstudio uses the same directories as R from terminal for its configuration. To do this, we will need to set an environmental variable in Windows. First, open the start menu, type "env" and select the match that reads "Edit the system environment variables". Click the button at the bottom that reads "Environmental Variables...":
+Next, we will make sure that Rstudio uses the same directories as R from terminal for its configuration. To do this, we will need to set an environmental variable in Windows. First, open the start menu, type "Edit the system environment variables" and select the match that reads "Edit the system environment variables". Click the button at the bottom that reads "Environmental Variables...":
 
 ![](/resources_pages/imgs/sys-props-env-vars.png)
 
@@ -558,7 +558,7 @@ Once the change is made you can try again in the RStudio console `Ctrl` + `Shift
 Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <http://cran.r-project.org/bin/windows/Rtools/> and download the latest version. After the download has finished, run the installer with the default configuration. **Do not** follow the Rtools' website instructions for "Putting Rtools on the PATH". RStudio will put Rtools on the PATH automatically when it is needed.
 
 To test if you're installation was successful,
-open RStudio (restart it if you already have it open)
+open RStudio (**restart** it if you already have it open)
 and type the following into the Console:
 
 ```
@@ -577,8 +577,6 @@ typing the following into the R console inside RStudio:
 install.packages(c('tidyverse', 'renv', 'usethis', 'devtools', 'markdown', 'rmarkdown', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
-install.packages("StanHeaders", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
-install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
 ```
 
 > **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
@@ -587,6 +585,13 @@ install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption
 
 Stan is the language we will be using later on in the program for Bayesian statistics.
 To install it open RStudio and install `rstan`
+
+```R
+install.packages("StanHeaders", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+```
+
+> **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
 
 Test the installation with:
 
@@ -885,7 +890,7 @@ You will use Docker to create reproducible, sharable and shippable computing env
 
 After signing-up and signing into the Docker Store, go [here](https://store.docker.com/editions/community/docker-ce-desktop-windows) and click on the "Get Docker Desktop" button on the right hand side of the screen. Then follow the installation instructions on that screen to install the stable version.
 
-> **Note:** If you see a warning saying that your WSL installation is incomplete, you can click the link to install the kernel update and then restart per the instructions in the warning message.
+> **Note:** If you see a warning saying that your WSL installation is incomplete, you can click the link to install the kernel update and then **restart** per the instructions in the warning message.
 
 After installation (Docker will make you sign out to finish installing), launch a terminal and type
 
