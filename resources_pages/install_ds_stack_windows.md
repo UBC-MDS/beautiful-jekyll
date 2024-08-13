@@ -664,8 +664,12 @@ You will see two panels,
 the right-most panel allows you to perform advanced modification
 of keyboards shortcuts in JupyterLab
 and it already contains quite a few shortcuts.
+Please do not delete any of these shortcuts. 
 We're going to add two more shortcuts,
-by pasting the following:
+by pasting a text snippet just before the first existing shortcut.
+Go ahead and create a new line just after the line that says `"shortcuts": [`
+and paste the following:
+
  
 
 ```json
@@ -787,7 +791,6 @@ tlmgr.bat install eurosym \
   environ \
   fp \
   jknapltx \
-  ms \
   parskip \
   pdfcol \
   pgf \
