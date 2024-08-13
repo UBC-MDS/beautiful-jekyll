@@ -5,9 +5,7 @@ title: MDS quizzes
 
 
 ### Overview
-With the exception of [project courses](https://ubc-mds.github.io/2019-08-22-project-courses/), MDS courses will typically have two quizzes throughout the block, typically one in the middle of the course and another after the course ends during the free days between blocks. The quizzes for a course will appear on the [MDS calendar](https://ubc-mds.github.io/calendar/) (ideally before the course starts) so that students are aware of the timing. We anticipate most quizzes being ~~30 minutes~~ 40 minutes long.
-
-_2020-2021 changes:_ Students will have **40 minutes** to complete quizzes to account for internet connectivity issues, etc. We will keep the same number/length of the questions (i.e., they won't be made 33% longer to use up 33% more time).
+With the exception of [project courses](https://ubc-mds.github.io/2019-08-22-project-courses/), MDS courses will have two quizzes throughout the block, typically one in the middle of the course and another after the course ends during the free days between blocks. The quizzes for a course will appear on the [MDS calendar](https://ubc-mds.github.io/calendar/) (ideally before the course starts) so that students are aware of the timing. We anticipate most quizzes being 45 minutes long.
 
 ### Purpose
 The purpose of quizzes are to be a "sanity check" that students are keeping up with the essential material. While labs may go more in-depth into a topic, the quizzes cover essential material that we expect students to have mastered and to retain.
@@ -15,75 +13,73 @@ The purpose of quizzes are to be a "sanity check" that students are keeping up w
 ### Difficulty
 In light of the purpose above, quizzes are intended to be less difficult than the labs. They are not meant to trick you nor to contain unexpected material. In short, if you did the labs without an unreasonable amount of collaboration with your classmates, you should succeed on the quizzes.
 
+### PrairieTest
+
+You must complete the instruction below before writing quizzes. This is an essential step to check in the quiz room.
+- Open https://ca.prairietest.com/pt
+- Click Login and select University of British Columbia (ubc.ca)
+- Log in with your CWL
+- Accept the invitation to join MDS 5XX
+  - You only need to do this once, and please DM the course coordinator if you have issues viewing the invitation.
+- You will see a list of future quizzes, including quiz times and locations, under Exam reservations.
+
 ### Format
 
-Quizzes will typically be through [Canvas](canvas.ubc.ca). Unlike labs, quizzes will be performed within a defined time period ~~and will be supervised by MDS instructional staff.~~
+Quizzes will typically be through [Canvas](canvas.ubc.ca). Unlike labs, quizzes will be performed within a defined time period and will be supervised by MDS instructional staff.
 
-~~Upon arriving to the quiz room:~~
+#### Upon arriving at the quiz room
 
-~~1. If the quiz is being held in lab, you must attend your designated lab section.~~
-~~2. Sign the attendance sheet, that the TA or lab instructor has.~~
+1. You must attend the assigned quiz session in your designed quiz room (check [PrairieTest](https://ca.prairietest.com/pt) if you are unsure).
+2. You must be present at least **10 minutes** before the quiz starts.
+3. Upon entering the exam room, you should **not** communicate with anyone other than the invigilators.
+4. An invigilator will check you in. Please wait until the reader displays **red** light before tapping your student card.
+5. You must put all of your personal belongings and electronics on the racks at the front of the room—phones, bags, hats, jackets, smartwatches, etc. Phones must be turned off or on airplane mode.
+  - Exceptions: You are allowed to bring a double sided A4 cheatsheet and we will provide scrap papers.
+  - Exceptions: You can bring a scientific calculator if you wish, but there is an embedded calculator as well.
+6. Find a seat and log onto the provided computer using the username and password on the whiteboard or on the wall.
+7. Use **Mircrosoft Edge** to open **canvas.ubc.ca**
+8. Log in with your CWL. If you need Two-Factor Authentication (2FA), raise your hand and inform the invigilator.
+9. Navigate to the quiz page, and wait for further instructions.
+  - Make sure you open the right quiz for your lab section.
 
-At the start of the quiz period:
+#### During the Quiz
 
-1. Go to <https://canvas.ubc.ca>, and log in with your CWL.
-2. Navigate to the relevant quiz on the relevant course page.
-3. Begin the quiz, fill out your answers, and click "submit". You will have a countdown timer to complete the quiz.
-4. Wait quietly until the quiz time slot finishes. The TA or lab instructor will specify when the quiz period is finished. 
+1. Once the invigilator announces the quiz password, you may begin.
+3. You have 45 minutes to answer all questions. There is an embedded countdown timer, and the quiz auto-submits after the timer runs out.
+4. If you finish and submit early, please wait quietly. The TA or lab instructor will specify when the quiz period is finished.
+5. After the exam ends, **close the browser** and hand in your cheatsheet and scrap papers on your way out.
+  - If there is a quiz after your sesion, please keep quiet until you leave the building to avoid interruptions.
 
+### Quiz Logistics
 
-_2020-2021 changes:_ Quizzes will not be supervised. 
+- You have to stay for the **full duration** and only leave the room after the invigilator lets you go.
+- All MDS quizzes are closed book and closed internet. Communication with anyone or any robot is strictly prohibited. For details please visit [Quiz policies](https://ubc-mds.github.io/policies/#quiz-policies) and [Plagiarism](https://ubc-mds.github.io/policies/#plagiarism).
+- You must go to your assigned quiz time slot and location. Otherwise, you will fail to check in to the quiz room.
+- You can find your assigned quiz time and location on PrairieTest. Alternatively, you can check the MDS Calendar and the lab-sections repo (now updated with your assigned quiz location).
+- When you are instructed to leave the room after the quiz, please leave the room quietly. Please refrain from discussing the quiz with anyone else.
 
-## Timing
+#### Closed-book
 
-When we set up a quiz on Canvas, we specify a start time, end time, and duration. For example, if a quiz is at 9:00am, we might set the start time to 9:00am, the end time to ~~9:35~~ 9:45, and the duration to ~~30 min~~ 40 min. That means you have ~~30 min~~ 40 min to complete the quiz within the ~~35-minute~~ 45-minute window from 9:00 to ~~9:35~~ 9:45. Individual instructors may vary this slightly but the window will generally be at least 2 minutes longer than the quiz duration itself. In general, we recommend you start the quiz within 2 minutes of the quiz period starting, so that you have the full length of time to write your quiz.
+Unless otherwise specified, **quizzes will be closed-book** except for a double-sided A4 cheatsheet. This means that during the quiz students are expected to:
 
-_2020-2021 changes:_ Quizzes will generally be 40 minutes within a 45-minute window.
+  - **not** use the internet to solve questions on the quiz
+  - **not** bring any materials into the quiz that would be of assistance in completing the quiz (aside from a cheatsheet)
+  - **not** open other files or webpages other than the Canvas quiz
+  - **not** leave the quiz room early, and not come back into the quiz room after leaving (other than for purposes such as using the washroom)
 
+#### No collaboration
 
-### ~~Closed-book (ignore for 2020-2021)~~
+You may **not** communicate with other students or anyone else or any robots, through any medium, at any time during the quiz. You may not communicate with any of your classmates until everyone is finished the quiz. For each quiz, there will be two sessions. Please don't post about MDS quizzes on Slack until at least 30 minutes after the end of the **second** quiz, in case some students were given extra time.
 
-~~Unless otherwise specified, **quizzes will be closed-book** except for offline documentation only (e.g., help in RStudio and Jupyter notebook). This means that during the quiz students are expected to:~~
+### Things to bring/remember
 
-  - ~~**not** use the internet to solve questions on the quiz~~
-  - ~~**not** bring any materials into the quiz that would be of assistance in completing the quiz (aside from a laptop)~~
-  - ~~**not** open other files inside RStudio or Jupyter beyond those provided in the quiz repo~~
-  - ~~**not** leave the quiz room early with your laptop, and not come back into the quiz room after leaving (other than for purposes such as using the washroom)~~
-
-~~You are allowed to consult documentation within R/Python or your IDE (e.g., RStudio). However, time is very limited on quizzes and we anticipate that you will be more successful if you are fluent with common functions and don't need to rely too heavily on the documentation.~~
-
-### No collaboration
-
-You may **not** communicate with other students or anyone else, through any medium, at any time during the quiz. You may not communicate with any of your classmates until everyone is finished the quiz. Please don't post about MDS quizzes on Slack until at least 30 minutes after the end of the quiz, in case some students were given extra time.
-
-_For 2020-21 only_: this year we will be offering the quizzes at two time slots to accommodate students in a range of time zones. You may not discuss the quizzes with anyone until after the second quiz (Session B) is complete. Please do not start discussing the quiz 30 minutes after Session A. 
-
-### General Guidelines
-
-There is rarely a need to write more than two brief sentences for any given question. 
+- **Student card**: You will need it to check in, and access the ICCS building during after-hours (after 5 pm)
+- **Cheatsheet**: You are allowed one double-sided A4 cheatsheet.
+- **CWL password**: Please memorize your password as you need it to log on to Canvas.
 
 ### Special Circumstances
 
-#### I cannot submit the quiz!
-
-Take screen shots of your completed quiz, and send them through Slack to the lab instructor of the course before the end of the quiz period.
-
-#### I'm finished the quiz early (ignore for 2020-21)
-
-~~Wait quietly with your laptop closed/ajar until the end of the quiz period.~~
-
-#### I need to use the washroom
-
-Just leave your laptop in the quiz room. 
-
-_2020-2021 changes:_ You can take your laptop with you if you really want...
-
-### Instructions for TAs (does not apply for 2020-21)
-
-1. ~~Go to the classroom at least 5 mins before the quiz time.~~
-2. ~~Bring a blank sheet of paper with you. Pass it around a couple of minutes before the quiz starts and ask the students to write their name on it. You can hand it or take a picture and send it to us later.~~
-3. ~~Try to walk around and make sure that at least one of the TAs stays at the back of the classroom.~~
-4. ~~Report to us if you observe any form of academic dishonesty or chatting in the classroom.~~
-5. ~~Ask the students to stay in the classroom for the full time even after they are done. (If students start leaving the classroom it can be distracting for other students.)~~
-6. If you encounter issues during the quiz, inform the lab instructor through Slack.
-
+1. I finished the quiz early
+  - Wait quietly on your seat until the end of the quiz period.
+2. I need to use the washroom
+  - Raise your hand and notify the invigilator. Leave only if you are permitted to. However, we recommend that you use the washroom before the quiz.

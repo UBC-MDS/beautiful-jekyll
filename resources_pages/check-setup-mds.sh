@@ -43,7 +43,7 @@ if [[ "$(uname)" == 'Linux' ]]; then
 elif [[ "$(uname)" == 'Darwin' ]]; then
     sw_vers >> check-setup-mds.log
     file_browser="open"
-    if ! $(sw_vers | grep -iq "13.\|12.\|11.[4|5|6]"); then
+    if ! $(sw_vers | grep -iq "14.\|13.\|12.\|11.[4|5|6]"); then
         echo '' >> check-setup-mds.log
         echo "MISSING You need macOS Big Sur or greater (>=11.4)." >> check-setup-mds.log
     fi
@@ -362,3 +362,4 @@ echo
 echo "The above output has been saved to the file $(pwd)/check-setup-mds.log"
 echo "together with system configuration details and any detailed error messages about PDF and HTML generation."
 echo "You can open this folder in your file browser by typing \`${file_browser} .\` (without the surrounding backticks)."
+echo "Before sharing the log file, review that there is no SENSITIVE INFORMATION such as passwords or access tokens in it."
