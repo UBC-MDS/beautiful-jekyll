@@ -1,37 +1,40 @@
 ---
 layout: page
-title: Block reps
+title: Block Representatives
 ---
 
-## MDS Block representatives
+## MDS Block Representatives
 
-Every block, one or more students volunteer to represent their peers, acting as a liaison between students and MDS leadership (we/our/ours). This allows us to see how the block is going, allowing us to make changes if need be. 
+In the new academic year, there will be one set of block representatives in Term 1 (Blocks 1-3) and another set in Term 2 (Blocks 4-6). Block representatives volunteer to represent their peers, acting as a liaison between students and MDS leadership. This allows us to monitor how each block is progressing and make adjustments if needed.
 
-Here are some guidelines for the "block rep".
+### Block Representative Roles
+
+In addition to the general role of gathering and communicating feedback, block representatives will also have specific roles, such as focusing on academics, career development, social activities, health and well-being, etc. The exact roles will be determined when the program begins. Please note that these guidelines apply to the MDS Vancouver program. If you are enrolled in MDS Computational Linguistics (MDS CL), the policies might differ.
+
+### Guidelines for Block Representatives
 
 #### 1. Introduce yourself to your peers as the new block rep
 
-We recommend doing this via Slack. If there isn't a "students only" channel, please do make one. You can try creating a private channel and then type `/invite @v-students` or `/invite @cl-students` in there. This will hopefully prompt you to invite all students into the channel.
+We recommend introducing yourself as the new block rep via Slack. If there isn’t already a “students only” channel, please create one. You can try creating a private channel and then type `/invite @v-students` or `/invite @cl-students` to invite all students into the channel.
 
 #### 2. Collect feedback throughout the block
 
-The main responsibility is to collect feedback from your classmates. Feedback is usually collected informally and then also through one or more surveys during the block. We have generally found that surveys with both quantitative and qualitative fields are useful - the text fields allow us to hear individual student comments, and the quantitative fields let us know where the majority sentiment lies. Furthermore, in your survey we suggest including both a positively-framed question and a constructively-framed question, e.g. "What is working well in this course?" and "What could be improved in this course?". During the meeting (see below), block reps often provide us with a document summarizing the survey results, which we archive for future reference. 
+Your main responsibility is to collect feedback from your classmates. Feedback is usually collected informally and through one or more surveys during the block. Surveys with both quantitative and qualitative fields are especially useful. We suggest including both positively-framed questions and constructively-framed questions, such as “What is working well in this course?” and “What could be improved in this course?”
 
-One thing we would like you to keep in mind is that the feedback passed on to instructions should be **constructive** and should not contain personal attacks or hurtful comments. Part of your role is to moderate student discussions as they are happening and/or remove/edit hurtful comments from surveys if you think they are inappropriate. If you are unsure about something, or would like help with this process, please reach out to your faculty contacts (probably the Option Co-Directors) and we will help.  
+Please ensure that feedback passed on to instructors is constructive and does not contain personal attacks or hurtful comments. Part of your role is to moderate student discussions and/or remove/edit inappropriate comments from surveys. If you are unsure about something or need assistance, please reach out to your faculty contacts (likely the Option Co-Directors) for support.
 
 #### 3. Attend our team meeting
 
-We'll ask you to attend our in-person team meeting, usually at the end of the 2nd week of the block (or early in the 3rd week). Often, the block reps will share survey results with the
-teaching team after the meeting. These results don't need to be in a polished form (see below).
+We’ll ask you to attend our in-person team meeting, typically at the end of the 2nd week of the block (or early in the 3rd week). During this meeting, block reps often provide us with a summary of the survey results, which we archive for future reference. These results don’t need to be in a polished form.
 
 #### 4. Communicate back to the cohort
 
-After the team meeting, we might ask the block rep to contact students. You can do this via Slack.  
+After the team meeting, we may ask the block rep to communicate with students via Slack to relay any important information.
 
-### A note on the expected time commitment
+### A Note on the Expected Time Commitment
 
-You are taking on this role on top of your MDS course work, which is already very intense! The Block Rep position is not meant to be onerous and we don't intend for it to take up large amounts of your time. We expect you'll be active on Slack, and you'll spend some time creating surveys. However, we don't expect you to turn the survey results into a polished presentation or polished document. The raw survey results are fine (or sometimes the block reps remove some problematic comments if sharing raw text comments). If you're ever unsure about the scope of your duties as Block Rep, feel free to ask us.
+We understand that the Block Rep role is in addition to your MDS coursework, which is already very demanding. This role is not meant to be overly time-consuming. We expect you to be active on Slack and to spend some time creating surveys, but we do not expect you to create polished presentations or documents. Raw survey results are acceptable (with the removal of any problematic comments). If you’re ever unsure about the scope of your duties as a Block Rep, please feel free to ask us.
 
 ### A note on the role of the block rep feedback
 
-Please see also [this document](/resources_pages/student_feedback) about the role of the block rep's feedback to the MDS team.
+For more details on the role of block rep feedback to the MDS team, please see [this document](/resources_pages/student_feedback).
