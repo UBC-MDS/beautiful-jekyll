@@ -11,12 +11,11 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 
 ## Team Stats
 
-- **10** : The total number of different languages we speak (including Hindi, Japanese, Malayalam, Mandarin, Marathi, Spanish, Swedish, and Vietnamese)
-- **15** : The total number of coding languages we have experience working with as a whole.
-- **8** : The number of different countries our team cheers for during the Olympics.
-- **5.4** : The average number of years our team has of teaching experience (with a standard deviation of 2.2).
+- **13** : The total number of different languages we speak (including Cantonese, Hindi, Japanese, Malayalam, Mandarin, Marathi, Nepali, Spanish, Swedish, and Vietnamese)
+- **16** : The total number of coding languages we have experience working with as a whole.
+- **10** : The number of different countries our team cheers for during the Olympics.
+- **5.5** : The average number of years our team has of teaching experience (with a standard deviation of 2.8).
 - **10** : The median number of postsecondary education years our team has studied.
-
 
 ## Team Facts
 
@@ -26,6 +25,23 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 - We hold weekly team meetings where we discuss not only our work progress but also our social wellbeing (this was implemented during COVID when we were working from home and we decided to keep it).
 
 ## The Team 
+
+#### Prajeet Bajpai, Postdoctoral Research and Teaching Fellow
+
+<img src='../img/team/prajeet.png' align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Prajeet received his Master's and PhD in Mathematics at the University of British Columbia and his Bachelor's degree at Dartmouth College. As a PhD student, he had the opportunity to work as a TA for MDS, and joined the program full-time as a Postdoctoral Teaching and Learning Fellow in 2024. <br>
+<br>
+
+<i>Prajeet likes to play tennis (and occasionally the guitar) and loves to cook and eat.</i> <br>
+
+<a href="https://p-bajpai.github.io" target="_blank">Learn more about Prajeet here.</a>
+
+</p>
+
+<br>
+<br>
+<br>
 
 #### Katie Burak, Assistant Professor of Teaching
 
@@ -38,7 +54,24 @@ Katie joined UBC and began her role with MDS in July 2023. She completed her PhD
 
 <i>Katie's favourite data science topics involve the applications of statistics, such as modelling and statistical inference.</i> <br>
 
-<a href="https://www.linkedin.com/in/katie-burak-a9a12615b/?originalSubdomain=ca" target="_blank">Learn more about Katie here.</a>
+<a href="https://katieburak.github.io/" target="_blank">Learn more about Katie here.</a>
+
+</p>
+
+<br>
+<br>
+
+#### Ben Chen, Course Coordinator
+
+
+<img src='../img/team/ben.jpg'  align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Ben joined the MDS program in July 2024 as a course coordinator. Born in Taiwan and primarily raised in Shanghai, he completed his undergraduate studies in Hong Kong before earning his Master’s degree at the UBC MDS program. In his spare time, Ben enjoys staying active through swimming, running, and playing basketball. On more relaxed days, he indulges in his passion for anime while lounging in bed. <br>
+<br>
+
+<i>Ben absolutely hates eating tomatoes.  </i> <br>
+
+<a href="https://www.benchenblog.com/" target="_blank">Learn more about Ben here.</a>
 
 </p>
 
@@ -68,7 +101,7 @@ in the tranquil world of underwater caves,
 on top of the world with a snowboard, or
 at a computer learing how to CAD design something to print on his 3D printer.
 <br>
-
+<br>
 <i>In the last 6 months, Daniel learned how to use a lathe and mill to make a lightsaber!</i>
 
 <i>Daniel's favorite data science topic are reproduciable and collaboratice workflows.</i>
@@ -76,9 +109,8 @@ at a computer learing how to CAD design something to print on his 3D printer.
 <a href="https://daniel.rbind.io/" target="_blank">Learn more about Daniel here.</a>
 
 </p>
+<br>
 
-<br>
-<br>
 
 #### Gittu George, Postdoctoral Research and Teaching Fellow
 
@@ -114,6 +146,19 @@ Varada Kolhatkar became a part of the MDS program in October 2018, serving as a 
 
 </p>
 
+
+#### Vincent Liu, Postdoctoral Research and Teaching Fellow
+
+<img src='../img/team/vincent.jpeg'  align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Vincent joined UBC in March 2024 as a postdoctoral teaching and research fellow. He completed his PhD and MSc in Computing Science at the University of Alberta where his research focused on data-driven reinforcement learning. Prior to that, he graduated with a Bachelor of Business Administration from National Taiwan University. He is passionate about the use of foundation models for education and personalization. <br>
+<br>
+
+<a href="https://vincentliu3.github.io/" target="_blank">Learn more about Vincent here.</a>
+</p>
+
+<br>
+<br>
 
 #### Quan Nguyen, Postdoctoral Research and Teaching Fellow
 
@@ -162,13 +207,27 @@ Alexi commenced his current role at MDS in January 2021. He completed his PhD in
 
 </p>
 
+#### Andy Tai, Postdoctoral Research and Teaching Fellow
 
+<img src='../img/team/andy.jpg' align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Andy Tai joined UBC's Master of Data Science Program as a Postdoctoral Teaching and Learning Fellow in July 2024. He completed his PhD in Neuroscience at the University of British Columbia, focusing on using machine learning to predict the risk of fatal overdose in addiction psychiatry. Andy has published multiple international manuscripts and collaborated with global experts. <br>
+<br>
+
+<i>Andy had 3 concussions, played varsity basketball for one year at UofT, and love playing beach volleyball</i> <br>
+
+<a href="https://andytai7.github.io/Andy-Tai/" target="_blank">Learn more about Andy here.</a>
+
+</p>
+
+<br>
+<br>
 
 #### Tiffany Timbers, Co-Director and Assistant Professor of Teaching
 
 <img src='../img/team/tiffany.png'  align="left" width="33%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
-Tiffany joined the founding team who developed the Master’s of Data Science program at UBC as a Postdoctoral Teaching and Learning Fellow. She received PhD in Neuroscience in 2012 from UBC, following which she held a Banting Postdoctoral Fellowship at Simon Fraser University where her research focused on cell biology & genomics. This postdoctoral research was data intensive and required the application of data science and statistical methodologies. In 2018, she joined the Statistics Department at UBC as an Assistant Professor of Teaching. She primarily teaches courses courses on introductory statistics and data science, computer programming, reproducible workflows and collaborative software development.
+Tiffany joined the founding team who developed the Master’s of Data Science program at UBC as a Postdoctoral Teaching and Learning Fellow. She received a PhD in Neuroscience in 2012 from UBC, following which she held a Banting Postdoctoral Fellowship at Simon Fraser University where her research focused on cell biology & genomics. This postdoctoral research was data intensive and required the application of data science and statistical methodologies. In 2018, she joined the Statistics Department at UBC as an Assistant Professor of Teaching. She primarily teaches courses courses on introductory statistics and data science, computer programming, reproducible workflows and collaborative software development.
 
 <br>
 <br>

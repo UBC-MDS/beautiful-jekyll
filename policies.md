@@ -85,17 +85,16 @@ Balancing these two sides is difficult. In MDS the policy is as follows: if a gr
 
 ## Quiz policies
 
-Unless otherwise specified, MDS quizzes are open-book. This means it is permitted to use any materials such as course notes,
-the internet, software documentation, etc. 
+Unless otherwise specified, MDS quizzes are **closed book**, with allowance of a double-sided A4 cheatsheet. You may only access Canvas during the quiz.
 
-**However, it is NOT permitted to communicate with anyone else, including via posting quiz questions on internet forums, during a quiz.**
+**It is NOT permitted to communicate with anyone else, including via posting quiz questions on internet forums, during a quiz.**
 
 **Use of AI tools (e.g., ChatGPT) is also strictly prohibited and can lead to serious consequences.**
 
 The following are also **NOT** permitted:
 
 - taking a quiz from a remote location
-- leaving the quiz room early with your laptop
+- leaving the quiz room early
 - leaving and re-entering the quiz room (unless approved by the instructor, please talk to the instructor before the quiz if you think you might have to leave the room during the quiz)
 
 Failing to observe the above expectations may result in a zero grade for the quiz in question.
@@ -123,6 +122,12 @@ Students must correctly cite any code that has been authored by someone else or 
 - the generation of code by automatic code-generations software
 
 An “adequate acknowledgement” requires a detailed identification of the (parts of the) code reused and a full citation of the original source code that has been reused.
+
+## Use of LLMs
+
+- Use of LLMs on quizzes in MDS will be strictly prohibited. The purpose of our quizzes is to test your knowledge, not the LLMs.
+- In some assignments in MDS you will be explicitly asked to use LLMs so that you get practice working with them.
+- If you are not asked to use an LLM to solve a problem in MDS, you probably shouldn’t use them to directly solve the problem. By doing so you are only cheating yourself of the practice and learning you would get by solving the problem yourself.
 
 ## Leaves of Absence (medical or personal)
 

@@ -437,7 +437,7 @@ and the LSP packages fill the same function for our code.
 Install them via the following commands:
 
 ```bash
-conda install pandas memory_profiler jupyterlab=4 jupyterlab-git jupyterlab-spellchecker jupytext
+conda install pandas jupyterlab=4 jupyterlab-git jupyterlab-spellchecker jupytext
 ```
 
 If the above command fails, try installing a few packages at a time instead of all of them at once.
@@ -1050,7 +1050,7 @@ bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/mast
 
 The output from running the script will look something like this:
 
-```
+````
 # MDS setup check 2023.1
 
 If a program or package is marked as MISSING,
@@ -1120,7 +1120,7 @@ OK        rmarkdown HTML-generation was successful.
 The above output has been saved to the file /c/Users/Danie/check-setup-mds.log
 together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `explorer .` (without the surrounding backticks).
-```
+````
 
 As you can see at the end of the output,
 a log file is saved in your current directory.

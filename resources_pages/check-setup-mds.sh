@@ -43,7 +43,7 @@ if [[ "$(uname)" == 'Linux' ]]; then
 elif [[ "$(uname)" == 'Darwin' ]]; then
     sw_vers >> check-setup-mds.log
     file_browser="open"
-    if ! $(sw_vers | grep -iq "13.\|12.\|11.[4|5|6]"); then
+    if ! $(sw_vers | grep -iq "14.\|13.\|12.\|11.[4|5|6]"); then
         echo '' >> check-setup-mds.log
         echo "MISSING You need macOS Big Sur or greater (>=11.4)." >> check-setup-mds.log
     fi
@@ -57,10 +57,6 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
     echo $os_version >> check-setup-mds.log
     file_browser="explorer"
 
-    if $(grep -iq Home <<< $os_edition); then
-        echo '' >> check-setup-mds.log
-        echo "MISSING Windows Home is not sufficient. Please upgrade to the free Education edition as per the setup instructions." >> check-setup-mds.log
-    fi
     if ! $(grep -iq "22[0-9]|1904[1|2|3|4]" <<< $os_version); then
         echo '' >> check-setup-mds.log
         echo "MISSING You need Windows 10 or 11 with build number >= 10.0.19041. Please run Windows update." >> check-setup-mds.log
@@ -292,12 +288,12 @@ if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable prog
 else
     # Create an empty Rmd-file for testing
     touch mds-knit-pdf-test.Rmd
-    if ! Rscript -e "rmarkdown::find_pandoc(dir = c('/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools'), cache=F); rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
+    if ! Rscript -e "rmarkdown::find_pandoc(dir = c('/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools'), cache=F); rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
         echo "MISSING   rmarkdown PDF-generation failed. Check that latex and rmarkdown are marked OK above." >> check-setup-mds.log
     else
         echo 'OK        rmarkdown PDF-generation was successful.' >> check-setup-mds.log
     fi
-    if ! Rscript -e "rmarkdown::find_pandoc(dir = c('/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools'), cache=F); rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'html_document')" &> /dev/null; then
+    if ! Rscript -e "rmarkdown::find_pandoc(dir = c('/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools'), cache=F); rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'html_document')" &> /dev/null; then
         echo "MISSING   rmarkdown HTML-generation failed. Check that rmarkdown is marked OK above." >> check-setup-mds.log
     else
         echo 'OK        rmarkdown HTML-generation was successful.' >> check-setup-mds.log
@@ -364,3 +360,4 @@ echo
 echo "The above output has been saved to the file $(pwd)/check-setup-mds.log"
 echo "together with system configuration details and any detailed error messages about PDF and HTML generation."
 echo "You can open this folder in your file browser by typing \`${file_browser} .\` (without the surrounding backticks)."
+echo "Before sharing the log file, review that there is no SENSITIVE INFORMATION such as passwords or access tokens in it."
