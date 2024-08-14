@@ -181,7 +181,7 @@ else
             echo "MISSING   ${py_pkg}.*" >> check-setup-mds.log
         else
             # Match the package name up until the first whitespace to get regexed versions
-            # without getting all following packages contained in the string of all pacakges
+            # without getting all following packages contained in the string of all packages
             echo "OK        $(grep -io "${py_pkg}\S*" <<< $installed_py_pkgs)" >> check-setup-mds.log
         fi
     done
