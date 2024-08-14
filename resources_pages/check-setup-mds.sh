@@ -228,10 +228,10 @@ else
     else
         # If the student didn't run `playwright install chromium`
         # then that command will try to download chromium,
-        # which should always take more than 1s
+        # which should always take more than 2s
         # so `timeout` will interupt it with exit code 1.
         # If chromium is already installed,
-        # this command just returns an info message which should not take more than 1s.
+        # this command just returns an info message which should not take more than 2s.
         # ----
         # Unfortunately, apple has decided not to use gnu-coreutils,
         # so we need to use less reliable solution on macOS;
@@ -239,10 +239,10 @@ else
         if [[ "$(uname)" == 'Darwin' ]]; then
             # The surrounding $() here is just to supress the alarm clock output
             # as redirection does not work.
-            $(perl -e 'alarm shift; exec `playwright install chromium`' 1)
+            $(perl -e 'alarm shift; exec `playwright install chromium`' 2)
         else
             # Using the reliable `timeout` tool on Linux and Windows
-            timeout 1s playwright install chromium &> /dev/null
+            timeout 2s playwright install chromium &> /dev/null
         fi
         # `$?` stores the exit code of the last program that as executed
         # If the exit code is anything else than zero, it means that the above command failed,
