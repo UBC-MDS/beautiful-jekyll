@@ -290,10 +290,11 @@ fi
 if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable program
     echo "Please install 'R' before testing PDF and HTML generation." >> check-setup-mds.log
 else
-    pandoc_version=$(Rscript -e "cat(paste(rmarkdown::find_pandoc(dir = c('/opt/quarto/bin/tools', '/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools'), cache=F)[['version']]))")
+    find_pandoc_command="rmarkdown::find_pandoc(dir = c('/opt/quarto/bin/tools', '/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools'), cache = F)"
+    pandoc_version=$(Rscript -e "cat(paste($find_pandoc_command[['version']]))")
     # Create an empty Rmd-file for testing
     touch mds-knit-pdf-test.Rmd
-    if ! Rscript -e "rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
+    if ! Rscript -e "$find_pandoc_command;rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
         echo "MISSING   rmarkdown PDF-generation failed. Check that quarto, rmarkdown, and latex are marked OK above." >> check-setup-mds.log
         if [ "$pandoc_version" = "0" ]; then
             echo "It seems that RMarkdown cannot find pandoc (should have been installed as part of quarto, check if 'quarto pandoc --version' works)" >> check-setup-mds.log
@@ -301,7 +302,7 @@ else
     else
         echo 'OK        rmarkdown PDF-generation was successful.' >> check-setup-mds.log
     fi
-    if ! Rscript -e "rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'html_document')" &> /dev/null; then
+    if ! Rscript -e "$find_pandoc_command;rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'html_document')" &> /dev/null; then
         echo "MISSING   rmarkdown HTML-generation failed. Check that quarto and rmarkdown are marked OK above." >> check-setup-mds.log
         if [ "$pandoc_version" = "0" ]; then
             echo "It seems that RMarkdown cannot find pandoc (should have been installed as part of quarto, check if 'quarto pandoc --version' works)" >> check-setup-mds.log
