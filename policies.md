@@ -83,11 +83,11 @@ Sometimes serious grading errors are made, for example when a grader did not see
 
 Balancing these two sides is difficult. In MDS the policy is as follows: if a grade is challenged in a way that is deemed unreasonable, the student will receive a warning. This decision will be made by the instructor (not TA). If a student receives three warnings, the student will lose the privilege to challenge grades for the remainder of the program. Examples of unreasonable requests include extremely minor complaints (e.g. half a mark on an assignment) or repeatedly contesting the same issue once a decision has been reached. This policy applies to both labs and quizzes.
 
-## Quiz policies
+## Quiz Policies
 
-Unless otherwise specified, MDS quizzes are **closed book**, with allowance of a double-sided A4 cheatsheet. You may only access Canvas during the quiz.
+Unless otherwise specified, MDS quizzes are **closed** book, with the allowance of a digital double-sided A4 cheatsheet that must be uploaded to PrairieLearn before the quiz. You may only access PrairieLearn during the quiz.
 
-**It is NOT permitted to communicate with anyone else, including via posting quiz questions on internet forums, during a quiz.**
+**It is NOT permitted to communicate with anyone else, including via posting quiz questions on internet forums and asking quiz-related questions on Slack, during quiz period.**
 
 **Use of AI tools (e.g., ChatGPT) is also strictly prohibited and can lead to serious consequences.**
 
@@ -95,7 +95,7 @@ The following are also **NOT** permitted:
 
 - taking a quiz from a remote location
 - leaving the quiz room early
-- leaving and re-entering the quiz room (unless approved by the instructor, please talk to the instructor before the quiz if you think you might have to leave the room during the quiz)
+- leaving and re-entering the quiz room (unless approved by the instructor; please talk to the instructor before the quiz if you anticipate needing to leave the room during the quiz)
 
 Failing to observe the above expectations may result in a zero grade for the quiz in question.
 
