@@ -10,7 +10,7 @@ NC='\033[0m' # No Color
 
 # 0. Help message and OS info
 echo ''
-echo -e "${ORANGE}# MDS setup check 2023.1${NC}" | tee check-setup-mds.log
+echo -e "${ORANGE}# MDS setup check 2024.1${NC}" | tee check-setup-mds.log
 echo '' | tee -a check-setup-mds.log
 echo 'If a program or package is marked as MISSING,'
 echo 'this means that you are missing the required version of that program or package.'
