@@ -61,7 +61,7 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
     os_build=${os_version_full##*.}    # Build number (after the last dot)
     if [[ $os_version -eq 10 && $os_build -lt 19041 ]]; then
         echo '' >> check-setup-mds.log
-        echo "MISSING You need Windows 10 or 11 with build number >= 10.0.19041. Please run Windows update." >> check-setup-mds.log
+        echo "MISSING You need Windows 10 or 11 with build number >= 10.0.19041. Please run Windows update and then try running this script again." >> check-setup-mds.log
     fi
 else
     echo "Operating system verison could not be detected." >> check-setup-mds.log
@@ -78,36 +78,36 @@ echo -e "${ORANGE}## System programs${NC}" >> check-setup-mds.log
 # so easier to test the location of the executable than having students add it to PATH.
 if [[ "$(uname)" == 'Darwin' ]]; then
     # psql is not added to path by default
-    if ! [ -x "$(command -v /Library/PostgreSQL/15/bin/psql)" ]; then
-        echo "MISSING   postgreSQL 15.*" >> check-setup-mds.log
+    if ! [ -x "$(command -v /Library/PostgreSQL/16/bin/psql)" ]; then
+        echo "MISSING   postgreSQL 16.*" >> check-setup-mds.log
     else
-        echo "OK        "$(/Library/PostgreSQL/15/bin/psql --version) >> check-setup-mds.log
+        echo "OK        "$(/Library/PostgreSQL/16/bin/psql --version) >> check-setup-mds.log
     fi
 
     # rstudio is installed as an .app
-    if ! $(grep -iq "= \"2023\.06.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)"); then
-        echo "MISSING   rstudio 2023.06.*" >> check-setup-mds.log
+    if ! $(grep -iq "= \"2024\.02.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)"); then
+        echo "MISSING   rstudio 2024.02.*" >> check-setup-mds.log
     else
         # This is what is needed instead of --version
-        installed_version_tmp=$(grep -io "= \"2023\.06.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)")
+        installed_version_tmp=$(grep -io "= \"2024\.02.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)")
         # Tidy strangely formatted version number
         installed_version=$(sed "s/= //;s/\"//g" <<< "$installed_version_tmp")
         echo "OK        "rstudio $installed_version >> check-setup-mds.log
     fi
 
     # Remove rstudio and psql from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* docker=24.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* docker=27.* code=1.*)
 # psql and Rstudio are not on PATH in windows
 elif [[ "$OSTYPE" == 'msys' ]]; then
-    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/15/bin/psql')" ]; then
-        echo "MISSING   psql 15.*" >> check-setup-mds.log
+    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/16/bin/psql')" ]; then
+        echo "MISSING   psql 16.*" >> check-setup-mds.log
     else
-        echo "OK        "$('/c/Program Files/PostgreSQL/15/bin/psql' --version) >> check-setup-mds.log
+        echo "OK        "$('/c/Program Files/PostgreSQL/16/bin/psql' --version) >> check-setup-mds.log
     fi
     # Rstudio on windows does not accept the --version flag when run interactively
     # so this section can only be troubleshot from the script
-    if ! $(grep -iq "2023\.06.*" <<< "$('/c//Program Files/RStudio/rstudio' --version)"); then
-        echo "MISSING   rstudio 2023.06*" >> check-setup-mds.log
+    if ! $(grep -iq "2024\.02.*" <<< "$('/c//Program Files/RStudio/rstudio' --version)"); then
+        echo "MISSING   rstudio 2024.02*" >> check-setup-mds.log
     else
         echo "OK        rstudio "$('/c//Program Files/RStudio/rstudio' --version) >> check-setup-mds.log
     fi
@@ -118,11 +118,11 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
         echo "OK        "$(tlmgr.bat --version | head -1) >> check-setup-mds.log
     fi
     # Remove rstudio from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=4.* git=2.* make=4.* latex=3.* docker=24.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=4.* git=2.* make=4.* latex=3.* docker=27.* code=1.*)
 else
     # For Linux everything is sane and consistent so all packages can be tested the same way
-    sys_progs=(psql=14.* rstudio=2023\.06.* R=4.* python=3.* conda="23\|22\|4.*" bash=5.* \
-        git=2.* make=4.* latex=3.* tlmgr=5.* docker=24.* code=1.*)
+    sys_progs=(psql=14.* rstudio=2024\.02.* R=4.* python=3.* conda="23\|22\|4.*" bash=5.* \
+        git=2.* make=4.* latex=3.* tlmgr=5.* docker=27.* code=1.*)
     # Note that the single equal sign syntax in used for `sys_progs` is what we have in the install
     # instruction for conda, so I am using it for Python packagees so that we
     # can just paste in the same syntax as for the conda installations
