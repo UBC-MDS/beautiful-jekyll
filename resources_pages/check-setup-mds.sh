@@ -85,11 +85,11 @@ if [[ "$(uname)" == 'Darwin' ]]; then
     fi
 
     # rstudio is installed as an .app
-    if ! $(grep -iq "= \"2024\.02.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)"); then
-        echo "MISSING   rstudio 2024.02.*" >> check-setup-mds.log
+    if ! $(grep -iq "= \"2024\.04.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)"); then
+        echo "MISSING   rstudio 2024.04.*" >> check-setup-mds.log
     else
         # This is what is needed instead of --version
-        installed_version_tmp=$(grep -io "= \"2024\.02.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)")
+        installed_version_tmp=$(grep -io "= \"2024\.04.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)")
         # Tidy strangely formatted version number
         installed_version=$(sed "s/= //;s/\"//g" <<< "$installed_version_tmp")
         echo "OK        "rstudio $installed_version >> check-setup-mds.log
@@ -107,8 +107,8 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
     fi
     # Rstudio on windows does not accept the --version flag when run interactively
     # so this section can only be troubleshot from the script
-    if ! $(grep -iq "2024\.02.*" <<< "$('/c//Program Files/RStudio/rstudio' --version)"); then
-        echo "MISSING   rstudio 2024.02*" >> check-setup-mds.log
+    if ! $(grep -iq "2024\.04.*" <<< "$('/c//Program Files/RStudio/rstudio' --version)"); then
+        echo "MISSING   rstudio 2024.04*" >> check-setup-mds.log
     else
         echo "OK        rstudio "$('/c//Program Files/RStudio/rstudio' --version) >> check-setup-mds.log
     fi
@@ -123,7 +123,7 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
         docker=27.* code=1.* quarto=1.*)
 else
     # For Linux everything is sane and consistent so all packages can be tested the same way
-    sys_progs=(psql=16.* rstudio=2024\.02.* R=4.* python=3.* conda="23\|22\|4.*" bash=5.* \
+    sys_progs=(psql=16.* rstudio=2024\.04.* R=4.* python=3.* conda="23\|22\|4.*" bash=5.* \
         git=2.* make=4.* latex=3.* tlmgr=5.* docker=27.* code=1.* quarto=1.*)
     # Note that the single equal sign syntax in used for `sys_progs` is what we have in the install
     # instruction for conda, so I am using it for Python packagees so that we
