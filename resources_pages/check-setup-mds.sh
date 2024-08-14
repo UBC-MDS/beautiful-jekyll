@@ -123,7 +123,7 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
         docker=27.* code=1.* quarto=1.*)
 else
     # For Linux everything is sane and consistent so all packages can be tested the same way
-    sys_progs=(psql=14.* rstudio=2024\.02.* R=4.* python=3.* conda="23\|22\|4.*" bash=5.* \
+    sys_progs=(psql=16.* rstudio=2024\.02.* R=4.* python=3.* conda="23\|22\|4.*" bash=5.* \
         git=2.* make=4.* latex=3.* tlmgr=5.* docker=27.* code=1.* quarto=1.*)
     # Note that the single equal sign syntax in used for `sys_progs` is what we have in the install
     # instruction for conda, so I am using it for Python packagees so that we
