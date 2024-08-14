@@ -290,7 +290,7 @@ fi
 if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable program
     echo "Please install 'R' before testing PDF and HTML generation." >> check-setup-mds.log
 else
-    pandoc_version=$(Rscript -e "cat(paste(rmarkdown::find_pandoc(dir = c('/opt/quarto/bin', '/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools'), cache=F)[['version']]))")
+    pandoc_version=$(Rscript -e "cat(paste(rmarkdown::find_pandoc(dir = c('/opt/quarto/bin/tools', '/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools'), cache=F)[['version']]))")
     # Create an empty Rmd-file for testing
     touch mds-knit-pdf-test.Rmd
     if ! Rscript -e "rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
