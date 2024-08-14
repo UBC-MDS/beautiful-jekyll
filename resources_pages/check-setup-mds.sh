@@ -296,7 +296,7 @@ else
     if ! Rscript -e "rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
         echo "MISSING   rmarkdown PDF-generation failed. Check that quarto, latex, rmarkdown, and pandoc are marked OK above." >> check-setup-mds.log
         if [ "$pandoc_version" = "0" ]; then
-            echo "It seems that RMarkdown cannot find pandoc (should have been installed as part of quarto, check if `quarto pandoc --version` works)" >> check-setup-mds.log
+            echo "It seems that RMarkdown cannot find pandoc (should have been installed as part of quarto, check if 'quarto pandoc --version' works)" >> check-setup-mds.log
         fi
     else
         echo 'OK        rmarkdown PDF-generation was successful.' >> check-setup-mds.log
@@ -304,7 +304,7 @@ else
     if ! Rscript -e "rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'html_document')" &> /dev/null; then
         echo "MISSING   rmarkdown HTML-generation failed. Check that quarto, rmarkdown, and pandoc are marked OK above." >> check-setup-mds.log
         if [ "$pandoc_version" = "0" ]; then
-            echo "It seems that RMarkdown cannot find pandoc (should have been installed as part of quarto, check if `quarto pandoc --version` works)" >> check-setup-mds.log
+            echo "It seems that RMarkdown cannot find pandoc (should have been installed as part of quarto, check if 'quarto pandoc --version' works)" >> check-setup-mds.log
         fi
     else
         echo 'OK        rmarkdown HTML-generation was successful.' >> check-setup-mds.log
