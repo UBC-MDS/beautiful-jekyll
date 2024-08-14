@@ -96,7 +96,8 @@ if [[ "$(uname)" == 'Darwin' ]]; then
     fi
 
     # Remove rstudio and psql from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* docker=27.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* \
+        docker=27.* code=1.*, quarto=1.* pandoc=3.*)
 # psql and Rstudio are not on PATH in windows
 elif [[ "$OSTYPE" == 'msys' ]]; then
     if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/16/bin/psql')" ]; then
@@ -118,11 +119,12 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
         echo "OK        "$(tlmgr.bat --version | head -1) >> check-setup-mds.log
     fi
     # Remove rstudio from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=4.* git=2.* make=4.* latex=3.* docker=27.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=4.* git=2.* make=4.* latex=3.* \
+        docker=27.* code=1.* quarto=1.* pandoc=3.*)
 else
     # For Linux everything is sane and consistent so all packages can be tested the same way
     sys_progs=(psql=14.* rstudio=2024\.02.* R=4.* python=3.* conda="23\|22\|4.*" bash=5.* \
-        git=2.* make=4.* latex=3.* tlmgr=5.* docker=27.* code=1.*)
+        git=2.* make=4.* latex=3.* tlmgr=5.* docker=27.* code=1.* quarto=1.* pandoc=3.*)
     # Note that the single equal sign syntax in used for `sys_progs` is what we have in the install
     # instruction for conda, so I am using it for Python packagees so that we
     # can just paste in the same syntax as for the conda installations
@@ -288,12 +290,6 @@ fi
 if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable program
     echo "Please install 'R' before testing PDF and HTML generation." >> check-setup-mds.log
 else
-    pandoc_version=$(Rscript -e "cat(paste(rmarkdown::find_pandoc(dir = c('/opt/quarto/bin', '/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools'), cache=F)[['version']]))")
-    if [ "$pandoc_version" = "0" ]; then
-        echo "MISSING   pandoc (check that quarto is marked OK above)" >> check-setup-mds.log
-    else
-        echo "OK        pandoc="$(pandoc_version) >> check-setup-mds.log
-    fi
     # Create an empty Rmd-file for testing
     touch mds-knit-pdf-test.Rmd
     if ! Rscript -e "rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
