@@ -5,9 +5,7 @@ date: 2022-12-01
 hero: /images/tswift-trump-logo-banner.jpg
 excerpt: Built a Markov Model that can write Taylor Swift lyrics or Tweet like Trump. 
 timeToRead: 10
-authors:
-  - Ty Andrews
-  - Jonah Hamilton
+subtitle: By Ty Andrews and Jonah Hamilton
 ---
 {{< table-of-contents >}}
 
