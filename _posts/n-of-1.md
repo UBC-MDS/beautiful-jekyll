@@ -4,7 +4,7 @@
 
 ### By [Merete Lutz](https://meretelutz.github.io/)
 
-![Photo by Luke Chesser on Unsplash](img/watch.jpg)
+![Photo by Luke Chesser on Unsplash](../img/blog/merete/watch.jpg)
 
 *Photo by Luke Chesser on Unsplash.*
 
@@ -54,7 +54,7 @@ The alcohol consumption variable is the response to the question "Did you have a
 
 The first step in any analysis is to do some exploratory data analysis (EDA). This is just to get a general idea of what our data looks like, and to create a visual that will help direct our investigation.
 
-![boxplots](img/boxplots.png)
+![boxplots](../img/blog/merete/boxplots.png)
 
 *Fig 1. Exploratory plot of the distribution of sleep performance score by level of alcohol consumed.*
 
@@ -119,7 +119,7 @@ Our p-value is 0.017 which means that our finding is significant at the alpha=0.
 
 I've included a helpful visualization of the null distribution, test statistic, and 95% quantile range below. The grey bars are the many possible test statistics calculated from our 1000 samples, and the orange line represents the density of these values. The blue dashed lines represent the 97.5th and 2.5th quantiles of this distribution, beyond which our test statistic (in red) is shown to be significant.
 
-![distribution](img/distribution.png)
+![distribution](../img/blog/merete/distribution.png)
 
 *Figure 2. The distribution of test statistics under the null hypothesis (no difference in mean sleep score with alcohol consumption).*
 
