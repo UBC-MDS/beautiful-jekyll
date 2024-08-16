@@ -397,6 +397,8 @@ Go to `Tools > Global Options > Code > Editing` and tick the following option:
 
 Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works. Close down RStudio afterwards.
 
+>For students that are having computer admin issues, please run this in the terminal ```sudo chown -R $(whoami) .config```
+
 ### Installing R packages
 
 Next, install the key R packages needed for the start of MDS program,
