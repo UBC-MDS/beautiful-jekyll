@@ -289,32 +289,34 @@ fi
 # rmarkdown PDF and HTML generation
 if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable program
     echo "Please install 'R' before testing PDF and HTML generation." >> check-setup-mds.log
-elif ! [ -x "$(command -v quarto)" ]; then  # Check that R exists as an executable program
-    echo "Please install 'quarto' before testing PDF and HTML generation." >> check-setup-mds.log
 else
-    # We need to create this file because quarto can't read from stdin...
-    echo "cat(dirname(paste(rmarkdown::pandoc_exec())))" > tmp-quarto-pandoc.R
-    # quarto also can't output to stdout and instead sends everything to stderr,
-    # so we need to redirect stderr to stdout to assign it as a variable =(
-    pandoc_path=$(quarto run tmp-quarto-pandoc.R 2>&1)
-    # The find_pandoc command need to be run in the same R instance
+    # The find_pandoc command need to be run in the same R instance 
     # as at the rendering of the PDF and HTML docs,
     # so we define it once here and run it twice below
-    find_pandoc_command="rmarkdown::find_pandoc(dir = c('$pandoc_path'), cache = F)"
+    # (plus one to explicitly check if pandoc was found
+    # and give a more informative error message)
+    find_pandoc_command="rmarkdown::find_pandoc(dir = c('/opt/quarto/bin/tools', '/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools', '/Applications/quarto/bin/tools/aarch64', '/Applications/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools/aarch64', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/aarch64'), cache = F)"
+    pandoc_version=$(Rscript -e "cat(paste($find_pandoc_command[['version']]))")
     # Create an empty Rmd-file for testing
     touch mds-knit-pdf-test.Rmd
     if ! Rscript -e "$find_pandoc_command;rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
-        echo "MISSING   rmarkdown PDF-generation failed. Check that quarto, rmarkdown, and latex are marked OK above, and that there is a pandoc executable in the following path: $pandoc_path" >> check-setup-mds.log
+        echo "MISSING   rmarkdown PDF-generation failed. Check that quarto, rmarkdown, and latex are marked OK above." >> check-setup-mds.log
+        if [ "$pandoc_version" = "0" ]; then
+            echo "It seems that RMarkdown cannot find pandoc (should have been installed as part of quarto, check if 'quarto pandoc --version' works)" >> check-setup-mds.log
+        fi
     else
         echo 'OK        rmarkdown PDF-generation was successful.' >> check-setup-mds.log
     fi
     if ! Rscript -e "$find_pandoc_command;rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'html_document')" &> /dev/null; then
-        echo "MISSING   rmarkdown HTML-generation failed. Check that quarto and rmarkdown are marked OK above and that there is a pandoc executable in the following path: $pandoc_path" >> check-setup-mds.log
+        echo "MISSING   rmarkdown HTML-generation failed. Check that quarto and rmarkdown are marked OK above." >> check-setup-mds.log
+        if [ "$pandoc_version" = "0" ]; then
+            echo "It seems that RMarkdown cannot find pandoc (should have been installed as part of quarto, check if 'quarto pandoc --version' works)" >> check-setup-mds.log
+        fi
     else
         echo 'OK        rmarkdown HTML-generation was successful.' >> check-setup-mds.log
     fi
     # -f makes sure `rm` succeeds even when the file does not exists
-    rm -f mds-knit-pdf-test.Rmd mds-knit-pdf-test.html mds-knit-pdf-test.pdf tmp-quarto-pandoc.R
+    rm -f mds-knit-pdf-test.Rmd mds-knit-pdf-test.html mds-knit-pdf-test.pdf
 fi
 
 # 4. Ouput the saved file to stdout
