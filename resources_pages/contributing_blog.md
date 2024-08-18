@@ -8,7 +8,7 @@ Want to share your insights with the MDS community? Contributing to the [MDS blo
 
 ### 1. Reach Out
 
-First things first—get in touch with the Editor to discuss your blog idea and how you'd like to contribute. We're excited to hear what you have in mind!
+First things first—get in touch with the Editor, Varada Kolhatkar, at kvarada@cs.ubc.ca to discuss your blog idea and how you'd like to contribute. We're excited to hear what you have in mind!
 
 ### 2. Fork the Repository
 
