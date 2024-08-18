@@ -87,7 +87,7 @@ Balancing these two sides is difficult. In MDS the policy is as follows: if a gr
 
 Unless otherwise specified, MDS quizzes are **closed** book, with the allowance of a digital double-sided A4 cheatsheet that must be uploaded to PrairieLearn before the quiz. You may only access PrairieLearn during the quiz.
 
-**It is NOT permitted to communicate with anyone else, including via posting quiz questions on internet forums and asking quiz-related questions on Slack, during quiz period.**
+During the quiz window, students are not allowed to disclose, discuss, or share any part of the quiz with any other individual, except as directly permitted or required by the course instructors. This includes discussions in person, online, or through any electronic means. Violation of this policy will result in academic penalties, which may include failure of the quiz or failure of the course.
 
 **Use of AI tools (e.g., ChatGPT) is also strictly prohibited and can lead to serious consequences.**
 

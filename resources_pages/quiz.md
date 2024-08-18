@@ -20,6 +20,8 @@ In light of the purpose above, quizzes are intended to be less difficult than th
 
 This year, quizzes will be held on PrairieLearn. Instead of quizzes being held at the same time for every student, we will provide quiz windows (available time slots) for students to register for their preferred time. Quizzes will feature randomized questions, so each student may receive a slightly different version of the quiz.
 
+During the quiz window, students are **NOT** allowed to disclose, discuss, or share any part of the quiz with any other individual, except as directly permitted or required by the course instructors. This includes discussions in person, online, or through any electronic means. Violation of this policy will result in academic penalties, which may include failure of the quiz or failure of the course.
+
 ### Digital Cheatsheets
 
 Students are now allowed to use digital cheatsheets, which can be uploaded to the PrairieLearn system. This means students can prepare a digital double-sided A4 cheatsheet and submit it directly within the PrairieLearn interface before starting their quiz.
@@ -27,7 +29,7 @@ Students are now allowed to use digital cheatsheets, which can be uploaded to th
 ### PrairieTest
 
 You must complete the instruction below before writing quizzes. This is an essential step to check in the quiz room.
-- Open https://ca.prairietest.com/pt
+- Open [PrairieTest](https://ca.prairietest.com/pt)
 - Click Login and select University of British Columbia (ubc.ca)
 - Log in with your CWL
 - Accept the invitation to join MDS 5XX
