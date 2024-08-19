@@ -1,8 +1,8 @@
-# N-of-1 Trials and Analyzing Your Own Fitness Data
-
-## Do I really sleep worse after drinking alcohol?
-
-### By [Merete Lutz](https://meretelutz.github.io/)
+---
+layout: post
+title: "N-of-1 Trials and Analyzing Your Own Fitness Data"
+subtitle: by Merete Lutz
+---
 
 ![Photo by Luke Chesser on Unsplash](../img/blog/merete/watch.jpg)
 
@@ -80,7 +80,7 @@ Now that we have defined our framework, we can use R to calculate our test stati
 
 From our sample data we can calculate our observed test statistic. The code in R is included below.
 
-```{r}
+```r
 test_stat <- data |> 
   specify(formula = sleep_performance ~ alcohol) |> 
   calculate(
@@ -93,7 +93,7 @@ Our test statistic is 8.01. This number means that the average sleep score for n
 
 The next step in the analysis is to generate a null distribution from our sample data. A null distribution represents all the different values of test statistic we would observe if samples were drawn repeatedly from the population. The distribution is meant to reflect the variation in the test statistic purely due to random sampling. The null distribution is created in R below:
 
-```{r}
+```r
 set.seed(42) #Setting seed for reproducibility
 
 null_distribution <- data |> 
@@ -110,7 +110,7 @@ What we are doing above is taking samples with replacement from our data, and ca
 
 After we have our null distribution and test statistic, we can calculate a two-sided p-value for an alpha of 0.05. The p-value can be thought of as the probability of getting a test statistic that is as extreme or more than our observed test statistic if the null hypothesis is true. Put into plain words; it represents how likely it would be to see this result if there was no true association. We calculate a two-sided p-value in R below, as we are interested in the possibility of the test statistic being greater or lesser than expected.
 
-```{r}
+```r
 p_value <- null_distribution|> 
   get_p_value(test_stat, direction = "both")
 ```
