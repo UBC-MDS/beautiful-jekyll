@@ -1,6 +1,9 @@
-# With Great Data Science Comes Great Responsibility
+---
+layout: post
+title: With Great Data Science Comes Great Responsibility
+subtitle: by Marian Agyby
+---
 ### Warning signs and tools to stop the spread of misinformation.
-#### By Marian Agyby
 
 <br/> 
 
@@ -96,7 +99,8 @@ Thank you for reading.
 </p>
 
 ---
-
+### Authors:
+[Author Name](link-to-your-bio) is {brief description of yourself}
 ### Sources:
 
 1. https://www.datapine.com/blog/misleading-statistics-and-data/
