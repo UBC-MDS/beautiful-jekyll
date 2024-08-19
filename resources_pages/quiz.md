@@ -34,7 +34,7 @@ You must complete the instruction below before writing quizzes. This is an essen
 - Log in with your CWL
 - Accept the invitation to join MDS 5XX
   - You only need to do this once, and please DM the course coordinator if you have issues viewing the invitation.
-- You will see a list of future quizzes, including quiz times and locations, under Exam reservations.
+- You will be able to book quizzes and view your booked quiz times and locations, under Exam reservations.
 
 ### Quiz Logistics
 
@@ -48,25 +48,24 @@ You must complete the instruction below before writing quizzes. This is an essen
 
 #### Upon arriving at the quiz room
 
-1. Attend the assigned quiz session in your designated quiz room (check [PrairieTest](https://ca.prairietest.com/pt) if you are unsure).
+1. Attend your booked quiz sessions.
 2. Be present at least **10 minutes** before the quiz starts.
 3. Upon entering the exam room, do **not** communicate with anyone other than the invigilators.
 4. An invigilator will check you in. Wait until the reader displays a **red** light before tapping your student card.
 5. Place all personal belongings and electronics on the racks at the front of the room (phones, bags, hats, jackets, smartwatches, etc.). Phones must be turned off or on airplane mode.
-  - Exceptions: You are allowed to upload a digital double-sided A4 cheatsheet. Scrap papers will be provided by the exam room.
+  - Note: Your 2-page A4 cheatsheet must be digital, and scrap papers will be provided in the exam room.
   - Exceptions: You may bring a scientific calculator if you wish, but an embedded calculator is available.
-6. Find a seat and log into the provided computer using the username and password displayed on the whiteboard or wall.
-7. Use **Mircrosoft Edge** to open **canvas.ubc.ca**
+6. Find your assigned seat number and log into the provided computer using the username and password displayed on the whiteboard or wall.
+7. Use **Mircrosoft Edge** to open **PrairieTest**
 8. Log in with your CWL. If you need Two-Factor Authentication (2FA), raise your hand and inform the invigilator.
 9. Navigate to the quiz page, and wait for further instructions.
-  - Ensure you open the correct quiz for your lab section.
+  - Ensure you open the correct quiz.
 
 #### During the Quiz
 
-1. Once the invigilator announces the quiz password, you may begin.
-3. You have 45 minutes to answer all questions. An embedded countdown timer will show the remaining time, and the quiz will auto-submit when the timer runs out.
-4. If you finish early, wait quietly. The TA or lab instructor will specify when the quiz period is over.
-5. After the exam ends, **close the browser** and hand in your digital cheatsheet and any scrap papers as you exit the room.
+  - You have 45 minutes to answer all questions. An embedded countdown timer will show the remaining time, and the quiz will auto-submit when the timer runs out.
+  - If you finish early, wait quietly. The TA or lab instructor will specify when the quiz period is over.
+  - After the exam ends, **close the browser** and hand in any scrap papers as you exit the room.
   - If another quiz session follows yours, leave the building quietly to avoid disturbances.
 
 ### Closed-book Policy
