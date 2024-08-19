@@ -100,7 +100,8 @@ Thank you for reading.
 
 ---
 ### Authors:
-[Author Name](link-to-your-bio) is {brief description of yourself}
+[Marian Agyby](https://github.com/marianagyby) is a 2023 Master of Data Science graduate and Process Improvement Analyst based in Alberta. 
+
 ### Sources:
 
 1. https://www.datapine.com/blog/misleading-statistics-and-data/
