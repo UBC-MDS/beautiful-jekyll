@@ -10,7 +10,7 @@ NC='\033[0m' # No Color
 
 # 0. Help message and OS info
 echo ''
-echo -e "${ORANGE}# MDS setup check 2023.1${NC}" | tee check-setup-mds.log
+echo -e "${ORANGE}# MDS setup check 2024.1${NC}" | tee check-setup-mds.log
 echo '' | tee -a check-setup-mds.log
 echo 'If a program or package is marked as MISSING,'
 echo 'this means that you are missing the required version of that program or package.'
@@ -36,9 +36,9 @@ if [[ "$(uname)" == 'Linux' ]]; then
     grep "Architecture" <<< $sys_info | sed 's/^[[:blank:]]*//;s/:/:    /' >> check-setup-mds.log
     grep "Kernel" <<< $sys_info | sed 's/^[[:blank:]]*//;s/:/:          /' >> check-setup-mds.log
     file_browser="xdg-open"
-    if ! $(grep -iq "22.04" <<< $os_version); then
+    if ! $(grep -iq "22.04\|24.04" <<< $os_version); then
         echo '' >> check-setup-mds.log
-        echo "MISSING You are recommended to use Ubuntu 22.04." >> check-setup-mds.log
+        echo "MISSING You are recommended to use Ubuntu 22.04 or 24.04." >> check-setup-mds.log
     fi
 elif [[ "$(uname)" == 'Darwin' ]]; then
     sw_vers >> check-setup-mds.log
@@ -61,7 +61,7 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
     os_build=${os_version_full##*.}    # Build number (after the last dot)
     if [[ $os_version -eq 10 && $os_build -lt 19041 ]]; then
         echo '' >> check-setup-mds.log
-        echo "MISSING You need Windows 10 or 11 with build number >= 10.0.19041. Please run Windows update." >> check-setup-mds.log
+        echo "MISSING You need Windows 10 or 11 with build number >= 10.0.19041. Please run Windows update and then try running this script again." >> check-setup-mds.log
     fi
 else
     echo "Operating system verison could not be detected." >> check-setup-mds.log
@@ -78,36 +78,37 @@ echo -e "${ORANGE}## System programs${NC}" >> check-setup-mds.log
 # so easier to test the location of the executable than having students add it to PATH.
 if [[ "$(uname)" == 'Darwin' ]]; then
     # psql is not added to path by default
-    if ! [ -x "$(command -v /Library/PostgreSQL/15/bin/psql)" ]; then
-        echo "MISSING   postgreSQL 15.*" >> check-setup-mds.log
+    if ! [ -x "$(command -v /Library/PostgreSQL/16/bin/psql)" ]; then
+        echo "MISSING   postgreSQL 16.*" >> check-setup-mds.log
     else
-        echo "OK        "$(/Library/PostgreSQL/15/bin/psql --version) >> check-setup-mds.log
+        echo "OK        "$(/Library/PostgreSQL/16/bin/psql --version) >> check-setup-mds.log
     fi
 
     # rstudio is installed as an .app
-    if ! $(grep -iq "= \"2023\.06.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)"); then
-        echo "MISSING   rstudio 2023.06.*" >> check-setup-mds.log
+    if ! $(grep -iq "= \"2024\.04.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)"); then
+        echo "MISSING   rstudio 2024.04.*" >> check-setup-mds.log
     else
         # This is what is needed instead of --version
-        installed_version_tmp=$(grep -io "= \"2023\.06.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)")
+        installed_version_tmp=$(grep -io "= \"2024\.04.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)")
         # Tidy strangely formatted version number
         installed_version=$(sed "s/= //;s/\"//g" <<< "$installed_version_tmp")
         echo "OK        "rstudio $installed_version >> check-setup-mds.log
     fi
 
     # Remove rstudio and psql from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* docker=24.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=3.* git=2.* make=3.* latex=3.* tlmgr=5.* \
+        docker=27.* code=1.* quarto=1.*)
 # psql and Rstudio are not on PATH in windows
 elif [[ "$OSTYPE" == 'msys' ]]; then
-    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/15/bin/psql')" ]; then
-        echo "MISSING   psql 15.*" >> check-setup-mds.log
+    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/16/bin/psql')" ]; then
+        echo "MISSING   psql 16.*" >> check-setup-mds.log
     else
-        echo "OK        "$('/c/Program Files/PostgreSQL/15/bin/psql' --version) >> check-setup-mds.log
+        echo "OK        "$('/c/Program Files/PostgreSQL/16/bin/psql' --version) >> check-setup-mds.log
     fi
     # Rstudio on windows does not accept the --version flag when run interactively
     # so this section can only be troubleshot from the script
-    if ! $(grep -iq "2023\.06.*" <<< "$('/c//Program Files/RStudio/rstudio' --version)"); then
-        echo "MISSING   rstudio 2023.06*" >> check-setup-mds.log
+    if ! $(grep -iq "2024\.04.*" <<< "$('/c//Program Files/RStudio/rstudio' --version)"); then
+        echo "MISSING   rstudio 2024.04*" >> check-setup-mds.log
     else
         echo "OK        rstudio "$('/c//Program Files/RStudio/rstudio' --version) >> check-setup-mds.log
     fi
@@ -118,11 +119,12 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
         echo "OK        "$(tlmgr.bat --version | head -1) >> check-setup-mds.log
     fi
     # Remove rstudio from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=4.* git=2.* make=4.* latex=3.* docker=24.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda="23\|22\|4.*" bash=4.* git=2.* make=4.* latex=3.* \
+        docker=27.* code=1.* quarto=1.*)
 else
     # For Linux everything is sane and consistent so all packages can be tested the same way
-    sys_progs=(psql=14.* rstudio=2023\.06.* R=4.* python=3.* conda="23\|22\|4.*" bash=5.* \
-        git=2.* make=4.* latex=3.* tlmgr=5.* docker=24.* code=1.*)
+    sys_progs=(psql=16.* rstudio=2024\.04.* R=4.* python=3.* conda="23\|22\|4.*" bash=5.* \
+        git=2.* make=4.* latex=3.* tlmgr=5.* docker=27.* code=1.* quarto=1.*)
     # Note that the single equal sign syntax in used for `sys_progs` is what we have in the install
     # instruction for conda, so I am using it for Python packagees so that we
     # can just paste in the same syntax as for the conda installations
@@ -179,7 +181,7 @@ else
             echo "MISSING   ${py_pkg}.*" >> check-setup-mds.log
         else
             # Match the package name up until the first whitespace to get regexed versions
-            # without getting all following packages contained in the string of all pacakges
+            # without getting all following packages contained in the string of all packages
             echo "OK        $(grep -io "${py_pkg}\S*" <<< $installed_py_pkgs)" >> check-setup-mds.log
         fi
     done
@@ -226,10 +228,10 @@ else
     else
         # If the student didn't run `playwright install chromium`
         # then that command will try to download chromium,
-        # which should always take more than 1s
+        # which should always take more than 2s
         # so `timeout` will interupt it with exit code 1.
         # If chromium is already installed,
-        # this command just returns an info message which should not take more than 1s.
+        # this command just returns an info message which should not take more than 2s.
         # ----
         # Unfortunately, apple has decided not to use gnu-coreutils,
         # so we need to use less reliable solution on macOS;
@@ -237,10 +239,10 @@ else
         if [[ "$(uname)" == 'Darwin' ]]; then
             # The surrounding $() here is just to supress the alarm clock output
             # as redirection does not work.
-            $(perl -e 'alarm shift; exec `playwright install chromium`' 1)
+            $(perl -e 'alarm shift; exec `playwright install chromium`' 2)
         else
             # Using the reliable `timeout` tool on Linux and Windows
-            timeout 1s playwright install chromium &> /dev/null
+            timeout 2s playwright install chromium &> /dev/null
         fi
         # `$?` stores the exit code of the last program that as executed
         # If the exit code is anything else than zero, it means that the above command failed,
@@ -288,15 +290,28 @@ fi
 if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable program
     echo "Please install 'R' before testing PDF and HTML generation." >> check-setup-mds.log
 else
+    # The find_pandoc command need to be run in the same R instance 
+    # as at the rendering of the PDF and HTML docs,
+    # so we define it once here and run it twice below
+    # (plus one to explicitly check if pandoc was found
+    # and give a more informative error message)
+    find_pandoc_command="rmarkdown::find_pandoc(dir = c('/opt/quarto/bin/tools', '/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools', '/Applications/quarto/bin/tools/aarch64', '/Applications/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools/aarch64', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/aarch64'), cache = F)"
+    pandoc_version=$(Rscript -e "cat(paste($find_pandoc_command[['version']]))")
     # Create an empty Rmd-file for testing
     touch mds-knit-pdf-test.Rmd
-    if ! Rscript -e "rmarkdown::find_pandoc(dir = c('/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools'), cache=F); rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
-        echo "MISSING   rmarkdown PDF-generation failed. Check that latex and rmarkdown are marked OK above." >> check-setup-mds.log
+    if ! Rscript -e "$find_pandoc_command;rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
+        echo "MISSING   rmarkdown PDF-generation failed. Check that quarto, rmarkdown, and latex are marked OK above." >> check-setup-mds.log
+        if [ "$pandoc_version" = "0" ]; then
+            echo "It seems that RMarkdown cannot find pandoc (should have been installed as part of quarto, check if 'quarto pandoc --version' works)" >> check-setup-mds.log
+        fi
     else
         echo 'OK        rmarkdown PDF-generation was successful.' >> check-setup-mds.log
     fi
-    if ! Rscript -e "rmarkdown::find_pandoc(dir = c('/usr/lib/rstudio/resources/app/bin/quarto/bin/tools', 'C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools', '/Applications/RStudio.app/Contents/MacOS/quarto/bin/tools', '/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools'), cache=F); rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'html_document')" &> /dev/null; then
-        echo "MISSING   rmarkdown HTML-generation failed. Check that rmarkdown is marked OK above." >> check-setup-mds.log
+    if ! Rscript -e "$find_pandoc_command;rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'html_document')" &> /dev/null; then
+        echo "MISSING   rmarkdown HTML-generation failed. Check that quarto and rmarkdown are marked OK above." >> check-setup-mds.log
+        if [ "$pandoc_version" = "0" ]; then
+            echo "It seems that RMarkdown cannot find pandoc (should have been installed as part of quarto, check if 'quarto pandoc --version' works)" >> check-setup-mds.log
+        fi
     else
         echo 'OK        rmarkdown HTML-generation was successful.' >> check-setup-mds.log
     fi
