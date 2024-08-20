@@ -5,11 +5,19 @@ title: Student Representatives
 
 ## MDS Student Representatives
 
-In the new academic year, there will be one set of student representatives in Term 1 (Blocks 1-3) and another set in Term 2 (Blocks 4-6). Student representatives volunteer to represent their peers, acting as a liaison between students and MDS leadership. This allows us to monitor how the program is progressing and make adjustments if needed.
+In the new academic year, there will be one set of student representatives in Term 1 (Blocks 1-3) and another set in Term 2 (Blocks 4-6). Additionally, there will be a third set of student reps during the Capstone project period. Student representatives volunteer to represent their peers, acting as a liaison between students and MDS leadership. This allows us to monitor how the program is progressing and make adjustments if needed.
 
 ### Student Representative Roles
 
-In addition to the general role of gathering and communicating feedback, student representatives will also have specific roles, such as focusing on academics, career development, social activities, health and well-being, etc. The exact roles will be determined when the program begins. Please note that these guidelines apply to the MDS Vancouver program. If you are enrolled in MDS Computational Linguistics (MDS CL), the policies might differ.
+In addition to the general role of gathering and communicating feedback, student representatives will have specific responsibilities. Each section will have five representatives, each dedicated to one of the following areas:
+
+- Academic
+- Social
+- Sports and Recreation
+- Career and Professional Development
+- Mental Health and Wellness
+
+Please note that these guidelines apply to the MDS Vancouver program. If you are enrolled in MDS Computational Linguistics (MDS CL), the policies may differ.
 
 ### Guidelines for Student Representatives
 
