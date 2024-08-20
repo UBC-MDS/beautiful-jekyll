@@ -100,7 +100,7 @@ Apple recently changed the Mac default shell in the Terminal to Zsh, however, we
 chsh -s /bin/bash
 ```
 
-You will have to quit all instances of open Terminals and then restart the Terminal for this to take effect.
+You will have to quit all instances of open Terminals and then **restart** the Terminal for this to take effect.
 
 ## Visual Studio Code
 
@@ -113,7 +113,7 @@ Pay attention here if you have to download the "Intel Chip" or "Apple silicon" i
 Once the download is finished, click "Open with Archive utility", and move the extracted VS Code application from "Downloads" to "Applications".
 In addition to reading the [getting started instructions](https://code.visualstudio.com/docs/setup/mac), **be sure to follow the ["Launching from the command line"](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) steps as well.**
 
-You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
+You can test that VS code is installed and can be opened from Terminal by **restarting** terminal and typing the following command:
 
 ```bash
 code --version
@@ -244,17 +244,29 @@ who might open up this file a few months from now =)
 
 ### Python and Conda
 
-We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html). 
+We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniforge platform (read more here)](https://github.com/conda-forge/miniforge). 
 
 Select the appropiate link:
 
-**Intel Mac**:  [Miniconda MacOS Intel 64-bit pkg install can be downloaded here.](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
+You can find the Mac ARM and Intel download links here: <https://conda-forge.org/miniforge/>.
+Make sure you use the `Miniforge3` installers, not the other ones listed.
+We will assume you downloaded the file into your `Downloads` folder.
 
-**Mac M1 or higher**: [Miniconda MacOS Apple M1 64-bit pkg install for Python **3.x** can be downloaded here.](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.pkg)
+Once downlaoded, open up a terminal and run the following command
 
-> **Note:** on August 24th, 2023 we observed an issue using the latest install link above for "Mac M1 or higher". If you also observe this, then please visit [https://docs.conda.io/en/latest/miniconda-other-installer-links.html#macos-installers](https://docs.conda.io/en/latest/miniconda-other-installer-links.html#macos-installers) and download and install the "Miniconda3 macOS Apple M1 64-bit pkg" installer from the latest (highest) version of Python that you can see listed on that page.
+```bash
+bash Miniforge3.sh -b -p "${HOME}/miniforge3"
+```
 
-After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
+After installation run the following commands
+
+```bash
+source "${HOME}/miniforge3/etc/profile.d/conda.sh"
+conda activate
+conda init
+```
+
+After installation, **restart** the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
 
 ```bash
 conda --version
@@ -288,13 +300,7 @@ which is good for stability,
 but also means that new versions will be delayed and fewer packages are available overall.
 There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
 which provides more up to date packages.
-To enable us to access the most up to date version of the Python packages we are going to use,
-we will add the more up to date channel.
-To add the conda-forge channel by typing the following in the terminal:
-
-```bash
-conda config --add channels conda-forge
-```
+Conda forge is already set up when we installed Miniforge3
 
 To install packages individually,
 we can now use the following command:
@@ -305,14 +311,6 @@ and you can press enter to proceed with the installation.
 If you want to answer `yes` by default and skip this confirmation step,
 you can replace `conda install` with `conda install -y`.
 Also note that we may occasionally need to install packages using `pip`, the standard Python package manager. The installation command is very similar to that of `conda`: `pip install <package-name>`.
-
-Let's try this out by installing a package that makes conda faster
-and changing the config to use this package by default:
-
-```bash
-conda install conda-libmamba-solver
-conda config --set solver libmamba
-```
 
 In the next session
 we will use `conda` to install
@@ -397,6 +395,8 @@ Go to `Tools > Global Options > Code > Editing` and tick the following option:
 
 Once the change is made you can try in the RStudio console `Ctrl` + `Shift` + `m` to check if works. Close down RStudio afterwards.
 
+>For students that are having computer admin issues, please run this in the terminal ```sudo chown -R $(whoami) .config```
+
 ### Installing R packages
 
 Next, install the key R packages needed for the start of MDS program,
@@ -407,8 +407,6 @@ typing the following into the R console inside RStudio:
 install.packages(c('tidyverse', 'renv', 'usethis', 'devtools', 'markdown', 'rmarkdown', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
-install.packages("StanHeaders", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
-install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
 ```
 
 > **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
@@ -417,6 +415,13 @@ install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption
 
 Stan is the language we will be using later on in the program for Bayesian statistics.
 To install it open RStudio and install `rstan`
+
+```R
+install.packages("StanHeaders", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+```
+
+> **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
 
 Test the installation with:
 
@@ -492,6 +497,7 @@ You will see two panels,
 the right-most panel allows you to perform advanced modification
 of keyboards shortcuts in JupyterLab
 and it already contains quite a few shortcuts.
+Please do not delete any of these shortcuts. 
 We're going to add two more shortcuts,
 by pasting a text snippet just before the first existing shortcut.
 Go ahead and create a new line just after the line that says `"shortcuts": [`
@@ -613,7 +619,6 @@ tlmgr install eurosym \
   environ \
   fp \
   jknapltx \
-  ms \
   parskip \
   pdfcol \
   pgf \

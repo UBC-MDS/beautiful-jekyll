@@ -94,7 +94,7 @@ and during the program).
 
 The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can install VS Code either via the [Snap store/Ubuntu software app through this link](https://snapcraft.io/code) or via the downloadable deb-file from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). The getting started instructions are here: [https://code.visualstudio.com/docs/?dv=linux64_deb](https://code.visualstudio.com/docs/?dv=linux64_deb).
 
-You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
+You can test that VS code is installed and can be opened from Terminal by **restarting** terminal and typing the following command:
 
 ```
 code --version
@@ -199,43 +199,48 @@ git config --global core.editor "code --wait"
 
 ### Python and Conda
 
-We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.x 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh).
+We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniforge platform (read more here)](https://github.com/conda-forge/miniforge). 
 
-Once the download is finished, open Terminal and execute the following commands:
+Select the appropiate link:
 
+You can find the Mac ARM and Intel download links here: <https://conda-forge.org/miniforge/>.
+Make sure you use the `Miniforge3` installers, not the other ones listed.
+We will assume you downloaded the file into your `Downloads` folder.
+
+Once downlaoded, open up a terminal and run the following command
+
+```bash
+bash Miniforge3.sh -b -p "${HOME}/miniforge3"
 ```
-bash path/to/file
+
+After installation run the following commands
+
+```bash
+source "${HOME}/miniforge3/etc/profile.d/conda.sh"
+conda activate
+conda init
 ```
 
-> **Note:** Most often this file is downloaded to the `Downloads` directory, and thus the command will look like this:
->
->```
->bash Downloads/Miniconda3-latest-Linux-x86_64.sh
->```
+After installation, **restart** the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
 
-The instructions for the installation will then appear:
-
-1. Press Enter.
-2. Once the licence agreement shows, you can press space scroll down, or press `q` to skip reading it.
-3. Type `yes` and press enter to accept the licence agreement.
-4. Press enter to accept the default installation location, and wait a few seconds for Conda to install to that location.
-5. Type `yes` and press enter to instruct the installer to run `conda init`, which makes `conda` available from the terminal/shell.
-
-After installation, restart the terminal. If the installation was successful, you will see `(base)` prepended to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
-
-```
+```bash
 conda --version
 ```
+
 which should return something like this:
 
 ```
 conda 23.5.2
 ```
 
-Installing Miniconda will install the latest version of Python. Type the following to ask for the version of Python:
-```
+> **Note:** If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell){:target="_self"} above to set your default Terminal shell to Bash as opposed to Zsh.
+
+Next, type the following to ask for the version of Python:
+
+```bash
 python --version
 ```
+
 Make sure it returns Python 3.11.0 or greater:
 
 ```
@@ -250,13 +255,7 @@ which is good for stability,
 but also means that new versions will be delayed and fewer packages are available overall.
 There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
 which provides more up to date packages.
-To enable us to access the most up to date version of the Python packages we are going to use,
-we will add the more up to date channel.
-To add the conda-forge channel by typing the following in the terminal:
-
-```bash
-conda config --add channels conda-forge
-```
+Conda forge is already set up when we installed Miniforge3
 
 To install packages individually,
 we can now use the following command:
@@ -267,13 +266,6 @@ and you can press enter to proceed with the installation.
 If you want to answer `yes` by default and skip this confirmation step,
 you can replace `conda install` with `conda install -y`.
 Also note that we may occasionally need to install packages using `pip`, the standard Python package manager. The installation command is very similar to that of `conda`: `pip install <package-name>`.
-Let's try this out by installing a package that makes conda faster
-and changing the config to use this package by default:
-
-```bash
-conda install conda-libmamba-solver
-conda config --set solver libmamba
-```
 
 In the next session
 we will use `conda` to install
@@ -394,8 +386,6 @@ typing the following into the R console inside RStudio
 install.packages(c('tidyverse', 'renv', 'usethis', 'devtools', 'markdown', 'rmarkdown', 'languageserver', 'janitor', 'gapminder', 'readxl'))
 devtools::install_github("ucbds-infra/ottr@stable")
 devtools::install_github("ttimbers/canlang")
-install.packages("StanHeaders", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
-install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
 ```
 
 > **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
@@ -404,6 +394,13 @@ install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption
 
 Stan is the language we will be using later on in the program for Bayesian statistics.
 To install it open RStudio and install `rstan`
+
+```R
+install.packages("StanHeaders", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+```
+
+> **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
 
 Test the installation with:
 
@@ -479,6 +476,7 @@ You will see two panels,
 the right-most panel allows you to perform advanced modification
 of keyboards shortcuts in JupyterLab
 and it already contains quite a few shortcuts.
+Please do not delete any of these shortcuts. 
 We're going to add two more shortcuts,
 by pasting a text snippet just before the first existing shortcut.
 Go ahead and create a new line just after the line that says `"shortcuts": [`
@@ -560,7 +558,7 @@ tinytex::install_tinytex()
 
 As recommended at the end of the installation,
 it is important to **log out and in again for TinyTex to work properly**
-(restarting the computer also works).
+(**restarting** the computer also works).
 Once you log back in,
 try running the following in a terminal:
 
@@ -598,7 +596,6 @@ tlmgr install eurosym \
   environ \
   fp \
   jknapltx \
-  ms \
   parskip \
   pdfcol \
   pgf \
