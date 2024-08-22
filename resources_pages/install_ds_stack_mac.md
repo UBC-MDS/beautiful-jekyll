@@ -50,9 +50,9 @@ or a 32-bit (also called x86) version of the application **always** choose the 6
 
 > **Important**
 > Mac computers are transitioning from
-> Intel processors to [Apple silicon](https://support.apple.com/en-us/HT211814). 
+> Intel processors to [Apple silicon](https://support.apple.com/en-us/HT211814).
 > If you have a new laptop (Mac M1 or Mac M2)
-> for some software 
+> for some software
 > you will have to use a different installer
 > than Macs with Intel processors.
 
@@ -61,7 +61,7 @@ make sure to follow the post-installation notes at the end
 to check that all software is setup correctly.
 
 ## UBC Student Email
-Please sign up for a UBC Student Email. This account will also grant you access to a range of UBC services, including Microsoft Teams and OneDrive. To do so navigate to [https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service](https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service) and follow the instructions under "Get Started". 
+Please sign up for a UBC Student Email. This account will also grant you access to a range of UBC services, including Microsoft Teams and OneDrive. To do so navigate to [https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service](https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service) and follow the instructions under "Get Started".
 
 ## Web browser
 
@@ -106,7 +106,7 @@ You will have to quit all instances of open Terminals and then **restart** the T
 
 ### Installing
 
-The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). 
+The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download).
 
 Pay attention here if you have to download the "Intel Chip" or "Apple silicon" installer.
 
@@ -244,15 +244,15 @@ who might open up this file a few months from now =)
 
 ### Python and Conda
 
-We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniforge platform (read more here)](https://github.com/conda-forge/miniforge). 
+We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniforge platform (read more here)](https://github.com/conda-forge/miniforge).
 
-Select the appropiate link:
+Select the appropriate link:
 
 You can find the Mac ARM and Intel download links here: <https://conda-forge.org/miniforge/>.
 Make sure you use the `Miniforge3` installers, not the other ones listed.
 We will assume you downloaded the file into your `Downloads` folder.
 
-Once downlaoded, open up a terminal and run the following command
+Once downloaded, open up a terminal and run the following command
 
 ```bash
 bash Miniforge3.sh -b -p "${HOME}/miniforge3"
@@ -300,7 +300,7 @@ which is good for stability,
 but also means that new versions will be delayed and fewer packages are available overall.
 There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
 which provides more up to date packages.
-Conda forge is already set up when we installed Miniforge3
+Conda-forge is already set up when we installed Miniforge3
 
 To install packages individually,
 we can now use the following command:
@@ -326,7 +326,7 @@ The spellchecker helps us correcting typos in our writing.
 Install them via the following commands:
 
 ```bash
-conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker  
+conda install pandas jupyterlab jupyterlab-git jupyterlab-spellchecker
 ```
 
 We will grade part of your assignments in MDS using the Otter-Grader package. For your Jupyter-based assignments, you need to install Otter-Grader using the following command:
@@ -382,13 +382,13 @@ Some R packages rely on the dependency XQuartz which no longer ships with the Ma
 
 ### RStudio
 
-Download the macOS Desktop version (not Pro) of RStudio  [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/). Open the file and follow the installer instructions. 
+Download the macOS Desktop version (not Pro) of RStudio  [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/). Open the file and follow the installer instructions.
 
 To see if you were successful, try opening RStudio by clicking on its icon (from Finder, Applications or Launchpad). It should open and look something like this picture below:
 
 ![](/resources_pages/imgs/RStudio.png)
 
-Now we are going to change RStudio’s *Insert Pipe* shortcut so that it inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/). 
+Now we are going to change RStudio’s *Insert Pipe* shortcut so that it inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/).
 Go to `Tools > Global Options > Code > Editing` and tick the following option:
 
 ![](/resources_pages/imgs/new-pipe-rstudio.png)
@@ -434,12 +434,12 @@ Here's a snippet of the output you should see:
 
 ```
 SAMPLING FOR MODEL '16a540c6086086816528e4524def24d9' NOW (CHAIN 4).
-Chain 4: 
+Chain 4:
 Chain 4: Gradient evaluation took 2e-06 seconds
 Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.02 seconds.
 Chain 4: Adjust your expectations accordingly!
-Chain 4: 
-Chain 4: 
+Chain 4:
+Chain 4:
 Chain 4: Iteration:    1 / 2000 [  0%]  (Warmup)
 Chain 4: Iteration:  200 / 2000 [ 10%]  (Warmup)
 Chain 4: Iteration:  400 / 2000 [ 20%]  (Warmup)
@@ -452,11 +452,11 @@ Chain 4: Iteration: 1400 / 2000 [ 70%]  (Sampling)
 Chain 4: Iteration: 1600 / 2000 [ 80%]  (Sampling)
 Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
-Chain 4: 
+Chain 4:
 Chain 4:  Elapsed Time: 0.003828 seconds (Warm-up)
 Chain 4:                0.003417 seconds (Sampling)
 Chain 4:                0.007245 seconds (Total)
-Chain 4: 
+Chain 4:
 ```
 
 
@@ -497,12 +497,12 @@ You will see two panels,
 the right-most panel allows you to perform advanced modification
 of keyboards shortcuts in JupyterLab
 and it already contains quite a few shortcuts.
-Please do not delete any of these shortcuts. 
+Please do not delete any of these shortcuts.
 We're going to add two more shortcuts,
 by pasting a text snippet just before the first existing shortcut.
 Go ahead and create a new line just after the line that says `"shortcuts": [`
 and paste the following:
- 
+
 
 ```json
         {
@@ -549,7 +549,7 @@ but this is all that is required for MDS.
 
 ## Quarto CLI
 
-Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal. 
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal.
 
 The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
 
@@ -687,7 +687,7 @@ you should see something like this if you were successful:
 ```
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
-1b930d010525: Pull complete 
+1b930d010525: Pull complete
 Digest: sha256:451ce787d12369c5df2a32c85e5a03d52cbcef6eb3586dd03075f3034f10adcd
 Status: Downloaded newer image for hello-world:latest
 

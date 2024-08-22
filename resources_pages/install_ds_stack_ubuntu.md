@@ -199,15 +199,15 @@ git config --global core.editor "code --wait"
 
 ### Python and Conda
 
-We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniforge platform (read more here)](https://github.com/conda-forge/miniforge). 
+We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniforge platform (read more here)](https://github.com/conda-forge/miniforge).
 
-Select the appropiate link:
+Select the appropriate link:
 
 You can find the Mac ARM and Intel download links here: <https://conda-forge.org/miniforge/>.
 Make sure you use the `Miniforge3` installers, not the other ones listed.
 We will assume you downloaded the file into your `Downloads` folder.
 
-Once downlaoded, open up a terminal and run the following command
+Once downloaded, open up a terminal and run the following command
 
 ```bash
 bash Miniforge3.sh -b -p "${HOME}/miniforge3"
@@ -255,7 +255,7 @@ which is good for stability,
 but also means that new versions will be delayed and fewer packages are available overall.
 There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
 which provides more up to date packages.
-Conda forge is already set up when we installed Miniforge3
+Conda-forge is already set up when we installed Miniforge3
 
 To install packages individually,
 we can now use the following command:
@@ -362,7 +362,7 @@ To see if you were successful, try opening RStudio by clicking on its icon or ty
 
 > **Note:** Since we installed RStudio directly from a deb file rather than from a repository or a snap package, it will not be updated when we run `sudo apt upgrade` and not automatically as for snap packages. Instead, RStudio will notify you of any available updates when the program is launched.
 
-Now we are going to change RStudio’s *Insert Pipe* shortcut so that it inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/). 
+Now we are going to change RStudio’s *Insert Pipe* shortcut so that it inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/).
 Go to `Tools > Global Options > Code > Editing` and tick the following option:
 
 ![](/resources_pages/imgs/new-pipe-rstudio.png)
@@ -413,12 +413,12 @@ Here's a snippet of the output you should see:
 
 ```
 SAMPLING FOR MODEL '16a540c6086086816528e4524def24d9' NOW (CHAIN 4).
-Chain 4: 
+Chain 4:
 Chain 4: Gradient evaluation took 2e-06 seconds
 Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.02 seconds.
 Chain 4: Adjust your expectations accordingly!
-Chain 4: 
-Chain 4: 
+Chain 4:
+Chain 4:
 Chain 4: Iteration:    1 / 2000 [  0%]  (Warmup)
 Chain 4: Iteration:  200 / 2000 [ 10%]  (Warmup)
 Chain 4: Iteration:  400 / 2000 [ 20%]  (Warmup)
@@ -431,11 +431,11 @@ Chain 4: Iteration: 1400 / 2000 [ 70%]  (Sampling)
 Chain 4: Iteration: 1600 / 2000 [ 80%]  (Sampling)
 Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
-Chain 4: 
+Chain 4:
 Chain 4:  Elapsed Time: 0.003828 seconds (Warm-up)
 Chain 4:                0.003417 seconds (Sampling)
 Chain 4:                0.007245 seconds (Total)
-Chain 4: 
+Chain 4:
 ```
 
 ### IRkernel
@@ -476,7 +476,7 @@ You will see two panels,
 the right-most panel allows you to perform advanced modification
 of keyboards shortcuts in JupyterLab
 and it already contains quite a few shortcuts.
-Please do not delete any of these shortcuts. 
+Please do not delete any of these shortcuts.
 We're going to add two more shortcuts,
 by pasting a text snippet just before the first existing shortcut.
 Go ahead and create a new line just after the line that says `"shortcuts": [`
@@ -632,7 +632,7 @@ pip install "nbconvert[webpdf]"
 playwright install chromium
 ```
 
-Now you can try exporting by going to 
+Now you can try exporting by going to
 `File -> Save and Export Notebook As... -> WebPDF`.
 
 ## PostgreSQL
@@ -823,7 +823,7 @@ this means that you are missing the required version of that program or package.
 Either it is not installed at all or the wrong version is installed.
 The required version is indicated with a number and an asterisk (*),
 e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.5, etc).
- 
+
 You can run the following commands to find out which version
 of a program or package is installed (if any):
 ```
@@ -831,14 +831,14 @@ name_of_program --version  # For system programs
 conda list  # For Python packages
 R -q -e "as.data.frame(installed.packages()[,3])"  # For R packages
 ```
- 
+
 Checking program and package versions...
- 
+
 ## Operating system
 Operating System: Ubuntu 22.04.1 LTS
 Architecture:     x86-64
 Kernel:           Linux 6.2.0-26-generic
- 
+
 ## System programs
 OK        psql 14.9 (Ubuntu 14.9-0ubuntu0.22.04.1)
 OK        rstudio 2023.06.2+561
@@ -852,7 +852,7 @@ OK        latex 3.141592653-2.6-1.40.25 (TeX Live 2023)
 OK        tlmgr 5:21 +0200)
 OK        docker 24.0.5, build ced0996
 OK        code 1.81.1
- 
+
 ## Python packages
 OK        otter-grader=5.1.3
 OK        pandas=2.0.3
@@ -864,7 +864,7 @@ OK        jupyterlab-spellchecker=0.8.4
 OK        jupyterlab PDF-generation was successful.
 OK        jupyterlab WebPDF-generation was successful.
 OK        jupyterlab HTML-generation was successful.
- 
+
 ## R packages
 OK        tidyverse=2.0.0
 OK        markdown=1.8
@@ -879,7 +879,7 @@ OK        ottr=1.1.3
 OK        canlang=0.0.1
 OK        rmarkdown PDF-generation was successful.
 OK        rmarkdown HTML-generation was successful.
- 
+
 The above output has been saved to the file /home/vboxuser/check-setup-mds.log
 together with system configuration details and any detailed error messages about PDF and HTML generation.
 You can open this folder in your file browser by typing `xdg-open .` (without the surrounding backticks).
