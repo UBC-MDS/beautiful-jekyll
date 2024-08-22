@@ -49,7 +49,7 @@ to check that all software is setup correctly.
 
 ## UBC Student Email
 
-Please sign up for a UBC Student Email. This account will also grant you access to a range of UBC services, including Microsoft Teams and OneDrive. To do so navigate to [https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service](https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service) and follow the instructions under "Get Started". 
+Please sign up for a UBC Student Email. This account will also grant you access to a range of UBC services, including Microsoft Teams and OneDrive. To do so navigate to [https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service](https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service) and follow the instructions under "Get Started".
 
 ## Web browser
 
@@ -133,12 +133,27 @@ run the installer and accept the default configuration for all pages except for 
     ![](/resources_pages/imgs/gitbash-terminal-profile.png)
 
 - On the **Choosing the default editor used by Git** page, select "Use Visual Studio Code as Git's default editor" from the drop-down menu'
+    - You should already have VS Code installed from an earlier installation step
 
     ![](/resources_pages/imgs/vscode-as-git-editor.png)
 
 - Set the default branch name to `main`
 
     ![](/resources_pages/imgs/gitbash-defualt_main.png)
+
+For the remainder screens, pick the default selected options:
+
+- Adjusting your PATH environment: Git from the command line and also from 3rd-party software
+- Choosing the SSH executable: Use bundled OpenSSH
+- Choosing HTTPS transport backend: Use the OpenSSL library
+- Configuring the line ending conversions: Checkout Windows-style, commit Unix-style line endings
+- Configuring the terminal emulator to use with Git Bash: Use MinTTY (the default terminal of MSYS2)
+- Choose the default behavior of 'git pull': Fast-forward or merge
+- Choose a credential helper: Git Credential Manager
+- Configuring extra options: Enable file system caching
+    - You can also choose to "Enable symbolic links"
+- Configuring experimental options: leave it unchecked
+
 
 [To install windows terminal visit this link](https://aka.ms/terminal)
 and click `Get` to open it in Windows Store.
@@ -200,7 +215,7 @@ There is NO WARRANTY, to the extent permitted by law.
 
 > **Note:** If there is a newline (the `enter` character) in the clipboard
 > when you are pasting into the terminal,
-> you will be asked if you are sure you want to paste 
+> you will be asked if you are sure you want to paste
 > since this newline will act as if you pressed `enter`
 > and run the command.
 > As a guideline you can press `Paste anyway`
@@ -310,11 +325,23 @@ Now Git Bash should be opened automatically each time you open a new terminal in
 
 ### Python and Conda
 
-We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.x 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe). After the download has finished, run the installer and accept the default configuration for all pages.
+We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniforge platform (read more here)](https://github.com/conda-forge/miniforge).
 
-> **Note:** Do *not* add miniconda to PATH. We will set this up later.
+Select the appropriate link:
 
-After installation, open the Start Menu and search for the program called "Anaconda Prompt (miniconda3)". When this opens you will see a prompt similar to `(base) C:\Users\your_name`. Type the following to check that your Python installation is working:
+You can find the Windows download links here: <https://conda-forge.org/miniforge/>.
+Make sure you use the `Miniforge3` installers, not the other ones listed.
+We will assume you downloaded the file into your `Downloads` folder.
+
+Once downloaded, run the installer.
+
+Use all the default options in the installer.
+
+The install location should look something like: `C:\Users\YOUR_USER_NAME\miniforge3`
+
+> **Note:** Do *not* add miniforge to PATH. We will set this up later.
+
+After installation, open the Start Menu and search for the program called "Miniforge Prompt". When this opens you will see a prompt similar to `(base) C:\Users\your_name`. Type the following to check that your Python installation is working:
 
 ```
 python --version
@@ -326,9 +353,16 @@ which should return Python 3.11.0 or greater:
 Python 3.11.0
 ```
 
+If not, run the following command in the Miniforge Prompt
+
+```bash
+conda install python=3.11
+```
+
+
 ### Integrating Python with the Git Bash terminal
 
-To avoid having to open the separate Anaconda Prompt every time we want to use Python, we can make it available from the (Git Bash) terminal, which is what we will be using most of the time. To set this up, open the "Anaconda Prompt (miniconda3)" again and type:
+To avoid having to open the separate Anaconda Prompt every time we want to use Python, we can make it available from the (Git Bash) terminal, which is what we will be using most of the time. To set this up, open the "Miniforge Prompt" again and type:
 
 ```
 conda init bash
@@ -396,13 +430,7 @@ which is good for stability,
 but also means that new versions will be delayed and fewer packages are available overall.
 There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
 which provides more up to date packages.
-To enable us to access the most up to date version of the Python packages we are going to use,
-we will add the more up to date channel.
-To add the conda-forge channel by typing the following in the terminal:
-
-```bash
-conda config --add channels conda-forge
-```
+Conda-forge is already set up when we installed Miniforge3
 
 To install packages individually,
 we can now use the following command:
@@ -413,13 +441,6 @@ and you can press enter to proceed with the installation.
 If you want to answer `yes` by default and skip this confirmation step,
 you can replace `conda install` with `conda install -y`.
 Also note that we may occasionally need to install packages using `pip`, the standard Python package manager. The installation command is very similar to that of `conda`: `pip install <package-name>`.
-Let's try this out by installing a package that makes conda faster
-and changing the config to use this package by default:
-
-```bash
-conda install conda-libmamba-solver
-conda config --set solver libmamba
-```
 
 In the next session
 we will use `conda` to install
@@ -545,7 +566,7 @@ and making sure that it is pointing to the correct folder.
 
 
 
-Now we are going to check that RStudio’s *Insert Pipe* shortcut inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/). 
+Now we are going to check that RStudio’s *Insert Pipe* shortcut inserts the [new native pipe operator `|>`](https://blog.rstudio.com/2021/06/09/rstudio-v1-4-update-whats-new/).
 
 Press `Shift` + `Ctrl` + `m` in RStudio's console. If it is returned the following operator `%>%` instead of `|>`, go to `Tools > Global Options > Code > Editing` and tick the following option:
 
@@ -604,12 +625,12 @@ Here's a snippet of the output you should see:
 
 ```
 SAMPLING FOR MODEL '16a540c6086086816528e4524def24d9' NOW (CHAIN 4).
-Chain 4: 
+Chain 4:
 Chain 4: Gradient evaluation took 2e-06 seconds
 Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.02 seconds.
 Chain 4: Adjust your expectations accordingly!
-Chain 4: 
-Chain 4: 
+Chain 4:
+Chain 4:
 Chain 4: Iteration:    1 / 2000 [  0%]  (Warmup)
 Chain 4: Iteration:  200 / 2000 [ 10%]  (Warmup)
 Chain 4: Iteration:  400 / 2000 [ 20%]  (Warmup)
@@ -622,11 +643,11 @@ Chain 4: Iteration: 1400 / 2000 [ 70%]  (Sampling)
 Chain 4: Iteration: 1600 / 2000 [ 80%]  (Sampling)
 Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
-Chain 4: 
+Chain 4:
 Chain 4:  Elapsed Time: 0.003828 seconds (Warm-up)
 Chain 4:                0.003417 seconds (Sampling)
 Chain 4:                0.007245 seconds (Total)
-Chain 4: 
+Chain 4:
 ```
 
 > **Note:** If you are asked to update packages during the installation via `devtools::install_github`, select `3: None`.
@@ -664,13 +685,13 @@ You will see two panels,
 the right-most panel allows you to perform advanced modification
 of keyboards shortcuts in JupyterLab
 and it already contains quite a few shortcuts.
-Please do not delete any of these shortcuts. 
+Please do not delete any of these shortcuts.
 We're going to add two more shortcuts,
 by pasting a text snippet just before the first existing shortcut.
 Go ahead and create a new line just after the line that says `"shortcuts": [`
 and paste the following:
 
- 
+
 
 ```json
         {
@@ -717,7 +738,7 @@ but this is all that is required for MDS.
 
 ## Quarto CLI
 
-Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal. 
+Quarto is an open-source scientific and technical publishing system that you can access from VSCode, Jupyter Lab, RStudio, or the terminal.
 
 The [RStudio version that you have downloaded](https://quarto.org/docs/tools/rstudio.html) is already equipped with the last version of Quarto. You can check this by opening a new document in `File -> New File -> Quarto Document`.
 
