@@ -255,7 +255,7 @@ We will assume you downloaded the file into your `Downloads` folder.
 Once downloaded, open up a terminal and run the following command
 
 ```bash
-bash Miniforge3.sh -b -p "${HOME}/miniforge3"
+bash ${HOME}/Downloads/Miniforge3.sh -b -p "${HOME}/miniforge3"
 ```
 
 After installation run the following commands
