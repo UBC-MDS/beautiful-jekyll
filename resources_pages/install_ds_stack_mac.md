@@ -292,6 +292,14 @@ Make sure it returns Python 3.11.0 or greater:
 Python 3.11.4
 ```
 
+If you do not see Python >3.11, close your terminal and open a new one.
+Confirm that you are in the `(base)` environment.
+Then update the base python with:
+
+```bash
+conda install python=3.11
+```
+
 ## Installing Python packages
 
 `conda` installs Python packages from different online repositories which are called "channels".
