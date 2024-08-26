@@ -353,12 +353,13 @@ which should return Python 3.11.0 or greater:
 Python 3.11.0
 ```
 
-If not, run the following command in the Miniforge Prompt
+If not, run the following command in the Miniforge Prompt,
+Confirm that you are in the `(base)` environment.
+Then update the base python with:
 
 ```bash
 conda install python=3.11
 ```
-
 
 ### Integrating Python with the Git Bash terminal
 
