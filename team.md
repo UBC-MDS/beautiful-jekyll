@@ -255,7 +255,6 @@ Hedayat (Heddy) joined the MDS program in August 2024 as a postdoctoral teaching
 <br>
 <br>
 <br>
-<br>
 
 <i>Outside his academic life, Heddy is a nature enthusiast, a hiker, and a ski instructor. </i> <br>
 
