@@ -11,10 +11,10 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 
 ## Team Stats
 
-- **13** : The total number of different languages we speak (including Cantonese, Hindi, Japanese, Malayalam, Mandarin, Marathi, Nepali, Spanish, Swedish, and Vietnamese)
+- **13** : The total number of different languages we speak (including Cantonese, Farsi, Hindi, Japanese, Malayalam, Mandarin, Marathi, Nepali, Spanish, Swedish, and Vietnamese)
 - **16** : The total number of coding languages we have experience working with as a whole.
-- **10** : The number of different countries our team cheers for during the Olympics.
-- **5.5** : The average number of years our team has of teaching experience (with a standard deviation of 2.8).
+- **11** : The number of different countries our team cheers for during the Olympics.
+- **5.2** : The average number of years our team has of teaching experience (with a standard deviation of 2.8).
 - **10** : The median number of postsecondary education years our team has studied.
 
 ## Team Facts
@@ -240,7 +240,19 @@ Tiffany joined the founding team who developed the Master’s of Data Science pr
 
 </p>
 
+#### Hedayat Zarkoob, Postdoctoral Research and Teaching Fellow
 
+
+<img src='../img/team/heddy.jpg'  align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Hedayat (Heddy) joined the MDS program in August 2024 as a postdoctoral teaching and research fellow. He did his PhD in computer science at UBC. During his PhD, he studied the intersection of AI and Education, focusing on using AI and technology to promote Active Learning practices in academic settings. <br>
+<br>
+
+<i>Outside his academic life, Heddy is a nature enthusiast, a hiker, and a ski instructor. </i> <br>
+
+<a href="https://www.cs.ubc.ca/~hzarkoob/" target="_blank">Learn more about Heddy here.</a>
+
+</p>
 
 #### Betty Zhao, Course Coordinator
 
