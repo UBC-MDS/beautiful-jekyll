@@ -248,11 +248,15 @@ Tiffany joined the founding team who developed the Master’s of Data Science pr
 Hedayat (Heddy) joined the MDS program in August 2024 as a postdoctoral teaching and research fellow. He did his PhD in computer science at UBC. During his PhD, he studied the intersection of AI and Education, focusing on using AI and technology to promote Active Learning practices in academic settings. <br>
 <br>
 
+<br>
+<br>
+
 <i>Outside his academic life, Heddy is a nature enthusiast, a hiker, and a ski instructor. </i> <br>
 
 <a href="https://www.cs.ubc.ca/~hzarkoob/" target="_blank">Learn more about Heddy here.</a>
 
 </p>
+
 
 #### Betty Zhao, Course Coordinator
 
