@@ -94,8 +94,7 @@ During the quiz window, students are not allowed to disclose, discuss, or share 
 The following are also **NOT** permitted:
 
 - taking a quiz from a remote location
-- leaving the quiz room early
-- leaving and re-entering the quiz room (unless approved by the instructor; please talk to the instructor before the quiz if you anticipate needing to leave the room during the quiz)
+- re-entering the quiz room (unless approved by the instructor; please talk to the instructor before the quiz if you anticipate needing to leave the room during the quiz)
 
 Failing to observe the above expectations may result in a zero grade for the quiz in question.
 
