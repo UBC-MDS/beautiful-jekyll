@@ -24,12 +24,12 @@ During the quiz window, students are **NOT** allowed to disclose, discuss, or sh
 
 ### Digital Cheatsheets
 
-Students are now allowed to use digital cheatsheets, which can be uploaded to the PrairieLearn system. This means students can prepare a digital double-sided A4 cheatsheet and submit it directly within the PrairieLearn interface before starting their quiz.
+Students are now allowed to use digital cheatsheets, which can be uploaded to the PrairieLearn system. This means students can prepare a digital 2-page A4 cheatsheet and submit it directly within the PrairieLearn interface before starting their quiz.
 
 ### PrairieTest
 
 You must complete the instruction below before writing quizzes. This is an essential step to check in the quiz room.
-- Open [PrairieTest](https://ca.prairietest.com/pt)
+- Open [PrairieTest](https://us.prairietest.com/)
 - Click Login and select University of British Columbia (ubc.ca)
 - Log in with your CWL
 - Accept the invitation to join MDS 5XX
@@ -42,7 +42,7 @@ You must complete the instruction below before writing quizzes. This is an essen
 - All MDS quizzes are closed-book and closed-internet, with the exception of a digital cheatsheet.
 - Communication with anyone or any external resources during the quiz is strictly prohibited. For details, please visit our [Quiz policies](https://ubc-mds.github.io/policies/#quiz-policies) and [Plagiarism](https://ubc-mds.github.io/policies/#plagiarism) pages.
 - You must attend your assigned quiz time and location. Failure to check in at the correct time and location may result in missing the quiz.
-- When instructed to leave the room after the quiz, please do so quietly to avoid disrupting others. Refrain from discussing the - quiz with anyone until everyone has completed it.
+- When leaving the room after the quiz, please do so quietly to avoid disrupting others. Refrain from discussing the - quiz with anyone until everyone has completed it.
 
 ### Quiz Room Procedures
 
@@ -64,35 +64,33 @@ You must complete the instruction below before writing quizzes. This is an essen
 #### During the Quiz
 
   - You have 45 minutes to answer all questions. An embedded countdown timer will show the remaining time, and the quiz will auto-submit when the timer runs out.
-  - If you finish early, wait quietly. The TA or lab instructor will specify when the quiz period is over.
-  - After the exam ends, **close the browser** and hand in any scrap papers as you exit the room.
-  - If another quiz session follows yours, leave the building quietly to avoid disturbances.
+  - After you submit your exams, **close the browser**, hand in any scrap papers as you exit the room, then leave the building quietly to avoid disturbances.
 
 ### Closed-book Policy
 
-Unless otherwise specified, **quizzes will be closed-book** except for the digital double-sided A4 cheatsheet. This means that during the quiz, students are expected to:
+Unless otherwise specified, **quizzes will be closed-book** except for the digital 2-page A4 cheatsheet. This means that during the quiz, students are expected to:
 
   - **Not** use the internet to solve quiz questions.
-  - **Not** bring any materials that would assist in completing the quiz (aside from the digital cheatsheet).
-  - **Not** open any other files or webpages apart from the PrairieLearn quiz.
-  - **Not** leave the quiz room early or re-enter after leaving (except for necessary reasons like using the washroom).
+  - **Not** bring any materials that would assist in completing the quiz.
+  - **Not** open any other files or webpages apart from the PrairieLearn quiz and the digital cheatsheet.
+  - **Not** re-enter after leaving the quiz room (except for necessary reasons like using the washroom).
 
 ### No Collaboration
 
-You may **not** communicate with other students or anyone else through any medium during the quiz. Communication with classmates is prohibited until all students have finished the quiz. There will be multiple quiz sessions, so please avoid discussing the quiz on Slack or elsewhere until at least 30 minutes after the end of the final quiz session.
+You may **not** communicate with other students or anyone else through any medium during the quiz. Communication with classmates is prohibited until all students have finished the quiz. There will be multiple quiz sessions, so please avoid discussing the quiz on Slack or elsewhere until the end of the final quiz session.
 
 ### Things to Bring/Remember
 
 - **Student card**: Required for check-in and accessing the ICCS building after hours (after 5 pm).
-- **Digital Cheatsheet**: Upload your digital double-sided A4 cheatsheet to PrairieLearn before the quiz.
+- **Digital Cheatsheet**: Upload your digital 2-page A4 cheatsheet to PrairieLearn before the quiz.
 - **CWL password**: Memorize your password for logging into PrairieLearn.
 
 ### Special Circumstances
 
-1. **I finished the quiz early:**
+- **I finished the quiz early:**
 
-  - Wait quietly at your seat until the quiz period ends.
+  - Feel free to leave the quiz room.
   
-2. **I need to use the washroom:**
+- **I need to use the washroom:**
 
   - Raise your hand and notify the invigilator. Leave only if permitted. We recommend using the washroom before the quiz starts.
