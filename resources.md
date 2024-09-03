@@ -23,7 +23,7 @@ subtitle: For MDS students and beyond
 - [Career and professional development](/resources_pages/CareerandIndustryResources)
 - [Potentially useful textbooks](/resources_pages/textbooks)
 - [Resources offered by UBC](/resources_pages/UBC_resources)
-- [Block rep guidelines](/resources_pages/block_rep)
+- [Student rep guidelines](/resources_pages/student_rep)
 - [Student feedback about the program](/resources_pages/student_feedback)
 - [Guidelines for working with others](/resources_pages/teamwork/)
 - [Contributing to the MDS blog](/resources_pages/contributing_blog/)
