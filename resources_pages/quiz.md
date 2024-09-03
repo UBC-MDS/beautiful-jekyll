@@ -52,9 +52,8 @@ You must complete the instruction below before writing quizzes. This is an essen
 2. Be present at least **10 minutes** before the quiz starts.
 3. Upon entering the exam room, do **not** communicate with anyone other than the invigilators.
 4. An invigilator will check you in. Wait until the reader displays a **red** light before tapping your student card.
-5. Place all personal belongings and electronics on the racks at the front of the room (phones, bags, hats, jackets, smartwatches, etc.). Phones must be turned off or on airplane mode.
+5. Place all personal belongings and electronics on the racks at the front of the room (phones, bags, hats, jackets, smartwatches, etc.). Phones must be turned off or on airplane mode. Physical calculators are also not permitted (a digital one will be provided on the computer).
   - Note: Your 2-page A4 cheatsheet must be digital, and scrap papers will be provided in the exam room.
-  - Exceptions: You may bring a scientific calculator if you wish, but an embedded calculator is available.
 6. Find your assigned seat number and log into the provided computer using the username and password displayed on the whiteboard or wall.
 7. Use **Mircrosoft Edge** to open **PrairieTest**
 8. Log in with your CWL. If you need Two-Factor Authentication (2FA), raise your hand and inform the invigilator.
