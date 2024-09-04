@@ -78,7 +78,7 @@ Ben joined the MDS program in July 2024 as a course coordinator. Born in Taiwan 
 <br>
 <br>
 
-#### Daniel Chen, Postdoctoral Research and Teaching Fellow
+#### Daniel Chen, Lecturer
 
 
 <img src='../img/team/daniel.jpeg' align="left" width="32%" style="margin-right: 5px;"/>
@@ -112,7 +112,7 @@ at a computer learing how to CAD design something to print on his 3D printer.
 <br>
 
 
-#### Gittu George, Postdoctoral Research and Teaching Fellow
+#### Gittu George, Lecturer
 
 <img src='../img/team/gittu.png'   align="left" width="31%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
