@@ -85,7 +85,7 @@ Balancing these two sides is difficult. In MDS the policy is as follows: if a gr
 
 ## Quiz Policies
 
-Unless otherwise specified, MDS quizzes are **closed** book, with the allowance of a digital 2-page A4 cheatsheet that must be uploaded to PrairieLearn before the quiz. You may only access PrairieLearn during the quiz.
+Unless otherwise specified, MDS quizzes are **closed** book, with the allowance of a **handwritten**, **single**, **one-page**, **letter-sized** cheatsheet that is scanned and uploaded as a PDF to PrairieLearn before the quiz. You may only access PrairieLearn during the quiz.
 
 During the quiz window, students are not allowed to disclose, discuss, or share any part of the quiz with any other individual, except as directly permitted or required by the course instructors. This includes discussions in person, online, or through any electronic means. Violation of this policy will result in academic penalties, which may include failure of the quiz or failure of the course.
 
