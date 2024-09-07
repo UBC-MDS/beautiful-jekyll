@@ -78,7 +78,7 @@ Ben joined the MDS program in July 2024 as a course coordinator. Born in Taiwan 
 <br>
 <br>
 
-#### Daniel Chen, Postdoctoral Research and Teaching Fellow
+#### Daniel Chen, Lecturer
 
 
 <img src='../img/team/daniel.jpeg' align="left" width="32%" style="margin-right: 5px;"/>
@@ -112,7 +112,7 @@ at a computer learing how to CAD design something to print on his 3D printer.
 <br>
 
 
-#### Gittu George, Postdoctoral Research and Teaching Fellow
+#### Gittu George, Lecturer
 
 <img src='../img/team/gittu.png'   align="left" width="31%" style="margin-right: 5px;"/>
 <p style="font-size:12.5px">
@@ -159,22 +159,6 @@ Vincent joined UBC in March 2024 as a postdoctoral teaching and research fellow.
 
 <br>
 <br>
-
-#### Quan Nguyen, Postdoctoral Research and Teaching Fellow
-
-<img src='../img/team/quan.jpeg'   align="left" width="34.5%" style="margin-right: 5px;"/>
-<p style="font-size:12.5px">
-Quan Nguyen began his teaching role in the MDS program at UBC in the summer of 2021. Prior to joining UBC, he was a Postdoctoral Research Fellow in Learning Analytics and an Adjunct Lecturer in the Master of Applied Data Science at the University of Michigan. His research applies statistical and machine learning techniques on large-scale clickstream data from learning management systems to predict student performance and interactions. Quan completed his Ph.D. in Learning Analytics from The Open University and received his Bachelor’s and Master’s degree in Economics from Maastricht University. In his spare time, Quan enjoys playing soccer, basketball, guitar and piano. <br>
-<br>
-
-<i>In the last 6 months, Quan has learned how to use AWS Sagemaker.</i> <br>
-
-<i>Quan's favourite data science topics are time-series, network analysis and asessing biases and fairness in machine learning models.</i> <br>
-
-<a href="https://quannguyen.rbind.io/" target="_blank">Learn more about Quan here.</a>
-
-</p>
-
 
 
 #### Joel Östblom, Assistant Professor of Teaching
@@ -290,5 +274,6 @@ Betty Zhao joined the MDS program in January 2022 as a course coordinator. She w
 - **Mike Gelbart** (Now Co-Founder and Principal of [VISST](https://www.visst.ca/#team))
 - **Rodolfo Lourenzutti** (Now tenure-track Professor of Teaching in the Dept. of Statistics at UBC)
 - **Firas Moosvi** (Now Lecturer in the Computer Science, Mathematics, Physics, and Statistics department at UBC Okanagan)
+- **Quan Nguyen** (Now Assistant Professor in the Computer Science department at Thompson River University)
 - **Arman Seyed-Ahmadi** (Now Research Scientist at Genentech)
 - **Shaun Sun** (Now Assistant Professor in the Department of Mathematics and Statistics at University of the Fraser Valley)
