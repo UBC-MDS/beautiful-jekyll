@@ -237,7 +237,7 @@ Zac move to Canada from Australia in August of 2021 and joined the MDS team in J
 
 <a href="https://www.linkedin.com/in/zacwarham/" target="_blank">Learn more about Zac here.</a>
 
-<br>
+</p>
 
 #### Hedayat Zarkoob, Postdoctoral Research and Teaching Fellow
 
