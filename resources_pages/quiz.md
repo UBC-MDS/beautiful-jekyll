@@ -27,6 +27,8 @@ During the quiz window, students are **NOT** allowed to disclose, discuss, or sh
 Students are now allowed to use digital cheatsheets, which can be uploaded to the PrairieLearn system. The cheatsheet must be:
 - **handwritten** on a **single**, **one-page**, **letter-sized** sheet (8.5x11 inches).
 - The cheat sheet must then be scanned and uploaded as a PDF **before** the quiz.
+- You may create your cheatsheet on an iPad, but it must be handwritten using a stylus—no typing is allowed.
+- Exceptions can be made for students with accommodations from CfA for handwriting.
 
 ### PrairieTest
 
@@ -55,7 +57,7 @@ You must complete the instruction below before writing quizzes. This is an essen
 3. Upon entering the exam room, do **not** communicate with anyone other than the invigilators.
 4. An invigilator will check you in. Wait until the reader displays a **red** light before tapping your student card.
 5. Place all personal belongings and electronics on the racks at the front of the room (phones, bags, hats, jackets, smartwatches, etc.). Phones must be turned off or on airplane mode. Physical calculators are also not permitted (a digital one will be provided on the computer).
-  - Note: Your digital cheatsheet must follow the listed requirements in the `Digital Cheatsheets` section above, and scrap papers will be provided in the exam room.
+  - Note: Your digital cheatsheet must follow the listed requirements in the [Digital Cheatsheets](#digital-cheatsheets) section above, and scrap papers will be provided in the exam room.
 6. Find your assigned seat number and log into the provided computer using the username and password displayed on the whiteboard or wall.
 7. Use **Mircrosoft Edge** to open **PrairieTest**
 8. Log in with your CWL. If you need Two-Factor Authentication (2FA), raise your hand and inform the invigilator.
@@ -83,7 +85,7 @@ You may **not** communicate with other students or anyone else through any mediu
 ### Things to Bring/Remember
 
 - **Student card**: Required for check-in and accessing the ICCS building after hours (after 5 pm).
-- **Digital Cheatsheet**: Make sure your cheatsheet meets the requirements and upload your digital cheatsheet to PrairieLearn before the quiz.
+- **Digital Cheatsheet**: Make sure your cheatsheet meets the [requirements](#digital-cheatsheets) and upload your digital cheatsheet to PrairieLearn before the quiz.
 - **CWL password**: Memorize your password for logging into PrairieLearn.
 
 ### Special Circumstances
