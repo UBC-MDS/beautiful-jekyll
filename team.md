@@ -12,9 +12,9 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 ## Team Stats
 
 - **13** : The total number of different languages we speak (including Cantonese, Farsi, Hindi, Japanese, Malayalam, Mandarin, Marathi, Nepali, Spanish, Swedish, and Vietnamese)
-- **20** : The total number of coding languages we have experience working with as a whole.
-- **10** : The number of different countries our team cheers for during the Olympics.
-- **5.3** : The average number of years our team has of teaching experience (with a standard deviation of 3.0).
+- **16** : The total number of coding languages we have experience working with as a whole.
+- **11** : The number of different countries our team cheers for during the Olympics.
+- **5.2** : The average number of years our team has of teaching experience (with a standard deviation of 2.8).
 - **10** : The median number of postsecondary education years our team has studied.
 
 ## Team Facts
@@ -223,21 +223,6 @@ Tiffany joined the founding team who developed the Master’s of Data Science pr
 <a href="http://tiffanytimbers.com/" target="_blank">Learn more about Tiffany here.</a>
 
 </p>
-
-#### Zac Warham, Course Coordinator
-
-<img src='../img/team/zac.jpg'  align="left" width="32%" style="margin-right: 5px;"/>
-<p style="font-size:12.5px">
-Zac move to Canada from Australia in August of 2021 and joined the MDS team in January 2022 as a TA whilst studying his Masters of Science in Oceans and Fisheries at UBC. Prior to his time at UBC, Zac worked as an IT Support Assistant and an Aquarium Aquarist whilst he studied a combination of Marine Biology & Web Development. Outside of the classroom, Zac can be found volunteering at the Marine Mammal Rescue Centre or playing pool and games.<br>
-<br>
-
-<i>In the last 6 months, Zac has completed his Masters Thesis.</i> <br>
-
-<i>Zac's favourite part of data science is developing dashboards (usually Shiny Apps) to make scientific data more accessible to the public.</i> <br>
-
-<a href="https://www.linkedin.com/in/zacwarham/" target="_blank">Learn more about Zac here.</a>
-
-<br>
 
 #### Hedayat Zarkoob, Postdoctoral Research and Teaching Fellow
 
