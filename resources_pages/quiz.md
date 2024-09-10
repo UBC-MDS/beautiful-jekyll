@@ -25,7 +25,7 @@ During the quiz window, students are **NOT** allowed to disclose, discuss, or sh
 ### Digital Cheatsheets
 
 Students are now allowed to use digital cheatsheets, which can be uploaded to the PrairieLearn system. The cheatsheet must be:
-- **handwritten** on a **single**, **one-page**, **letter-sized** sheet (8.5x11 inches).
+- **handwritten** on a **single-sided**, **one-page**, **letter-sized** sheet (8.5x11 inches).
 - The cheat sheet must then be scanned and uploaded as a PDF **before** the quiz.
 - You may create your cheatsheet on an iPad, but it must be handwritten using a stylus—no typing is allowed.
 - Exceptions can be made for students with accommodations from CfA for handwriting.
