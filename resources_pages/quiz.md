@@ -6,7 +6,7 @@ title: MDS quizzes
 
 ### Overview
 
-With the exception of [project courses](https://ubc-mds.github.io/2019-08-22-project-courses/), MDS courses will have two quizzes throughout the block, typically one in the middle of the course and another after the course ends during the free days between blocks. The quizzes for a course will appear on the [MDS calendar](https://ubc-mds.github.io/calendar/) (ideally before the course starts) so that students are aware of the timing. We anticipate most quizzes being 45 minutes long.
+With the exception of [project courses](https://ubc-mds.github.io/2019-08-22-project-courses/), MDS courses will have two quizzes throughout the block, typically one in the middle of the course and another after the course ends during the free days between blocks. The quizzes for a course will appear on the [MDS calendar](https://ubc-mds.github.io/calendar/) (ideally before the course starts) so that students are aware of the timing. We anticipate most quizzes being 50 minutes long.
 
 ### Purpose
 
@@ -28,10 +28,14 @@ Students are now allowed to use digital cheatsheets, which can be uploaded to th
 - **handwritten** on a **single-sided**, **one-page**, **letter-sized** sheet (8.5x11 inches).
 - The cheatsheet must then be scanned and uploaded as a PDF **before** the quiz.
 - The cheatsheet file has to be named as `cheatsheet.pdf`.
-- You may create your cheatsheet on an iPad, but it must be handwritten using a stylus—no typing is allowed.
-- Exceptions can be made for students with accommodations from CfA for handwriting.
+- You may create your cheatsheet on an iPad, but it must be handwritten using a stylus—**no typing is allowed**.
+  - Students with accommodations from CfA for handwriting may be granted exceptions.
+- Sharing of cheatsheets is strictly prohibited.
+- TAs will verify that your cheatsheet complies with these instructions. No prior approval will be given, but cheatsheets that do not meet the requirements may be removed.
 
 #### Instructions to Upload Cheatsheet
+
+**Note**: Please use **Chrome** or **Firefox** to upload your cheatsheet. Other browsers may not work. If you haven’t installed these browsers, please refer to the [installation guide](https://ubc-mds.github.io/resources_pages/installation_instructions/) for instructions.
 
 1. Log in to PrairieLearn and navigate to the course where you need to upload your cheatsheet.
 2. Select the "Cheatsheet" assessment and open the corresponding upload question.
@@ -80,7 +84,7 @@ You must complete the instruction below before writing quizzes. This is an essen
 
 - You will have access to your digital cheatsheet during the quiz. Open PrairieTest, where you’ll find both the quiz link and the cheatsheet link.
   - **Note**: If the cheatsheet link doesn’t work due to a known bug, you can access it by going to `Assessments` → Cheatsheet assignment.
-- You have 45 minutes to complete all questions. A countdown timer will display the remaining time, and the quiz will automatically submit when the timer reaches zero.
+- You have 50 minutes to complete all questions. A countdown timer will display the remaining time, and the quiz will automatically submit when the timer reaches zero.
 - After submitting your exam, close your browser, hand in any scrap paper, and exit the room quietly to avoid disturbing others.
 
 ### Closed-book Policy
