@@ -126,11 +126,20 @@ Students must correctly cite any code that has been authored by someone else or 
 
 An “adequate acknowledgement” requires a detailed identification of the (parts of the) code reused and a full citation of the original source code that has been reused.
 
-## Use of LLMs
+## Use of Generative AI (GenAI)
 
-- Use of LLMs on quizzes in MDS will be strictly prohibited. The purpose of our quizzes is to test your knowledge, not the LLMs.
-- In some assignments in MDS you will be explicitly asked to use LLMs so that you get practice working with them.
-- If you are not asked to use an LLM to solve a problem in MDS, you probably shouldn’t use them to directly solve the problem. By doing so you are only cheating yourself of the practice and learning you would get by solving the problem yourself.
+Students are responsible for completing all assessments independently, demonstrating their understanding and mastery of the course material. Generative AI (GenAI) tools can be useful for tasks such as gathering information, brainstorming ideas, reviewing concepts, finding analogies, revising written work, or creating study questions. However, their use should be limited, and all submitted work must reflect the student’s own efforts and comprehension. **Ultimately, your goal is to master the material, so ensure that using these tools supports your learning rather than hinders it.**
+
+If you choose to use GenAI tools in your work, you must:
+
+- Cite the GenAI tool you used, including the name of the tool and how it was applied.
+- Provide an annotation with your citation explaining the extent to which the GenAI tool contributed to your work and a brief description of its usage.
+
+**Important:** The use of GenAI to bypass learning or misrepresent your effort is considered academic dishonesty. It also deprives you of the opportunity to fully engage with the material and grow as a learner and individual. If an instructor suspects that a submission relies excessively on AI without proper citation, you may be required to explain your work in more detail. If your explanation is unsatisfactory, you may receive a 0 for the question or the entire assignment, depending on the severity of the violation.
+
+In group work scenarios, all group members must be aware of and agree to the use of GenAI tools. The group is collectively responsible for ensuring that the final work adheres to these guidelines.
+
+Check out [UBC’s approach to generative artificial intelligence tools in teaching and learning](https://academicintegrity.ubc.ca/generative-ai/). 
 
 ## Leaves of Absence (medical or personal)
 
