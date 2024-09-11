@@ -128,7 +128,7 @@ An “adequate acknowledgement” requires a detailed identification of the (par
 
 ## Use of Generative AI (GenAI)
 
-Students are responsible for completing all assessments independently, demonstrating their understanding and mastery of the course material. Generative AI (GenAI) tools can be useful for tasks such as gathering information, brainstorming ideas, reviewing concepts, finding analogies, revising written work, or creating study questions. However, their use should be limited, and all submitted work must reflect the student’s own efforts and comprehension. **Ultimately, your goal is to master the material, so ensure that using these tools supports your learning rather than hindering it.**
+Students are responsible for completing all assessments independently, demonstrating their understanding and mastery of the course material. Generative AI (GenAI) tools can be useful for tasks such as gathering information, brainstorming ideas, reviewing concepts, finding analogies, revising written work, or creating study questions. However, their use should be limited, and all submitted work must reflect the student’s own efforts and comprehension. **Ultimately, your goal is to master the material, so ensure that using these tools supports your learning rather than hinders it.**
 
 If you choose to use GenAI tools in your work, you must:
 
