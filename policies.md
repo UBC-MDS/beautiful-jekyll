@@ -131,10 +131,13 @@ An “adequate acknowledgement” requires a detailed identification of the (par
 Students are responsible for completing all assessments independently, demonstrating their understanding and mastery of the course material. Generative AI (GenAI) tools can be useful for tasks such as gathering information, brainstorming ideas, reviewing concepts, finding analogies, revising written work, or creating study questions. However, their use should be limited, and all submitted work must reflect the student’s own efforts and comprehension. **Ultimately, your goal is to master the material, so ensure that using these tools supports your learning rather than hindering it.**
 
 If you choose to use GenAI tools in your work, you must:
-- Cite the GenAI tool you used, including specific details such as the name of the tool and how it was applied.
-- Provide an annotation with your citation that explains the extent to which the GenAI tool contributed to your work, including a brief description of how it was used.
 
-If the instructor suspects that a submission relies excessively on AI without proper citation, the student may be required to explain their work in more detail. If the explanation is unsatisfactory, the student may receive a 0 for the question or for the entire assignment, depending on the severity of the violation.
+- Cite the GenAI tool you used, including the name of the tool and how it was applied.
+- Provide an annotation with your citation explaining the extent to which the GenAI tool contributed to your work and a brief description of its usage.
+
+**Important:** The use of GenAI to bypass learning or misrepresent your effort is considered academic dishonesty. It also deprives you of the opportunity to fully engage with the material and grow as a learner and individual. If an instructor suspects that a submission relies excessively on AI without proper citation, you may be required to explain your work in more detail. If your explanation is unsatisfactory, you may receive a 0 for the question or the entire assignment, depending on the severity of the violation.
+
+In group work scenarios, all group members must be aware of and agree to the use of GenAI tools. The group is collectively responsible for ensuring that the final work adheres to these guidelines.
 
 Check out [UBC’s approach to generative artificial intelligence tools in teaching and learning](https://academicintegrity.ubc.ca/generative-ai/). 
 
