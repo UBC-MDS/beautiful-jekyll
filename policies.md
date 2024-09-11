@@ -87,7 +87,11 @@ Balancing these two sides is difficult. In MDS the policy is as follows: if a gr
 
 Unless otherwise specified, MDS quizzes are **closed** book, with the allowance of a **handwritten**, **single-sided**, **one-page**, **letter-sized** cheatsheet that is scanned and uploaded as a PDF to PrairieLearn before the quiz. Ensure that your cheatsheet complies with all [stated requirements](../resources_pages/quiz/#digital-cheatsheets). You may only access PrairieLearn during the quiz.
 
+Please remember to reserve your quiz spot in a timely manner, as availability is limited and may fill up quickly.
+
 During the quiz window, students are not allowed to disclose, discuss, or share any part of the quiz with any other individual, except as directly permitted or required by the course instructors. This includes discussions in person, online, or through any electronic means. Violation of this policy will result in academic penalties, which may include failure of the quiz or failure of the course.
+
+For more information, refer to the complete quiz policy on the [quiz policy page](https://ubc-mds.github.io/resources_pages/quiz/).
 
 **Use of AI tools (e.g., ChatGPT) is also strictly prohibited and can lead to serious consequences.**
 

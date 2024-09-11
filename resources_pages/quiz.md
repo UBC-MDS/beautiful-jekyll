@@ -26,11 +26,20 @@ During the quiz window, students are **NOT** allowed to disclose, discuss, or sh
 
 Students are now allowed to use digital cheatsheets, which can be uploaded to the PrairieLearn system. The cheatsheet must be:
 - **handwritten** on a **single-sided**, **one-page**, **letter-sized** sheet (8.5x11 inches).
-- The cheat sheet must then be scanned and uploaded as a PDF **before** the quiz.
+- The cheatsheet must then be scanned and uploaded as a PDF **before** the quiz.
+- The cheatsheet file has to be named as `cheatsheet.pdf`.
 - You may create your cheatsheet on an iPad, but it must be handwritten using a stylus—no typing is allowed.
 - Exceptions can be made for students with accommodations from CfA for handwriting.
 
-### PrairieTest
+#### Instructions to Upload Cheatsheet
+
+1. Log in to PrairieLearn and navigate to the course where you need to upload your cheatsheet.
+2. Select the "Cheatsheet" assessment and open the corresponding upload question.
+3. Upload your cheatsheet, ensuring it meets the cheatsheet [requirements](#digital-cheatsheets).
+4. Click `Save & Grade` to submit your file.
+5. Once uploaded, you should see a preview of your PDF on PrairieLearn. You can update and re-upload your cheatsheet as many times as needed before the deadline.
+
+### PrairieTest and Making a Reservation for your Quiz
 
 You must complete the instruction below before writing quizzes. This is an essential step to check in the quiz room.
 - Open [PrairieTest](https://us.prairietest.com/)
@@ -39,6 +48,9 @@ You must complete the instruction below before writing quizzes. This is an essen
 - Accept the invitation to join MDS 5XX
   - You only need to do this once, and please DM the course coordinator if you have issues viewing the invitation.
 - You will be able to book quizzes and view your booked quiz times and locations, under Exam reservations.
+- Follow the instructions [here](https://cbtf.ubc.ca/students/reservations) to make reservations.
+- Please make reservations early, as the spots can run out
+
 
 ### Quiz Logistics
 
@@ -66,8 +78,10 @@ You must complete the instruction below before writing quizzes. This is an essen
 
 #### During the Quiz
 
-  - You have 45 minutes to answer all questions. An embedded countdown timer will show the remaining time, and the quiz will auto-submit when the timer runs out.
-  - After you submit your exams, **close the browser**, hand in any scrap papers as you exit the room, then leave the building quietly to avoid disturbances.
+- You will have access to your digital cheatsheet during the quiz. Open PrairieTest, where you’ll find both the quiz link and the cheatsheet link.
+  - **Note**: If the cheatsheet link doesn’t work due to a known bug, you can access it by going to `Assessments` → Cheatsheet assignment.
+- You have 45 minutes to complete all questions. A countdown timer will display the remaining time, and the quiz will automatically submit when the timer reaches zero.
+- After submitting your exam, close your browser, hand in any scrap paper, and exit the room quietly to avoid disturbing others.
 
 ### Closed-book Policy
 
