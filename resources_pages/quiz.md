@@ -119,7 +119,7 @@ You may **not** communicate with other students or anyone else through any mediu
 
   - Raise your hand and notify the invigilator. Leave only if permitted. We recommend using the washroom before the quiz starts.
 
-### What if I can't see my cheatsheets!
+### How to Access your Cheatsheet During the Quiz
 
 After you open PrairieTest, you will see three links. Two links that direct to quiz itself and one link that directs to the cheatsheet. 
 
