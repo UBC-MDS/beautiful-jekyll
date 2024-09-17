@@ -118,3 +118,37 @@ You may **not** communicate with other students or anyone else through any mediu
 - **I need to use the washroom:**
 
   - Raise your hand and notify the invigilator. Leave only if permitted. We recommend using the washroom before the quiz starts.
+
+### What if I can't see my cheatsheets!
+
+After you open PrairieTest, you will see three links. Two links that direct to quiz itself and one link that directs to the cheatsheet. 
+
+![cheatsheet-instruction1](imgs/cheatsheet-instruction1.png)
+
+#### Quiz Link
+
+Both quiz link will work so feel free to click on either one. 
+
+#### Cheatsheet Link
+
+If you click on the cheatsheet link and it shows `Assessment is no longer available`. **Don't stress!**
+
+![cheatsheet-instruction1](imgs/cheatsheet-instruction2.png)
+
+- Click on `Assessment` on the top.
+
+![cheatsheet-instruction1](imgs/cheatsheet-instruction3.png)
+
+- Click on the `cheatsheet` assessment.
+
+![cheatsheet-instruction1](imgs/cheatsheet-instruction4.png)
+
+- Click on the `cheatsheet` question.
+
+![cheatsheet-instruction1](imgs/cheatsheet-instruction5.png)
+
+- Click `preview`.
+
+![cheatsheet-instruction1](imgs/cheatsheet-instruction6.png)
+
+- **Note**: If the preview doesn't load properly, refresh the browswer or download the cheatsheet.
