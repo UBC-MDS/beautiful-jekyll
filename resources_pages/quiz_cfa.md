@@ -10,11 +10,13 @@ The CfA stands for the Centre for Accessibility. It provides disability-related 
 In the MDS program, if you have a disability or ongoing medical condition, you can request quiz accommodations through the CfA.
 ## Accommodations
 
-If you have an accommodation letter from the Center for Accessibility, please send them to the course coordinators to ensure you receive your approved accommodations throughout the program.
+If you have an accommodation letter from the Center for Accessibility (CfA), please send it to the course coordinators to ensure that your approved accommodations are provided throughout the program.
 
-If **all** of your accommodations **can** be accommodated by the CBTF (check the list [here](https://cbtf.ubc.ca/students/accommodations)), you will still write your quizzes at the CBTF. Please follow instructions on [MDS quizzes](https://ubc-mds.github.io/resources_pages/quiz/).
+If **all** of your accommodations **can** be met by the CBTF (check the list [here](https://cbtf.ubc.ca/students/accommodations)), you will continue to write your quizzes at the CBTF. Please follow the instructions on the [MDS quizzes](https://ubc-mds.github.io/resources_pages/quiz/) page to register for your quizzes.
 
-Otherwise, please follow the instructions below.
+For accommodations that cannot be provided by the CBTF, follow the instructions below. You should still go through the [MDS quiz policies](https://ubc-mds.github.io/resources_pages/quiz/). Just note that the following sections will not apply to you:
+- [PrairieTest and Making a Reservation for your Quiz](https://ubc-mds.github.io/resources_pages/quiz/#prairietest-and-making-a-reservation-for-your-quiz)
+- [Quiz Room Procedures](https://ubc-mds.github.io/resources_pages/quiz/#quiz-room-procedures)
 
 ## List of MDS Quiz instructions that diverge
 
@@ -25,9 +27,9 @@ You should still go through the [MDS quizzes](https://ubc-mds.github.io/resource
 
 ## CfA Quiz Booking
 
-- On [PrairieTest](https://us.prairietest.com/pt), you do **not** need to make a reservation. Instead, we will assign you to a special session allowing you to write your quiz outside of the CBTF.
-- You should book each of your quizzes with the CfA. Instructions are provided by [the CfA](https://students.ubc.ca/about-student-services/centre-for-accessibility).
-    - You can pick your own quiz times, as long as they fall in the quiz window specified in the calendar, **and** they cannot happen during your lecture and lab times.
+You do **not** need to make a reservation on [PrairieTest](https://us.prairietest.com/pt). Instead, we will assign you to a special session to write your quiz outside of the CBTF.
+- Book each of your quizzes through the CfA following their instructions [here](https://students.ubc.ca/about-student-services/centre-for-accessibility).
+    - You can choose your quiz times as long as they fall within the quiz window specified in the calendar **and** do not overlap with your lecture or lab times.
 - Please also book the quizzes early, as the CfA requires us to provide them with exam instructions at least three business days before the quiz date.
 
 
