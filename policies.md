@@ -18,11 +18,26 @@ Attendance in lectures and lab sessions is not mandatory but highly recommended.
 
 We do not livestream or require instructors to record their lectures. If you miss a class you can catch up by reviewing lecture notes as well as by talking to peers and asking them to share their notes. When past lecture recordings are available, instructors may grant access to students who were absent for approved reasons only (e.g. illness, jury duty, etc.).
 
-## Academic concession policy
+## Academic Concession Policy
 
-If you are expecting to miss an assignment or a quiz for a justified reason you can request an academic concession before the deadline. From the UBC Senate [policy on academic concession](https://www.calendar.ubc.ca/vancouver/index.cfm?tree=3,329,0,0), grounds for academic concession can be illness, conflicting responsibilities, or compassionate grounds. Examples of compassionate grounds, from the above policy, include "a traumatic event experienced by the student, a family member, or a close friend; an act of sexual assault or other sexual misconduct experienced by the student, a family member, or a close friend; a death in the family or of a close friend."
+If you anticipate missing an assignment or quiz for a justified reason, you may request an academic concession before the deadline. According to the UBC Senate [policy on academic concession](https://www.calendar.ubc.ca/vancouver/index.cfm?tree=3,329,0,0), valid grounds for academic concessions include illness, conflicting responsibilities, or compassionate grounds. Compassionate grounds, as defined by the policy, include situations such as "a traumatic event experienced by the student, a family member, or a close friend; an act of sexual assault or other sexual misconduct experienced by the student, a family member, or a close friend; a death in the family or of a close friend."
 
-To request an academic concession, students should immediately send a completed and signed [academic concession form](https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/img/Template%20-%20In-Term%20Academic%20Concessions%20Self%20Declaration.pdf?raw=1) to the course coordinator via Slack. Upon receiving the form, the course coordinator, the Lab Instructor and/or MDS Co-Directors will make a decision about how to proceed. Failure to present valid documentation may result in a failing grade. 
+### Requirements for Submitting an Academic Concession Request
+
+To request an academic concession, students must fill out the [academic concession form](https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/img/Template%20-%20In-Term%20Academic%20Concessions%20Self%20Declaration.pdf?raw=1) and include the following details:
+
+- **Reason for the Request:**
+    - Clearly state the reason for requesting the academic concession in the form. This reason must align with the UBC Senate’s grounds for academic concessions (e.g., illness, conflicting responsibilities, or compassionate grounds).
+    - Attach supporting documentation (if available) to validate the reason for the request. If you cannot provide documentation at the time of the request, indicate when you expect to submit it.
+- **Extension Details:**
+    - Indicate in the form which specific assignment(s) or deadline(s) you are requesting an extension or exemption for.
+    - Specify in the form an approximate of how long an extension you are requesting.
+
+### Submission Process
+
+Once the form is completed, send it via Slack to the course coordinator. Incomplete or unsigned forms may delay the processing of your request. Ensure that all necessary fields in the form, including the date, your name, student number, and signature, are filled out. Please note that you must submit the academic concession form **before** the deadline of the assignment or quiz for which you are requesting the concession. Submitting a request does **not** guarantee approval.
+
+After receiving your completed form, the course coordinator, Lab Instructor, and/or MDS Co-Directors will review your request. You may be asked to provide additional documentation or clarification if needed. Decisions will be communicated as soon as possible. Failure to provide valid documentation when required may result in a denial of your request.
 
 ## Grades and Academic Standing
 
