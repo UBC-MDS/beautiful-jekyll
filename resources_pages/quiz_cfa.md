@@ -3,7 +3,11 @@ layout: page
 title: MDS quizzes - CfA
 ---
 
+## What is CfA?
 
+The CfA stands for the Centre for Accessibility. It provides disability-related accommodations and programming designed to remove barriers for students with disabilities or ongoing medical conditions in all aspects of university life. For more information, visit the [Centre for Accessibility](https://students.ubc.ca/about-student-services/centre-for-accessibility).
+
+In the MDS program, if you have a disability or ongoing medical condition, you can request quiz accommodations through the CfA.
 ## Accommodations
 
 If you have an accommodation letter from the Center for Accessibility, please send them to the course coordinators to ensure you receive your approved accommodations throughout the program.
