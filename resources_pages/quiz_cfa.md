@@ -8,6 +8,7 @@ title: MDS quizzes - CfA
 The CfA stands for the Centre for Accessibility. It provides disability-related accommodations and programming designed to remove barriers for students with disabilities or ongoing medical conditions in all aspects of university life. For more information, visit the [Centre for Accessibility](https://students.ubc.ca/about-student-services/centre-for-accessibility).
 
 In the MDS program, if you have a disability or ongoing medical condition, you can request quiz accommodations through the CfA.
+
 ## Accommodations
 
 If you have an accommodation letter from the Center for Accessibility (CfA), please send it to the course coordinators to ensure that your approved accommodations are provided throughout the program.
@@ -17,13 +18,6 @@ If **all** of your accommodations **can** be met by the CBTF (check the list [he
 For accommodations that cannot be provided by the CBTF, follow the instructions below. You should still go through the [MDS quiz policies](https://ubc-mds.github.io/resources_pages/quiz/). Just note that the following sections will not apply to you:
 - [PrairieTest and Making a Reservation for your Quiz](https://ubc-mds.github.io/resources_pages/quiz/#prairietest-and-making-a-reservation-for-your-quiz)
 - [Quiz Room Procedures](https://ubc-mds.github.io/resources_pages/quiz/#quiz-room-procedures)
-
-## List of MDS Quiz instructions that diverge
-
-You should still go through the [MDS quizzes](https://ubc-mds.github.io/resources_pages/quiz/) page. The only sections that do not apply to you is:
-- [PrairieTest and Making a Reservation for your Quiz](https://ubc-mds.github.io/resources_pages/quiz/#prairietest-and-making-a-reservation-for-your-quiz)
-- [Quiz Room Procedures](https://ubc-mds.github.io/resources_pages/quiz/#quiz-room-procedures)
-
 
 ## CfA Quiz Booking
 
