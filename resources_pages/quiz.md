@@ -26,12 +26,16 @@ During the quiz window, students are **NOT** allowed to disclose, discuss, or sh
 
 Students are now allowed to use digital cheatsheets, which can be uploaded to the PrairieLearn system. The cheatsheet must be:
 - **handwritten** on a **single-sided**, **one-page**, **letter-sized** sheet (8.5x11 inches).
-- The cheatsheet must then be scanned and uploaded as a PDF **before** the quiz.
-- The cheatsheet file has to be named as `cheatsheet.pdf`.
-- You may create your cheatsheet on an iPad, but it must be handwritten using a stylus—**no typing is allowed**.
   - Students with accommodations from CfA for handwriting may be granted exceptions.
+  - Instructors will provide paper in the labs if you need some
+- The back of the cheatsheet must include **your name**, **your CWL**, **your CWL**, and the **course number** e.g. 551
+- The cheatsheet must then be scanned and uploaded as a PNG **before** the quiz.
+  - This is the version that will be accessible during the quiz.
+  - The cheatsheet filename requirements will be in the submission.
+  - Must be less than 5 MB in size (this is enforced by PrairieLearn)
 - Sharing of cheatsheets is strictly prohibited.
-- TAs will verify that your cheatsheet complies with these instructions. No prior approval will be given, but cheatsheets that do not meet the requirements may be removed.
+- TAs will verify that your cheatsheet complies with these instructions. No prior approval will be given, but cheatsheets that do not meet the requirements may face penalties.
+  - Penalties may also apply if you do not hand in your physical copy but submit a digital one
 
 #### Instructions to Upload Cheatsheet
 
