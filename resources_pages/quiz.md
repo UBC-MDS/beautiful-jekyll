@@ -24,14 +24,16 @@ During the quiz window, students are **NOT** allowed to disclose, discuss, or sh
 
 ### Digital Cheatsheets
 
-Students are now allowed to use digital cheatsheets, which can be uploaded to the PrairieLearn system. The cheatsheet must be:
-- **handwritten** on a **single-sided**, **one-page**, **letter-sized** sheet (8.5x11 inches).
-- The cheatsheet must then be scanned and uploaded as a PDF **before** the quiz.
-- The cheatsheet file has to be named as `cheatsheet.pdf`.
-- You may create your cheatsheet on an iPad, but it must be handwritten using a stylus—**no typing is allowed**.
-  - Students with accommodations from CfA for handwriting may be granted exceptions.
+Students are allowed to use digital cheatsheets, which must be uploaded to the PrairieLearn system following these guidelines:
+
+- The cheatsheet must be confined to a **single-sided**, **one-page**, **letter-sized** piece of paper (8.5 by 11 inches). Please do not use legal or A4-sized paper.
+- You may **handwrite**, **type**, or **digitally** create your cheatsheet, ensuring all information is **clearly readable** when printed on letter-sized paper. If you're typing your cheatsheet, ensure you use a **minimum font size of 8 pt**. (Letter-sized paper will be available in the labs if needed.)
+- The cheatsheet must be submitted as a **PNG file** (not PDF), with a file size of **5 MB or less**. This limit is enforced by PrairieLearn. You can create the PNG by scanning, photographing, or taking a screenshot of your cheatsheet.
+- You can use **Paint on Windows** and **Preview on Mac** for basic resizing. For more detailed adjustments, such as resizing or format conversion, **ImageMagick** can be helpful.
+- File names of your digital cheatsheets should correspond with course names to avoid confusion—e.g., the file name for the 521 cheatsheet should be similar to `521_cheatsheet.png`. Please verify the exact name upon submission.
+- Digital cheatsheets are due by **11:59 p.m. on the Monday night** before the quiz window opens.
+- If a cheatsheet is found to be **unreasonable** (i.e., not readable when printed on letter-sized paper), you may be called in for a discussion and could face penalties.
 - Sharing of cheatsheets is strictly prohibited.
-- TAs will verify that your cheatsheet complies with these instructions. No prior approval will be given, but cheatsheets that do not meet the requirements may be removed.
 
 #### Instructions to Upload Cheatsheet
 
