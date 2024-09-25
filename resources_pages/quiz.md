@@ -59,7 +59,7 @@ You must complete the instruction below before writing quizzes. This is an essen
 
 ### Quiz Results Review Session
 
-To review your quiz results, you must register for a quiz review session on PrairieTest. These sessions will typically be available one week after the quiz, once all grading has been completed. Registration for the review session will follow the same process as registering for the quiz. During the review session, you will have access to the results of all quizzes from the previous week. You may also submit regrade requests at this time by clicking on `Report an issue with this question` and describing the issue.
+To review your quiz results, you must register for a quiz review session on PrairieTest. These sessions will typically be available one week after the quiz, once all grading has been completed. Registration for the review session will follow the same process as registering for the quiz. During the review session, you will have access to the results of all quizzes from the previous week. You may also submit regrade requests at this time by clicking on `Report an issue with this question` (to the right of the question) and describing the your regrade request.
 
 ![cheatsheet-instruction1](imgs/report-issue.png)
 
