@@ -24,18 +24,24 @@ During the quiz window, students are **NOT** allowed to disclose, discuss, or sh
 
 ### Digital Cheatsheets
 
-Students are now allowed to use digital cheatsheets, which can be uploaded to the PrairieLearn system. The cheatsheet must be:
-- **handwritten** on a **single-sided**, **one-page**, **letter-sized** sheet (8.5x11 inches).
-  - Students with accommodations from CfA for handwriting may be granted exceptions.
-  - Instructors will provide paper in the labs if you need some
-- The back of the cheatsheet must include **your name**, **your CWL**, **your CWL**, and the **course number** e.g. 551
-- The cheatsheet must then be scanned and uploaded as a PNG **before** the quiz.
-  - This is the version that will be accessible during the quiz.
-  - The cheatsheet filename requirements will be in the submission.
-  - Must be less than 5 MB in size (this is enforced by PrairieLearn)
-- Sharing of cheatsheets is strictly prohibited.
-- TAs will verify that your cheatsheet complies with these instructions. No prior approval will be given, but cheatsheets that do not meet the requirements may face penalties.
-  - Penalties may also apply if you do not hand in your physical copy but submit a digital one
+Students are now allowed to use digital cheatsheets, which can be uploaded to the PrairieLearn system. We trust that you will adhere to the guidelines when submitting your digital cheatsheets. Should we spot an "unreasonable" digital cheatsheet, we may request the **corresponding printed physical cheatsheet.** If it is deemed excessively unfair compared to others, penalties may be applied. The cheatsheet must be:
+
+- **Requirements:** Confined to a **single, one-sided piece of letter-sized paper, 8.5 by 11 inches.** Please **do not** use legal or A4-sized paper
+  - Letter-sized paper will be available in the labs if needed
+- **Content format:** You may handwrite, type, or digitally create your cheatsheet, ensuring all information is **clearly readable when printed on letter-sized paper**
+  - If you're typing your cheatsheet, ensure you use a minimum font size of 8 pt
+- **Submission format:** The cheatsheet must be submitted as a **PNG file (not PDF)** with a file size of **5 MB or less.** This file size limit is enforced by PrairieLearn, not by us
+  - You can create the PNG by scanning, photographing, or taking a screenshot of your cheatsheet
+- **Resizing tools:** You can use Paint on Windows and Preview on Mac for basic resizing. Check out [ImageMagick](https://imagemagick.org/index.php) for more detailed adjustments such as resizing or format conversion, if needed
+- **Naming convention:** File names of your digital cheatsheets should correspond with course names to avoid confusion
+  - The file name for the 521 cheatsheet should be similar to `521_quiz_2_cheatsheet.png`
+  - Please verify the **exact name** upon submission
+- **Deadline:** digital cheatsheets are **due by 11:59 p.m.** the night before the quiz window opens
+  - This is typically Monday night unless instructed otherwise
+- **If a cheatsheet is found to be "unreasonable", i.e., the cheatsheet is not readable when printed on a letter-sized paper, you may be called in for a discussion and could face penalties**
+
+Please remember that the primary goal is to understand the course material, not just to optimize your cheatsheets. Focusing on the concepts rather than the cheatsheet format will be far more beneficial for your quizzes and overall learning in the long run.
+
 
 #### Instructions to Upload Cheatsheet
 
@@ -45,7 +51,7 @@ Students are now allowed to use digital cheatsheets, which can be uploaded to th
 2. Select the "Cheatsheet" assessment and open the corresponding upload question.
 3. Upload your cheatsheet, ensuring it meets the cheatsheet [requirements](#digital-cheatsheets).
 4. Click `Save & Grade` to submit your file.
-5. Once uploaded, you should see a preview of your PDF on PrairieLearn. You can update and re-upload your cheatsheet as many times as needed before the deadline.
+5. Once uploaded, you should see a preview of your PNG on PrairieLearn. You can update and re-upload your cheatsheet as many times as needed before the deadline.
 
 ### PrairieTest and Making a Reservation for your Quiz
 
