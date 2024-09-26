@@ -100,7 +100,17 @@ Balancing these two sides is difficult. In MDS the policy is as follows: if a gr
 
 ## Quiz Policies
 
-Unless otherwise specified, MDS quizzes are **closed** book, with the allowance of a **handwritten**, **single-sided**, **one-page**, **letter-sized** cheatsheet that is scanned and uploaded as a PDF to PrairieLearn before the quiz. Ensure that your cheatsheet complies with all [stated requirements](../resources_pages/quiz/#digital-cheatsheets). You may only access PrairieLearn during the quiz.
+Unless otherwise specified, MDS quizzes are closed book, with the allowance of a cheatsheet that adheres to the following guidelines:
+
+- The cheatsheet must be confined to a **single-sided**, **one-page**, **letter-sized** piece of paper (8.5 by 11 inches). Please do not use legal or A4-sized paper.
+- You may **handwrite**, **type**, or **digitally** create your cheatsheet, ensuring all information is **clearly readable** when printed on letter-sized paper. If you're typing your cheatsheet, ensure you use a **minimum font size of 8 pt**. (Letter-sized paper will be available in the labs if needed.)
+- The cheatsheet must be submitted as a **PNG file** (not PDF), with a file size of **5 MB or less**. This limit is enforced by PrairieLearn. You can create the PNG by scanning, photographing, or taking a screenshot of your cheatsheet.
+- You can use **Paint on Windows** and **Preview on Mac** for basic resizing. For more detailed adjustments, such as resizing or format conversion, **ImageMagick** can be helpful.
+- File names of your digital cheatsheets should correspond with course names to avoid confusion—e.g., the file name for the 521 cheatsheet should be similar to `521_cheatsheet.png`. Please verify the exact name upon submission.
+- Digital cheatsheets are due by **11:59 p.m. on the Monday night** before the quiz window opens.
+- If a cheatsheet is found to be **unreasonable** (i.e., not readable when printed on letter-sized paper), you may be called in for a discussion and could face penalties.
+
+Ensure that your cheatsheet complies with all stated requirements. You may only access PrairieLearn during the quiz.
 
 Please remember to reserve your quiz spot in a timely manner, as availability is limited and may fill up quickly. You will also have to reserve a review session in order to review the results of your quiz.
 
