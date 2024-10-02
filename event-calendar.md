@@ -17,7 +17,7 @@ title: MDS Event Calendar
 |The Art of Building Connections for Job Search                         |Jan 13, 2025   |
 |LinkedIn                                                               |Jan 15, 2025   |
 |Resume & Cover Letter Writing                                          |Jan 30, 2025   |
-|Capstone Fair                                                          |Feb 4 - 5th, 2025  |
+|Capstone Fair                                                          |Feb 4, 2025  |
 |ChatGPT for Jobseekers                                                 |Feb 10, 2025  |
 |Interview Skills                                                       |Feb 12, 2025  |
 |Semester 2 (Blocks 4-6) Midterm Break                                  |Feb 17 - 21st, 2025|
