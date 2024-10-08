@@ -16,13 +16,13 @@ This year's capstone course will run __May - June, 2025__ (~8 weeks).
 | [Final deadline to submit proposals](#proposal-revision-process)                                                          | November 15, 2024      |
 | [Selection of proposals](#selection-of-proposals)                                                                         | December 13, 2024      |
 | [Partners submit video presentations](#partners-submit-video-presentations)                                               | January 17, 2025       |
-| [Capstone fair](#capstone-fair)                                                                                           | Feb 4 - 5, 2025        |
-| [Students rate the projects](#students-rate-the-projects)                                                                 | Feb 16, 2025           |
+| [Capstone fair](#capstone-fair)                                                                                           | February 4, 2025        |
+| [Students rate the projects](#students-rate-the-projects)                                                                 | February 16, 2025           |
 | [Partners demonstrate readiness of data and sign legal docs](#partners-demonstrate-readiness-of-data-and-sign-legal-docs) | February 20, 2025      |
-| Students are assigned to projects                                                                                         | Mar 31, 2025           |
+| Students are assigned to projects                                                                                         | March 31, 2025           |
 | [Kickoff meetings](#kickoff-meetings)                                                                                     | April, 2025            |
-| [Kickoff hackathon](#hackathon)                                                                                           | Apr 28 - Apr 30, 2025  |
-| [Project](#project)                                                                                                       | Apr 28 - June 26, 2025 |
+| [Kickoff hackathon](#hackathon)                                                                                           | April 28 - Apr 30, 2025  |
+| [Project](#project)                                                                                                       | April 28 - June 26, 2025 |
 
 <br>
 
