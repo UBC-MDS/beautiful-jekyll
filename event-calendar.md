@@ -11,7 +11,7 @@ title: MDS Event Calendar
 |EDI Workshop                                                           |Sept 13th, 2024    |
 |Semester 1 (Blocks 1-3) Midterm Break                                  |Nov 11th - 15th, 2024|
 |Mentoring Kick-off Event (for students registered in mentoring program)|Nov 19th, 2024  |
-|LinkedIn                                                               |Dec 11th, 2024   |
+|Definitive LinkedIn Bootcamp                                           |Dec 11th, 2024   |
 |Last Day of Semester 1 (Blocks 1-3)                                    |Dec 20th, 2024     |
 |Holiday Party                                                          |Dec, 2024          |
 |Start Day of Semester 2 (Blocks 4-6)                                   |Jan 6th, 2025      |
