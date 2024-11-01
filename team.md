@@ -167,7 +167,7 @@ Vincent joined UBC in March 2024 as a postdoctoral teaching and research fellow.
 Payman began his role as a Postdoctoral Research and Teaching Fellow at UBC in September 2024. Earlier that year, in February, he completed his PhD in Statistics at Simon Fraser University, where his research focused on biostatistics and goodness-of-fit tests using empirical distribution functions. Before that, he earned a bachelor's degree in mathematical statistics and a master's degree in statistics from the University of Tehran. His passion for statistics, teaching, and data science brought him to this role. Outside of work, Payman enjoys swimming and capturing the night sky through astrophotography. <br>
 <br>
 
-<i>I like to take photo from night sky (a hobby known as astrophotography)</i> <br>
+<i>I like to take photo from night sky, a hobby known as astrophotography</i> <br>
 
 <a href="https://pnickchi.github.io/" target="_blank">Learn more about Payman here.</a>
 </p>
