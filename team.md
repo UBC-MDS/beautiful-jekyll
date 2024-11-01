@@ -14,7 +14,7 @@ Courses in the UBC Master of Data Science - Vancouver program are primarily taug
 - **13** : The total number of different languages we speak (including Cantonese, Farsi, Hindi, Japanese, Malayalam, Mandarin, Marathi, Nepali, Spanish, Swedish, and Vietnamese)
 - **20** : The total number of coding languages we have experience working with as a whole.
 - **10** : The number of different countries our team cheers for during the Olympics.
-- **5.3** : The average number of years our team has of teaching experience (with a standard deviation of 3.0).
+- **5.7** : The average number of years our team has of teaching experience (with a standard deviation of 3.2).
 - **10** : The median number of postsecondary education years our team has studied.
 
 ## Team Facts
@@ -155,6 +155,21 @@ Vincent joined UBC in March 2024 as a postdoctoral teaching and research fellow.
 <br>
 
 <a href="https://vincentliu3.github.io/" target="_blank">Learn more about Vincent here.</a>
+</p>
+
+<br>
+<br>
+
+#### Payman Nickchi, Postdoctoral Research and Teaching Fellow
+
+<img src='../img/team/payman.jpg'  align="left" width="32%" style="margin-right: 5px;"/>
+<p style="font-size:12.5px">
+Payman began his role as a Postdoctoral Research and Teaching Fellow at UBC in September 2024. Earlier that year, in February, he completed his PhD in Statistics at Simon Fraser University, where his research focused on biostatistics and goodness-of-fit tests using empirical distribution functions. Before that, he earned a bachelor's degree in mathematical statistics and a master's degree in statistics from the University of Tehran. His passion for statistics, teaching, and data science brought him to this role. Outside of work, Payman enjoys swimming and capturing the night sky through astrophotography. <br>
+<br>
+
+<i>I like to take photo from night sky (a hobby known as astrophotography)</i> <br>
+
+<a href="https://pnickchi.github.io/" target="_blank">Learn more about Payman here.</a>
 </p>
 
 <br>
