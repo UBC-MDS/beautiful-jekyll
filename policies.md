@@ -111,7 +111,7 @@ Examples of **unreasonable** regrading requests:
 - Demands, such as "I want 80%", "Please give full credit", or "This question should have partial marks".
 - Submitting regrading requests without any specifics, particularly multiple ones on the same assignment.
     - "I think my solution might deserve more marks" (no rationale as to why additional marks should be given)
-    - "I wrote 'X' which is the same as 'Y' in the solution" (no explanation for how 'X' is the same as 'Y')
+    - "I wrote 'X' which is the same as 'Y' in the solution" (no explanation for how 'X' is the same as 'Y'; although this might seem obvious to you, the grader will not know what you were thinking when writing it.)
 - Suggesting that a vague term you wrote meant the same as the solution. We can only give points for what you write, so you need to be explicit in your writing.
     - "When I wrote 'a smooth line' in my answer, I really meant 'kernel density estimate' as in the solution"
 - Minor complaints (e.g. half a mark on an assignment).
