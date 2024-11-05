@@ -96,7 +96,29 @@ Grades are not perfect; some randomness in grading is normal, meaning that you'l
 
 Sometimes serious grading errors are made, for example when a grader did not see your answer to a question or completely deviated from standard grading practices for some unknown reason. Such situations can be quite frustrating for students, and we want you to feel that the courses are fair. In these cases, it makes sense for the student to bring the error to our attention.
 
-Balancing these two sides is difficult. In MDS the policy is as follows: if a grade is challenged in a way that is deemed unreasonable, the student will receive a warning. This decision will be made by the instructor (not TA). If a student receives three warnings, the student will lose the privilege to challenge grades for the remainder of the program. Examples of unreasonable requests include extremely minor complaints (e.g. half a mark on an assignment) or repeatedly contesting the same issue once a decision has been reached. This policy applies to both labs and quizzes.
+Balancing these two sides is difficult. In MDS the policy is as follows: if a grade is challenged in a way that is deemed unreasonable, the student will receive a warning. This decision will be made by the instructor (not TA). If a student receives three warnings, the student will lose the privilege to challenge grades for the remainder of the program. This policy applies to both labs and quizzes.
+
+To submit an effective regrade request, you only need to follow two steps:
+
+1. Read the solution and the feedback from the grader. Often, this will be sufficient to understand why you lost points.
+2. Include a rationale explaining why you think the marking of your submission is unreasonable and should be regraded.
+    - This needs to be specific, either include references to the correct solution of how your answer is equivalent or explain why submission is correct although it is not equivalent to what is in the solution.
+
+Examples of **reasonable** regrading requests:
+
+- "The solution wrote that the number of bins in a histogram impacts its appearance. I wrote "binwidth" instead of "number of bins", but these are effectively the same since the wider each bin, the fewer bins there are along the axis."
+- "I think my code generates the same output as the correct answer. The only difference in code is `specify(response = y explanatory = x)` and `specify(y ~ x)`."
+
+Examples of **unreasonable** regrading requests:
+
+- Demands, such as "I want 80%", "Please give full credit", or "This question should have partial marks".
+- Submitting regrading requests without any specifics, particularly multiple ones on the same assignment.
+    - "I think my solution deserves more marks, can you regrade?" (no rationale as to why additional marks should be given)
+    - "I wrote XYZ, could you please check again?" (no specifics for how XYZ compares to the solution)
+- Suggesting that a vague term you wrote meant the same as the solution. We can only give points for what you write, so you need to be explicit in your writing.
+    - "When I wrote 'a smooth line' in my answer, I really meant 'kernel density estimate' as in the solution"
+- Minor complaints (e.g. half a mark on an assignment).
+- Repeatedly contesting the same issue once a decision has been reached.
 
 ## Quiz Policies
 
