@@ -103,7 +103,7 @@ To submit an effective regrade request, you only need to follow two steps:
 
 Examples of **reasonable** regrading requests:
 
-- "The solution wrote that the number of bins in a histogram impacts its appearance. I wrote "binwidth" instead of "number of bins", but these are effectively the same since the wider each bin, the fewer bins there are along the axis."
+- "The solution wrote that the number of bins in a histogram impacts its appearance. I wrote 'binwidth' instead of 'number of bins', but these are effectively the same since the wider each bin, the fewer bins there are along the axis."
 - "I think my code generates the same output as the correct answer. The only difference in code is `specify(response = y explanatory = x)` and `specify(y ~ x)`."
 
 Examples of **unreasonable** regrading requests:
@@ -117,7 +117,7 @@ Examples of **unreasonable** regrading requests:
 - Minor complaints (e.g. half a mark on an assignment).
 - Repeatedly contesting the same issue once a decision has been reached.
 
-##### Rationale for regrading policy
+**Rationale for regrading policy**
 
 Grades are not perfect; some randomness in grading is normal, meaning that you'll generally get more than you deserve in some cases and less than you deserve in other cases. Thus, it is possible to cheat the system by consistently complaining when your grade is too low but not when it is too high. Unfortunately, this takes time away from the course staff which could have been spent on making the course better for everyone. Thus, in our view, students who overzealously contest grades are penalizing their classmates for personal gain.
 
