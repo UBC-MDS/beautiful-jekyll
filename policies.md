@@ -92,17 +92,14 @@ When we receive a regrade request we may re-grade the entire submission; thus, y
 If you perceive a problem with a grade, you have **one week** to raise a concern from the time that your grade was released. After that, your grade is final.
 
 #### Reasonable grading concerns
-Grades are not perfect; some randomness in grading is normal, meaning that you'll generally get more than you deserve in some cases and less than you deserve in other cases. Thus, it is possible to cheat the system by consistently complaining when your grade is too low but not when it is too high. Unfortunately, this takes time away from the course staff which could have been spent on making the course better for everyone. Thus, in our view, students who overzealously contest grades are penalizing their classmates for personal gain.
 
-Sometimes serious grading errors are made, for example when a grader did not see your answer to a question or completely deviated from standard grading practices for some unknown reason. Such situations can be quite frustrating for students, and we want you to feel that the courses are fair. In these cases, it makes sense for the student to bring the error to our attention.
-
-Balancing these two sides is difficult. In MDS the policy is as follows: if a grade is challenged in a way that is deemed unreasonable, the student will receive a warning. This decision will be made by the instructor (not TA). If a student receives three warnings, the student will lose the privilege to challenge grades for the remainder of the program. This policy applies to both labs and quizzes.
+If a grade is challenged in a way that is deemed unreasonable, the student will receive a warning. This decision will be made by the instructor (not TA). If a student receives three warnings, the student will lose the privilege to challenge grades for the remainder of the program. This policy applies to both labs and quizzes.
 
 To submit an effective regrade request, you only need to follow two steps:
 
 1. Read the solution and the feedback from the grader. Often, this will be sufficient to understand why you lost points.
 2. Include a rationale explaining why you think the marking of your submission is unreasonable and should be regraded.
-    - This needs to be specific, either include references to the correct solution of how your answer is equivalent or explain why submission is correct although it is not equivalent to what is in the solution.
+    - This needs to be specific, either include references to the correct solution and explain how your answer is equivalent, or explain why your submission is correct although it is not equivalent to what is in the solution.
 
 Examples of **reasonable** regrading requests:
 
@@ -113,12 +110,20 @@ Examples of **unreasonable** regrading requests:
 
 - Demands, such as "I want 80%", "Please give full credit", or "This question should have partial marks".
 - Submitting regrading requests without any specifics, particularly multiple ones on the same assignment.
-    - "I think my solution deserves more marks, can you regrade?" (no rationale as to why additional marks should be given)
-    - "I wrote XYZ, could you please check again?" (no specifics for how XYZ compares to the solution)
+    - "I think my solution might deserve more marks" (no rationale as to why additional marks should be given)
+    - "I wrote 'X' which is the same as 'Y' in the solution" (no explanation for how 'X' is the same as 'Y')
 - Suggesting that a vague term you wrote meant the same as the solution. We can only give points for what you write, so you need to be explicit in your writing.
     - "When I wrote 'a smooth line' in my answer, I really meant 'kernel density estimate' as in the solution"
 - Minor complaints (e.g. half a mark on an assignment).
 - Repeatedly contesting the same issue once a decision has been reached.
+
+##### Rationale for regrading policy
+
+Grades are not perfect; some randomness in grading is normal, meaning that you'll generally get more than you deserve in some cases and less than you deserve in other cases. Thus, it is possible to cheat the system by consistently complaining when your grade is too low but not when it is too high. Unfortunately, this takes time away from the course staff which could have been spent on making the course better for everyone. Thus, in our view, students who overzealously contest grades are penalizing their classmates for personal gain.
+
+Sometimes serious grading errors are made, for example when a grader did not see your answer to a question or completely deviated from standard grading practices for some unknown reason. Such situations can be quite frustrating for students, and we want you to feel that the courses are fair. In these cases, it makes sense for the student to bring the error to our attention.
+
+Balancing these two sides is difficult and we have tried to make our regrading policy as explicit as possible to distinguish reasonable and unreasonable grading concerns.
 
 ## Quiz Policies
 
