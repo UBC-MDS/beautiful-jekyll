@@ -66,7 +66,7 @@ Another situation worth explaining is if you have unsuccessfully applied to the 
 
 #### 5. Recorded Virtual Interview
 
-NEW for applications for September 2024 - After you submit your application form, you will be emailed an invitation with a link to record and submit a virtual interview in which we will ask you several questions about your experience, motivation, communication skills, etc. You will be emailed detailed instructions and deadlines in early February.
+All applicants who submit a complete application will be emailed an invitation with a link to record and submit a virtual interview in which we will ask you several questions about your experience, motivation, communication skills, etc. Remember, this is not a job interview and many of the above personal statement tips also apply to the virtual interview.
 
 #### Disclaimer
 
