@@ -16,6 +16,7 @@ title: MDS Event Calendar
 |Holiday Party                                                          |Dec, 2024          |
 |Start Day of Semester 2 (Blocks 4-6)                                   |Jan 6th, 2025      |
 |The Art of Building Connections for Job Search                         |Jan 13th, 2025   |
+|Career Talk                                                            |Jan 16th, 2025   |
 |Resume & Cover Letter Writing                                          |Jan 30th, 2025   |
 |Capstone Fair                                                          |Feb 4th - 5th, 2025  |
 |ChatGPT for Jobseekers                                                 |Feb 10th, 2025  |
