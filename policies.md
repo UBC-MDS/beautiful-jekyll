@@ -177,7 +177,7 @@ If you choose to use GenAI tools in your work, you must:
 - Cite the GenAI tool you used, including the name of the tool and how it was applied.
 - Provide an annotation with your citation explaining the extent to which the GenAI tool contributed to your work and a brief description of its usage.
 
-**Important:** The use of GenAI to bypass learning or misrepresent your effort is considered academic dishonesty. It also deprives you of the opportunity to fully engage with the material and grow as a learner and individual. If an instructor suspects that a submission relies excessively on AI without proper citation, you may be required to explain your work in more detail. If your explanation is unsatisfactory, your submission will receive a penalty which is scaled according to the severity of the violation and usually results in a score of zero on the entire assignment.
+**Important:** The use of GenAI to bypass learning or misrepresent your effort is considered academic dishonesty. It also deprives you of the opportunity to fully engage with the material and grow as a learner and individual. If an instructor suspects that a submission relies excessively on AI without proper citation, you may be required to explain your work in more detail. If your explanation is unsatisfactory, your submission will receive a penalty which is scaled according to the severity of the violation and may result in a score of zero on the entire assignment.
 
 In group work scenarios, all group members must be aware of and agree to the use of GenAI tools. The group is collectively responsible for ensuring that the final work adheres to these guidelines.
 
