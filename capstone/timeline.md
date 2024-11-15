@@ -7,13 +7,13 @@ subtitle: For MDS Capstone Projects
 
 This year's capstone course will run __May - June, 2025__ (~8 weeks).
 
-**The soft deadline for UBC Capstone proposals is Oct 15th. And the hard deadline is Nov 15th.** Proposals sent in by Oct 15th will receive feedback (that will hopefully increase their chances of being selected).
+**The soft deadline for UBC Capstone proposals is Oct 15th. And the hard deadline is Nov 30th.** Proposals sent in by Oct 15th will receive feedback (that will hopefully increase their chances of being selected).
 
 | Event                                                                                                                     | Dates                  |
 |---------------------------------------------------------------------------------------------------------------------------|------------------------|
 | [Call for Capstone proposals opens](https://ubc-mds.github.io/capstone/proposal/)                                         | August 1, 2024         |
 | [Deadline to submit proposals for early feedback](#proposal-revision-process)                                             | October 15, 2024       |
-| [Final deadline to submit proposals](#proposal-revision-process)                                                          | November 15, 2024      |
+| [Final deadline to submit proposals](#proposal-revision-process)                                                          | November 30, 2024      |
 | [Selection of proposals](#selection-of-proposals)                                                                         | December 13, 2024      |
 | [Partners submit video presentations](#partners-submit-video-presentations)                                               | January 17, 2025       |
 | [Capstone fair](#capstone-fair)                                                                                           | Feb 4 - 5, 2025        |
