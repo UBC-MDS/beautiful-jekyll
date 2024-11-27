@@ -17,15 +17,16 @@ title: MDS Event Calendar
 |Start Day of Semester 2 (Blocks 4-6)                                   |Jan 6th, 2025      |
 |The Art of Building Connections for Job Search                         |Jan 13th, 2025   |
 |Career Talk                                                            |Jan 16th, 2025   |
-|Resume & Cover Letter Writing                                          |Jan 30th, 2025   |
-|Capstone Fair                                                          |Feb 4th - 5th, 2025  |
+|Resume & Cover Letter Writing                                          |Jan 29th, 2025   |
+|Career Talk                                                            |Jan 30th, 2025   |
+|Capstone Fair                                                          |Feb 4th, 2025  |
 |ChatGPT for Jobseekers                                                 |Feb 10th, 2025  |
 |Interview Skills                                                       |Feb 12th, 2025  |
 |Semester 2 (Blocks 4-6) Midterm Break                                  |Feb 17th - 21st, 2025|
 |Career Talk                                                            |Feb 26th, 2025  |
 |Technical Interview Clinic                                             |Feb, 2025          |
+|Job Offer Negotiation                                                  |Mar 13th, 2025     |
 |Post-Graduation Work Permit                                            |Mar, 2025          |
-|Job Offer Negotiation                                                  |Mar, 2025          |
 |Career Talk                                                            |Mar, 2025          |
 |Mentoring Wrap-Up Event (for students registered in mentoring program) |Apr, 2025          |
 |Alumni Reunion                                                         |Apr, 2025          |
