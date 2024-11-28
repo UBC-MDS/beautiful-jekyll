@@ -23,8 +23,8 @@ title: MDS Event Calendar
 |ChatGPT for Jobseekers                                                 |Feb 10th, 2025  |
 |Interview Skills                                                       |Feb 12th, 2025  |
 |Semester 2 (Blocks 4-6) Midterm Break                                  |Feb 17th - 21st, 2025|
-|Career Talk                                                            |Feb 26th, 2025  |
-|Technical Interview Clinic                                             |Feb, 2025          |
+|Technical Interview Clinic                                             |Feb 24th, 2025     |
+|Career Talk                                                            |Feb 26th, 2025     |
 |Job Offer Negotiation                                                  |Mar 13th, 2025     |
 |Post-Graduation Work Permit                                            |Mar, 2025          |
 |Career Talk                                                            |Mar, 2025          |
