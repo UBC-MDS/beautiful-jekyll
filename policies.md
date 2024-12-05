@@ -10,7 +10,9 @@ The Master of Data Science Policies and Regulations are part of the campus-wide 
 
 ## Attendance
 
-Attendance in lectures and lab sessions is not mandatory but highly recommended. You will get the most out of the program if you show up in person. 
+Attendance in lectures and lab sessions is *typically* not mandatory<sup>1</sup> but highly recommended. You will get the most out of the program if you show up in person. 
+
+<sup>1. To maintain fairness to all group members, some project based courses will implement mandatory attendance to some or all classes. This information will be provided at the start of the relevant block.<sup>
 
 **If you are feeling unwell, are experiencing any flu-like symptoms, or have reason to believe you may have Covid-19, please do not come to any in-person meetings including lectures, labs, office hours, or quizzes**.
 
@@ -205,3 +207,7 @@ UBC provides resources to support student learning and to maintain healthy lifes
 
 - Transfer between sections are not permitted.
 - Transfer between options are generally not permitted. In exceptional circumstances (*e.g.,* an external job offer requiring a different area of specialization), a transfer request may be considered if: a) a written rationale is submitted prior to the end of Block 2, b) the student is in a good academic standing, and c) the student had initially been accepted to both options. Final decisions will be at the discretion of the Option Directors, following discussion with the instructional and leadership teams.
+
+## Policy Updates
+
+We reserve the right to make changes to this policy during the program as required. Announcements for relevant changes will be made to the students via the appropriate Slack channels.
