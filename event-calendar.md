@@ -25,9 +25,10 @@ title: MDS Event Calendar
 |Semester 2 (Blocks 4-6) Midterm Break                                  |Feb 17th - 21st, 2025|
 |Technical Interview Clinic                                             |Feb 24th, 2025     |
 |Career Talk                                                            |Feb 26th, 2025     |
+|Career Talk                                                            |Mar 10th, 2025     |
+|Post-Graduation Work Permit (PGWP) Workshop                            |Mar 12th, 2025     |
 |Job Offer Negotiation                                                  |Mar 13th, 2025     |
-|Post-Graduation Work Permit                                            |Mar, 2025          |
-|Career Talk                                                            |Mar, 2025          |
+|Career Talk                                                            |Mar 26th, 2025     |
 |Mentoring Wrap-Up Event (for students registered in mentoring program) |Apr, 2025          |
 |Alumni Reunion                                                         |Apr, 2025          |
 |Career Talk                                                            |Apr, 2025          |
